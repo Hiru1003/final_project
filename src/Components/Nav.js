@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import "../Styles/main.css";
+import { Link } from 'react-router-dom';
 
 function NavPage () {
     const navRef = useRef();
@@ -15,10 +16,11 @@ function NavPage () {
         <header>
             <h3>Logo</h3>
             <nav ref={navRef}>
-                <a href='/#'>Home</a>
-                <a href='/#'>Bird Identification</a>
-                <a href='/#'>Bird Migration</a>
-                <a href='/#'>Visual Identification</a>
+                <Link to='/'>Home</Link>
+                <Link to='/BirdIdentification'>Bird Identification</Link>
+                <Link to='/endemic-birds'>Endemic Birds</Link>
+                <Link to='/visual-identification'>Visual Identification</Link>
+                
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes/>
                 </button>

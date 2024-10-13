@@ -1,0 +1,24 @@
+.bird-info-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.bird-info-image {
+    width: 100%; /* Adjust the size as needed */
+    max-width: 600px; /* Limit the maximum size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+.bird-info-name {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin: 20px 0 10px; /* Add margin for spacing */
+    color: var(--textColor);
+}
+
+.bird-info-description {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: var(--textColor400);
+    max-width: 800px; /* Limit the width of the description */
+    margin: 0 auto; /* Center align */
+}
