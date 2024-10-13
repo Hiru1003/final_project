@@ -1,11 +1,30 @@
-:root{
+:root {
     --primaryColor: #9ad7bd;
+    --primaryColor400: #328352;
+    --primaryColor300: #399B5F;
+    --primaryColor200: #58BE80;
+    --primaryColor100: #84C39C;
+
     --secondaryColor: #1b507e;
-    --textColor: #130e01;
+    --secondaryColor400: #072239;
+    --secondaryColor300: #306FA6;
+    --secondaryColor200: #50A4ED;
+    --secondaryColor100: #85C6FF;
+
     --accentColor: #b0cbe2;
+    --accentColor400: #6A7F90;
+    --accentColor300: #91A4B4;
+    --accentColor200: #BACAD8;
+    --accentColor100: #ECF1F6;
+
+    --textColor: #130e01;
+    --textColor400: #656464;
+    --textColor300: #B3B3B3;
+    --textColor200: #D1D0D2;
+    --textColor100: #FFFFFF;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,6 +33,7 @@ header{
     background-color: var(--accentColor);
     color: var(--textColor);
     padding-left: 40px;
+    z-index: 5;
 }
 
 nav a {
@@ -23,33 +43,34 @@ nav a {
     font-weight: 600;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--secondaryColor);
 }
 
-header .nav-btn{
+header .nav-btn {
     padding: 5px;
     cursor: pointer;
     background: transparent;
     border: none;
     outline: none;
-    color:var(--textColor);
+    color: var(--textColor);
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
+    z-index: 10;
 }
 
-@media only screen and (max-width: 1024px){
-    header .nav-btn{
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
         visibility: visible;
         opacity: 1;
     }
 
-    header nav{
+    header nav {
         position: fixed;
-        top:0;
+        top: 0;
         left: 0;
-        height:100%;
+        height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -57,21 +78,33 @@ header .nav-btn{
         flex-direction: column;
         gap: 1.5rem;
         background-color: var(--accentColor);
-        transition: 1s;
-        transform: translate(-100vh);
+        transition: transform 0.5s ease;
+        transform: translateX(-100%);
+        z-index: 4;
     }
 
-    header .responsive_nav{
-        transform: none;
+    header .responsive_nav {
+        transform: translateX(0);
     }
     
     nav .nav-close-btn {
         position: absolute;
         top: 2rem;
-        right:2rem;
+        right: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: var(--textColor);
     }
     
-    nav a{
+    nav a {
         font-size: 1.5rem;
+    }
+
+    header .responsive_nav .nav-btn {
+        display: none;
+    }
+
+    header .responsive_nav .nav-close-btn {
+        display: block;
     }
 }

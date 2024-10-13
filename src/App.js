@@ -1,13 +1,17 @@
 import './App.css';
 import React from'react';
-import NavPage from './Components/Nav';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/Home';
+import BirdIdentification from './Pages/BirdIdentification';
 
 function App() {
   return (
-    <React.Fragment>
-      <NavPage />
-      
-    </React.Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/BirdIdentification" element={<BirdIdentification />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

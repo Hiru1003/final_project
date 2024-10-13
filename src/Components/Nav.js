@@ -1,13 +1,14 @@
-import React from 'react';
-import { useRef } from 'react';
-import colorPalette from './colorPalette.json';
+import React, { useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import "../Styles/main.css";
 
 function NavPage () {
     const navRef = useRef();
+    const [isNavOpen, setIsNavOpen] = useState(false); // State to track the menu visibility
+
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
+        setIsNavOpen(!isNavOpen); // Toggle the state when the navbar is shown or hidden
     }
 
     return (
@@ -22,9 +23,12 @@ function NavPage () {
                     <FaTimes/>
                 </button>
             </nav>
-            <button className='nav-btn' onClick={showNavbar}>
+            {/* Only show the menu icon (FaBars) when the menu is not open */}
+            {!isNavOpen && (
+                <button className='nav-btn' onClick={showNavbar}>
                     <FaBars />
                 </button>
+            )}
         </header>
     );
 };

@@ -1,0 +1,62 @@
+/* Fullscreen background image with text in the center */
+.landing-page {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Assets/landing2.webp'); 
+    background-size: cover; 
+    background-position: center;
+    z-index: 0;
+  }
+  
+  /* Overlay with opacity on the image */
+  .landing-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  /* Text container */
+  .landing-content {
+    position: relative;
+    z-index: 2; /* Make sure it sits above the overlay */
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  /* Heading styles */
+  .landing-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paragraph styles */
+  .landing-paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button styles */
+  .landing-button {
+    background-color: var(--secondaryColor200); 
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .landing-button:hover {
+    background-color: var(--secondaryColor);
+  }
+  
