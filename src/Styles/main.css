@@ -56,8 +56,9 @@ header .nav-btn {
     color: var(--textColor);
     visibility: hidden;
     opacity: 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     z-index: 10;
+    padding-right: 20px;
 }
 
 @media only screen and (max-width: 1024px) {

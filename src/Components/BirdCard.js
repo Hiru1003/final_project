@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../Styles/BirdCard.css'; 
 
 const BirdCard = ({ bird }) => {
-    const navigate = useNavigate(); // Updated hook
+    const navigate = useNavigate();
 
     const handleClick = () => {
         navigate(`/birds/${bird.id}`);

@@ -71,7 +71,7 @@ const birds = [
 const BirdGallery = () => {
     return (
         <>
-        <h2 style={{ paddingLeft:'4rem', paddingTop:'5rem', paddingBottom:'2rem'}}>Endemic Birds</h2>
+        <h2 style={{ paddingLeft:'4rem', paddingTop:'5rem', paddingBottom:'2rem'}}></h2>
         <div className="bird-gallery" style={{ display: 'flex', flexWrap: 'wrap', paddingLeft:'3rem' , paddingBottom:'2rem', gap: '30px'}}>      
             {birds.map((bird) => (               
                 <BirdCard key={bird.id} bird={bird} />

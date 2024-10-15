@@ -1,24 +1,50 @@
 .bird-info-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
 .bird-info-image {
-    width: 100%; /* Adjust the size as needed */
-    max-width: 600px; /* Limit the maximum size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: add rounded corners */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .bird-info-name {
-    font-size: 2rem; /* Adjust font size as needed */
-    margin: 20px 0 10px; /* Add margin for spacing */
+    font-size: 2rem;
+    margin: 20px 0 10px; 
     color: var(--textColor);
 }
 
-.bird-info-description {
-    font-size: 1.2rem; /* Adjust font size as needed */
+.bird-info-scientific {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
     color: var(--textColor400);
-    max-width: 800px; /* Limit the width of the description */
-    margin: 0 auto; /* Center align */
+}
+
+.bird-info-description {
+    font-size: 1.2rem;
+    color: var(--textColor400);
+    text-align: left;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.bird-info-details {
+    font-size: 1.1rem;
+    color: var(--textColor500);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 80px;
+    text-align: left; 
+    padding-left: 80px;
+}
+
+.bird-info-details p {
+    margin: 5px 0;
+    
 }
