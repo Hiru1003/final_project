@@ -61,6 +61,67 @@ header .nav-btn {
     padding-right: 20px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--textColor);
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: var(--accentColor);
+    min-width: 200px;
+    font-weight: 600;
+    box-shadow: none; 
+    z-index: 1;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.dropdown-content a {
+    color: var(--textColor);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: var(--secondaryColor);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1024px) {
+    .dropbtn {
+        width: 100%;
+        text-align: left; 
+        font-size: 16px; 
+    }
+
+    .dropdown-content {
+        position: relative; 
+        min-width: 100%; 
+        font-size: 18px; 
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     header .nav-btn {
         visibility: visible;
@@ -77,7 +138,6 @@ header .nav-btn {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 1.5rem;
         background-color: var(--accentColor);
         transition: transform 0.5s ease;
         transform: translateX(-100%);
@@ -97,10 +157,6 @@ header .nav-btn {
         color: var(--textColor);
     }
     
-    nav a {
-        font-size: 1.5rem;
-    }
-
     header .responsive_nav .nav-btn {
         display: none;
     }
