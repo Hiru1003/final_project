@@ -30,7 +30,6 @@ function NavPage() {
                         <div className="dropdown-content">
                             <Link to="/endemic-birds">Endemic Birds</Link>
                             <Link to="/endemic-bird-2">All Birds</Link>
-                            {/* Add more links as needed */}
                         </div>
                     ) : (
                         <>
@@ -40,8 +39,7 @@ function NavPage() {
                             {isDropdownOpen && (
                                 <div className="dropdown-content">
                                     <Link to="/endemic-birds">Endemic Birds</Link>
-                                    <Link to="/endemic-bird-2">All Birds</Link>
-                                    {/* Add more links as needed */}
+                                    <Link to="/all-birds">All Birds</Link>
                                 </div>
                             )}
                         </>

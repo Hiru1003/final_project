@@ -1,4 +1,4 @@
-import BirdGallery from "../Components/BirdGallery";
+import BirdGalleryEndemic from "../Components/BirdGalleryEndemic";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
 import landingImage from '../Assets/landing4.jpg'; 
@@ -17,7 +17,7 @@ const EndemicBirds = () => {
             </>
           }
       />
-        <BirdGallery/>
+        <BirdGalleryEndemic/>
     </>
   );
 };

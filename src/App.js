@@ -4,8 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/Home';
 import BirdIdentification from './Pages/BirdIdentification';
 import BirdInfo from './Components/BirdInfo';
-import BirdGallery from './Components/BirdGallery';
+import BirdGallery from './Components/BirdGalleryEndemic';
 import EndemicBirds from './Pages/EndemicBirds';
+import AllBirds from './Pages/AllBirds';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/birds/:id" element={<BirdInfo />} />
         <Route path="/BirdGallery" exact element={BirdGallery} />
         <Route path='/endemic-birds' element={<EndemicBirds />}  />
+        <Route path='/all-birds' element={<AllBirds />}  />
       </Routes>
     </BrowserRouter>
   );

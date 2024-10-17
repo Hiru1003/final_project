@@ -1,5 +1,5 @@
 import React from 'react';
-import BirdCard from '../Components/BirdCard';
+import BirdCard from './BirdCard';
 import SriLankaJunglefowl from '../Assets/EndemicBirds/Sri Lanka Junglefowl.webp';
 import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpeg';
 import SriLankaWoodPigeon from '../Assets/EndemicBirds/Sri Lanka Wood Pigeon.jpg';
