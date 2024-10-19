@@ -259,6 +259,123 @@ import AlexandrineParakeet from '../Assets/AllBirds/AlexandrineParakeet.jpeg';
 import EmeraldCollaredParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
 import IndianPitta from '../Assets/AllBirds/IndianPitta.jpeg';
 import BlackHoodedOriole from '../Assets/AllBirds/BlackHoodedOriole.webp';
+import EurasianGoldenOriole from '../Assets/AllBirds/EurasianGoldenOriole.jpg';
+import IndianGoldenOriole from '../Assets/AllBirds/IndianGoldenOriole.jpg';
+import SmallMinivet from '../Assets/AllBirds/SmallMinivet.jpg';
+import ScarletMinivet from '../Assets/AllBirds/ScarletMinivet.jpeg';
+import IndianCuckooshrike from '../Assets/AllBirds/IndianCuckooshrike.jpeg';
+import BlackHeadedCuckooshrike from '../Assets/AllBirds/BlackHeadedCuckooshrike.webp';
+import AshyWoodswallow from '../Assets/AllBirds/AshyWoodswallow.jpg';
+import BarWingedFlycatcherShrike from '../Assets/AllBirds/BarWingedFlycatcherShrike.jpeg';
+import SriLankaWoodshrike from '../Assets/EndemicBirds/SriLankaWoodshrike.jpeg';
+import CommonIora from '../Assets/AllBirds/CommonIora.webp';
+import MarshallsIora from '../Assets/AllBirds/MarshallsIora.jpg';
+import WhiteBrowedFantail from '../Assets/AllBirds/WhiteBrowedFantail.jpg';
+import BlackDrongo from '../Assets/AllBirds/BlackDrongo.webp';
+import AshyDrongo from '../Assets/AllBirds/AshyDrongo.jpeg';
+import WhiteBelliedDrongo from '../Assets/AllBirds/WhiteBelliedDrongo.avif';
+import GreaterRacquetTailedDrongo from '../Assets/AllBirds/GreaterRacquetTailedDrongo.webp';
+import SriLankaDrongo from '../Assets/AllBirds/SriLankaDrongo.jpg';
+import BlackNapedMonarch from '../Assets/AllBirds/BlackNapedMonarch.jpg';
+import IndianParadiseFlycatcher from '../Assets/AllBirds/IndianParadiseFlycatcher.jpeg';
+import BrownShrike from '../Assets/AllBirds/BrownShrike.jpeg';
+import LongTailedShrike from '../Assets/AllBirds/LongTailedShrike.jpeg';
+import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpeg';
+import HouseCrow from '../Assets/AllBirds/HouseCrow.jpg';
+import GreyHeadedCanaryFlycatcher from '../Assets/AllBirds/GreyHeadedCanaryFlycatcher.jpg';
+import AshyCrownedSparrowLark from '../Assets/AllBirds/AshyCrownedSparrowLark.jpg';
+import JerdonsBushlark from '../Assets/AllBirds/JerdonsBushlark.jpg';
+import OrientalSkylark from '../Assets/AllBirds/OrientalSkylark.jpeg';
+import ZittingCisticola from '../Assets/AllBirds/ZittingCisticola.jpg';
+import GreyBreastedPrinia from '../Assets/AllBirds/GreyBreastedPrinia.jpg';
+import JunglePrinia from '../Assets/AllBirds/JunglePrinia.jpg';
+import AshyPrinia from '../Assets/AllBirds/AshyPrinia.jpg';
+import PlainPrinia from '../Assets/AllBirds/PlainPrinia.webp';
+import CommonTailorbird from '../Assets/AllBirds/CommonTailorbird.webp';
+import BootedWarbler from '../Assets/AllBirds/BootedWarbler.jpeg';
+import SykessWarbler from '../Assets/AllBirds/SykessWarbler.jpg';
+import BlythsReedWarbler from '../Assets/AllBirds/BlythsReedWarbler.jpg';
+import ClamorousReedWarbler from '../Assets/AllBirds/ClamorousReedWarbler.webp';
+import PallassGrasshopperWarbler from '../Assets/AllBirds/PallassGrasshopperWarbler.jpg';
+import LanceolatedWarbler from '../Assets/AllBirds/LanceolatedWarbler.webp';
+import SriLankaWarbler from '../Assets/EndemicBirds/SriLankaBushWarbler.jpg';
+import SriLankaSwallow from '../Assets/AllBirds/SriLankaSwallow.jpg';
+import HouseSwallow from '../Assets/AllBirds/HouseSwallow.jpeg';
+import BarnSwallow from '../Assets/AllBirds/BarnSwallow.jpeg';
+import SquareTailedBulbul from '../Assets/AllBirds/SquareTailedBulbul.jpg';
+import BlackCappedBulbul from '../Assets/EndemicBirds/SriLankaBlackCappedBulbul.jpg';
+import RedVentedBulbul from '../Assets/AllBirds/RedVentedBulbul.jpg';
+import YellowEaredBulbul from '../Assets/AllBirds/YellowEaredBulbul.jpg';
+import WhiteBrowedBulbul from '../Assets/AllBirds/WhiteBrowedBulbul.jpeg';
+import YellowBrowedBulbul from '../Assets/AllBirds/YellowBrowedBulbul.jpg';
+import GreenWarbler from '../Assets/AllBirds/GreenWarbler.jpg';
+import GreenishWarbler from '../Assets/AllBirds/GreenishWarbler.jpeg';
+import LargeBilledLeafWarbler from '../Assets/AllBirds/LargeBilledLeafWarbler.jpg';
+import LesserWhitethroat from '../Assets/AllBirds/LesserWhitethroat.jpg';
+import YellowEyedBabbler from '../Assets/AllBirds/YellowEyedBabbler.jpeg';
+import SriLankaWhiteEye from '../Assets/EndemicBirds/SriLankaWhiteEye.jpg';
+import IndianWhiteEye from '../Assets/AllBirds/IndianWhiteEye.webp';
+import SriLankaScimitarBabbler from  '../Assets/EndemicBirds/SriLankaScimitarBabbler.jpg';
+import TawnyBelliedBabbler from '../Assets/AllBirds/TawnyBelliedBabbler.jpeg';
+import DarkFrontedBabbler from '../Assets/AllBirds/DarkFrontedBabbler.jpg';
+import BrownCappedBabbler from '../Assets/AllBirds/BrownCappedBabbler.jpeg';
+import AshyFrontedBabbler from '../Assets/AllBirds/AshyFrontedBabbler.jpg';
+import OrangeBilledBabbler from  '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
+import YellowBilledBabbler from '../Assets/AllBirds/YellowBilledBabbler.jpg';
+import VelvetFrontedNuthatch from '../Assets/AllBirds/VelvetFrontedNuthatch.jpeg';
+import RosyStarling from '../Assets/AllBirds/RosyStarling.webp';
+import WhiteFacedStarling from '../Assets/EndemicBirds/Ceylon White-headed Starling.webp';
+import BrahminyStarling from '../Assets/AllBirds/BrahminyStarling.jpeg';
+import CommonMyna from '../Assets/AllBirds/CommonMyna.jpeg';
+import SriLankaHillMyna from '../Assets/EndemicBirds/SriLankaHillMyna.jpg';
+import SouthernHillMyna from '../Assets/AllBirds/SouthernHillMyna.jpeg';
+import WhitesThrush from '../Assets/AllBirds/WhitesThrush.jpg';
+import PiedThrush from '../Assets/AllBirds/PiedThrush.jpg';
+import SpotWingedThrush from '../Assets/AllBirds/SpotWingedThrush.jpg';
+import OrangeHeadedThrush from '../Assets/AllBirds/OrangeHeadedThrush.jpeg';
+import IndianBlackbird from '../Assets/AllBirds/IndianBlackbird.jpeg';
+import EyebrowedThrush from '../Assets/AllBirds/EyebrowedThrush.webp';
+import OrientalMagpieRobin from '../Assets/AllBirds/OrientalMagpieRobin.jpg';
+import IndianRobin from '../Assets/AllBirds/IndianRobin.jpg';
+import WhiteRumpedShama from '../Assets/AllBirds/WhiteRumpedShama.jpeg';
+import BrownBreastedFlycatcher from '../Assets/AllBirds/BrownBreastedFlycatcher.webp';
+import AsianBrownFlycatcher from '../Assets/AllBirds/AsianBrownFlycatcher.webp';
+import DullBlueFlycatcher from '../Assets/EndemicBirds/SriLankaDullBlueFlycatcher.jpeg';
+import TickellsBlueFlycatcher from '../Assets/AllBirds/TickellsBlueFlycatcher.jpeg';
+import BlueThroatedBlueFlycatcher from '../Assets/AllBirds/BlueThroatedBlueFlycatcher.jpeg';
+import IndianBlueRobin from '../Assets/AllBirds/IndianBlueRobin.jpeg';
+import Bluethroat from '../Assets/AllBirds/Bluethroat.jpeg';
+import SriLankaWhistlingThrush from '../Assets/EndemicBirds/SriLankaWhistlingThrush.jpg';
+import KashmirFlycatcher from '../Assets/AllBirds/KashmirFlycatcher.jpg';
+import BlueRockThrush from '../Assets/AllBirds/BlueRockThrush.webp';
+import PiedBushchat from '../Assets/AllBirds/PiedBushchat.jpg';
+
+import PiedWheatear from '../Assets/AllBirds/PiedWheatear.jpg';
+import AsianFairyBluebird from '../Assets/AllBirds/AsianFairyBluebird.jpeg';
+import GoldenFrontedLeafbird from '../Assets/AllBirds/GoldenFrontedLeafbird.jpg';
+import JerdonsLeafbird from '../Assets/AllBirds/JerdonsLeafbird.jpg';
+import WhiteThroatedFlowerpecker from '../Assets/EndemicBirds/White-throated Flowerpecker.jpg';
+import ThickBilledFlowerpecker from '../Assets/AllBirds/ThickBilledFlowerpecker.jpg';
+import PaleBilledFlowerpecker from '../Assets/AllBirds/PaleBilledFlowerpecker.jpg';
+import PurpleRumpedSunbird from '../Assets/AllBirds/PurpleRumpedSunbird.jpeg';
+import PurpleSunbird from '../Assets/AllBirds/PurpleSunbird.jpeg';
+import LotensSunbird from '../Assets/AllBirds/LotensSunbird.webp';
+import StreakedWeaver from '../Assets/AllBirds/StreakedWeaver.jpg';
+import BayaWeaver from '../Assets/AllBirds/BayaWeaver.jpeg';
+import IndianSilverbill from '../Assets/AllBirds/IndianSilverbill.jpeg';
+import WhiteRumpedMunia from '../Assets/AllBirds/WhiteRumpedMunia.jpeg';
+import ScalyBreastedMunia from '../Assets/AllBirds/ScalyBreastedMunia.webp';
+import BlackThroatedMunia from '../Assets/AllBirds/BlackThroatedMunia.jpeg';
+import TricolouredMunia from '../Assets/AllBirds/TricolouredMunia.jpeg';
+import HouseSparrow from '../Assets/AllBirds/HouseSparrow.jpeg';
+import ForestWagtail from '../Assets/AllBirds/ForestWagtail.jpeg';
+import RichardsPipit from '../Assets/AllBirds/RichardsPipit.jpeg';
+import PaddyfieldPipit from '../Assets/AllBirds/PaddyfieldPipit.webp';
+import BlythsPipit from '../Assets/AllBirds/BlythsPipit.jpeg';
+import WesternYellowWagtail from '../Assets/AllBirds/WesternYellowWagtail.jpeg';
+import GreyWagtail from '../Assets/AllBirds/GreyWagtail.jpeg';
+import WhiteBrowedWagtail from '../Assets/AllBirds/WhiteBrowedWagtail.jpeg';
+import WhiteWagtail from '../Assets/AllBirds/WhiteWagtail.jpeg';
 
 
 const birds = [
@@ -521,125 +638,122 @@ const birds = [
     { id: 258, name: 'Emerald-collared Parakeet', image: EmeraldCollaredParakeet },
     { id: 259, name: 'Indian Pitta', image: IndianPitta },
     { id: 260, name: 'Black-hooded Oriole', image: BlackHoodedOriole },
-    
-
-
-    { id: 261, name: 'Eurasian Golden Oriole', image: '' },
-    { id: 262, name: 'Indian Golden Oriole', image: '' },
-    { id: 263, name: 'Small Minivet', image: '' },
-    { id: 264, name: 'Scarlet Minivet', image: '' },
-    { id: 265, name: 'Indian Cuckooshrike', image: '' },
-    { id: 266, name: 'Black-headed Cuckooshrike', image: '' },
-    { id: 267, name: 'Ashy Woodswallow', image: '' },
-    { id: 268, name: 'Bar-winged Flycatcher-shrike', image: '' },
-    { id: 269, name: 'Sri Lanka Woodshrike', image: '' },
-    { id: 270, name: 'Common Iora', image: '' },
-    { id: 271, name: 'Marshall\'s Iora', image: '' },
-    { id: 272, name: 'White-browed Fantail', image: '' },
-    { id: 273, name: 'Black Drongo', image: '' },
-    { id: 274, name: 'Ashy Drongo', image: '' },
-    { id: 275, name: 'White-bellied Drongo', image: '' },
-    { id: 276, name: 'Greater Racquet-tailed Drongo', image: '' },
-    { id: 277, name: 'Sri Lanka Drongo', image: '' },
-    { id: 278, name: 'Black-naped Monarch', image: '' },
-    { id: 279, name: 'Indian Paradise-flycatcher', image: '' },
-    { id: 280, name: 'Brown Shrike', image: '' },
-    { id: 281, name: 'Long-tailed Shrike', image: '' },
-    { id: 282, name: 'Sri Lanka Blue Magpie', image: '' },
-    { id: 283, name: 'House Crow', image: '' },
-    { id: 284, name: 'Grey-headed Canary-flycatcher', image: '' },
-    { id: 285, name: 'Ashy-crowned Sparrow-lark', image: '' },
-    { id: 286, name: 'Jerdon\'s Bushlark', image: '' },
-    { id: 287, name: 'Oriental Skylark', image: '' },
-    { id: 288, name: 'Zitting Cisticola', image: '' },
-    { id: 289, name: 'Grey-breasted Prinia', image: '' },
-    { id: 290, name: 'Jungle Prinia', image: '' },
-    { id: 291, name: 'Ashy Prinia', image: '' },
-    { id: 292, name: 'Plain Prinia', image: '' },
-    { id: 293, name: 'Common Tailorbird', image: '' },
-    { id: 294, name: 'Booted Warbler', image: '' },
-    { id: 295, name: 'Sykes\'s Warbler', image: '' },
-    { id: 296, name: 'Blyth\'s Reed-warbler', image: '' },
-    { id: 297, name: 'Clamorous Reed-warbler', image: '' },
-    { id: 298, name: 'Pallas\'s Grasshopper-warbler', image: '' },
-    { id: 299, name: 'Lanceolated Warbler', image: '' },
-    { id: 300, name: 'Sri Lanka Warbler', image: '' },
-    { id: 301, name: 'Sri Lanka Swallow', image: '' },
-    { id: 302, name: 'House Swallow', image: '' },
-    { id: 303, name: 'Barn Swallow', image: '' },
-    { id: 304, name: 'Square-tailed Bulbul', image: '' },
-    { id: 305, name: 'Black-capped Bulbul', image: '' },
-    { id: 306, name: 'Red-vented Bulbul', image: '' },
-    { id: 307, name: 'Yellow-eared Bulbul', image: '' },
-    { id: 308, name: 'White-browed Bulbul', image: '' },
-    { id: 309, name: 'Yellow-browed Bulbul', image: '' },
-    { id: 310, name: 'Green Warbler', image: '' },
-    { id: 311, name: 'Greenish Warbler', image: '' },
-    { id: 312, name: 'Large-billed Leaf-warbler', image: '' },
-    { id: 313, name: 'Lesser Whitethroat', image: '' },
-    { id: 314, name: 'Yellow-eyed Babbler', image: '' },
-    { id: 315, name: 'Sri Lanka White-eye', image: '' },
-    { id: 316, name: 'Indian White-eye', image: '' },
-    { id: 317, name: 'Sri Lanka Scimitar-babbler', image: '' },
-    { id: 318, name: 'Tawny-bellied Babbler', image: '' },
-    { id: 319, name: 'Dark-fronted Babbler', image: '' },
-    { id: 320, name: 'Brown-capped Babbler', image: '' },
-    { id: 321, name: 'Ashy-fronted Babbler', image: '' },
-    { id: 322, name: 'Orange-billed Babbler', image: '' },
-    { id: 323, name: 'Yellow-billed Babbler', image: '' },
-    { id: 324, name: 'Velvet-fronted Nuthatch', image: '' },
-    { id: 325, name: 'Rosy Starling', image: '' },
-    { id: 326, name: 'White-faced Starling', image: '' },
-    { id: 327, name: 'Brahminy Starling', image: '' },
-    { id: 328, name: 'Common Myna', image: '' },
-    { id: 329, name: 'Sri Lanka Hill Myna', image: '' },
-    { id: 330, name: 'Southern Hill Myna', image: '' },
-    { id: 331, name: "White's Thrush", image: '' },
-    { id: 332, name: 'Pied Thrush', image: '' },
-    { id: 333, name: 'Spot-winged Thrush', image: '' },
-    { id: 334, name: 'Orange-headed Thrush', image: '' },
-    { id: 335, name: 'Indian Blackbird', image: '' },
-    { id: 336, name: 'Eyebrowed Thrush', image: '' },
-    { id: 337, name: 'Oriental Magpie-robin', image: '' },
-    { id: 338, name: 'Indian Robin', image: '' },
-    { id: 339, name: 'White-rumped Shama', image: '' },
-    { id: 340, name: 'Brown-breasted Flycatcher', image: '' },
-    { id: 341, name: 'Asian Brown Flycatcher', image: '' },
-    { id: 342, name: 'Dull-blue Flycatcher', image: '' },
-    { id: 343, name: "Tickell's Blue-flycatcher", image: '' },
-    { id: 344, name: 'Blue-throated Blue-flycatcher', image: '' },
-    { id: 345, name: 'Indian Blue Robin', image: '' },
-    { id: 346, name: 'Bluethroat', image: '' },
-    { id: 347, name: 'Sri Lanka Whistling-thrush', image: '' },
-    { id: 348, name: 'Kashmir Flycatcher', image: '' },
-    { id: 349, name: 'Blue Rock-thrush', image: '' },
-    { id: 350, name: 'Pied Bushchat', image: '' },
-    { id: 351, name: 'Pied Wheatear', image: '' },
-    { id: 352, name: 'Asian Fairy-bluebird', image: '' },
-    { id: 353, name: 'Golden-fronted Leafbird', image: '' },
-    { id: 354, name: "Jerdon's Leafbird", image: '' },
-    { id: 355, name: 'White-throated Flowerpecker', image: '' },
-    { id: 356, name: 'Thick-billed Flowerpecker', image: '' },
-    { id: 357, name: 'Pale-billed Flowerpecker', image: '' },
-    { id: 358, name: 'Purple-rumped Sunbird', image: '' },
-    { id: 359, name: 'Purple Sunbird', image: '' },
-    { id: 360, name: "Loten's Sunbird", image: '' },
-    { id: 361, name: 'Streaked Weaver', image: '' },
-    { id: 362, name: 'Baya Weaver', image: '' },
-    { id: 363, name: 'Indian Silverbill', image: '' },
-    { id: 364, name: 'White-rumped Munia', image: '' },
-    { id: 365, name: 'Scaly-breasted Munia', image: '' },
-    { id: 366, name: 'Black-throated Munia', image: '' },
-    { id: 367, name: 'Tricoloured Munia', image: '' },
-    { id: 368, name: 'House Sparrow', image: '' },
-    { id: 369, name: 'Forest Wagtail', image: '' },
-    { id: 370, name: "Richard's Pipit", image: '' },
-    { id: 371, name: 'Paddyfield Pipit', image: '' },
-    { id: 372, name: "Blyth's Pipit", image: '' },
-    { id: 373, name: 'Western Yellow Wagtail', image: '' },
-    { id: 374, name: 'Grey Wagtail', image: '' },
-    { id: 375, name: 'White-browed Wagtail', image: '' },
-    { id: 376, name: 'White Wagtail', image: '' }
+    { id: 261, name: 'Eurasian Golden Oriole', image: EurasianGoldenOriole },
+    { id: 262, name: 'Indian Golden Oriole', image: IndianGoldenOriole },
+    { id: 263, name: 'Small Minivet', image: SmallMinivet },
+    { id: 264, name: 'Scarlet Minivet', image: ScarletMinivet },
+    { id: 265, name: 'Indian Cuckooshrike', image: IndianCuckooshrike },
+    { id: 266, name: 'Black-headed Cuckooshrike', image: BlackHeadedCuckooshrike },
+    { id: 267, name: 'Ashy Woodswallow', image: AshyWoodswallow },
+    { id: 268, name: 'Bar-winged Flycatcher-shrike', image: BarWingedFlycatcherShrike },
+    { id: 269, name: 'Sri Lanka Woodshrike', image: SriLankaWoodshrike },
+    { id: 270, name: 'Common Iora', image: CommonIora },
+    { id: 271, name: 'Marshall\'s Iora', image: MarshallsIora },
+    { id: 272, name: 'White-browed Fantail', image: WhiteBrowedFantail },
+    { id: 273, name: 'Black Drongo', image: BlackDrongo },
+    { id: 274, name: 'Ashy Drongo', image: AshyDrongo },
+    { id: 275, name: 'White-bellied Drongo', image: WhiteBelliedDrongo },
+    { id: 276, name: 'Greater Racquet-tailed Drongo', image: GreaterRacquetTailedDrongo },
+    { id: 277, name: 'Sri Lanka Drongo', image: SriLankaDrongo },
+    { id: 278, name: 'Black-naped Monarch', image: BlackNapedMonarch },
+    { id: 279, name: 'Indian Paradise-flycatcher', image: IndianParadiseFlycatcher },
+    { id: 280, name: 'Brown Shrike', image: BrownShrike },
+    { id: 281, name: 'Long-tailed Shrike', image: LongTailedShrike },
+    { id: 282, name: 'Sri Lanka Blue Magpie', image: SriLankaBlueMagpie },
+    { id: 283, name: 'House Crow', image: HouseCrow },
+    { id: 284, name: 'Grey-headed Canary-flycatcher', image: GreyHeadedCanaryFlycatcher },
+    { id: 285, name: 'Ashy-crowned Sparrow-lark', image: AshyCrownedSparrowLark },
+    { id: 286, name: 'Jerdon\'s Bushlark', image: JerdonsBushlark },
+    { id: 287, name: 'Oriental Skylark', image: OrientalSkylark },
+    { id: 288, name: 'Zitting Cisticola', image: ZittingCisticola },
+    { id: 289, name: 'Grey-breasted Prinia', image: GreyBreastedPrinia },
+    { id: 290, name: 'Jungle Prinia', image: JunglePrinia },
+    { id: 291, name: 'Ashy Prinia', image: AshyPrinia },
+    { id: 292, name: 'Plain Prinia', image: PlainPrinia },
+    { id: 293, name: 'Common Tailorbird', image: CommonTailorbird },
+    { id: 294, name: 'Booted Warbler', image: BootedWarbler },
+    { id: 295, name: 'Sykes\'s Warbler', image: SykessWarbler },
+    { id: 296, name: 'Blyth\'s Reed-warbler', image: BlythsReedWarbler },
+    { id: 297, name: 'Clamorous Reed-warbler', image: ClamorousReedWarbler },
+    { id: 298, name: 'Pallas\'s Grasshopper-warbler', image: PallassGrasshopperWarbler },
+    { id: 299, name: 'Lanceolated Warbler', image: LanceolatedWarbler },
+    { id: 300, name: 'Sri Lanka Warbler', image: SriLankaWarbler },
+    { id: 301, name: 'Sri Lanka Swallow', image: SriLankaSwallow },
+    { id: 302, name: 'House Swallow', image: HouseSwallow },
+    { id: 303, name: 'Barn Swallow', image: BarnSwallow },
+    { id: 304, name: 'Square-tailed Bulbul', image: SquareTailedBulbul },
+    { id: 305, name: 'Black-capped Bulbul', image: BlackCappedBulbul },
+    { id: 306, name: 'Red-vented Bulbul', image: RedVentedBulbul },
+    { id: 307, name: 'Yellow-eared Bulbul', image: YellowEaredBulbul },
+    { id: 308, name: 'White-browed Bulbul', image: WhiteBrowedBulbul },
+    { id: 309, name: 'Yellow-browed Bulbul', image: YellowBrowedBulbul },
+    { id: 310, name: 'Green Warbler', image: GreenWarbler },
+    { id: 311, name: 'Greenish Warbler', image: GreenishWarbler },
+    { id: 312, name: 'Large-billed Leaf-warbler', image: LargeBilledLeafWarbler },
+    { id: 313, name: 'Lesser Whitethroat', image: LesserWhitethroat },
+    { id: 314, name: 'Yellow-eyed Babbler', image: YellowEyedBabbler },
+    { id: 315, name: 'Sri Lanka White-eye', image: SriLankaWhiteEye },
+    { id: 316, name: 'Indian White-eye', image: IndianWhiteEye },
+    { id: 317, name: 'Sri Lanka Scimitar-babbler', image: SriLankaScimitarBabbler },
+    { id: 318, name: 'Tawny-bellied Babbler', image: TawnyBelliedBabbler },
+    { id: 319, name: 'Dark-fronted Babbler', image: DarkFrontedBabbler },
+    { id: 320, name: 'Brown-capped Babbler', image: BrownCappedBabbler },
+    { id: 321, name: 'Ashy-fronted Babbler', image: AshyFrontedBabbler },
+    { id: 322, name: 'Orange-billed Babbler', image: OrangeBilledBabbler },
+    { id: 323, name: 'Yellow-billed Babbler', image: YellowBilledBabbler },
+    { id: 324, name: 'Velvet-fronted Nuthatch', image: VelvetFrontedNuthatch },
+    { id: 325, name: 'Rosy Starling', image: RosyStarling },
+    { id: 326, name: 'White-faced Starling', image: WhiteFacedStarling },
+    { id: 327, name: 'Brahminy Starling', image: BrahminyStarling },
+    { id: 328, name: 'Common Myna', image: CommonMyna },
+    { id: 329, name: 'Sri Lanka Hill Myna', image: SriLankaHillMyna },
+    { id: 330, name: 'Southern Hill Myna', image: SouthernHillMyna },
+    { id: 331, name: "White's Thrush", image: WhitesThrush },
+    { id: 332, name: 'Pied Thrush', image: PiedThrush },
+    { id: 333, name: 'Spot-winged Thrush', image: SpotWingedThrush },
+    { id: 334, name: 'Orange-headed Thrush', image: OrangeHeadedThrush },
+    { id: 335, name: 'Indian Blackbird', image: IndianBlackbird },
+    { id: 336, name: 'Eyebrowed Thrush', image: EyebrowedThrush },
+    { id: 337, name: 'Oriental Magpie-robin', image: OrientalMagpieRobin },
+    { id: 338, name: 'Indian Robin', image: IndianRobin },
+    { id: 339, name: 'White-rumped Shama', image: WhiteRumpedShama },
+    { id: 340, name: 'Brown-breasted Flycatcher', image: BrownBreastedFlycatcher },
+    { id: 341, name: 'Asian Brown Flycatcher', image: AsianBrownFlycatcher },
+    { id: 342, name: 'Dull-blue Flycatcher', image: DullBlueFlycatcher },
+    { id: 343, name: "Tickell's Blue-flycatcher", image: TickellsBlueFlycatcher },
+    { id: 344, name: 'Blue-throated Blue-flycatcher', image: BlueThroatedBlueFlycatcher },
+    { id: 345, name: 'Indian Blue Robin', image: IndianBlueRobin },
+    { id: 346, name: 'Bluethroat', image: Bluethroat },
+    { id: 347, name: 'Sri Lanka Whistling-thrush', image: SriLankaWhistlingThrush },
+    { id: 348, name: 'Kashmir Flycatcher', image: KashmirFlycatcher },
+    { id: 349, name: 'Blue Rock-thrush', image: BlueRockThrush },
+    { id: 350, name: 'Pied Bushchat', image: PiedBushchat },
+    { id: 351, name: 'Pied Wheatear', image: PiedWheatear },
+    { id: 352, name: 'Asian Fairy-bluebird', image: AsianFairyBluebird },
+    { id: 353, name: 'Golden-fronted Leafbird', image: GoldenFrontedLeafbird },
+    { id: 354, name: "Jerdon's Leafbird", image: JerdonsLeafbird },
+    { id: 355, name: 'White-throated Flowerpecker', image: WhiteThroatedFlowerpecker },
+    { id: 356, name: 'Thick-billed Flowerpecker', image: ThickBilledFlowerpecker },
+    { id: 357, name: 'Pale-billed Flowerpecker', image: PaleBilledFlowerpecker },
+    { id: 358, name: 'Purple-rumped Sunbird', image: PurpleRumpedSunbird },
+    { id: 359, name: 'Purple Sunbird', image: PurpleSunbird },
+    { id: 360, name: "Loten's Sunbird", image: LotensSunbird },
+    { id: 361, name: 'Streaked Weaver', image: StreakedWeaver },
+    { id: 362, name: 'Baya Weaver', image: BayaWeaver },
+    { id: 363, name: 'Indian Silverbill', image: IndianSilverbill },
+    { id: 364, name: 'White-rumped Munia', image: WhiteRumpedMunia },
+    { id: 365, name: 'Scaly-breasted Munia', image: ScalyBreastedMunia },
+    { id: 366, name: 'Black-throated Munia', image: BlackThroatedMunia },
+    { id: 367, name: 'Tricoloured Munia', image: TricolouredMunia },
+    { id: 368, name: 'House Sparrow', image: HouseSparrow },
+    { id: 369, name: 'Forest Wagtail', image: ForestWagtail },
+    { id: 370, name: "Richard's Pipit", image: RichardsPipit },
+    { id: 371, name: 'Paddyfield Pipit', image: PaddyfieldPipit },
+    { id: 372, name: "Blyth's Pipit", image: BlythsPipit },
+    { id: 373, name: 'Western Yellow Wagtail', image: WesternYellowWagtail },
+    { id: 374, name: 'Grey Wagtail', image: GreyWagtail },
+    { id: 375, name: 'White-browed Wagtail', image: WhiteBrowedWagtail },
+    { id: 376, name: 'White Wagtail', image: WhiteWagtail },
 ];
 
 const BirdGallery = () => {
