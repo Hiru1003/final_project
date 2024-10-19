@@ -123,7 +123,6 @@ import TibetanSandplover from '../Assets/AllBirds/TibetanSandplover.jpeg';
 import GreaterSandplover from '../Assets/AllBirds/GreaterSandplover.jpg';
 import CaspianPlover from '../Assets/AllBirds/CaspianPlover.jpg';
 import YellowWattledLapwing from '../Assets/AllBirds/YellowWattledLapwing.webp';
-
 import RedWattledLapwing from '../Assets/AllBirds/RedWattledLapwing.jpeg';
 import SociableLapwing from '../Assets/AllBirds/SociableLapwing.jpg';
 import GreaterPaintedSnipe from '../Assets/AllBirds/GreaterPaintedSnipe.webp';
@@ -150,7 +149,6 @@ import PinTailedSnipe from '../Assets/AllBirds/PinTailedSnipe.jpg';
 import SwinhoesSnipe from '../Assets/AllBirds/SwinhoesSnipe.jpeg';
 import CommonSnipe from '../Assets/AllBirds/CommonSnipe.jpg';
 import JackSnipe from '../Assets/AllBirds/JackSnipe.webp';
-
 import TerekSandpiper from '../Assets/AllBirds/TerekSandpiper.avif';
 import CommonSandpiper from '../Assets/AllBirds/CommonSandpiper.jpg';
 import GreenSandpiper from '../Assets/AllBirds/GreenSandpiper.jpg';
@@ -181,7 +179,86 @@ import WhiteWingedTern from '../Assets/AllBirds/WhiteWingedTern.jpg';
 import BlackTern from '../Assets/AllBirds/BlackTern.jpeg';
 import RoseateTern from '../Assets/AllBirds/RoseateTern.webp';
 import CommonTern from '../Assets/AllBirds/CommonTern.jpeg';
-
+import LesserCrestedTern from '../Assets/AllBirds/LesserCrestedTern.webp';
+import SandwichTern from '../Assets/AllBirds/SandwichTern.jpg';
+import GreaterCrestedTern from '../Assets/AllBirds/GreaterCrestedTern.webp';
+import ArcticJaeger from '../Assets/AllBirds/ArcticJaeger.webp';
+import PomarineJaeger from '../Assets/AllBirds/PomarineJaeger.jpeg';
+import BrownSkua from '../Assets/AllBirds/BrownSkua.jpg';
+import SriLankaBayOwl from '../Assets/AllBirds/SriLankaBayOwl.jpeg';
+import CommonBarnOwl from '../Assets/AllBirds/CommonBarnOwl.webp';
+import BrownBoobook from '../Assets/AllBirds/BrownBoobook.jpg';
+import JungleOwlet from '../Assets/AllBirds/JungleOwlet.jpeg';
+import ChestnutBackedOwlet from '../Assets/AllBirds/ChestnutBackedOwlet.jpg';
+import SerendibScopsOwl from '../Assets/EndemicBirds/SerendibScopsOwl.jpg';
+import IndianScopsOwl from '../Assets/AllBirds/IndianScopsOwl.jpg';
+import OrientalScopsOwl from '../Assets/AllBirds/OrientalScopsOwl.webp';
+import BrownWoodOwl from '../Assets/AllBirds/BrownWoodOwl.jpeg';
+import SpotBelliedEagleOwl from '../Assets/AllBirds/SpotBelliedEagleOwl.jpg';
+import BrownFishOwl from '../Assets/AllBirds/BrownFishOwl.jpg';
+import Osprey from '../Assets/AllBirds/Osprey.jpg';
+import BlackWingedKite from '../Assets/AllBirds/BlackWingedKite.jpeg';
+import OrientalHoneyBuzzard from '../Assets/AllBirds/OrientalHoneyBuzzard.jpg';
+import JerdonsBaza from '../Assets/AllBirds/JerdonsBaza.webp';
+import BlackBaza from '../Assets/AllBirds/BlackBaza.jpg';
+import CrestedSerpentEagle from '../Assets/AllBirds/CrestedSerpentEagle.jpg';
+import MountainHawkEagle from '../Assets/AllBirds/MountainHawkEagle.jpg';
+import ChangeableHawkEagle from '../Assets/AllBirds/ChangeableHawkEagle.jpg';
+import RufousBelliedEagle from '../Assets/AllBirds/RufousBelliedEagle.jpeg';
+import BlackEagle from '../Assets/AllBirds/BlackEagle.webp';
+import BootedEagle from '../Assets/AllBirds/BootedEagle.jpg';
+import WesternMarshHarrier from '../Assets/AllBirds/WesternMarshHarrier.jpg';
+import PallidHarrier from '../Assets/AllBirds/PallidHarrier.jpg';
+import PiedHarrier from '../Assets/AllBirds/PiedHarrier.jpeg';
+import MontagusHarrier from '../Assets/AllBirds/MontagusHarrier.jpg';
+import CrestedGoshawk from '../Assets/AllBirds/CrestedGoshawk.jpeg';
+import Shikra from '../Assets/AllBirds/Shikra.jpg';
+import Besra from '../Assets/AllBirds/Besra.jpeg';
+import WhiteBelliedSeaEagle from '../Assets/AllBirds/WhiteBelliedSeaEagle.webp';
+import GreyHeadedFishEagle from '../Assets/AllBirds/GreyHeadedFishEagle.jpg';
+import BrahminyKite from '../Assets/AllBirds/BrahminyKite.jpeg';
+import BlackKite from '../Assets/AllBirds/BlackKite.jpeg';
+import EurasianBuzzard from '../Assets/AllBirds/EurasianBuzzard.webp';
+import MalabarTrogon from '../Assets/AllBirds/MalabarTrogon.webp';
+import SriLankaGreyHornbill from '../Assets/EndemicBirds/Sri Lanka Grey Hornbill.jpg';
+import MalabarPiedHornbill from '../Assets/AllBirds/MalabarPiedHornbill.webp';
+import CommonHoopoe from '../Assets/AllBirds/CommonHoopoe.jpg';
+import AsianGreenBeeEater from '../Assets/AllBirds/AsianGreenBeeEater.jpeg';
+import ChestnutHeadedBeeEater from '../Assets/AllBirds/ChestnutHeadedBeeEater.webp';
+import BlueTailedBeeEater from '../Assets/AllBirds/BlueTailedBeeEater.webp';
+import EuropeanBeeEater from '../Assets/AllBirds/EuropeanBeeEater.jpg';
+import IndianRoller from '../Assets/AllBirds/IndianRoller.jpeg';
+import OrientalDollarbird from '../Assets/AllBirds/OrientalDollarbird.jpeg';
+import BlackBackedDwarfKingfisher from '../Assets/AllBirds/BlackBackedDwarfKingfisher.webp';
+import BlueEaredKingfisher from '../Assets/AllBirds/BlueEaredKingfisher.jpeg';
+import CommonKingfisher from '../Assets/AllBirds/CommonKingfisher.jpg';
+import PiedKingfisher from '../Assets/AllBirds/PiedKingfisher.jpg';
+import StorkBilledKingfisher from '../Assets/AllBirds/StorkBilledKingfisher.webp';
+import WhiteBreastedKingfisher from '../Assets/AllBirds/WhiteBreastedKingfisher.jpeg';
+import CoppersmithBarbet from '../Assets/AllBirds/CoppersmithBarbet.jpeg';
+import SriLankaBarbet from '../Assets/EndemicBirds/CrimsonFrontedBarbet.webp';
+import BrownHeadedBarbet from '../Assets/AllBirds/BrownHeadedBarbet.jpeg';
+import YellowFrontedBarbet from '../Assets/EndemicBirds/YellowFrontedBarbet.jpg';
+import GreaterSriLankaFlameback from  '../Assets/EndemicBirds/SriLankaFlameback.jpg';
+import WhiteNapedWoodpecker from '../Assets/AllBirds/WhiteNapedWoodpecker.jpg';
+import BlackRumpedFlameback from '../Assets/AllBirds/BlackRumpedFlameback.jpg';
+import LesserSriLankaFlameback from '../Assets/AllBirds/LesserSriLankaFlameback.jpg';
+import RufousWoodpecker from '../Assets/AllBirds/RufousWoodpecker.jpeg';
+import LesserYellownape from '../Assets/AllBirds/LesserYellownape.jpg';
+import StreakThroatedWoodpecker from '../Assets/AllBirds/StreakThroatedWoodpecker.jpg';
+import IndianPygmyWoodpecker from '../Assets/AllBirds/IndianPygmyWoodpecker.jpg';
+import YellowCrownedWoodpecker from '../Assets/AllBirds/YellowCrownedWoodpecker.jpeg';
+import CommonKestrel from '../Assets/AllBirds/CommonKestrel.webp';
+import AmurFalcon from '../Assets/AllBirds/AmurFalcon.jpeg';
+import OrientalHobby from '../Assets/AllBirds/OrientalHobby.webp';
+import PeregrineFalcon from '../Assets/AllBirds/PeregrineFalcon.jpg';
+import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parrot.jpeg';
+import PlumHeadedParakeet from '../Assets/AllBirds/PlumHeadedParakeet.jpg';
+import RoseRingedParakeet from '../Assets/AllBirds/RoseRingedParakeet.webp';
+import AlexandrineParakeet from '../Assets/AllBirds/AlexandrineParakeet.jpeg';
+import EmeraldCollaredParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
+import IndianPitta from '../Assets/AllBirds/IndianPitta.jpeg';
+import BlackHoodedOriole from '../Assets/AllBirds/BlackHoodedOriole.webp';
 
 
 const birds = [
@@ -334,7 +411,6 @@ const birds = [
     { id: 148, name: "Swinhoe's Snipe", image: SwinhoesSnipe },
     { id: 149, name: 'Common Snipe', image: CommonSnipe },
     { id: 150, name: 'Jack Snipe', image: JackSnipe },
-
     { id: 151, name: 'Terek Sandpiper', image: TerekSandpiper },
     { id: 152, name: 'Common Sandpiper', image: CommonSandpiper },
     { id: 153, name: 'Green Sandpiper', image: GreenSandpiper },
@@ -365,88 +441,89 @@ const birds = [
     { id: 178, name: 'Black Tern', image: BlackTern },
     { id: 179, name: 'Roseate Tern', image: RoseateTern },
     { id: 180, name: 'Common Tern', image: CommonTern },
+    { id: 181, name: 'Lesser Crested Tern', image: LesserCrestedTern },
+    { id: 182, name: 'Sandwich Tern', image: SandwichTern },
+    { id: 183, name: 'Greater Crested Tern', image: GreaterCrestedTern },
+    { id: 184, name: 'Arctic Jaeger', image: ArcticJaeger },
+    { id: 185, name: 'Pomarine Jaeger', image: PomarineJaeger },
+    { id: 186, name: 'Brown Skua', image: BrownSkua },
+    { id: 187, name: 'Sri Lanka Bay-owl', image: SriLankaBayOwl },
+    { id: 188, name: 'Common Barn-owl', image: CommonBarnOwl },
+    { id: 189, name: 'Brown Boobook', image: BrownBoobook },
+    { id: 190, name: 'Jungle Owlet', image: JungleOwlet },
+    { id: 191, name: 'Chestnut-backed Owlet', image: ChestnutBackedOwlet },
+    { id: 192, name: 'Serendib Scops-owl', image: SerendibScopsOwl },
+    { id: 193, name: 'Indian Scops-owl', image: IndianScopsOwl },
+    { id: 194, name: 'Oriental Scops-owl', image: OrientalScopsOwl },
+    { id: 195, name: 'Brown Wood-owl', image: BrownWoodOwl },
+    { id: 196, name: 'Spot-bellied Eagle-owl', image: SpotBelliedEagleOwl },
+    { id: 197, name: 'Brown Fish-owl', image: BrownFishOwl },
+    { id: 198, name: 'Osprey', image: Osprey },
+    { id: 199, name: 'Black-winged Kite', image: BlackWingedKite },
+    { id: 200, name: 'Oriental Honey-buzzard', image: OrientalHoneyBuzzard },
+    { id: 201, name: "Jerdon's Baza", image: JerdonsBaza },
+    { id: 202, name: 'Black Baza', image: BlackBaza },
+    { id: 203, name: 'Crested Serpent-eagle', image: CrestedSerpentEagle },
+    { id: 204, name: 'Mountain Hawk-eagle', image: MountainHawkEagle },
+    { id: 205, name: 'Changeable Hawk-eagle', image: ChangeableHawkEagle },
+    { id: 206, name: 'Rufous-bellied Eagle', image: RufousBelliedEagle },
+    { id: 207, name: 'Black Eagle', image: BlackEagle },
+    { id: 208, name: 'Booted Eagle', image: BootedEagle },
+    { id: 209, name: 'Western Marsh-harrier', image: WesternMarshHarrier },
+    { id: 210, name: 'Pallid Harrier', image: PallidHarrier },
+    { id: 211, name: 'Pied Harrier', image: PiedHarrier },
+    { id: 212, name: 'Montagu\'s Harrier', image: MontagusHarrier },
+    { id: 213, name: 'Crested Goshawk', image: CrestedGoshawk },
+    { id: 214, name: 'Shikra', image: Shikra },
+    { id: 215, name: 'Besra', image: Besra },
+    { id: 216, name: 'White-bellied Sea-eagle', image: WhiteBelliedSeaEagle },
+    { id: 217, name: 'Grey-headed Fish-eagle', image: GreyHeadedFishEagle },
+    { id: 218, name: 'Brahminy Kite', image: BrahminyKite },
+    { id: 219, name: 'Black Kite', image: BlackKite },
+    { id: 220, name: 'Eurasian Buzzard', image: EurasianBuzzard },
+    { id: 221, name: 'Malabar Trogon', image: MalabarTrogon },
+    { id: 222, name: 'Sri Lanka Grey Hornbill', image: SriLankaGreyHornbill },
+    { id: 223, name: 'Malabar Pied Hornbill', image: MalabarPiedHornbill },
+    { id: 224, name: 'Common Hoopoe', image: CommonHoopoe },
+    { id: 225, name: 'Asian Green Bee-eater', image: AsianGreenBeeEater },
+    { id: 226, name: 'Chestnut-headed Bee-eater', image: ChestnutHeadedBeeEater },
+    { id: 227, name: 'Blue-tailed Bee-eater', image: BlueTailedBeeEater },
+    { id: 228, name: 'European Bee-eater', image: EuropeanBeeEater },
+    { id: 229, name: 'Indian Roller', image: IndianRoller },
+    { id: 230, name: 'Oriental Dollarbird', image: OrientalDollarbird },
+    { id: 231, name: 'Black-backed Dwarf-kingfisher', image: BlackBackedDwarfKingfisher },
+    { id: 232, name: 'Blue-eared Kingfisher', image: BlueEaredKingfisher },
+    { id: 233, name: 'Common Kingfisher', image: CommonKingfisher },
+    { id: 234, name: 'Pied Kingfisher', image: PiedKingfisher },
+    { id: 235, name: 'Stork-billed Kingfisher', image: StorkBilledKingfisher },
+    { id: 236, name: 'White-breasted Kingfisher', image: WhiteBreastedKingfisher },
+    { id: 237, name: 'Coppersmith Barbet', image: CoppersmithBarbet },
+    { id: 238, name: 'Sri Lanka Barbet', image: SriLankaBarbet },
+    { id: 239, name: 'Brown-headed Barbet', image: BrownHeadedBarbet },
+    { id: 240, name: 'Yellow-fronted Barbet', image: YellowFrontedBarbet },
+    { id: 241, name: 'Greater Sri Lanka Flameback', image: GreaterSriLankaFlameback },
+    { id: 242, name: 'White-naped Woodpecker', image: WhiteNapedWoodpecker },
+    { id: 243, name: 'Black-rumped Flameback', image: BlackRumpedFlameback },
+    { id: 244, name: 'Lesser Sri Lanka Flameback', image: LesserSriLankaFlameback },
+    { id: 245, name: 'Rufous Woodpecker', image: RufousWoodpecker },
+    { id: 246, name: 'Lesser Yellownape', image: LesserYellownape },
+    { id: 247, name: 'Streak-throated Woodpecker', image: StreakThroatedWoodpecker },
+    { id: 248, name: 'Indian Pygmy Woodpecker', image: IndianPygmyWoodpecker },
+    { id: 249, name: 'Yellow-crowned Woodpecker', image: YellowCrownedWoodpecker },
+    { id: 250, name: 'Common Kestrel', image: CommonKestrel },
+    { id: 251, name: 'Amur Falcon', image: AmurFalcon },
+    { id: 252, name: 'Oriental Hobby', image: OrientalHobby },
+    { id: 253, name: 'Peregrine Falcon', image: PeregrineFalcon },
+    { id: 254, name: 'Sri Lanka Hanging-parrot', image: SriLankaHangingParrot },
+    { id: 255, name: 'Plum-headed Parakeet', image: PlumHeadedParakeet },
+    { id: 256, name: 'Rose-ringed Parakeet', image: RoseRingedParakeet },
+    { id: 257, name: 'Alexandrine Parakeet', image: AlexandrineParakeet },
+    { id: 258, name: 'Emerald-collared Parakeet', image: EmeraldCollaredParakeet },
+    { id: 259, name: 'Indian Pitta', image: IndianPitta },
+    { id: 260, name: 'Black-hooded Oriole', image: BlackHoodedOriole },
+    
 
 
-    { id: 181, name: 'Lesser Crested Tern', image: '' },
-    { id: 182, name: 'Sandwich Tern', image: '' },
-    { id: 183, name: 'Greater Crested Tern', image: '' },
-    { id: 184, name: 'Arctic Jaeger', image: '' },
-    { id: 185, name: 'Pomarine Jaeger', image: '' },
-    { id: 186, name: 'Brown Skua', image: '' },
-    { id: 187, name: 'Sri Lanka Bay-owl', image: '' },
-    { id: 188, name: 'Common Barn-owl', image: '' },
-    { id: 189, name: 'Brown Boobook', image: '' },
-    { id: 190, name: 'Jungle Owlet', image: '' },
-    { id: 191, name: 'Chestnut-backed Owlet', image: '' },
-    { id: 192, name: 'Serendib Scops-owl', image: '' },
-    { id: 193, name: 'Indian Scops-owl', image: '' },
-    { id: 194, name: 'Oriental Scops-owl', image: '' },
-    { id: 195, name: 'Brown Wood-owl', image: '' },
-    { id: 196, name: 'Spot-bellied Eagle-owl', image: '' },
-    { id: 197, name: 'Brown Fish-owl', image: '' },
-    { id: 198, name: 'Osprey', image: '' },
-    { id: 199, name: 'Black-winged Kite', image: '' },
-    { id: 200, name: 'Oriental Honey-buzzard', image: '' },
-    { id: 201, name: 'Jerdon\'s Baza', image: '' },
-    { id: 202, name: 'Black Baza', image: '' },
-    { id: 203, name: 'Crested Serpent-eagle', image: '' },
-    { id: 204, name: 'Mountain Hawk-eagle', image: '' },
-    { id: 205, name: 'Changeable Hawk-eagle', image: '' },
-    { id: 206, name: 'Rufous-bellied Eagle', image: '' },
-    { id: 207, name: 'Black Eagle', image: '' },
-    { id: 208, name: 'Booted Eagle', image: '' },
-    { id: 209, name: 'Western Marsh-harrier', image: '' },
-    { id: 210, name: 'Pallid Harrier', image: '' },
-    { id: 211, name: 'Pied Harrier', image: '' },
-    { id: 212, name: 'Montagu\'s Harrier', image: '' },
-    { id: 213, name: 'Crested Goshawk', image: '' },
-    { id: 214, name: 'Shikra', image: '' },
-    { id: 215, name: 'Besra', image: '' },
-    { id: 216, name: 'White-bellied Sea-eagle', image: '' },
-    { id: 217, name: 'Grey-headed Fish-eagle', image: '' },
-    { id: 218, name: 'Brahminy Kite', image: '' },
-    { id: 219, name: 'Black Kite', image: '' },
-    { id: 220, name: 'Eurasian Buzzard', image: '' },
-    { id: 221, name: 'Malabar Trogon', image: '' },
-    { id: 222, name: 'Sri Lanka Grey Hornbill', image: '' },
-    { id: 223, name: 'Malabar Pied Hornbill', image: '' },
-    { id: 224, name: 'Common Hoopoe', image: '' },
-    { id: 225, name: 'Asian Green Bee-eater', image: '' },
-    { id: 226, name: 'Chestnut-headed Bee-eater', image: '' },
-    { id: 227, name: 'Blue-tailed Bee-eater', image: '' },
-    { id: 228, name: 'European Bee-eater', image: '' },
-    { id: 229, name: 'Indian Roller', image: '' },
-    { id: 230, name: 'Oriental Dollarbird', image: '' },
-    { id: 231, name: 'Black-backed Dwarf-kingfisher', image: '' },
-    { id: 232, name: 'Blue-eared Kingfisher', image: '' },
-    { id: 233, name: 'Common Kingfisher', image: '' },
-    { id: 234, name: 'Pied Kingfisher', image: '' },
-    { id: 235, name: 'Stork-billed Kingfisher', image: '' },
-    { id: 236, name: 'White-breasted Kingfisher', image: '' },
-    { id: 237, name: 'Coppersmith Barbet', image: '' },
-    { id: 238, name: 'Sri Lanka Barbet', image: '' },
-    { id: 239, name: 'Brown-headed Barbet', image: '' },
-    { id: 240, name: 'Yellow-fronted Barbet', image: '' },
-    { id: 241, name: 'Greater Sri Lanka Flameback', image: '' },
-    { id: 242, name: 'White-naped Woodpecker', image: '' },
-    { id: 243, name: 'Black-rumped Flameback', image: '' },
-    { id: 244, name: 'Lesser Sri Lanka Flameback', image: '' },
-    { id: 245, name: 'Rufous Woodpecker', image: '' },
-    { id: 246, name: 'Lesser Yellownape', image: '' },
-    { id: 247, name: 'Streak-throated Woodpecker', image: '' },
-    { id: 248, name: 'Indian Pygmy Woodpecker', image: '' },
-    { id: 249, name: 'Yellow-crowned Woodpecker', image: '' },
-    { id: 250, name: 'Common Kestrel', image: '' },
-    { id: 251, name: 'Amur Falcon', image: '' },
-    { id: 252, name: 'Oriental Hobby', image: '' },
-    { id: 253, name: 'Peregrine Falcon', image: '' },
-    { id: 254, name: 'Sri Lanka Hanging-parrot', image: '' },
-    { id: 255, name: 'Plum-headed Parakeet', image: '' },
-    { id: 256, name: 'Rose-ringed Parakeet', image: '' },
-    { id: 257, name: 'Alexandrine Parakeet', image: '' },
-    { id: 258, name: 'Emerald-collared Parakeet', image: '' },
-    { id: 259, name: 'Indian Pitta', image: '' },
-    { id: 260, name: 'Black-hooded Oriole', image: '' },
     { id: 261, name: 'Eurasian Golden Oriole', image: '' },
     { id: 262, name: 'Indian Golden Oriole', image: '' },
     { id: 263, name: 'Small Minivet', image: '' },
