@@ -6,7 +6,7 @@ const AllBirdCard = ({ bird }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/allbirds/${bird.id}`);
+        navigate(`/all-birds/${bird.id}`);
     };
 
     return (

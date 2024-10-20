@@ -1804,6 +1804,7 @@ const birdData = [
     {
         id: 101,
         name: 'Lesser Frigatebird',
+        scientificName: 'Fregata ariel',
         image: LesserFrigatebird,
         description: 'The Lesser Frigatebird is a large seabird found in tropical oceans worldwide. These birds are known for their impressive aerial abilities, soaring and gliding for long distances without needing to flap their wings frequently. They feed primarily on fish, snatching prey from the surface of the water using their sharp beaks. Lesser Frigatebirds are often seen in colonies on islands, nesting in trees and bushes, and are characterized by their distinctive long, pointed wings and forked tails.',
         habitat: 'Tropical oceans, islands',
@@ -1817,6 +1818,7 @@ const birdData = [
     {
         id: 102,
         name: 'Great Frigatebird',
+        scientificName: 'Fregata minor',
         image: GreatFrigatebird,
         description: 'The Great Frigatebird is a large seabird that is primarily found in tropical and subtropical oceans. These birds are known for their massive wingspan and excellent flying skills, spending much of their life in flight. They feed by stealing fish from other birds or snatching prey from the water. The Great Frigatebird is easily recognized by its large size, long wings, and forked tail, as well as its striking red throat pouch, which males inflate during the breeding season to attract females.',
         habitat: 'Tropical oceans, coastal islands',
@@ -1830,6 +1832,7 @@ const birdData = [
     {
         id: 103,
         name: 'Christmas Island Frigatebird',
+        scientificName: 'Fregata andrewsi',
         image: ChristmasIslandFrigatebird,
         description: 'The Christmas Island Frigatebird is a critically endangered seabird found on Christmas Island in the Indian Ocean. It has a relatively small population and is threatened by habitat loss and predation from invasive species. These birds are known for their impressive flying abilities, often soaring for hours without touching the ground. The Christmas Island Frigatebird feeds primarily on fish and squid, which it catches in mid-air by snatching them from the water.',
         habitat: 'Christmas Island, tropical oceans',
@@ -1843,6 +1846,7 @@ const birdData = [
     {
         id: 104,
         name: 'Red-footed Booby',
+        scientificName: 'Sula sula',
         image: RedFootedBooby,
         description: 'The Red-footed Booby is a medium-sized seabird commonly found in tropical oceans around the world. It is easily identified by its red feet and long wingspan. These birds are strong fliers and are excellent at diving into the water to catch fish. They have a variety of plumage colors, including white, brown, and black, depending on their age and location. Red-footed Boobies nest on cliffs and trees, where they often lay their eggs in colonies.',
         habitat: 'Tropical oceans, islands',
@@ -1856,6 +1860,7 @@ const birdData = [
     {
         id: 105,
         name: 'Brown Booby',
+        scientificName: 'Sula leucogaster',
         image: BrownBooby,
         description: 'The Brown Booby is a large seabird found in tropical and subtropical oceans worldwide. It is recognized by its brownish plumage, which helps it blend into the coastal rock formations where it nests. These birds are exceptional divers, plunging into the water to catch fish and squid. Brown Boobies are typically solitary during non-breeding seasons but come together in large groups during the breeding period, where they build nests on cliffs or trees.',
         habitat: 'Tropical oceans, islands, coastal cliffs',
@@ -1869,6 +1874,7 @@ const birdData = [
     {
         id: 106,
         name: 'Masked Booby',
+        scientificName: 'Sula dactylatra',
         image: MaskedBooby,
         description: 'The Masked Booby is a large seabird that can be found in tropical oceans, known for its white plumage and striking black mask around its eyes. These birds are skilled hunters, diving from great heights to capture fish and squid in their strong beaks. The Masked Booby is often seen in large colonies on remote islands, where they nest and raise their young. These birds are also excellent fliers, spending much of their time soaring over the ocean.',
         habitat: 'Tropical oceans, remote islands',
@@ -1882,6 +1888,7 @@ const birdData = [
     {
         id: 107,
         name: 'Little Cormorant',
+        scientificName: 'Microcarbo niger',
         image: LittleCormorant,
         description: 'The Little Cormorant is a small-sized waterbird found across Asia, particularly in wetlands and coastal areas. These birds are known for their diving skills, which they use to hunt for fish and other aquatic prey. They have dark plumage and are often seen perched on rocks or drying their wings after diving. Little Cormorants are often seen in flocks, feeding and nesting together in colonies near freshwater lakes and rivers.',
         habitat: 'Freshwater lakes, rivers, coastal wetlands',
@@ -1895,6 +1902,7 @@ const birdData = [
     {
         id: 108,
         name: 'Great Cormorant',
+        scientificName: 'Phalacrocorax carbo',
         image: GreatCormorant,
         description: 'The Great Cormorant is a large waterbird found across Europe, Asia, and North Africa. These birds are strong swimmers and divers, often hunting in groups to catch fish. Great Cormorants have long, dark plumage and are easily recognized by their hooked bills and sharp eyesight. They are commonly found near large bodies of water, where they nest on trees or cliffs, often forming large colonies during the breeding season.',
         habitat: 'Coastal areas, rivers, lakes',
@@ -1908,6 +1916,7 @@ const birdData = [
     {
         id: 109,
         name: 'Indian Cormorant',
+        scientificName: 'Phalacrocorax fuscicollis',
         image: IndianCormorant,
         description: 'The Indian Cormorant is a large waterbird native to South Asia, found in a wide variety of aquatic habitats, from rivers and lakes to coastal areas. These birds are skilled divers and hunters, often seen diving for fish and aquatic invertebrates. Indian Cormorants have dark plumage, a hooked bill, and are excellent swimmers, using their webbed feet to navigate through the water with ease.',
         habitat: 'Rivers, lakes, coastal wetlands',
@@ -1921,6 +1930,7 @@ const birdData = [
     {
         id: 110,
         name: 'Oriental Darter',
+        scientificName: 'Anhinga melanogaster',
         image: OrientalDarter,
         description: 'The Oriental Darter, also known as the Snakebird, is a large waterbird found in Southeast Asia. These birds are characterized by their long, slender necks and sharp bills. They are often seen swimming and diving underwater to catch fish, where their necks give them the appearance of a snake. Oriental Darters are typically found near lakes, rivers, and wetlands, where they build their nests in trees and shrubs near the water.',
         habitat: 'Lakes, rivers, wetlands',
@@ -1934,6 +1944,7 @@ const birdData = [
     {
         id: 111,
         name: 'Indian Thick-knee',
+        scientificName: 'Burhinus indicus',
         image: IndianThickknee,
         description: 'The Indian Thick-knee, also known as the Indian Stone-curlew, is a medium-sized wader found in grasslands and open country across India and parts of Southeast Asia. These birds are known for their distinctive thick legs and large, round eyes, which provide excellent night vision. Indian Thick-knees are typically ground-dwelling birds, often found in pairs or small groups, and they feed on insects, small reptiles, and other invertebrates.',
         habitat: 'Grasslands, open country',
@@ -1947,6 +1958,7 @@ const birdData = [
     {
         id: 112,
         name: 'Great Thick-knee',
+        scientificName: 'Esacus recurvirostris',
         image: GreatThickknee,
         description: 'The Great Thick-knee is a large wader species found in parts of South Asia and Southeast Asia. It is easily recognized by its thick, yellow legs and large eyes, which help it hunt at night. These birds are typically found in open, arid environments, where they feed on a variety of invertebrates, small fish, and amphibians. Great Thick-knees are ground nesters, often laying their eggs in shallow depressions in the sand or dirt.',
         habitat: 'Arid and semi-arid regions',
@@ -1960,6 +1972,7 @@ const birdData = [
     {
         id: 113,
         name: 'Eurasian Oystercatcher',
+        scientificName: 'Haematopus ostralegus',
         image: EurasianOystercatcher,
         description: 'The Eurasian Oystercatcher is a large wader bird found along coastal regions of Europe and Asia. They are known for their striking black and white plumage, bright orange beaks, and strong legs. These birds are typically found on rocky shorelines, mudflats, and sandy beaches, where they forage for shellfish, crustaceans, and small fish by probing the sand with their beaks.',
         habitat: 'Coastal regions, mudflats, sandy beaches',
@@ -1973,6 +1986,7 @@ const birdData = [
     {
         id: 114,
         name: 'Pied Avocet',
+        scientificName: 'Recurvirostra avosetta',
         image: PiedAvocet,
         description: 'The Pied Avocet is a striking wader bird with black and white plumage and long, slender legs. Found in wetlands, mudflats, and coastal lagoons, the Pied Avocet is known for its distinctive upward-curved bill, which it uses to sweep through the water in search of small invertebrates. These birds are often seen in large flocks during migration, and they are easily recognized by their elegant appearance and distinctive feeding behavior.',
         habitat: 'Wetlands, mudflats, coastal lagoons',
@@ -1986,6 +2000,7 @@ const birdData = [
     {
         id: 115,
         name: 'Black-winged Stilt',
+        scientificName: 'Himantopus himantopus',
         image: BlackWingedStilt,
         description: 'The Black-winged Stilt is a medium-sized wader bird with long, slender legs and a long, straight bill. Found in wetlands, estuaries, and coastal areas, these birds are known for their elegant appearance and distinctive black wings. Black-winged Stilts feed on small invertebrates, aquatic insects, and crustaceans, and they are often seen walking through shallow waters while probing the mud for food.',
         habitat: 'Wetlands, estuaries, coastal areas',
@@ -1999,6 +2014,7 @@ const birdData = [
     {
         id: 116,
         name: 'Grey Plover',
+        scientificName: 'Pluvialis squatarola',
         image: GreyPlover,
         description: 'The Grey Plover is a medium-sized wader bird found along coastal regions of Europe, Asia, and North America. These birds are easily recognized by their grey plumage during the winter months and their black-and-white appearance during the breeding season. Grey Plovers feed on a variety of invertebrates, small fish, and crustaceans, and they are often seen in mudflats, sandy beaches, and rocky shorelines.',
         habitat: 'Coastal regions, mudflats, sandy beaches',
@@ -2012,6 +2028,7 @@ const birdData = [
     {
         id: 117,
         name: 'Pacific Golden Plover',
+        scientificName: 'Pluvialis fulva',
         image: PacificGoldenPlover,
         description: 'The Pacific Golden Plover is a migratory wader bird found in coastal regions of the Pacific Ocean, from Alaska to New Zealand. These birds are known for their striking golden-brown plumage during the breeding season and their pale, speckled appearance in winter. Pacific Golden Plovers are often seen on mudflats and sandy beaches, where they feed on small invertebrates, insects, and crustaceans.',
         habitat: 'Coastal regions, mudflats, sandy beaches',
@@ -2025,6 +2042,7 @@ const birdData = [
     {
         id: 118,
         name: 'Common Ringed Plover',
+        scientificName: 'Charadrius hiaticula',
         image: CommonRingedPlover,
         description: 'The Common Ringed Plover is a small wader bird found in coastal regions, rivers, and wetlands across Europe and Asia. These birds are easily recognized by their distinctive black ring around their neck and their compact size. They are often seen running along the shore, probing the sand for small invertebrates, crustaceans, and insects.',
         habitat: 'Coastal regions, rivers, wetlands',
@@ -2038,6 +2056,7 @@ const birdData = [
     {
         id: 119,
         name: 'Little Ringed Plover',
+        scientificName: 'Charadrius dubius',
         image: LittleRingedPlover,
         description: 'The Little Ringed Plover is a small, migratory wader bird found in wetlands, rivers, and coastal areas. They are characterized by their yellow-ringed eyes and distinctive black ring around their neck. These birds are often seen foraging for small invertebrates and insects along the water\'s edge, where they use their sharp beaks to probe the sand.',
         habitat: 'Wetlands, rivers, coastal areas',
@@ -2051,6 +2070,7 @@ const birdData = [
     {
         id: 120,
         name: 'Kentish Plover',
+        scientificName: 'Charadrius alexandrinus',
         image: KentishPlover,
         description: "The Kentish Plover is a small wader bird found in coastal regions, salt flats, and estuaries. It has pale sandy-colored plumage and distinctive black markings on its head and neck. These birds feed on small invertebrates, crustaceans, and insects, which they find by probing the sand with their sharp bills. Kentish Plovers are known for their quick movements and sharp calls, often seen alone or in pairs. Their breeding season is from April to July.",
         habitat: 'Coastal regions, salt flats, estuaries',
@@ -2064,6 +2084,7 @@ const birdData = [
     { 
         id: 121, 
         name: 'Tibetan Sandplover', 
+        scientificName: 'Charadrius atrifrons',
         image: TibetanSandplover,
         description: "The Tibetan Sandplover is a small wader bird found in the sandy shores and deserts of Central Asia. It has pale plumage with a distinct dark ring around its neck. These plovers feed on insects, crustaceans, and small invertebrates found in the sand. Tibetan Sandplovers are agile and often seen alone or in pairs while foraging. Their breeding season is from May to August. These birds are known for their swift movements and ability to adapt to harsh environments.",
         habitat: 'Sandy shores, deserts, coastal regions',
@@ -2076,7 +2097,8 @@ const birdData = [
     },
     { 
         id: 122, 
-        name: 'Greater Sandplover', 
+        name: 'Greater Sandplover',
+        scientificName: 'Charadrius leschenaultii',
         image: GreaterSandplover,
         description: 'The Greater Sandplover is a medium-sized wader found in coastal areas and sandy beaches. This bird has a light brown upper part and a white underside with distinct black markings during the breeding season.',
         habitat: 'Coastal regions, sandy beaches, estuaries',
@@ -2090,6 +2112,7 @@ const birdData = [
     { 
         id: 123, 
         name: 'Caspian Plover', 
+        scientificName: ' Charadrius asiaticus',
         image: CaspianPlover,
         description: "The Greater Sandplover is a medium-sized wader found in coastal areas and sandy beaches. This bird has light brown upper parts and a white underside, with black markings during the breeding season. The Greater Sandplover feeds on insects, crustaceans, and small invertebrates. It is often seen foraging alone, using rapid movements to catch prey. These plovers prefer solitary behavior but are highly active during the breeding season, which spans from April to August in coastal areas.",
         habitat: 'Sandy deserts, coastal areas, dry regions',
@@ -2103,6 +2126,7 @@ const birdData = [
     { 
         id: 124, 
         name: 'Yellow-wattled Lapwing', 
+        scientificName: 'Vanellus malabaricus ',
         image: YellowWattledLapwing,
         description:"The Caspian Plover is a medium-sized wader bird known for its distinctive black and white coloration and pale sandy plumage. Found in the Caspian region and other sandy areas in Central Asia, these plovers thrive in dry, sandy environments. They feed on insects and small invertebrates, using quick movements to catch prey. Caspian Plovers are typically solitary and known for their efficient foraging habits. Their breeding season lasts from May to July, and they are widely regarded as resilient birds.",
         habitat: 'Grasslands, plains, semi-arid regions',
@@ -2115,7 +2139,8 @@ const birdData = [
     },
     { 
         id: 125, 
-        name: 'Red-wattled Lapwing', 
+        name: 'Red-wattled Lapwing',
+        scientificName: 'Vanellus indicus ',
         image: RedWattledLapwing,
         description: "The Yellow-wattled Lapwing is a large wader bird known for the striking yellow wattles on its face. These birds are found in open grasslands, plains, and semi-arid regions across India and parts of Southeast Asia. They primarily feed on insects, small invertebrates, and seeds. Yellow-wattled Lapwings are often seen in pairs or small groups and are known for their loud calls and protective behavior around their nests. Their breeding season spans from February to May.",
         habitat: 'Open fields, grasslands, wetlands',
@@ -2129,6 +2154,7 @@ const birdData = [
     { 
         id: 126, 
         name: 'Sociable Lapwing', 
+        scientificName: ' Vanellus gregarius',
         image: SociableLapwing,
         description: 'The Sociable Lapwing is a medium-sized wader bird that thrives in open grasslands and semi-arid regions. Known for its highly sociable nature, it often forms large flocks that forage together for insects and small invertebrates. Its distinctive brown upper parts and white underparts, along with a striking black-and-white face pattern, make it easily identifiable. This bird migrates in large groups, relying on its social bonds to navigate long journeys, a key characteristic of the species.',
         habitat: 'Grasslands, plains, semi-arid regions',
@@ -2142,6 +2168,7 @@ const birdData = [
     { 
         id: 127, 
         name: 'Greater Painted-snipe', 
+        scientificName: ' Rostratula benghalensis',
         image: GreaterPaintedSnipe,
         description: 'The Greater Painted-snipe is a striking wader bird recognized for its vibrant iridescent feathers, which display a dazzling array of colors. It typically inhabits wetland areas, such as marshes and ponds, where it is often elusive and difficult to spot. This bird is known for its solitary behavior and tendency to hide among tall vegetation to avoid detection. The Greater Painted-snipe primarily feeds on small invertebrates, insects, and seeds, making it an interesting species to observe in the wild.',
         habitat: 'Wetlands, marshes, ponds',
@@ -2155,6 +2182,7 @@ const birdData = [
     { 
         id: 128, 
         name: 'Pheasant-tailed Jacana', 
+        scientificName: 'Hydrophasianus chirurgus ',
         image: PheasantTailedJacana,
         description: 'The Pheasant-tailed Jacana is a beautiful wader bird known for its long, elegant pheasant-like tail feathers. This bird is found in wetland areas, particularly in South Asia, where it gracefully walks on floating vegetation. Its large feet help it balance on water lilies and other floating plants, making it one of the most unique species in its habitat. The Pheasant-tailed Jacana feeds on insects, small invertebrates, and seeds, using its agility to navigate through its aquatic environment.',
         habitat: 'Wetlands, marshes, ponds',
@@ -2168,6 +2196,7 @@ const birdData = [
     { 
         id: 129, 
         name: 'Whimbrel', 
+        scientificName: 'Numenius phaeopus ',
         image: Whimbrel,
         description: 'The Whimbrel is a large wader bird, easily recognized by its long, down-curved bill. Known for its distinctive, melodic calls, this bird is often found in coastal regions and mudflats, where it forages for crustaceans, mollusks, and small invertebrates. The Whimbrel is a migratory species, traveling long distances between breeding and wintering grounds. It often forms small flocks along coastlines during migration. Despite its large size, it blends well into its habitat, using its bill to probe for food.',
         habitat: 'Coastal regions, mudflats, estuaries',
@@ -2181,6 +2210,7 @@ const birdData = [
     { 
         id: 130, 
         name: 'Eurasian Curlew', 
+        scientificName: 'Numenius arquata ',
         image: EurasianCurlew,
         description: 'The Eurasian Curlew is a large wader with a long, distinctive, curved bill that it uses to forage for small invertebrates, worms, and crustaceans in coastal wetlands. Found across Europe and Asia, the Eurasian Curlew is known for its distinctive loud calls that can be heard during both the breeding and migratory seasons. It forms flocks during migration and is often seen feeding along mudflats and estuaries. Its size and unique bill shape make it easily recognizable.',
         habitat: 'Coastal regions, wetlands, estuaries',
@@ -2194,6 +2224,7 @@ const birdData = [
     { 
         id: 131, 
         name: 'Bar-tailed Godwit', 
+        scientificName: ' Limosa lapponica',
         image: BarTailedGodwit,
         description: 'The Bar-tailed Godwit is a large wader with long legs and a slightly upturned bill. This bird is recognized for its remarkable long-distance migrations, which often span thousands of kilometers. Found in coastal regions, mudflats, and estuaries, it feeds primarily on mollusks, crustaceans, and small invertebrates. The Bar-tailed Godwit uses its long legs to probe the mudflats for food. During migration, it is often seen in large flocks, creating a striking spectacle along coastal regions.',
         habitat: 'Coastal regions, mudflats, estuaries',
@@ -2207,6 +2238,7 @@ const birdData = [
     { 
         id: 132, 
         name: 'Black-tailed Godwit', 
+        scientificName: 'Limosa limosa ',
         image: BlackTailedGodwit,
         description: 'The Black-tailed Godwit is a wader bird with long legs and a slightly upturned bill. It is commonly found in wetlands, estuaries, and coastal areas across Europe and Asia. The Black-tailed Godwit feeds primarily on invertebrates, small fish, and worms, probing the mud and shallow waters for its food. This species is often seen in flocks, especially during migration. Its distinct long legs and bill help it to forage efficiently in muddy and shallow waters.',
         habitat: 'Wetlands, estuaries, coastal areas',
@@ -2220,6 +2252,7 @@ const birdData = [
     { 
         id: 133, 
         name: 'Ruddy Turnstone', 
+        scientificName: 'Arenaria interpres',
         image: RuddyTurnstone,
         description: 'The Ruddy Turnstone is a small wader bird with a distinctive pattern of reddish-brown, black, and white plumage. It is best known for its behavior of turning over stones and shells along rocky shores, in search of prey. Found in coastal regions, rocky shores, and mudflats, the Ruddy Turnstone feeds on a diet of invertebrates, crustaceans, and small mollusks. This bird is an active forager, using its strong bill to overturn debris while scouring for food along shorelines.',
         habitat: 'Coastal regions, rocky shores, mudflats',
@@ -2233,6 +2266,7 @@ const birdData = [
     { 
         id: 134, 
         name: 'Great Knot', 
+        scientificName: ' Calidris tenuirostris',
         image: GreatKnot,
         description: 'The Great Knot is a medium-sized wader with long legs and a slightly upturned bill. This species is typically found in mudflats and coastal regions during migration, where it forages for small invertebrates, crustaceans, and mollusks. The Great Knot is known for its remarkable long-distance migration and is often observed in large flocks. These birds often feed along the shoreline, searching for food in the mud and shallow waters. Its large wingspan helps it during its extensive migratory journeys.',
         habitat: 'Mudflats, coastal regions, estuaries',
@@ -2246,6 +2280,7 @@ const birdData = [
     { 
         id: 135, 
         name: 'Red Knot', 
+        scientificName: 'Calidris canutus ',
         image: RedKnot,
         description: 'The Red Knot is a medium-sized wader with reddish-brown plumage in breeding season.',
         habitat: 'Coastal regions, mudflats, estuaries',
@@ -2259,6 +2294,7 @@ const birdData = [
     { 
         id: 136, 
         name: 'Ruff', 
+        scientificName: ' Calidris pugnax',
         image: Ruff,
         description: 'The Ruff is known for its feathered collar and is found in wetlands and grassy plains.',
         habitat: 'Wetlands, mudflats, grassy plains',
@@ -2271,7 +2307,8 @@ const birdData = [
     },
     { 
         id: 137, 
-        name: 'Broad-billed Sandpiper', 
+        name: 'Broad-billed Sandpiper',
+        scientificName: ' Calidris falcinellus',
         image: BroadBilledSandpiper,
         description: 'A small wader with a broad bill, found in coastal mudflats and sandy beaches.',
         habitat: 'Mudflats, coastal regions, sandy beaches',
@@ -2285,6 +2322,7 @@ const birdData = [
     { 
         id: 138, 
         name: 'Curlew Sandpiper', 
+        scientificName: 'Calidris ferruginea ',
         image: CurlewSandpiper,
         description: 'A small wader with long legs and down-curved bill, found along coastal regions.',
         habitat: 'Coastal regions, mudflats, estuaries',
@@ -2298,6 +2336,7 @@ const birdData = [
     { 
         id: 139, 
         name: "Temminck's Stint", 
+        scientificName: 'Calidris temminckii ',
         image: TemmincksStint,
         description: "Temminck's Stint is a small wader known for its active foraging habits along muddy shores.",
         habitat: 'Wetlands, mudflats, estuaries',
@@ -2311,6 +2350,7 @@ const birdData = [
     { 
         id: 140, 
         name: 'Long-toed Stint', 
+        scientificName: 'Calidris subminuta ',
         image: LongToedStint,
         description: 'The Long-toed Stint is a small wader with long toes, found in wetlands and mudflats.',
         habitat: 'Wetlands, mudflats, estuaries',
@@ -2324,6 +2364,7 @@ const birdData = [
     { 
         id: 141, 
         name: 'Spoon-billed Sandpiper', 
+        scientificName: 'Calidris pygmaea ',
         image: SpoonBilledSandpiper,
         description: 'The Spoon-billed Sandpiper is a critically endangered small wader with a spoon-shaped bill.',
         habitat: 'Mudflats, coastal regions, estuaries',
@@ -2337,6 +2378,7 @@ const birdData = [
     { 
         id: 142, 
         name: 'Red-necked Stint', 
+        scientificName: ' Calidris ruficollis',
         image: RedNeckedStint,
         description: 'The Red-necked Stint is a small wader bird that displays reddish-brown plumage during the breeding season. Found in coastal regions and wetlands, it is known for its agility and long-distance migration. This bird primarily feeds on small invertebrates, crustaceans, and mollusks, probing mudflats and sandy shores for food. Red-necked Stints often travel in small groups and are highly active during foraging. They are well adapted to life in wetland habitats and are commonly seen along the shorelines during the breeding season.',
         habitat: 'Coastal regions, mudflats, estuaries',
@@ -2350,6 +2392,7 @@ const birdData = [
     { 
         id: 143, 
         name: 'Sanderling', 
+        scientificName: ' Calidris alba',
         image: Sanderling,
         description: 'The Sanderling is a small wader bird that is known for its active behavior, constantly running along beaches in search of food. With a distinctive white and grey plumage, it often moves in response to the tides, feeding on small invertebrates, crustaceans, and mollusks along the shore. Sanderlings typically form large flocks and are often seen foraging on sandy beaches and coastal regions. Their agility and quick movements make them a common sight in areas with fluctuating tides.',
         habitat: 'Sandy beaches, coastal regions, mudflats',
@@ -2363,6 +2406,7 @@ const birdData = [
     { 
         id: 144, 
         name: 'Dunlin', 
+        scientificName: ' Calidris alpina',
         image: Dunlin,
         description: 'The Dunlin is a small wader bird known for the distinctive black markings on its breast during the breeding season. It inhabits coastal regions, mudflats, and estuaries, where it actively forages for small invertebrates, mollusks, and crustaceans. Dunlins are often seen in large flocks, moving in unison as they search for food along the shorelines. Their characteristic flight patterns and feeding behavior make them a recognizable species in coastal wetlands. The Dunlin is adaptable and can be found in a wide range of habitats.',
         habitat: 'Coastal regions, mudflats, estuaries',
@@ -2376,6 +2420,7 @@ const birdData = [
     { 
         id: 145, 
         name: 'Little Stint', 
+        scientificName: 'Calidris minuta ',
         image: LittleStint,
         description: 'The Little Stint is a small wader bird typically found in shallow wetlands, mudflats, and estuaries. This bird is known for its short bill and legs, which make it well-suited for probing the mud in search of food. Little Stints feed on small invertebrates, crustaceans, and mollusks, and are often seen in small groups, actively foraging along the shorelines. They are a common sight in coastal regions during the breeding season, where their distinct behavior and size make them easy to identify.',
         habitat: 'Mudflats, wetlands, coastal regions',
@@ -2388,7 +2433,8 @@ const birdData = [
     },
     { 
         id: 146, 
-        name: 'Eurasian Woodcock', 
+        name: 'Eurasian Woodcock',
+        scientificName: 'Scolopax rusticola ', 
         image: EurasianWoodcock,
         description: 'The Eurasian Woodcock is a large wader known for its cryptic plumage, which provides excellent camouflage in woodland habitats. This species is primarily nocturnal and has a unique courtship flight during breeding season. It feeds on earthworms, insects, and small invertebrates, which it searches for by probing the soil with its long bill. Eurasian Woodcocks are solitary birds and are highly elusive, making them difficult to spot in their forested habitats. They are most commonly found in boggy or wetland areas during the breeding season.',
         habitat: 'Woodlands, forests, boggy areas',
@@ -2402,6 +2448,7 @@ const birdData = [
     { 
         id: 147, 
         name: 'Pin-tailed Snipe', 
+        scientificName: 'Gallinago stenura ',
         image: PinTailedSnipe,
         description: 'The Pin-tailed Snipe is a medium-sized wader known for its long, slender tail and intricate plumage patterns. Found in wetlands, marshes, and mudflats, it feeds on invertebrates, crustaceans, and mollusks, probing shallow waters for food. The Pin-tailed Snipe is also known for its long, graceful flights and is often seen foraging in shallow waters during the breeding season. This species is highly adaptable, and although not very common, it can be found in a variety of wetland habitats throughout its range.',
         habitat: 'Wetlands, marshes, mudflats',
@@ -2415,6 +2462,7 @@ const birdData = [
     { 
         id: 148, 
         name: "Swinhoe's Snipe", 
+        scientificName: ' Gallinago megala',
         image: SwinhoesSnipe,
         description: 'Swinhoe\'s Snipe is a medium-sized wader bird with a long bill and striking plumage. Found in marshes, wetlands, and mudflats, this species feeds on invertebrates, small fish, and mollusks. Swinhoe\'s Snipes are known for their probing behavior, foraging by sticking their bills into the mud to find small invertebrates. During breeding season, they are often seen in shallow waters, where they display elaborate courtship behaviors. This species is adaptable and is found in various wetland habitats throughout its range.',
         habitat: 'Marshes, wetlands, mudflats',
@@ -2428,6 +2476,7 @@ const birdData = [
     { 
         id: 149, 
         name: 'Common Snipe', 
+        scientificName: 'Gallinago gallinago ',
         image: CommonSnipe,
         description: 'The Common Snipe is a small wader with a long bill and striped plumage. It is commonly found in wetland habitats, including marshes, mudflats, and boggy areas. Known for its camouflage, the Common Snipe can be elusive, often remaining hidden in dense vegetation. It feeds on small invertebrates, crustaceans, and mollusks by probing the mud. The Common Snipe is a solitary bird, often seen in small groups during migration. It is known for its distinctive drumming flight during the breeding season.',
         habitat: 'Wetlands, marshes, mudflats',
@@ -2441,6 +2490,7 @@ const birdData = [
     { 
         id: 150, 
         name: 'Jack Snipe', 
+        scientificName: 'Lymnocryptes minimus ',
         image: JackSnipe,
         description: 'The Jack Snipe is a small and elusive wader bird known for its cryptic plumage and distinctive flight pattern. It is found in wetland areas, especially in marshes, bogs, and mudflats. The Jack Snipe feeds on small invertebrates and mollusks, foraging by probing the mud with its long bill. This species is solitary and often remains hidden during the day, coming out to forage in the early mornings or late evenings. Jack Snipes are often seen in small, scattered flocks during migration.',
         habitat: 'Marshes, bogs, mudflats',
@@ -2454,6 +2504,7 @@ const birdData = [
     { 
         id: 151, 
         name: 'Terek Sandpiper', 
+        scientificName: ' Xenus cinereus',
         image: TerekSandpiper,
         description: 'The Terek Sandpiper is a small wader with a distinctive upward-curved bill. It is typically found in coastal habitats, such as mudflats, estuaries, and marshes. These birds are often seen probing the mud for small invertebrates, crustaceans, and mollusks. Their unique bill helps them forage in shallow waters. Terek Sandpipers are migratory birds and can be seen in flocks during their migratory periods. They breed in the northern regions of Asia and Europe.',
         habitat: 'Mudflats, coastal regions, estuaries',
@@ -2466,7 +2517,8 @@ const birdData = [
     },
     { 
         id: 152, 
-        name: 'Common Sandpiper', 
+        name: 'Common Sandpiper',
+        scientificName: 'Actitis hypoleucos ', 
         image: CommonSandpiper,
         description: 'The Common Sandpiper is a small wader with brown and white plumage. It is commonly found along freshwater and coastal habitats, especially in marshes and mudflats. These birds can often be seen searching for small invertebrates and crustaceans along the water’s edge. They have a distinctive behavior of constantly bobbing their body while foraging. Common Sandpipers breed in Eurasia and migrate to warmer regions during the winter.',
         habitat: 'Freshwater bodies, mudflats, estuaries',
@@ -2480,6 +2532,7 @@ const birdData = [
     { 
         id: 153, 
         name: 'Green Sandpiper', 
+        scientificName: 'Tringa ochropus ',
         image: GreenSandpiper,
         description: 'The Green Sandpiper is a small wader with a distinctive greenish-brown plumage and long legs. It is often found in freshwater wetlands and muddy shores. These birds are solitary and usually seen foraging alone in shallow waters. They feed on small invertebrates, crustaceans, and mollusks. Green Sandpipers are migratory birds, breeding in northern Europe and Asia, and migrating to warmer regions during the winter months.',
         habitat: 'Freshwater wetlands, mudflats, estuaries',
@@ -2492,7 +2545,8 @@ const birdData = [
     },
     { 
         id: 154, 
-        name: 'Spotted Redshank', 
+        name: 'Spotted Redshank',
+        scientificName: 'Tringa erythropus ', 
         image: SpottedRedshank,
         description: 'The Spotted Redshank is a wader with striking black-and-white plumage, especially during the breeding season. It is commonly found in coastal wetlands and mudflats. Spotted Redshanks are larger than many other waders and are often seen in flocks, probing the mud for small invertebrates and mollusks. They are migratory birds, breeding in northern Europe and Asia and migrating to southern Europe and Africa during the winter.',
         habitat: 'Coastal wetlands, mudflats, estuaries',
@@ -2506,6 +2560,7 @@ const birdData = [
     { 
         id: 155, 
         name: 'Common Greenshank', 
+        scientificName: ' Tringa nebularia',
         image: CommonGreenshank,
         description: 'The Common Greenshank is a medium-sized wader with long legs and a greenish tint to its plumage. It is often found in coastal regions and estuaries, where it feeds on small invertebrates, mollusks, and crustaceans. These birds can often be seen searching for prey in the shallow waters. Greenshanks are migratory birds, breeding in Eurasia and migrating to southern regions during the winter. They are often seen in flocks during migration.',
         habitat: 'Coastal regions, estuaries, mudflats',
@@ -2519,6 +2574,7 @@ const birdData = [
     { 
         id: 156, 
         name: 'Common Redshank', 
+        scientificName: ' ',
         image: CommonRedshank,
         description: 'The Common Redshank is a medium-sized wader with a reddish-orange beak and legs. It is typically found in coastal wetlands and mudflats, where it forages for invertebrates, mollusks, and crustaceans. The redshank is known for its distinctive call and is often seen searching the mud for prey. Redshanks are migratory birds, breeding in northern Europe and Asia, and migrating to southern Europe and Africa during the winter.',
         habitat: 'Coastal wetlands, mudflats, estuaries',
@@ -2532,6 +2588,7 @@ const birdData = [
     { 
         id: 157, 
         name: 'Wood Sandpiper', 
+        scientificName: 'Tringa totanus ',
         image: WoodSandpiper,
         description: 'The Wood Sandpiper is a small wader with long legs and a slender bill. It is often found in freshwater wetlands, bogs, and marshes, where it forages for invertebrates, small crustaceans, and mollusks. Wood Sandpipers are solitary birds, usually seen searching for prey in shallow waters. They breed in northern Eurasia and migrate to southern regions during the winter. Their distinct behavior includes moving quickly while foraging.',
         habitat: 'Freshwater wetlands, bogs, marshes',
@@ -2545,6 +2602,7 @@ const birdData = [
     { 
         id: 158, 
         name: 'Marsh Sandpiper', 
+        scientificName: 'Tringa glareola ',
         image: MarshSandpiper,
         description: 'The Marsh Sandpiper is a small wader with long legs and a slender bill. It is commonly found in marshes and mudflats, where it feeds on small mollusks, crustaceans, and invertebrates. Marsh Sandpipers are often seen foraging in shallow waters, probing the mud for food. These birds breed in wetlands in southern regions of Europe, Asia, and Africa, migrating to warmer areas during the winter.',
         habitat: 'Marshes, mudflats, coastal wetlands',
@@ -2557,7 +2615,8 @@ const birdData = [
     },
     { 
         id: 159, 
-        name: 'Barred Buttonquail', 
+        name: 'Barred Buttonquail',
+        scientificName: ' Tringa stagnatilis',
         image: BarredButtonquail,
         description: 'The Barred Buttonquail is a small, ground-dwelling bird with striking barred plumage. It is found in dry, open grasslands and scrubby habitats. These birds are usually solitary and known for their quick, darting movements on the ground. Barred Buttonquails feed on seeds, small invertebrates, and insects. They are found across Asia and Africa, where they breed during the warmer months, often in scrublands and agricultural fields.',
         habitat: 'Grasslands, open scrublands, agricultural fields',
@@ -2571,6 +2630,7 @@ const birdData = [
     { 
         id: 160, 
         name: 'Sociable Lapwing', 
+        scientificName: 'Turnix suscitator ',
         image: SociableLapwing,
         description: 'The Sociable Lapwing is a medium-sized wader with long legs and a distinctive black-and-white plumage. It is often found in open grasslands, steppe, and savannas. These birds are known for their social behavior, often forming large flocks during migration. Sociable Lapwings are primarily insectivorous, feeding on insects, small invertebrates, and seeds. They breed in central Asia and migrate to Africa and India during the winter.',
         habitat: 'Grasslands, steppe, savannas',
@@ -2584,6 +2644,7 @@ const birdData = [
     { 
         id: 161, 
         name: 'Indian Courser', 
+        scientificName: ' Dromas ardeola',
         image: IndianCourser,
         description: 'The Indian Courser is a ground-dwelling bird with a slender body and long legs. Found in arid habitats, this bird is renowned for its speed and agility, often chasing insects across the ground. It has a distinctive brown plumage with white underparts and a black line running from the beak to the neck. These birds prefer dry, open areas and are often seen running swiftly, avoiding predators with their impressive speed.',
         habitat: 'Grasslands, deserts, arid scrublands',
@@ -2597,6 +2658,7 @@ const birdData = [
     { 
         id: 162, 
         name: 'Collared Pratincole', 
+        scientificName: 'Cursorius coromandelicus ',
         image: CollaredPratincole,
         description: 'The Collared Pratincole is a small wader bird with a distinctive collar-like marking on its neck. These birds are often found near water sources in open areas such as grasslands and savannas. They are agile flyers and are known for catching insects mid-air during flight. Collared Pratincoles have brown upperparts, pale underparts, and a unique collar of dark feathers around their necks, giving them a striking appearance.',
         habitat: 'Grasslands, open wetlands, savannas',
@@ -2610,6 +2672,7 @@ const birdData = [
     { 
         id: 163, 
         name: 'Oriental Pratincole', 
+        scientificName: ' Glareola pratincola',
         image: OrientalPratincole,
         description: 'The Oriental Pratincole is a slender wader bird with a long wingspan, typically found in open habitats near water sources. It is an agile flyer, catching insects in mid-air during flight. These birds have a pale brownish body with darker wings and a distinctive black line on their neck. They are often seen soaring gracefully above wetlands and grasslands, demonstrating their aerial prowess in the evenings.',
         habitat: 'Grasslands, open wetlands, coastal areas',
@@ -2623,6 +2686,7 @@ const birdData = [
     { 
         id: 164, 
         name: 'Little Pratincole', 
+        scientificName: ' Glareola maldivarum',
         image: LittlePratincole,
         description: 'The Little Pratincole is a small, agile wader bird often found in open grassy areas near water. Known for its graceful flight, this bird catches insects mid-air while foraging. Its brown upperparts, pale underparts, and dark wings make it easily recognizable. Little Pratincoles are often seen in groups, foraging in flight during the evening hours. They breed in open wetlands and savannas, where they can be observed hunting for insects.',
         habitat: 'Grasslands, wetlands, open savannas',
@@ -2636,6 +2700,7 @@ const birdData = [
     { 
         id: 165, 
         name: 'Brown Noddy', 
+        scientificName: 'Glareola lactea ',
         image: BrownNoddy,
         description: 'The Brown Noddy is a medium-sized seabird that lives in tropical and subtropical coastal regions. It has dark brown plumage and is known for its graceful flight and agile foraging skills. These birds often feed on small fish and invertebrates found in shallow coastal waters. Brown Noddies typically breed in colonies on tropical islands, where they can be seen gliding over the water, searching for prey.',
         habitat: 'Coastal regions, tropical islands, sandy beaches',
@@ -2648,7 +2713,8 @@ const birdData = [
     },
     { 
         id: 166, 
-        name: 'Common White Tern', 
+        name: 'Common White Tern',
+        scientificName: 'Anous stolidus ', 
         image: CommonWhiteTern,
         description: 'The Common White Tern is a small seabird with striking white plumage and a slender bill. It is often found in tropical coastal regions, gliding gracefully over the ocean. Known for their effortless flight, these birds hunt for small fish and invertebrates, often diving into the water to catch their prey. The Common White Tern is an elegant bird that can be seen soaring through the air in search of food.',
         habitat: 'Tropical coastal regions, islands',
@@ -2662,6 +2728,7 @@ const birdData = [
     { 
         id: 167, 
         name: 'Brown-headed Gull', 
+        scientificName: 'Gygis candida ',
         image: BrownHeadedGull,
         description: 'The Brown-headed Gull is a medium-sized gull with brown head markings during the breeding season. It is commonly found in coastal and freshwater environments. These gulls are known for their scavenging habits, feeding on fish, invertebrates, and scraps. During the breeding season, they display distinctive brown markings on their heads, which become more prominent. Brown-headed Gulls are social birds, often seen in flocks near water.',
         habitat: 'Coastal regions, freshwater lakes, rivers',
@@ -2675,6 +2742,7 @@ const birdData = [
     { 
         id: 168, 
         name: 'Black-headed Gull', 
+        scientificName: ' Larus brunnicephalus',
         image: BlackHeadedGull,
         description: 'The Black-headed Gull is a small to medium-sized gull with a distinctive dark head. Found in a variety of coastal and freshwater habitats, it is an agile forager. Black-headed Gulls are known for their sharp eyesight, which helps them locate food along shorelines and in shallow waters. During the breeding season, their dark head makes them easily identifiable. They feed on fish, insects, and other small invertebrates.',
         habitat: 'Coastal regions, freshwater lakes, rivers',
@@ -2688,6 +2756,7 @@ const birdData = [
     { 
         id: 169, 
         name: "Pallas's Gull", 
+        scientificName: 'Larus ridibundus ',
         image: PallassGull,
         description: 'Pallas\'s Gull is a large gull species found in coastal regions and rivers in temperate climates. It is known for its black-and-white plumage and strong flight. These gulls are often seen scavenging near fishing boats or on beaches, feeding on fish, invertebrates, and mollusks. They have a distinct call and are known for their large size and impressive wingspan. Pallas\'s Gulls are highly migratory, covering long distances during the winter.',
         habitat: 'Coastal regions, rivers, estuaries',
@@ -2701,6 +2770,7 @@ const birdData = [
     { 
         id: 170, 
         name: 'Sooty Tern', 
+        scientificName: 'Larus ichthyaetus ',
         image: SootyTern,
         description: 'The Sooty Tern is a seabird with dark plumage and a slender body, found in tropical coastal regions and islands. Known for their long-distance flights, these birds cover vast areas during migration. They are often seen soaring above the ocean, searching for fish and invertebrates. Sooty Terns are elegant birds, with a striking black and white contrast on their wings and head. They breed in colonies on tropical islands.',
         habitat: 'Tropical coastal regions, islands',
@@ -2714,6 +2784,7 @@ const birdData = [
     { 
         id: 171, 
         name: 'Bridled Tern', 
+        scientificName: 'Onychoprion anaethetus ',
         image: BridledTern,
         description: 'The Bridled Tern is a seabird with a black line around its eye, resembling a bridled appearance. It inhabits tropical and subtropical coastal regions and islands. Known for its sleek body and agile flight, the Bridled Tern forages for fish and small invertebrates by diving into the water. This species is commonly seen during its breeding season, which lasts from May to August, and is generally considered a bird of least concern in terms of conservation.',
         habitat: 'Tropical coastal regions, islands',
@@ -2727,6 +2798,7 @@ const birdData = [
     { 
         id: 172, 
         name: 'Little Tern', 
+        scientificName: ' Sternula albifrons',
         image: LittleTern,
         description: 'The Little Tern is a small seabird with a black-capped head and graceful flight. It inhabits coastal regions and estuaries, where it can be seen diving for small fish and invertebrates. This species has a lifespan of 5-7 years and is classified as a bird of least concern. The Little Tern breeds from May to August and is known for its delicate nature and agility in flight, making it a common sight along shallow coastal waters.',
         habitat: 'Coastal regions, estuaries, sandy beaches',
@@ -2740,6 +2812,7 @@ const birdData = [
     { 
         id: 173, 
         name: "Saunders's Tern", 
+        scientificName: 'Sternula saundersi ',
         image: SaunderssTern,
         description: 'Saunders\'s Tern is a small seabird native to East Asia, easily identified by its black cap and slender body. It typically inhabits coastal areas, mudflats, and sandy beaches, where it forages for small fish and invertebrates. With a lifespan of 10-12 years, it is classified as endangered. Saunders\'s Tern breeds from May to July, known for its agile flight and its ability to spot prey from the air, making it a skilled hunter.',
         habitat: 'Coastal areas, mudflats, sandy beaches',
@@ -2753,6 +2826,7 @@ const birdData = [
     { 
         id: 174, 
         name: 'Common Gull-billed Tern', 
+        scientificName: 'Gelochelidon nilotica ',
         image: CommonGullBilledTern,
         description: 'The Common Gull-billed Tern is a medium-sized seabird with a short, stout bill. It inhabits coastal wetlands and estuaries, where it preys on small fish, crustaceans, and insects. This species has a lifespan of 7-10 years and is classified as least concern. Common Gull-billed Terns are known for their ground foraging behavior and ability to snatch prey from the surface of shallow waters, often breeding from May to August in coastal regions.',
         habitat: 'Coastal wetlands, mudflats, estuaries',
@@ -2766,6 +2840,7 @@ const birdData = [
     { 
         id: 175, 
         name: 'Caspian Tern', 
+        scientificName: ' Hydroprogne caspia',
         image: CaspianTern,
         description: 'The Caspian Tern is a large seabird known for its striking black markings and red bill. It resides along coastal regions and inland lakes, where it catches fish and small invertebrates. With a lifespan of 15-20 years, it is classified as a bird of least concern. The Caspian Tern is an exceptional hunter, using its powerful flight and sharp vision to dive and catch fish. Its breeding season lasts from May to August, often near water bodies.',
         habitat: 'Coastal regions, inland lakes, rivers',
@@ -2779,6 +2854,7 @@ const birdData = [
     { 
         id: 176, 
         name: 'Whiskered Tern', 
+        scientificName: 'Chlidonias hybrida ',
         image: WhiskeredTern,
         description: 'The Whiskered Tern is a delicate seabird with a whisker-like plume on its face. Found in freshwater wetlands and lakes, it feeds on insects, small invertebrates, and fish. This species has a lifespan of 5-7 years and is listed as least concern. Whiskered Terns are known for their gliding flight over water, often searching for prey. They breed from May to July, typically in marshes and wetlands with abundant food sources.',
         habitat: 'Freshwater wetlands, lakes, marshes',
@@ -2792,6 +2868,7 @@ const birdData = [
     { 
         id: 177, 
         name: 'White-winged Tern', 
+        scientificName: ' Chlidonias leucopterus',
         image: WhiteWingedTern,
         description: 'The White-winged Tern is a small seabird with striking white wings and a black head. It is often found in coastal wetlands, marshes, and lakes. This species feeds on fish and small invertebrates, with a lifespan of 5-7 years. The White-winged Tern is known for its graceful flight and foraging habits, diving into shallow waters for prey. It typically breeds from May to August in coastal and freshwater habitats, classified as least concern.',
         habitat: 'Coastal wetlands, marshes, lakes',
@@ -2805,6 +2882,7 @@ const birdData = [
     { 
         id: 178, 
         name: 'Black Tern', 
+        scientificName: 'Chlidonias niger ',
         image: BlackTern,
         description: 'The Black Tern is a small wader with dark plumage and slender body, commonly found near freshwater lakes and wetlands. It feeds on insects, small invertebrates, and fish. With a lifespan of 4-6 years, it is classified as least concern. Black Terns are often seen foraging in the air and over water, searching for prey. Their breeding season lasts from May to August, and they typically nest in marshy areas with abundant water.',
         habitat: 'Freshwater lakes, wetlands, marshes',
@@ -2818,6 +2896,7 @@ const birdData = [
     { 
         id: 179, 
         name: 'Roseate Tern', 
+        scientificName: ' Sterna dougallii',
         image: RoseateTern,
         description: 'The Roseate Tern is a slender seabird with pinkish hues on its wings and breast. It is often found in coastal areas and islands, where it feeds on small fish and invertebrates. With a lifespan of 15-20 years, it is considered endangered. Roseate Terns are known for their diving behavior in search of small prey in shallow coastal waters. Their breeding season is from May to August, and they are most active in coastal habitats.',
         habitat: 'Coastal regions, sandy beaches, islands',
@@ -2831,6 +2910,7 @@ const birdData = [
     { 
         id: 180, 
         name: 'Common Tern', 
+        scientificName: 'Sterna hirundo ',
         image: CommonTern,
         description: 'The Common Tern is a medium-sized seabird with a grayish-white body and a black cap. It is widely found in coastal regions, lakes, and estuaries. Known for its graceful flight and expert fishing skills, it dives into the water to catch small fish and crustaceans. Common Terns typically breed in colonies from May to August, often on sandy or rocky islands. Their lifespan is 10-15 years, and they play a vital role in the coastal ecosystem.',
         habitat: 'Coastal regions, lakes, estuaries',
@@ -2844,6 +2924,7 @@ const birdData = [
     { 
         id: 181, 
         name: 'Lesser Crested Tern', 
+        scientificName: 'Thalasseus bengalensis ',
         image: LesserCrestedTern,
         description: 'The Lesser Crested Tern is a seabird with a distinctive black crest during the breeding season. It is commonly found in coastal regions and islands. This bird is known for its agile flight and deep dives to catch fish and small invertebrates. Lesser Crested Terns breed from May to August and prefer sandy beaches or rocky islands for nesting. They are typically seen in flocks, foraging in shallow waters and playing a key role in marine ecosystems.',
         habitat: 'Coastal regions, sandy beaches, islands',
@@ -2857,6 +2938,7 @@ const birdData = [
     { 
         id: 182, 
         name: 'Sandwich Tern', 
+        scientificName: ' Thalasseus sandvicensis',
         image: SandwichTern,
         description: 'The Sandwich Tern is a medium-sized seabird with a black cap and long, slender wings. It inhabits coastal regions and islands, where it is frequently seen diving for fish. Known for its elegant flight and vocal nature, the Sandwich Tern is an important part of the coastal ecosystem, feeding on small fish and invertebrates. It breeds from May to August and typically builds its nest on sandy beaches or rocky islands, often in large colonies.',
         habitat: 'Coastal regions, sandy beaches, islands',
@@ -2870,6 +2952,7 @@ const birdData = [
     { 
         id: 183, 
         name: 'Greater Crested Tern', 
+        scientificName: 'Thalasseus bergii ',
         image: GreaterCrestedTern,
         description: 'The Greater Crested Tern is a large seabird characterized by its prominent black crest. Found in coastal regions and islands, it is often seen diving for fish in shallow waters. This tern plays a significant role in controlling fish populations and maintaining the balance in coastal ecosystems. Its strong wings and powerful flight allow it to cover large areas in search of food. It breeds from May to August, typically in colonies on sandy beaches.',
         habitat: 'Coastal regions, sandy beaches, islands',
@@ -2883,6 +2966,7 @@ const birdData = [
     { 
         id: 184, 
         name: 'Arctic Jaeger', 
+        scientificName: 'Stercorarius parasiticus ',
         image: ArcticJaeger,
         description: 'The Arctic Jaeger is a large seabird known for its aggressive behavior, particularly towards other seabirds. Found in the Arctic and sub-Arctic regions, it is often seen chasing other birds to steal their food. Arctic Jaegers are solitary hunters during the breeding season, which lasts from June to August. They feed on fish, seabirds, and occasionally scavenge. Despite its aggressive nature, the Arctic Jaeger plays an important role in maintaining the food chain in these regions.',
         habitat: 'Arctic and sub-Arctic regions, coastal tundra',
@@ -2896,6 +2980,7 @@ const birdData = [
     { 
         id: 185, 
         name: 'Pomarine Jaeger', 
+        scientificName: ' Stercorarius pomarinus',
         image: PomarineJaeger,
         description: 'The Pomarine Jaeger is a large seabird known for its distinctive tail feathers and powerful flight. It is found in the Arctic and sub-Arctic regions, where it aggressively chases other seabirds to steal their prey. Pomarine Jaegers are solitary hunters and often rely on scavenging. Their powerful wings and swift flight enable them to cover great distances in search of food. They breed from May to July, typically in coastal tundra or on remote islands.',
         habitat: 'Arctic and sub-Arctic regions, coastal tundra',
@@ -2909,6 +2994,7 @@ const birdData = [
     { 
         id: 186, 
         name: 'Brown Skua', 
+        scientificName: ' Catharacta antarctica',
         image: BrownSkua,
         description: 'The Brown Skua is a large seabird found in the southern oceans. Known for its aggressive behavior, it steals food from other seabirds and scavenges in coastal areas. Its large size and powerful flight make it a dominant presence in its habitat. Brown Skuas breed from September to December, often in large colonies on remote islands or coastal regions. Despite its aggressive nature, the Brown Skua plays a crucial role in maintaining balance in the marine ecosystem.',
         habitat: 'Coastal regions, especially near breeding colonies in the southern oceans',
@@ -2922,6 +3008,7 @@ const birdData = [
     { 
         id: 187, 
         name: 'Sri Lanka Bay-owl', 
+        scientificName: 'Phodilus assimilis ',
         image: SriLankaBayOwl,
         description: 'The Sri Lanka Bay-owl is a medium-sized owl endemic to Sri Lanka. Recognizable by its large, round face and nocturnal hunting behavior, this owl preys on insects and small mammals. It inhabits the tropical forests and woodlands of Sri Lanka, preferring dense cover for hunting. Sri Lanka Bay-owls have a lifespan of 5-8 years and are most active during the night. They breed from April to August, and their solitary habits make them difficult to spot in the wild.',
         habitat: 'Tropical forests and woodlands of Sri Lanka',
@@ -2935,6 +3022,7 @@ const birdData = [
     { 
         id: 188, 
         name: 'Common Barn-owl', 
+        scientificName: 'Tyto alba ',
         image: CommonBarnOwl,
         description: 'The Common Barn-owl is a widespread owl species known for its heart-shaped face and ghostly appearance. It inhabits open fields, farmlands, and sometimes forests, where it hunts small mammals and birds. Nocturnal in nature, Barn-owls have a quiet flight and use their acute hearing to locate prey. They breed from April to September and play a vital role in controlling rodent populations. Their lifespan is 4-5 years, and they are often heard screeching during flight.',
         habitat: 'Open fields, farmlands, and sometimes forests',
@@ -2948,6 +3036,7 @@ const birdData = [
     {
         id: 189, 
         name: 'Brown Boobook', 
+        scientificName: ' Ninox scutulata',
         image: BrownBoobook,
         description: 'The Brown Boobook is a small, cryptic owl found in forests and woodlands. Its brown plumage blends with the surroundings, helping it remain hidden from predators. Active mostly at night, it hunts insects and small vertebrates. The owl’s large, rounded eyes give it excellent night vision. With a lifespan of 6-8 years, it prefers tropical and subtropical forests, remaining elusive and solitary, often perched in dense foliage during the day.',
         habitat: 'Tropical and subtropical forests',
@@ -2961,6 +3050,7 @@ const birdData = [
     {
         id: 190, 
         name: 'Jungle Owlet', 
+        scientificName: 'Glaucidium radiatum',
         image: JungleOwlet,
         description: 'The Jungle Owlet is a small owl that lives in dense forests, characterized by its cryptic behavior and distinct call. It blends well with its environment, making it hard to spot. This owl hunts insects and small birds, primarily during the night. With a lifespan of 5-7 years, it prefers the tropical and subtropical forests. Known for its shy nature, the Jungle Owlet is most active during the breeding season from April to July.',
         habitat: 'Tropical and subtropical forests',
@@ -2974,6 +3064,7 @@ const birdData = [
     {
         id: 191, 
         name: 'Chestnut-backed Owlet', 
+        scientificName: ' Glaucidium castanotum',
         image: ChestnutBackedOwlet,
         description: 'The Chestnut-backed Owlet is a small, nocturnal owl species native to Sri Lanka. It is easily recognized by its reddish-brown back and small size. Found primarily in dense tropical forests, it hunts insects and small mammals. This endangered owl prefers solitude and is often found perched in dense undergrowth during the day. Its breeding season spans from March to August, and it has a lifespan of 4-6 years.',
         habitat: 'Tropical forests of Sri Lanka',
@@ -2987,6 +3078,7 @@ const birdData = [
     {
         id: 192, 
         name: 'Serendib Scops-owl', 
+        scientificName: ' Otus thilohoffmanni',
         image: SerendibScopsOwl,
         description: 'The Serendib Scops-owl is a small, endangered owl species endemic to Sri Lanka. It is known for its distinct ear-tufts and camouflaged appearance. The owl resides in rainforests and montane forests, where it feeds on insects and small vertebrates. Active mostly at night, it is elusive and rarely seen. Its lifespan ranges from 6 to 8 years, and the breeding season occurs from April to September.',
         habitat: 'Rainforests and montane forests of Sri Lanka',
@@ -3000,6 +3092,7 @@ const birdData = [
     {
         id: 193, 
         name: 'Indian Scops-owl', 
+        scientificName: 'Otus bakkamoena ',
         image: IndianScopsOwl,
         description: 'The Indian Scops-owl is a small owl species found in India and Sri Lanka. Recognizable by its ear-tufts and large, expressive eyes, this owl inhabits open woodlands, forests, and scrublands. It has a diet of insects and small vertebrates. With a lifespan of 6-8 years, it is mostly nocturnal, resting during the day and blending into its surroundings. Its breeding season lasts from April to August.',
         habitat: 'Open woodlands, forests, and scrublands',
@@ -3013,6 +3106,7 @@ const birdData = [
     {
         id: 194, 
         name: 'Oriental Scops-owl', 
+        scientificName: 'Otus sunia ',
         image: OrientalScopsOwl,
         description: 'The Oriental Scops-owl is a small owl species native to Asia, known for its large eyes and ear-tufts. It prefers dry forests and scrublands, where it hunts insects and small reptiles. This nocturnal bird has a lifespan of 5-7 years. It is a strong and agile hunter, often preying on small vertebrates. Its breeding season spans from March to July.',
         habitat: 'Tropical and subtropical dry forests, scrublands',
@@ -3026,6 +3120,7 @@ const birdData = [
     {
         id: 195, 
         name: 'Brown Wood-owl', 
+        scientificName: 'Strix leptogrammica ',
         image: BrownWoodOwl,
         description: 'The Brown Wood-owl is a large, nocturnal owl found in the forests of South Asia. Its broad, rounded head and reddish-brown plumage make it easily identifiable. A skilled hunter, it preys on small mammals, birds, and insects. Its large size, with a wingspan of 120-130 cm, allows it to cover large areas in search of prey. It has a lifespan of 10-12 years and breeds between November and January.',
         habitat: 'Deciduous and evergreen forests',
@@ -3039,6 +3134,7 @@ const birdData = [
     {
         id: 196, 
         name: 'Spot-bellied Eagle-owl', 
+        scientificName: 'Bubo nipalensis ',
         image: SpotBelliedEagleOwl,
         description: 'The Spot-bellied Eagle-owl is a large and powerful owl species recognized by its distinctive dark spots on the belly. Found in forests and rocky outcrops, this owl is a strong predator, hunting small mammals, birds, and reptiles. It is known for its agility and strength. Its lifespan ranges from 12 to 15 years, and it has a breeding season between January and May.',
         habitat: 'Forests, rocky outcrops',
@@ -3052,6 +3148,7 @@ const birdData = [
     {
         id: 197, 
         name: 'Brown Fish-owl', 
+        scientificName: 'Ketupa zeylonensis ',
         image: BrownFishOwl,
         description: 'The Brown Fish-owl is a large species often found near water bodies such as wetlands, rivers, and lakes. Specializing in hunting fish, it can dive for prey in shallow waters. Its diet also includes small mammals. This owl has a lifespan of 10-12 years and is known for its expert fishing skills. Its breeding season lasts from April to September.',
         habitat: 'Wetlands, rivers, lakes',
@@ -3065,6 +3162,7 @@ const birdData = [
     {
         id: 198, 
         name: 'Osprey', 
+        scientificName: ' Pandion haliaetus',
         image: Osprey,
         description: 'The Osprey is a large raptor, known for its exceptional fishing skills. Found near coastal regions, rivers, and lakes, it primarily preys on fish. Its large wingspan (150-160 cm) allows it to soar over water bodies and dive to capture its prey. With a lifespan of 15-20 years, the Osprey breeds from March to July and is highly adapted for a life near water.',
         habitat: 'Coastal regions, rivers, lakes',
@@ -3078,6 +3176,7 @@ const birdData = [
     { 
         id: 199, 
         name: 'Black-winged Kite', 
+        scientificName: 'Elanus caeruleus ',
         image: BlackWingedKite,
         description: 'The Black-winged Kite is a small to medium-sized raptor, easily recognized by its white body and black wings. It is an expert hunter, often seen hovering in the air before diving to catch small prey. Its sharp vision allows it to spot prey from high altitudes, and it is often seen hunting in open fields and grasslands. These birds are solitary and use their hovering flight to expertly locate and capture their food.',
         habitat: 'Grasslands, open woodlands, and agricultural fields',
@@ -3091,6 +3190,7 @@ const birdData = [
     { 
         id: 200, 
         name: 'Oriental Honey-buzzard', 
+        scientificName: 'Pernis ptilorhynchus ',
         image: OrientalHoneyBuzzard,
         description: 'The Oriental Honey-buzzard is a medium-sized raptor that primarily feeds on honey, insects, and larvae. Its distinct appearance, with dark wings and a pale head, helps it stand out. It is known for its unique behavior of raiding bee hives to consume honey and larvae. It has strong talons, and its hunting skills are focused on extracting honey and other soft prey from hives and nests. Its diet includes a variety of insects and small birds.',
         habitat: 'Forests, grasslands, and near water bodies',
@@ -3104,6 +3204,7 @@ const birdData = [
     { 
         id: 201, 
         name: "Jerdon's Baza", 
+        scientificName: 'Aviceda jerdoni ',
         image: JerdonsBaza,
         description: 'Jerdon\'s Baza is a small raptor native to the forests and woodlands of India and Sri Lanka. It is easily recognized by its striking white-and-brown plumage and distinctive crest. These birds are arboreal hunters, preferring to perch quietly on tree branches as they wait for prey to approach. They feed on small mammals, birds, and reptiles, using their sharp talons to capture prey. The species is mostly solitary and elusive, making it difficult to spot in the wild.',
         habitat: 'Forests, woodlands, and scrublands',
@@ -3117,6 +3218,7 @@ const birdData = [
     { 
         id: 202, 
         name: 'Black Baza', 
+        scientificName: 'Aviceda leuphotes ',
         image: BlackBaza,
         description: 'The Black Baza is a small, striking raptor found in tropical and subtropical forests. It is known for its black and white plumage and distinctive white stripes on its wings. This bird is primarily a glider, soaring through the canopy as it hunts for small mammals, birds, and insects. It has excellent eyesight and often spots its prey from a great distance. The Black Baza is highly agile, able to maneuver expertly through the dense foliage of its forest habitat.',
         habitat: 'Tropical and subtropical forests',
@@ -3130,6 +3232,7 @@ const birdData = [
     { 
         id: 203, 
         name: 'Crested Serpent-eagle', 
+        scientificName: 'Spilornis cheela ',
         image: CrestedSerpentEagle,
         description: 'The Crested Serpent-eagle is a large, powerful eagle known for its distinct crest. It is an expert predator, specializing in hunting snakes and other reptiles. This eagle is often seen soaring high in the sky or perched on tall trees as it searches for prey. Its sharp talons and keen eyesight help it capture reptiles, small mammals, and birds. The Crested Serpent-eagle is highly territorial and often hunts in the same areas year after year.',
         habitat: 'Open woodlands, forests, and near rivers',
@@ -3143,6 +3246,7 @@ const birdData = [
     { 
         id: 204, 
         name: 'Mountain Hawk-eagle', 
+        scientificName: 'Nisaetus nipalensis ',
         image: MountainHawkEagle,
         description: 'The Mountain Hawk-eagle is a medium-sized eagle found in mountainous regions. It has sharp talons and powerful wings, using these features to hunt birds and small mammals. Its habitat includes steep mountain forests and rocky cliffs, where it preys on animals living in these high-altitude regions. The Mountain Hawk-eagle is a swift and agile predator, known for its rapid flight and keen eyesight. It often hunts over forested areas, diving quickly to catch prey.',
         habitat: 'Mountain forests and cliffs',
@@ -3156,6 +3260,7 @@ const birdData = [
     { 
         id: 205, 
         name: 'Changeable Hawk-eagle', 
+        scientificName: 'Nisaetus cirrhatus ',
         image: ChangeableHawkEagle,
         description: 'The Changeable Hawk-eagle is a versatile raptor found in a wide range of habitats. It is a medium-sized eagle that adapts to different environments, making it a flexible hunter. It preys on a wide variety of animals, including small mammals, birds, and reptiles. This eagle is known for its ability to thrive in diverse ecosystems, from forests to open woodlands. Its hunting technique involves agile flight and keen observation to catch prey, often swooping down from high perches.',
         habitat: 'Forests, open woodlands, and rocky areas',
@@ -3169,6 +3274,7 @@ const birdData = [
     { 
         id: 206, 
         name: 'Rufous-bellied Eagle', 
+        scientificName: ' Lophotriorchis kienerii',
         image: RufousBelliedEagle,
         description: 'The Rufous-bellied Eagle is a large eagle known for its striking reddish-brown plumage on its belly. It is commonly found in forests and grasslands of South Asia, where it preys on small mammals, birds, and reptiles. This eagle is known for its strong flight and territorial behavior. It often perches on trees or soars through the sky while searching for food. The Rufous-bellied Eagle is a solitary hunter, rarely seen in groups, and is a powerful predator in its habitat.',
         habitat: 'Grasslands, forests, and open areas',
@@ -3182,6 +3288,7 @@ const birdData = [
     { 
         id: 207, 
         name: 'Black Eagle', 
+        scientificName: 'Ictinaetus malaiensis ',
         image: BlackEagle,
         description: 'The Black Eagle is a powerful and majestic raptor found in mountainous areas. It has deep-black plumage and is known for its strength and agility. Black Eagles are apex predators in their environment, preying on small mammals, birds, and reptiles. They are often seen soaring in the sky or perched on cliff edges, scanning for prey. These eagles have excellent eyesight and are known for their stealthy hunting technique, using quick and decisive attacks to capture their quarry.',
         habitat: 'Mountain forests and cliffs',
@@ -3194,7 +3301,8 @@ const birdData = [
     },
     { 
         id: 208, 
-        name: 'Booted Eagle', 
+        name: 'Booted Eagle',
+        scientificName: ' Hieraaetus pennatus', 
         image: BootedEagle,
         description: 'The Booted Eagle is a small eagle known for its agile flight and characteristic boot-like feathers on its legs. It is a highly adaptable predator, found in a wide range of habitats, from forests to grasslands. The Booted Eagle feeds on small mammals, birds, and insects, using its sharp talons and keen eyesight to catch prey. It is an expert hunter and often seen soaring through the sky or perching on trees in search of food.',
         habitat: 'Forests, grasslands, and open woodlands',
@@ -3208,6 +3316,7 @@ const birdData = [
     { 
         id: 209, 
         name: 'Western Marsh-harrier', 
+        scientificName: ' Circus aeruginosus',
         image: WesternMarshHarrier,
         description: 'The Western Marsh-harrier is a medium-sized raptor found near wetlands and marshes. It hunts by flying low over the water, using its keen eyesight to spot prey. These birds are known for their silent flight and nocturnal hunting behavior. Their diet includes small mammals, birds, and amphibians. Marsh-harriers are agile predators and are an essential part of the ecosystem, controlling the populations of small animals.',
         habitat: 'Wetlands, marshes, and grasslands',
@@ -3221,6 +3330,7 @@ const birdData = [
     { 
         id: 210, 
         name: 'Pallid Harrier', 
+        scientificName: 'Circus macrourus ',
         image: PallidHarrier,
         description: 'The Pallid Harrier is a medium-sized raptor, easily recognizable by its light-colored plumage. It glides gracefully over grasslands and wetlands in search of prey. Known for its agile flight, the Pallid Harrier often hovers before diving down to catch small mammals, birds, and insects. These birds are migratory, often traveling long distances between breeding and wintering grounds.',
         habitat: 'Grasslands, wetlands, and open country',
@@ -3233,7 +3343,8 @@ const birdData = [
     },
     { 
         id: 211, 
-        name: 'Pied Harrier', 
+        name: 'Pied Harrier',
+        scientificName: 'Circus melanoleucos ', 
         image: PiedHarrier,
         description: 'The Pied Harrier is a large, striking raptor with black-and-white plumage. It is often seen flying over open fields and marshes, hunting small mammals, birds, and insects. These harriers are known for their strong, agile flight, often seen hunting in pairs. They are opportunistic hunters, using their sharp eyesight to locate prey while soaring gracefully in the air.',
         habitat: 'Grasslands, marshes, and wetlands',
@@ -3247,6 +3358,7 @@ const birdData = [
     { 
         id: 212, 
         name: 'Montagu\'s Harrier', 
+        scientificName: ' Circus pygargus',
         image: MontagusHarrier,
         description: 'Montagu\'s Harrier is a medium-sized raptor with long wings and tail. It is often seen gliding low over grasslands and agricultural fields in search of prey. These harriers are skilled hunters, relying on their excellent eyesight and stealth to capture small mammals, birds, and insects. They are migratory and typically breed in temperate regions before migrating to warmer climates for winter.',
         habitat: 'Grasslands, agricultural fields, and wetlands',
@@ -3260,6 +3372,7 @@ const birdData = [
     { 
         id: 213, 
         name: 'Crested Goshawk', 
+        scientificName: 'Accipiter trivirgatus ',
         image: CrestedGoshawk,
         description: 'The Crested Goshawk is a small but aggressive raptor, known for its powerful flight and sharp talons. It is found in tropical forests and woodlands, where it preys on small birds and mammals. The bird uses ambush tactics, often launching surprise attacks from a high perch. Its agility and quick movements make it an efficient predator in its forested habitat.',
         habitat: 'Tropical forests and woodlands',
@@ -3273,6 +3386,7 @@ const birdData = [
     { 
         id: 214, 
         name: 'Shikra', 
+        scientificName: ' Accipiter badius',
         image: Shikra,
         description: 'The Shikra is a small but fast raptor found in various habitats, from forests to urban areas. It is an efficient predator, preying on small birds and reptiles. Shikras are known for their rapid flight, darting between trees to capture their prey. Their small size and agility make them formidable hunters, capable of catching prey much larger than themselves.',
         habitat: 'Forests, woodlands, and urban areas',
@@ -3286,6 +3400,7 @@ const birdData = [
     { 
         id: 215, 
         name: 'Besra', 
+        scientificName: 'Accipiter virgatus ',
         image: Besra,
         description: 'The Besra is a small, elusive hawk, known for its quick movements and sharp talons. It primarily inhabits forests and woodlands, where it preys on small birds and insects. The Besra is a solitary predator, often seen perched on tree branches waiting for its prey to pass by. Its stealth and speed make it a successful hunter in its dense forest habitat.',
         habitat: 'Forests and woodlands',
@@ -3299,6 +3414,7 @@ const birdData = [
     {
         id: 216, 
         name: 'White-bellied Sea-eagle', 
+        scientificName: 'Haliaeetus leucogaster ',
         image: WhiteBelliedSeaEagle,
         description: 'The White-bellied Sea-eagle is a large bird of prey found near coastal areas and wetlands. It has a distinctive white belly and is known for its powerful flight and strong talons. The eagle primarily hunts fish, often soaring high above the water before diving to catch prey. It is a solitary hunter and a top predator in its coastal habitat.',
         habitat: 'Coastal areas, estuaries, and wetlands',
@@ -3312,6 +3428,7 @@ const birdData = [
     {
         id: 217, 
         name: 'Grey-headed Fish-eagle', 
+        scientificName: 'Icthyophaga ichthyaetus ',
         image: GreyHeadedFishEagle,
         description: 'The Grey-headed Fish-eagle is a medium-sized raptor found near rivers, lakes, and coastal wetlands. It primarily feeds on fish and has excellent eyesight for spotting prey from the air. Known for its agility and keen hunting skills, the Grey-headed Fish-eagle is often seen flying low over water bodies or perched on trees along the shore.',
         habitat: 'Rivers, lakes, and coastal wetlands',
@@ -3325,6 +3442,7 @@ const birdData = [
     {
         id: 218, 
         name: 'Brahminy Kite', 
+        scientificName: 'Haliastur indus ',
         image: BrahminyKite,
         description: 'The Brahminy Kite is a striking raptor with reddish-brown plumage and a white head. It is commonly found near coastal areas and rivers, where it hunts for fish and small prey. The kite uses its strong flight and keen eyesight to locate food, often hovering over water or perching near rivers. These birds are often seen soaring gracefully in search of their next meal.',
         habitat: 'Coastal areas, rivers, and wetlands',
@@ -3338,6 +3456,7 @@ const birdData = [
     {
         id: 219, 
         name: 'Black Kite', 
+        scientificName: 'Milvus migrans ',
         image: BlackKite,
         description: 'The Black Kite is a common raptor found across various habitats. With dark plumage, it is highly adaptable and often seen scavenging for food. These birds play a critical role in the ecosystem by cleaning up carrion. They are agile in flight and often soar in the sky, searching for small mammals, birds, or carrion. Black Kites can live for 10-15 years and are known for their opportunistic feeding behavior.',
         habitat: 'Urban areas, open woodlands, and wetlands',
@@ -3351,6 +3470,7 @@ const birdData = [
     {
         id: 220, 
         name: 'Eurasian Buzzard', 
+        scientificName: ' Buteo buteo',
         image: EurasianBuzzard,
         description: 'The Eurasian Buzzard is a medium-sized raptor that hunts small mammals and birds. Known for its soaring flight, the buzzard often hunts from a high vantage point. It is found in woodlands, grasslands, and farmlands. With a wingspan of up to 130 cm, it is a powerful hunter. The Eurasian Buzzard is a skilled hunter and remains a common bird of prey across its range. Its lifespan is typically 10-15 years.',
         habitat: 'Open woodlands, grasslands, and farmland',
@@ -3364,6 +3484,7 @@ const birdData = [
     {
         id: 221, 
         name: 'Malabar Trogon', 
+        scientificName: 'Harpactes fasciatus ',
         image: MalabarTrogon,
         description: 'The Malabar Trogon is a small, colorful bird native to the tropical forests of South India. With its vibrant plumage, it is often found in dense vegetation, where it hides to avoid predators. Known for its beautiful colors, the Malabar Trogon preys mainly on insects and small fruits. Its shy nature makes it hard to spot, and it is often heard rather than seen. Its lifespan ranges from 5 to 8 years.',
         habitat: 'Tropical forests and woodlands',
@@ -3377,6 +3498,7 @@ const birdData = [
     {
         id: 222, 
         name: 'Sri Lanka Grey Hornbill', 
+        scientificName: 'Ocyceros gingalensis ',
         image: SriLankaGreyHornbill,
         description: 'The Sri Lanka Grey Hornbill is endemic to Sri Lanka and easily identified by its grey plumage. It thrives in dry forests and scrublands, where it can be seen foraging for fruits and insects. This species plays a key role in dispersing seeds and maintaining the health of the ecosystem. Its lifespan is typically 10-12 years. The Sri Lanka Grey Hornbill is endangered due to habitat loss and is rarely seen outside protected areas.',
         habitat: 'Dry forests, scrublands',
@@ -3390,6 +3512,7 @@ const birdData = [
     {
         id: 223, 
         name: 'Malabar Pied Hornbill', 
+        scientificName: 'Anthracoceros coronatus ',
         image: MalabarPiedHornbill,
         description: 'The Malabar Pied Hornbill is a large bird native to the tropical forests of India. Its striking black and white plumage, combined with a large bill, makes it one of the most recognizable hornbills. These birds are often seen flying in pairs and are known for their loud, distinctive calls. Malabar Pied Hornbills are omnivores, eating fruits, small vertebrates, and insects. Their lifespan ranges from 20 to 30 years.',
         habitat: 'Tropical and subtropical forests',
@@ -3403,6 +3526,7 @@ const birdData = [
     {
         id: 224, 
         name: 'Common Hoopoe', 
+        scientificName: 'Upupa epops ',
         image: CommonHoopoe,
         description: 'The Common Hoopoe is a distinctively shaped bird with a crown-like crest on its head and a long, curved bill. Found in woodlands, grasslands, and agricultural areas, it is known for its loud calls and its habit of probing the ground for insects. This bird has a lifespan of 5-10 years and is a skilled hunter of invertebrates. Its distinctive appearance and vocalizations make it a common sight in open habitats.',
         habitat: 'Open woodlands, grasslands, and farmland',
@@ -3416,6 +3540,7 @@ const birdData = [
     {
         id: 225, 
         name: 'Asian Green Bee-eater', 
+        scientificName: 'Merops orientalis ',
         image: AsianGreenBeeEater,
         description: 'The Asian Green Bee-eater is a small, colorful bird that thrives in open areas like grasslands and agricultural fields. It preys mainly on bees, wasps, and other flying insects, catching them mid-air. With its striking green plumage, it is often seen perched on branches, waiting for prey. This species has a lifespan of 5-7 years and is known for its aerial acrobatics. It is found throughout South and Southeast Asia.',
         habitat: 'Open woodlands, grasslands, and agricultural fields',
@@ -3429,6 +3554,7 @@ const birdData = [
     {
         id: 226, 
         name: 'Chestnut-headed Bee-eater', 
+        scientificName: ' Merops leschenaulti',
         image: ChestnutHeadedBeeEater,
         description: 'The Chestnut-headed Bee-eater is a brightly colored bird found in Asia, characterized by its chestnut-colored head and vibrant plumage. It is skilled in catching flying insects, especially bees. These birds are often seen in small groups, catching their prey mid-air with impressive agility. The Chestnut-headed Bee-eater typically lives for 5-6 years. It is a common sight in grasslands and mangrove forests across the region.',
         habitat: 'Open areas, grasslands, and mangrove forests',
@@ -3442,6 +3568,7 @@ const birdData = [
     {
         id: 227, 
         name: 'Blue-tailed Bee-eater', 
+        scientificName: 'Merops philippinus ',
         image: BlueTailedBeeEater,
         description: 'The Blue-tailed Bee-eater is a small, colorful bird with a distinctive blue tail. It is known for its agile flight and hunting insects, particularly bees. These birds often fly in groups, chasing insects mid-air. The Blue-tailed Bee-eater is a skilled predator, using its sharp beak to catch prey while in flight. They are commonly found in open woodlands and grasslands, where they breed in burrows. Their bright colors make them a favorite among birdwatchers.',
         habitat: 'Open woodlands, grasslands, and agricultural areas',
@@ -3455,6 +3582,7 @@ const birdData = [
     {
         id: 228, 
         name: 'European Bee-eater', 
+        scientificName: 'Merops apiaster ',
         image: EuropeanBeeEater,
         description: 'The European Bee-eater is a striking bird with vivid plumage and a long tail. It is known for its ability to catch bees and other flying insects. These birds have a remarkable technique of catching insects mid-flight, often performing acrobatic maneuvers. The European Bee-eater is highly social, often seen in groups perched on trees or wires. They breed in colonies, using burrows in sandy banks. Their vibrant colors and dynamic behavior make them a fascinating species to observe.',
         habitat: 'Open woodlands, grasslands, and dry habitats',
@@ -3468,6 +3596,7 @@ const birdData = [
     {
         id: 229, 
         name: 'Indian Roller', 
+        scientificName: 'Coracias benghalensis ',
         image: IndianRoller,
         description: 'The Indian Roller is a colorful bird with brilliant blue and brown plumage. It is known for its acrobatic flight and is commonly found in open areas. Indian Rollers are often seen perched on power lines or tree branches, where they hunt for insects, small reptiles, and birds. These birds are solitary and territorial, often displaying vibrant courtship behaviors during the breeding season. They are also known for their dramatic aerial displays during flight, making them a spectacle to watch.',
         habitat: 'Open fields, scrublands, and grasslands',
@@ -3481,6 +3610,7 @@ const birdData = [
     {
         id: 230, 
         name: 'Oriental Dollarbird', 
+        scientificName: 'Eurystomus orientalis ',
         image: OrientalDollarbird,
         description: 'The Oriental Dollarbird is a medium-sized bird with a distinctive blue-green body and a white crescent on its wings. It is known for its hunting of large insects and small birds. The Oriental Dollarbird is named for the circular white spots on its wings, which resemble dollar coins. These birds often fly in search of large insects, using their sharp beak to catch prey mid-air. They are usually found in open woodlands and grasslands, where they nest in tree cavities.',
         habitat: 'Open woodlands, grasslands, and mangrove forests',
@@ -3494,6 +3624,7 @@ const birdData = [
     {
         id: 231,
         name: 'Black-backed Dwarf-kingfisher',
+        scientificName: ' Ceyx erithaca',
         image: BlackBackedDwarfKingfisher,
         description: 'The Black-backed Dwarf-kingfisher is a small, vibrant bird known for its striking blue and orange plumage. This kingfisher is often seen near water, hunting for small fish and insects. Its bright colors and quick movements make it a favorite among bird watchers. The Black-backed Dwarf-kingfisher prefers dense, tropical forests where it can nest in tree holes and hunt in streams. These birds are solitary and are most active during the early morning and late afternoon, diving skillfully for prey.',
         habitat: 'Tropical forests, near streams',
@@ -3507,6 +3638,7 @@ const birdData = [
     {
         id: 232,
         name: 'Blue-eared Kingfisher',
+        scientificName: 'Alcedo meninting ',
         image: BlueEaredKingfisher,
         description: 'The Blue-eared Kingfisher is a small and vividly colored bird, distinguished by its iridescent blue feathers and striking orange underparts. These birds are often found near clear, slow-moving streams or ponds. They use their sharp bills to catch small fish and insects, diving skillfully from a perch to snatch their prey. The Blue-eared Kingfisher is territorial and prefers solitary hunting. Its brightly colored plumage makes it easy to spot, but its quiet behavior and sharp eyesight make it a highly efficient predator.',
         habitat: 'Rivers, streams, ponds',
@@ -3520,6 +3652,7 @@ const birdData = [
     {
         id: 233,
         name: 'Common Kingfisher',
+        scientificName: 'Alcedo atthis ',
         image: CommonKingfisher,
         description: 'The Common Kingfisher is a bright, small bird known for its brilliant blue and orange plumage. It is a skilled fisherman, often diving into the water to catch small fish. This species is widespread and can be seen in a variety of freshwater habitats across its range. The Common Kingfisher is territorial and prefers to stay close to its hunting grounds. These birds are solitary and very active during daylight hours, spending their time perched quietly before making sudden dives into the water.',
         habitat: 'Lakes, rivers, ponds',
@@ -3533,6 +3666,7 @@ const birdData = [
     {
         id: 234,
         name: 'Pied Kingfisher',
+        scientificName: 'Ceryle rudis ',
         image: PiedKingfisher,
         description: 'The Pied Kingfisher is a strikingly patterned bird with black and white feathers. This species is a skilled hunter, often hovering above water before diving to catch fish. It is widely distributed and can be found near rivers, lakes, and other freshwater habitats. The Pied Kingfisher is known for its high-energy hunting style, hovering in mid-air and diving sharply to catch its prey. These birds are territorial and vocal, often heard calling out as they patrol their hunting grounds.',
         habitat: 'Rivers, lakes, ponds',
@@ -3546,6 +3680,7 @@ const birdData = [
     {
         id: 235,
         name: 'Stork-billed Kingfisher',
+        scientificName: 'Pelargopsis capensis ',
         image: StorkBilledKingfisher,
         description: 'The Stork-billed Kingfisher is a large and powerful bird with a distinctive, large, red bill that helps it capture fish and other prey. It is commonly found in tropical forests near rivers, lakes, and ponds. Its vibrant blue and orange feathers make it highly visible against the greenery. This kingfisher prefers to hunt by perching on tree branches and diving into the water to catch its prey.',
         habitat: 'Tropical forests, near water',
@@ -3559,6 +3694,7 @@ const birdData = [
     {
         id: 236,
         name: 'White-breasted Kingfisher',
+        scientificName: 'Halcyon smyrnensis ',
         image: WhiteBreastedKingfisher,
         description: 'The White-breasted Kingfisher is a large, vibrant bird known for its striking blue back, white belly, and reddish-brown wings. Found near water bodies, it hunts for small fish and insects. Its bright colors and loud calls make it easily recognizable. This bird prefers to perch in a quiet spot, swooping down on its prey with precision. Its plumage also serves as camouflage among the dense vegetation near water.',
         habitat: 'Woodlands, wetlands, and urban areas',
@@ -3572,6 +3708,7 @@ const birdData = [
     {
         id: 237,
         name: 'Coppersmith Barbet',
+        scientificName: 'Psilopogon haemacephalus ',
         image: CoppersmithBarbet,
         description: 'The Coppersmith Barbet is a small, colorful bird with a green body and bright red forehead. Its metallic call, resembling the sound of a coppersmith hammering, is its most distinct feature. This barbet feeds primarily on fruits, seeds, and insects, often seen foraging in trees. It lives in tropical forests and gardens, and its call is one of the most easily identifiable sounds in these environments. Barbets are often heard before they are seen.',
         habitat: 'Tropical forests, gardens, and open woodlands',
@@ -3585,6 +3722,7 @@ const birdData = [
     {
         id: 238,
         name: 'Sri Lanka Barbet',
+        scientificName: 'Psilopogon rubricapillus ',
         image: SriLankaBarbet,
         description: 'The Sri Lanka Barbet is a brightly colored, endemic bird found only in the tropical forests and montane forests of Sri Lanka. It is known for its distinctive green and yellow plumage, highlighted by a red face and throat. This bird primarily feeds on fruits, insects, and small invertebrates found in its forested habitat. It is a relatively quiet bird that spends most of its time in pairs or small groups, foraging in the treetops.',
         habitat: 'Tropical forests, montane forests',
@@ -3598,6 +3736,7 @@ const birdData = [
     {
         id: 239,
         name: 'Brown-headed Barbet',
+        scientificName: 'Psilopogon zeylanicus ',
         image: BrownHeadedBarbet,
         description: 'The Brown-headed Barbet is a small bird with a distinctive brown head and a vivid green body. Found in forests and plantations, it feeds on fruits, insects, and other small invertebrates. This bird is famous for its drumming sound, which it creates by striking tree trunks, marking its territory. The Brown-headed Barbet has a quiet demeanor but becomes more vocal and active during the breeding season when defending its nest.',
         habitat: 'Forests, plantations, gardens',
@@ -3611,6 +3750,7 @@ const birdData = [
     {
         id: 240,
         name: 'Yellow-fronted Barbet',
+        scientificName: 'Psilopogon flavifrons ',
         image: YellowFrontedBarbet,
         description: 'The Yellow-fronted Barbet is a small, brightly colored bird found in tropical forests and gardens. It is easily recognized by its distinctive yellow forehead and throat, contrasted with a green body and brownish back. These barbets primarily feed on fruits, seeds, and insects. They are arboreal, spending most of their time in the canopy, where they forage for food and nest in tree cavities. The bird’s vibrant coloration helps it blend into the leafy green surroundings.',
         habitat: 'Tropical forests, gardens',
@@ -3623,7 +3763,8 @@ const birdData = [
     },
     {
         id: 241, 
-        name: 'Greater Sri Lanka Flameback', 
+        name: 'Greater Sri Lanka Flameback',
+        scientificName: 'Chrysocolaptes stricklandi ', 
         image: GreaterSriLankaFlameback,
         description: 'The Greater Sri Lanka Flameback is a large, impressive woodpecker endemic to Sri Lanka. This bird is known for its brilliant golden back feathers and dark wings, which make it easy to identify. The Flameback is primarily found in forested areas, where it uses its strong beak to drum against tree trunks in search of insects. It is a solitary bird, and its loud drumming is a typical sound in its habitat. Its habitat range is mostly restricted to the island of Sri Lanka.',
         habitat: 'Forests, woodlands',
@@ -3637,6 +3778,7 @@ const birdData = [
     {
         id: 242, 
         name: 'White-naped Woodpecker', 
+        scientificName: 'Chrysocolaptes festivus ',
         image: WhiteNapedWoodpecker,
         description: 'The White-naped Woodpecker is a medium-sized bird with a distinctive white patch on its neck and a dark cap. It can be found in forests and woodlands, where it uses its sharp beak to search for insects, beetles, and termites in tree bark. Its drumming sound is characteristic of woodpeckers, and this bird is often heard before it is seen. The White-naped Woodpecker is known for its solitary nature and sharp, repetitive drumming as it forages for food.',
         habitat: 'Forests, woodlands',
@@ -3650,6 +3792,7 @@ const birdData = [
     {
         id: 243, 
         name: 'Black-rumped Flameback', 
+        scientificName: 'Dinopium benghalense ',
         image: BlackRumpedFlameback,
         description: 'The Black-rumped Flameback is a medium-sized woodpecker with a bright red head and black body. It is known for its unique drumming on trees to attract mates and communicate with other birds. These woodpeckers are highly territorial, using their drumming to establish dominance and mark their territory. They can often be heard drumming on trees from a distance.',
         habitat: 'Dry forests, woodlands',
@@ -3663,6 +3806,7 @@ const birdData = [
     {
         id: 244, 
         name: 'Lesser Sri Lanka Flameback', 
+        scientificName: 'Dinopium psarodes ',
         image: LesserSriLankaFlameback,
         description: 'The Lesser Sri Lanka Flameback is a smaller cousin of the Greater Flameback. It has similar golden feathers on its back and a striking black-and-white wing pattern. Native to Sri Lanka’s dense forests, this species is less common and faces habitat threats. They are recognized for their distinct drumming sounds, which echo through their dense forest habitats.',
         habitat: 'Dense forests, plantations',
@@ -3676,6 +3820,7 @@ const birdData = [
     {
         id: 245, 
         name: 'Rufous Woodpecker', 
+        scientificName: ' Micropternus brachyurus',
         image: RufousWoodpecker,
         description: 'The Rufous Woodpecker has a distinctive rufous-colored body with dark streaks. It is a common sight in the forests of South Asia and is known for its drumming behavior while searching for insects. These woodpeckers are particularly adept at foraging in difficult areas, often tapping deep into tree bark to find hidden insects.',
         habitat: 'Tropical and subtropical forests',
@@ -3689,6 +3834,7 @@ const birdData = [
     {
         id: 246, 
         name: 'Lesser Yellownape', 
+        scientificName: 'Picus chlorolophus ',
         image: LesserYellownape,
         description: 'The Lesser Yellownape is a small woodpecker with a yellow nape and a black body. It is known for its small size compared to other woodpeckers and is often seen tapping on tree trunks in forests. This species is an expert in accessing small crevices where other birds may struggle, allowing it to forage for insects that are hidden deep within the bark.',
         habitat: 'Forests, woodlands',
@@ -3702,6 +3848,7 @@ const birdData = [
     {
         id: 247, 
         name: 'Streak-throated Woodpecker', 
+        scientificName: 'Picus xanthopygaeus ',
         image: StreakThroatedWoodpecker,
         description: 'The Streak-throated Woodpecker is a medium-sized bird with a distinct streaked throat. It is commonly found in dense forested areas and is known for its loud drumming on tree trunks. This species is often seen foraging on both tree trunks and the forest floor, using its strong beak to peck away at wood and search for termites and other insects.',
         habitat: 'Dense forests, tropical and subtropical regions',
@@ -3715,6 +3862,7 @@ const birdData = [
     {
         id: 248, 
         name: 'Indian Pygmy Woodpecker', 
+        scientificName: ' Picoides nanus',
         image: IndianPygmyWoodpecker,
         description: 'The Indian Pygmy Woodpecker is a small bird with a brown and white striped body. It is commonly found in Indian forests and is known for its ability to forage in small crevices for insects. This species is highly agile and often seen hopping along tree trunks, searching for insects under the bark and in wood cavities.',
         habitat: 'Woodlands, tropical and subtropical forests',
@@ -3728,6 +3876,7 @@ const birdData = [
     {
         id: 249, 
         name: 'Yellow-crowned Woodpecker', 
+        scientificName: 'Leiopicus mahrattensis ',
         image: YellowCrownedWoodpecker,
         description: 'The Yellow-crowned Woodpecker is easily recognized by its vibrant yellow crown and black wings. It is found in tropical forests and is known for its drumming and vocalization. These woodpeckers are often seen in pairs, foraging together for insects and making their presence known through loud drumming sounds.',
         habitat: 'Tropical forests, mangrove swamps',
@@ -3741,6 +3890,7 @@ const birdData = [
     {
         id: 250, 
         name: 'Common Kestrel', 
+        scientificName: ' Falco tinnunculus',
         image: CommonKestrel,
         description: 'The Common Kestrel is a small falcon with a distinctive rufous-brown back and black spots. It is a skilled hunter, preying on small mammals and insects. Often seen hovering mid-air while searching for prey, the kestrel uses its keen eyesight to spot small mammals from a distance.',
         habitat: 'Grasslands, open fields, and savannas',
@@ -3754,6 +3904,7 @@ const birdData = [
     {
         id: 251, 
         name: 'Amur Falcon', 
+        scientificName: 'Falco amurensis',
         image: AmurFalcon,
         description: 'The Amur Falcon is a small, migratory falcon with a grayish-brown back and distinctive black markings on its wings. It is known for its long migratory journeys from Asia to Africa. These falcons are highly skilled hunters, often seen hunting insects mid-air during their long journeys.',
         habitat: 'Grasslands, open woodlands, and savannas',
@@ -3767,6 +3918,7 @@ const birdData = [
     {
         id: 252, 
         name: 'Oriental Hobby', 
+        scientificName: 'Falco severus ',
         image: OrientalHobby,
         description: 'The Oriental Hobby is a small falcon with a sleek body and dark plumage. It is an agile predator, hunting small birds and insects with precision. The hobby is a fast flier and relies on its speed and agility to capture prey mid-air.',
         habitat: 'Open woodlands, grasslands, and mountains',
@@ -3780,6 +3932,7 @@ const birdData = [
     {
         id: 253, 
         name: 'Peregrine Falcon', 
+        scientificName: 'Falco peregrinus ',
         image: PeregrineFalcon,
         description: 'The Peregrine Falcon is a formidable bird of prey renowned for its incredible speed. With its powerful wings and striking dark and white plumage, it is capable of diving at speeds exceeding 300 km/h. Found in diverse habitats including cliffs, mountains, and coastal regions, the Peregrine Falcon uses its keen eyesight to hunt birds and small mammals. Its dramatic hunting dives, combined with its majestic flight, make it a symbol of power and precision in the avian world.',
         habitat: 'Cliffs, mountains, and coastal regions',
@@ -3793,6 +3946,7 @@ const birdData = [
     {
         id: 254, 
         name: 'Sri Lanka Hanging-parrot', 
+        scientificName: 'Loriculus beryllinus ',
         image: SriLankaHangingParrot,
         description: 'The Sri Lanka Hanging-parrot is a small, vibrant bird native to Sri Lanka. Its emerald-green feathers and unique hanging posture while feeding give it a distinct appearance. These parrots prefer forested regions and are known for their acrobatic feeding behavior, hanging upside down to reach fruits, seeds, and flowers. Though small, the Sri Lanka Hanging-parrot is highly vocal and often seen in pairs or small groups. Due to habitat loss, this species is classified as vulnerable.',
         habitat: 'Forests, woodlands, plantations',
@@ -3806,6 +3960,7 @@ const birdData = [
     {
         id: 255, 
         name: 'Plum-headed Parakeet', 
+        scientificName: 'Himalayapsitta cyanocephala ',
         image: PlumHeadedParakeet,
         description: 'The Plum-headed Parakeet is a large and colorful bird, distinguished by its vibrant purple head and green body. These parrots are often seen in large flocks, known for their playful, social behavior. They are highly vocal and engage in various calls and sounds, creating a lively atmosphere in their habitat. Native to South Asia, Plum-headed Parakeets are commonly found in forests, woodlands, and gardens, feeding primarily on fruits, seeds, and flowers. They are a popular species among birdwatchers due to their striking appearance.',
         habitat: 'Forests, woodlands, and gardens',
@@ -3819,6 +3974,7 @@ const birdData = [
     {
         id: 256, 
         name: 'Rose-ringed Parakeet', 
+        scientificName: ' Alexandrinus krameri',
         image: RoseRingedParakeet,
         description: 'The Rose-ringed Parakeet is a vibrant green parakeet known for its distinctive red beak and long, pointed tail. Native to the Indian subcontinent, this bird is often seen in large flocks feeding on seeds and fruits. It is known for its adaptability to urban environments and can be spotted in parks and gardens. Their vocal nature and bright colors make them a popular bird among birdwatchers. They are social birds and tend to form strong pair bonds.',
         habitat: 'Woodlands, parks, and urban areas',
@@ -3832,6 +3988,7 @@ const birdData = [
     {
         id: 257, 
         name: 'Alexandrine Parakeet', 
+        scientificName: 'Palaeornis eupatria ',
         image: AlexandrineParakeet,
         description: 'The Alexandrine Parakeet is a large, colorful bird with a green body and a distinctive red beak. Named after Alexander the Great, this bird is found across South Asia and is known for its loud calls and impressive flying abilities. They are often seen in groups feeding on fruits, nuts, and seeds. Their social structure and vibrant plumage make them a favorite among bird enthusiasts. These parrots are intelligent and capable of mimicking human speech.',
         habitat: 'Forests, urban areas, and parks',
@@ -3844,7 +4001,8 @@ const birdData = [
     },
     {
         id: 258, 
-        name: 'Emerald-collared Parakeet', 
+        name: 'Emerald-collared Parakeet',
+        scientificName: 'Nicopsitta calthrapae ', 
         image: EmeraldCollaredParakeet,
         description: 'The Emerald-collared Parakeet is a striking green parakeet known for its brilliant emerald-colored neck and distinctive vocalizations. Native to the Indian subcontinent, it is often found in tropical and subtropical forests. This bird is social and can often be seen in groups feeding on fruits, seeds, and nuts. The Emerald-collared Parakeet is recognized for its intelligence and adaptability in urban settings. Its vibrant plumage and lively behavior make it a favorite among birdwatchers.',
         habitat: 'Tropical and subtropical forests, urban areas',
@@ -3858,6 +4016,7 @@ const birdData = [
     {
         id: 259, 
         name: 'Indian Pitta', 
+        scientificName: 'Pitta brachyura ',
         image: IndianPitta,
         description: 'The Indian Pitta is a small, colorful bird with a distinct appearance, featuring bright green, blue, and orange plumage. It is commonly found in forests and dense undergrowth in India. Known for its shy nature, the Indian Pitta spends most of its time hopping around the forest floor in search of insects, small invertebrates, and fruits. Despite its vibrant colors, it is often difficult to spot due to its secretive behavior. The Indian Pitta is a migratory bird, returning to India during the monsoon season.',
         habitat: 'Dense forests, undergrowth, and grasslands',
@@ -3871,6 +4030,7 @@ const birdData = [
     {
         id: 260, 
         name: 'Black-hooded Oriole', 
+        scientificName: 'Oriolus xanthornus ',
         image: BlackHoodedOriole,
         description: 'The Black-hooded Oriole is a striking yellow bird with a black hood on its head. Found throughout the Indian subcontinent, it inhabits both tropical and subtropical forests. Known for its loud and melodious calls, the Black-hooded Oriole is often seen in trees, feeding on fruits, insects, and small vertebrates. Its bright coloration and distinctive call make it easy to identify in the wild. The bird plays an important role in seed dispersal and is a common sight in gardens and forest edges.',
         habitat: 'Tropical and subtropical forests, gardens',
@@ -3884,6 +4044,7 @@ const birdData = [
     {
         id: 261, 
         name: 'Eurasian Golden Oriole', 
+        scientificName: 'Oriolus oriolus ',
         image: EurasianGoldenOriole,
         description: 'The Eurasian Golden Oriole is a vibrant yellow and black bird that is widely distributed across Europe and Asia. Known for its striking appearance, it is often found in wooded areas, parks, and gardens. This bird feeds on a diet of fruits, insects, and small vertebrates. The Eurasian Golden Oriole is an excellent flier and is often seen darting through the trees. It has a sweet, melodic call that is heard during the breeding season, making it a favorite among bird enthusiasts.',
         habitat: 'Wooded areas, parks, and gardens',
@@ -3897,6 +4058,7 @@ const birdData = [
     {
         id: 262, 
         name: 'Indian Golden Oriole', 
+        scientificName: ' Oriolus kundoo',
         image: IndianGoldenOriole,
         description: 'The Indian Golden Oriole is a brightly colored bird with vivid yellow plumage and black wings. Native to the Indian subcontinent, this bird is often found in forests, parks, and gardens. Known for its melodious calls and its ability to blend into the canopy, the Indian Golden Oriole is a favorite among birdwatchers. It feeds on fruits, insects, and small vertebrates, and it plays an important role in seed dispersal. Its striking appearance makes it easy to identify during the breeding season.',
         habitat: 'Forests, parks, and gardens',
@@ -3910,6 +4072,7 @@ const birdData = [
     {
         id: 263, 
         name: 'Small Minivet', 
+        scientificName: 'Pericrocotus cinnamomeus ',
         image: SmallMinivet,
         description: 'The Small Minivet is a small, colorful bird found in forests across the Indian subcontinent. Males are characterized by their bright red and black plumage, while females have a more subdued yellow and green coloration. This bird feeds on insects, small fruits, and seeds. Small Minivets are often seen in flocks, flitting through the trees in search of food. Their bright colors and social behavior make them a popular sight for birdwatchers. They are active during the day and are often seen in the canopy.',
         habitat: 'Forests, open woodlands, and parks',
@@ -3923,6 +4086,7 @@ const birdData = [
     {
         id: 264, 
         name: 'Scarlet Minivet', 
+        scientificName: 'Pericrocotus flammeus ',
         image: ScarletMinivet,
         description: 'The Scarlet Minivet is a small, brightly colored bird found in forests and woodlands of the Indian subcontinent. Males have vivid red and black plumage, while females have yellow and green coloration. These birds are often seen in flocks, foraging for insects and small fruits. Their vibrant colors and social behavior make them easy to spot in their natural habitats. Scarlet Minivets are active during the day and are often seen moving quickly through the trees in search of food.',
         habitat: 'Forests, open woodlands, and parks',
@@ -3936,6 +4100,7 @@ const birdData = [
     {
         id: 265, 
         name: 'Indian Cuckooshrike', 
+        scientificName: 'Coracina macei ',
         image: IndianCuckooshrike,
         description: 'The Indian Cuckooshrike is a medium-sized bird with dark gray and white plumage. Found in a variety of habitats from forests to open woodlands, this bird feeds on insects and small vertebrates. Its distinctive black and white coloration, along with its hooked beak, make it easily recognizable. Indian Cuckooshrikes are solitary birds, often seen perched on branches while hunting for prey. Their sharp vision and quick reflexes help them catch their food efficiently.',
         habitat: 'Forests, open woodlands, and grasslands',
@@ -3949,6 +4114,7 @@ const birdData = [
     {
         id: 266, 
         name: 'Black-headed Cuckooshrike', 
+        scientificName: ' Lalage melanoptera',
         image: BlackHeadedCuckooshrike,
         description: 'The Black-headed Cuckooshrike is a striking bird with a contrasting black head and grayish body. Found in open woodlands and forests, this bird is known for its hunting behavior, feeding on insects and small reptiles. Its sharp beak and keen eyesight make it a proficient hunter, often seen perched on high branches waiting for prey. The Black-headed Cuckooshrike is a solitary bird and is highly territorial, often defending its hunting grounds against other birds.',
         habitat: 'Open woodlands and forests',
@@ -3962,6 +4128,7 @@ const birdData = [
     {
         id: 267, 
         name: 'Ashy Woodswallow', 
+        scientificName: ' Artamus fuscus',
         image: AshyWoodswallow,
         description: 'The Ashy Woodswallow is a medium-sized bird with ash-gray plumage and a black cap on its head. Found in forests and open woodlands, this bird feeds on insects, which it catches in mid-flight. Known for its acrobatic flight and swift movements, the Ashy Woodswallow is often seen darting through the air in search of food. It is a social bird, often seen in groups perched on exposed branches or wires. The Ashy Woodswallow is also known for its distinctive call.',
         habitat: 'Forests, open woodlands, and grasslands',
@@ -3975,6 +4142,7 @@ const birdData = [
     {
         id: 268, 
         name: 'Bar-winged Flycatcher-shrike', 
+        scientificName: 'Hemipus picatus ',
         image: BarWingedFlycatcherShrike,
         description: 'The Bar-winged Flycatcher-shrike is a small bird known for its distinctive bar-like markings on its wings. It is found in tropical forests and wooded areas across Asia. This bird feeds primarily on insects and is known for its agility in flight, often catching prey mid-air. The Bar-winged Flycatcher-shrike has a unique call and is often heard in its forest habitat. It is a solitary bird and can be challenging to spot due to its camouflage in the foliage.',
         habitat: 'Tropical forests and wooded areas',
@@ -3988,6 +4156,7 @@ const birdData = [
     {
         id: 269, 
         name: 'Sri Lanka Woodshrike', 
+        scientificName: 'Tephrodornis affinis ',
         image: SriLankaWoodshrike,
         description: 'The Sri Lanka Woodshrike is a small bird endemic to Sri Lanka, known for its dark plumage and sharp, hooked beak. This bird is commonly found in forests, where it hunts for insects and small vertebrates. The Sri Lanka Woodshrike is highly territorial, defending its territory from other birds. Its hunting technique involves perching quietly and waiting for prey to come into range before swooping down to catch it. It is a solitary bird and is often heard calling in the forest.',
         habitat: 'Forests of Sri Lanka',
@@ -4001,6 +4170,7 @@ const birdData = [
     {
         id: 270, 
         name: 'Common Iora', 
+        scientificName: 'Aegithina tiphia ',
         image: CommonIora,
         description: 'The Common Iora is a small, vibrant green bird with striking yellow and white plumage. It is found in forests, gardens, and open woodlands across South Asia. Known for its energetic behavior and loud calls, the Common Iora feeds on insects, small fruits, and nectar. It is a highly social bird, often seen in pairs or small groups. The Common Iora is known for its acrobatic movements, as it hangs from branches while foraging. It is a common sight in tropical and subtropical regions.',
         habitat: 'Forests, gardens, and open woodlands',
@@ -4014,6 +4184,7 @@ const birdData = [
     {
         id: 271, 
         name: "Marshall's Iora", 
+        scientificName: ' Aegithina nigrolutea',
         image: MarshallsIora,
         description: "The Marshall's Iora is a small, vibrant green and white bird found in Sri Lanka. Known for its beautiful singing, it is often seen flitting through the canopy of forests and woodland areas. Its vivid coloration helps it blend in with the lush green surroundings.",
         habitat: "Tropical and subtropical forests",
@@ -4027,6 +4198,7 @@ const birdData = [
     {
         id: 272, 
         name: 'White-browed Fantail', 
+        scientificName: 'Rhipidura aureola ',
         image: WhiteBrowedFantail,
         description: "The White-browed Fantail is a small, agile bird known for its distinctive fan-shaped tail. It is an excellent acrobat, often seen chasing insects through dense foliage. Its white eyebrow and blackish body make it easily recognizable.",
         habitat: "Forest edges, scrublands",
@@ -4040,6 +4212,7 @@ const birdData = [
     {
         id: 273, 
         name: 'Black Drongo', 
+        scientificName: ' Dicrurus macrocercus',
         image: BlackDrongo,
         description: "The Black Drongo is a bold, aggressive bird known for its striking black plumage and sharp, forked tail. It is a master of aerial acrobatics, often chasing away larger birds and catching insects in flight.",
         habitat: "Open woodlands, grasslands",
@@ -4053,6 +4226,7 @@ const birdData = [
     {
         id: 274, 
         name: 'Ashy Drongo', 
+        scientificName: 'Dicrurus leucophaeus ',
         image: AshyDrongo,
         description: "The Ashy Drongo is a medium-sized bird with ashy-grey plumage and a distinctive forked tail. It is often found hunting insects in mid-flight and is known for its territorial behavior.",
         habitat: "Lowland forests, mangroves",
@@ -4066,6 +4240,7 @@ const birdData = [
     {
         id: 275, 
         name: 'White-bellied Drongo', 
+        scientificName: 'Dicrurus caerulescens ',
         image: WhiteBelliedDrongo,
         description: "The White-bellied Drongo is a striking black bird with a white belly and a long, forked tail. It is often seen perched in open woodlands, where it uses its sharp eyesight to catch insects in mid-air.",
         habitat: "Woodland, scrubby forests",
@@ -4079,6 +4254,7 @@ const birdData = [
     {
         id: 276, 
         name: 'Greater Racquet-tailed Drongo', 
+        scientificName: ' Dicrurus paradiseus',
         image: GreaterRacquetTailedDrongo,
         description: "The Greater Racquet-tailed Drongo is a large, striking bird with a long tail shaped like racquets. It is known for its loud calls and its ability to mimic other birds. It often hunts insects from tree branches.",
         habitat: "Tropical forests, mangroves",
@@ -4092,6 +4268,7 @@ const birdData = [
     {
         id: 277, 
         name: 'Sri Lanka Drongo', 
+        scientificName: 'Dicrurus lophorinus ',
         image: SriLankaDrongo,
         description: "The Sri Lanka Drongo is an endemic bird species known for its dark plumage and aggressive nature. It is commonly seen hunting insects in the air or from tree branches in Sri Lanka’s forests.",
         habitat: "Tropical and subtropical forests",
@@ -4105,6 +4282,7 @@ const birdData = [
     {
         id: 278, 
         name: 'Black-naped Monarch', 
+        scientificName: 'Hypothymis azurea ',
         image: BlackNapedMonarch,
         description: "The Black-naped Monarch is a small, elegant bird with a distinctive black patch on the back of its head. It is known for its attractive blue plumage and is often found in dense forest canopies.",
         habitat: "Tropical forests, dense woodlands",
@@ -4118,6 +4296,7 @@ const birdData = [
     {
         id: 279, 
         name: 'Indian Paradise-flycatcher', 
+        scientificName: 'Terpsiphone paradisi ',
         image: IndianParadiseFlycatcher,
         description: "The Indian Paradise-flycatcher is a striking bird known for its long, flowing tail feathers. It is predominantly white, with an orange-brown back and a distinctive long tail that makes it stand out in its forest habitat.",
         habitat: "Dense forests, woodlands",
@@ -4131,6 +4310,7 @@ const birdData = [
     {
         id: 280, 
         name: 'Brown Shrike', 
+        scientificName: 'Lanius cristatus ',
         image: BrownShrike,
         description: "The Brown Shrike is a small, stout bird known for its brown and greyish plumage. It is often seen perched on a branch, waiting for insects or small prey to pass by before swooping down to catch them.",
         habitat: "Open woodlands, grasslands",
@@ -4144,6 +4324,7 @@ const birdData = [
     {
         id: 281, 
         name: 'Long-tailed Shrike', 
+        scientificName: ' Lanius schach',
         image: LongTailedShrike,
         description: "The Long-tailed Shrike is a bird known for its striking black and white plumage and long, tapering tail. It is often seen perched in open areas, hunting insects and small vertebrates.",
         habitat: "Open woodlands, grasslands",
@@ -4157,6 +4338,7 @@ const birdData = [
     {
         id: 282, 
         name: 'Sri Lanka Blue Magpie', 
+        scientificName: 'Urocissa ornata ',
         image: SriLankaBlueMagpie,
         description: "The Sri Lanka Blue Magpie is an endemic species, easily recognized by its striking blue and orange plumage. It is a highly social bird, often seen in pairs or small groups, and known for its loud, musical calls.",
         habitat: "Tropical forests, montane regions",
@@ -4170,6 +4352,7 @@ const birdData = [
     {
         id: 283, 
         name: 'House Crow', 
+        scientificName: ' Corvus splendens',
         image: HouseCrow,
         description: "The House Crow is a highly adaptable bird that is commonly found in urban and rural areas. It is known for its black feathers and greyish body, and is often seen scavenging in human settlements.",
         habitat: "Urban areas, farmlands",
@@ -4183,6 +4366,7 @@ const birdData = [
     {
         id: 284, 
         name: 'Grey-headed Canary-flycatcher', 
+        scientificName: 'Culicicapa ceylonensis ',
         image: GreyHeadedCanaryFlycatcher,
         description: "The Grey-headed Canary-flycatcher is a small, bright yellow bird with a grey head. It is often seen flitting through the undergrowth in search of insects.",
         habitat: "Forests, woodlands",
@@ -4196,6 +4380,7 @@ const birdData = [
     {
         id: 285, 
         name: 'Ashy-crowned Sparrow-lark', 
+        scientificName: 'Eremopterix griseus ',
         image: AshyCrownedSparrowLark,
         description: "The Ashy-crowned Sparrow-lark is a small bird with a distinctive grey crown and pale body. It is often found in dry grasslands and open fields, where it feeds on seeds and insects.",
         habitat: "Grasslands, scrublands",
@@ -4209,6 +4394,7 @@ const birdData = [
     {
         id: 286, 
         name: 'Jerdon\'s Bushlark', 
+        scientificName: ' ',
         image: JerdonsBushlark,
         description: 'Jerdon\'s Bushlark is a small, sparrow-like bird found in dry scrublands and grasslands. It has a streaked brown appearance with a distinctive long tail and a slightly curved bill. This bird is known for its melodious song, which is often heard during its breeding season.',
         habitat: 'Dry scrublands, grasslands',
@@ -4223,6 +4409,7 @@ const birdData = [
     {
         id: 287, 
         name: 'Oriental Skylark', 
+        scientificName: 'Mirafra affinis ',
         image: OrientalSkylark,
         description: 'The Oriental Skylark is a small, brownish bird found in grasslands and cultivated fields. It has a distinctive crest and a beautiful, melodic song that can be heard during the breeding season. These birds are known for their impressive flight displays.',
         habitat: 'Grasslands, cultivated fields',
@@ -4237,6 +4424,7 @@ const birdData = [
     {
         id: 288, 
         name: 'Zitting Cisticola', 
+        scientificName: 'Alauda gulgula ',
         image: ZittingCisticola,
         description: 'The Zitting Cisticola is a small warbler-like bird with a distinctive "zitting" call. It is often found in tall grasslands, where it nests close to the ground. Its diet consists of insects and seeds, and it is known for its aggressive territorial behavior.',
         habitat: 'Tall grasslands, wetlands',
@@ -4251,6 +4439,7 @@ const birdData = [
     {
         id: 289, 
         name: 'Grey-breasted Prinia', 
+        scientificName: 'Cisticola juncidis ',
         image: GreyBreastedPrinia,
         description: 'The Grey-breasted Prinia is a small, active bird with a greyish-brown body and a long tail. It is often found in shrubby areas and grasslands, where it feeds on insects. Its lively behavior and constant movement make it easily recognizable.',
         habitat: 'Shrubby areas, grasslands',
@@ -4265,6 +4454,7 @@ const birdData = [
     {
         id: 290, 
         name: 'Jungle Prinia', 
+        scientificName: ' Prinia hodgsonii',
         image: JunglePrinia,
         description: 'The Jungle Prinia is a small, insectivorous bird commonly found in dense forests and thickets. It has a brownish-grey appearance with a slightly downturned bill, which helps it catch small insects. Its call is a soft, repetitive chirp.',
         habitat: 'Dense forests, thickets',
@@ -4279,6 +4469,7 @@ const birdData = [
     {
         id: 291, 
         name: 'Ashy Prinia', 
+        scientificName: 'Prinia sylvatica ',
         image: AshyPrinia,
         description: 'The Ashy Prinia is a small bird with a greyish-brown plumage and a slightly upturned bill. It inhabits grasslands and shrubby areas, where it forages for insects. The bird is often seen darting through vegetation while hunting for food.',
         habitat: 'Grasslands, shrubby areas',
@@ -4293,6 +4484,7 @@ const birdData = [
     {
         id: 292, 
         name: 'Plain Prinia', 
+        scientificName: 'Prinia socialis ',
         image: PlainPrinia,
         description: 'The Plain Prinia is a small bird with unadorned brown plumage and a distinctive long tail. It is commonly found in open grasslands and scrubby areas, where it feeds on insects and small invertebrates. Its call is a repetitive "tsik-tsik" sound.',
         habitat: 'Grasslands, scrubby areas',
@@ -4307,6 +4499,7 @@ const birdData = [
     {
         id: 293, 
         name: 'Common Tailorbird', 
+        scientificName: 'Prinia inornata ',
         image: CommonTailorbird,
         description: 'The Common Tailorbird is a small bird known for its distinctive behavior of stitching leaves together to create a nest. It is found in a variety of habitats, including urban gardens and forests, and feeds on insects and spiders.',
         habitat: 'Urban gardens, forests',
@@ -4321,6 +4514,7 @@ const birdData = [
     {
         id: 294, 
         name: 'Booted Warbler', 
+        scientificName: 'Orthotomus sutorius ',
         image: BootedWarbler,
         description: 'The Booted Warbler is a small, slender bird with pale brown plumage and a distinctive white ring around its eyes. It inhabits grassy areas and open woodlands, where it feeds on insects and small invertebrates. It has a soft, melodic song.',
         habitat: 'Grassy areas, open woodlands',
@@ -4334,6 +4528,7 @@ const birdData = [
     {
         id: 295,
         name: 'Sykes\'s Warbler',
+        scientificName: ' Iduna caligata',
         image: SykessWarbler,
         description: 'Sykes\'s Warbler is a small, active bird with a distinctive greenish-brown coloration. It is known for its high-pitched song and frequent flitting between dense vegetation. These birds are commonly found in open scrubland, grasslands, and forests, where they hunt for insects and small invertebrates. Their behavior includes hopping on low branches or grass, searching for food. They often prefer areas with dense undergrowth and are commonly seen in southern Asia.',
         habitat: 'Open scrubland, grasslands, and forests',
@@ -4347,6 +4542,7 @@ const birdData = [
     {
         id: 296,
         name: 'Blyth\'s Reed-warbler',
+        scientificName: 'Iduna rama ',
         image: BlythsReedWarbler,
         description: 'Blyth\'s Reed-warbler is a small, slender bird with brownish plumage and a pale underside. Known for its gentle, melodic song, this bird is commonly found in reed beds and wetlands, where it feeds on insects and small invertebrates. Blyth\'s Reed-warbler is an elusive species, often hiding within dense vegetation. It migrates over long distances and can be seen in a variety of habitats across Asia during its migration periods.',
         habitat: 'Reed beds, wetlands',
@@ -4360,6 +4556,7 @@ const birdData = [
     {
         id: 297,
         name: 'Clamorous Reed-warbler',
+        scientificName: ' Acrocephalus dumetorum',
         image: ClamorousReedWarbler,
         description: 'The Clamorous Reed-warbler is a medium-sized, active bird with a slightly streaked brown plumage and a sharp, loud call. It is typically found in reed beds and wetlands, where it feeds on insects and small invertebrates. These birds are known for their aggressive behavior when defending territory, especially during the breeding season. The Clamorous Reed-warbler is a migratory species, often seen during migration in South Asia, and is recognized for its distinct vocalizations.',
         habitat: 'Reed beds, wetlands',
@@ -4373,6 +4570,7 @@ const birdData = [
     {
         id: 298,
         name: 'Pallas\'s Grasshopper-warbler',
+        scientificName: 'Acrocephalus stentoreus ',
         image: PallassGrasshopperWarbler,
         description: 'Pallas\'s Grasshopper-warbler is a small, brown and greenish bird with a cryptic appearance. Its song is a continuous, grasshopper-like trill, which helps it blend into its grassland habitat. Found in open grassy areas, the bird is an insectivore, preying on grasshoppers and other insects. Despite its small size, it is a hardy species, often living in harsh environments. This bird migrates during winter and is seen in parts of Asia and Europe.',
         habitat: 'Grasslands, open fields',
@@ -4386,6 +4584,7 @@ const birdData = [
     {
         id: 299,
         name: 'Lanceolated Warbler',
+        scientificName: 'Helopsaltes certhiola ',
         image: LanceolatedWarbler,
         description: 'The Lanceolated Warbler is a small, inconspicuous bird with a streaky brown appearance, often blending into its grassy surroundings. It is known for its secretive behavior, usually hiding in tall grass and vegetation. This warbler feeds primarily on insects and small invertebrates. During the breeding season, it becomes more active, singing from concealed locations. The species migrates over long distances and is commonly found in wetlands, grasslands, and marshes.',
         habitat: 'Grasslands, wetlands, marshes',
@@ -4399,6 +4598,7 @@ const birdData = [
     {
         id: 300,
         name: 'Sri Lanka Warbler',
+        scientificName: ' Locustella lanceolata',
         image: SriLankaWarbler,
         description: 'The Sri Lanka Warbler is a small, endemic species found exclusively in the forests of Sri Lanka. It is characterized by its brownish-grey body and white underparts. The bird is known for its high-pitched, melodious song, which it sings from dense undergrowth. It primarily feeds on insects and small invertebrates, foraging through leaves and branches. This species is of conservation concern due to its restricted range and habitat loss in Sri Lanka’s forests.',
         habitat: 'Dense forests, undergrowth',
@@ -4412,6 +4612,7 @@ const birdData = [
     {
         id: 301,
         name: 'Sri Lanka Swallow',
+        scientificName: 'Elaphrornis palliseri ',
         image: SriLankaSwallow,
         description: 'The Sri Lanka Swallow is a small, vibrant bird native to the island of Sri Lanka. It has a striking blue and orange plumage and is easily recognizable in flight. These birds are insectivores, feeding on a wide range of insects caught mid-air. Sri Lanka Swallows are often seen near water bodies or open fields, where they swoop and glide gracefully. They are known for their migratory habits, flying across Sri Lanka during breeding season.',
         habitat: 'Open fields, water bodies',
@@ -4425,6 +4626,7 @@ const birdData = [
     {
         id: 302,
         name: 'House Swallow',
+        scientificName: 'Hirundo javanica ',
         image: HouseSwallow,
         description: 'The House Swallow is a small, agile bird with a dark blue back and a light underbelly. It is commonly found near human settlements, where it builds nests under roofs and eaves. House Swallows are insectivores, catching insects in flight. They are highly social and often seen in groups, flying low over fields and water bodies. This species migrates seasonally, and is known for its long-distance migration across continents.',
         habitat: 'Human settlements, open areas',
@@ -4438,6 +4640,7 @@ const birdData = [
     {
         id: 303,
         name: 'Barn Swallow',
+        scientificName: 'Hirundo rustica ',
         image: BarnSwallow,
         description: 'The Barn Swallow is a familiar bird with a long, forked tail and sleek blue plumage. It is known for its acrobatic flight and its tendency to build nests in barns and other man-made structures. Barn Swallows feed on insects, catching them mid-flight. These birds are highly migratory and travel vast distances between breeding and wintering grounds. They are easily spotted flying low over fields and water bodies during the summer months.',
         habitat: 'Barns, open fields, water bodies',
@@ -4451,6 +4654,7 @@ const birdData = [
     {
         id: 304,
         name: 'Square-tailed Bulbul',
+        scientificName: ' Hypsipetes ganeesa',
         image: SquareTailedBulbul,
         description: 'The Square-tailed Bulbul is a medium-sized bird with a distinctive square-shaped tail and olive-green plumage. It is commonly found in forests and woodlands, where it feeds on fruits, insects, and small invertebrates. This bird is known for its territorial nature, often singing loudly to defend its area. Square-tailed Bulbuls are highly social and can often be seen in pairs or small groups, hopping through the undergrowth in search of food.',
         habitat: 'Forests, woodlands',
@@ -4464,6 +4668,7 @@ const birdData = [
     {
         id: 305,
         name: 'Black-capped Bulbul',
+        scientificName: 'Rubigula melanictera ',
         image: BlackCappedBulbul,
         description: 'The Black-capped Bulbul is a medium-sized bird with distinct black plumage on its head, contrasting with the pale yellow belly. Found in a variety of habitats including forests and gardens, this species is known for its melodious song. It primarily feeds on fruits, insects, and small invertebrates. These birds are often seen foraging in pairs or small groups, hopping through foliage and branches. Their territorial nature is displayed during the breeding season when they defend their nests with vigorous calls.',
         habitat: 'Forests, gardens',
@@ -4477,6 +4682,7 @@ const birdData = [
     {
         id: 306,
         name: 'Red-vented Bulbul',
+        scientificName: 'Pycnonotus cafer ',
         image: RedVentedBulbul,
         description: 'The Red-vented Bulbul is a small, medium-sized bird with a striking red patch on its vent and a dark, spiky crest. This species is commonly found in urban areas, gardens, and woodlands. It feeds on a diet of fruits, insects, and small invertebrates. These birds are vocal and often communicate with a variety of chirps and whistles. Red-vented Bulbuls are known for their adaptability and can live in diverse environments, including semi-arid regions and near water bodies.',
         habitat: 'Urban areas, gardens, woodlands',
@@ -4490,6 +4696,7 @@ const birdData = [
     {
         id: 307,
         name: 'Yellow-eared Bulbul',
+        scientificName: 'Pycnonotus penicillatus ',
         image: YellowEaredBulbul,
         description: 'The Yellow-eared Bulbul is a striking species with bright yellow patches around its ears and a dark, olive-brown body. It is typically found in dense forests and plantations, where it feeds primarily on fruits and small invertebrates. Known for its melodious calls, this species is often heard before it is seen. These birds are primarily arboreal, hopping between branches in search of food and nesting in trees. Their songs are used to attract mates and establish territory.',
         habitat: 'Dense forests, plantations',
@@ -4503,6 +4710,7 @@ const birdData = [
     {
         id: 308,
         name: 'White-browed Bulbul',
+        scientificName: 'Pycnonotus luteolus ',
         image: WhiteBrowedBulbul,
         description: 'The White-browed Bulbul is a small bird with distinctive white markings above its eyes, contrasted by a dark brown body and yellow belly. This species is found in forests, gardens, and grasslands, where it primarily feeds on fruits, insects, and nectar. Its melodious song is often heard during the breeding season. White-browed Bulbuls are known for their territorial behavior, often defending their nesting areas from intruders. They are also active foragers, frequently hopping between branches in search of food.',
         habitat: 'Forests, gardens, grasslands',
@@ -4516,6 +4724,7 @@ const birdData = [
     {
         id: 309,
         name: 'Yellow-browed Bulbul',
+        scientificName: ' Acritillas indica',
         image: YellowBrowedBulbul,
         description: 'The Yellow-browed Bulbul is a small, vibrant bird with a yellow streak across its brow, contrasting with its olive-green body. This species is commonly found in dense forests and bamboo groves, where it feeds on insects, fruits, and nectar. Known for its energetic and swift movements, the Yellow-browed Bulbul is often seen hopping through undergrowth and branches in search of food. It is highly territorial during breeding season, often singing loudly to defend its space and attract mates.',
         habitat: 'Dense forests, bamboo groves',
@@ -4529,6 +4738,7 @@ const birdData = [
     {
         id: 310,
         name: 'Green Warbler',
+        scientificName: ' Phylloscopus nitidus',
         image: GreenWarbler,
         description: 'The Green Warbler is a small, vibrant bird with bright green plumage and a slightly streaked belly. It inhabits forests, woodland edges, and areas with dense vegetation. This species primarily feeds on insects and small invertebrates, which it catches while flitting through the foliage. Green Warblers are known for their agility and quick movements. They are also highly territorial and vocal during the breeding season, using their calls to establish territory and attract mates. This warbler is often seen in pairs during breeding.',
         habitat: 'Forests, woodland edges',
@@ -4542,6 +4752,7 @@ const birdData = [
     {
         id: 311,
         name: 'Greenish Warbler',
+        scientificName: 'Phylloscopus trochiloides ',
         image: GreenishWarbler,
         description: 'The Greenish Warbler is a small, slim bird with olive-green plumage and a pale underbelly. It is primarily found in dense forests and thickets, where it feeds on insects and small invertebrates. Known for its distinctive high-pitched song, this species is often heard before it is seen. Greenish Warblers are solitary birds and prefer to remain hidden in foliage, only emerging to forage. Their diet consists mainly of small invertebrates, which they catch by flitting through branches.',
         habitat: 'Dense forests, thickets',
@@ -4555,6 +4766,7 @@ const birdData = [
     {
         id: 312,
         name: 'Large-billed Leaf-warbler',
+        scientificName: 'Phylloscopus magnirostris ',
         image: LargeBilledLeafWarbler,
         description: 'The Large-billed Leaf-warbler is a small bird with a slightly bulky build and a pale greenish-brown body. It is found in dense forests and bamboo groves, where it feeds on insects, especially small caterpillars and larvae. The species is known for its distinctive, sharp calls and its ability to blend into its surroundings. The Large-billed Leaf-warbler often stays hidden among the leaves and branches, only emerging to forage. It is a migratory bird, moving to warmer regions during winter.',
         habitat: 'Dense forests, bamboo groves',
@@ -4568,6 +4780,7 @@ const birdData = [
     {
         id: 313,
         name: 'Lesser Whitethroat',
+        scientificName: 'Curruca curruca ',
         image: LesserWhitethroat,
         description: 'The Lesser Whitethroat is a small, agile bird with a pale grey head and a brownish body. This species is commonly found in scrublands, open woodlands, and grasslands, where it feeds on insects, berries, and small fruits. Lesser Whitethroats are known for their distinctive, melodious calls, which they use to establish territory and communicate with others. They are highly territorial during the breeding season and are often seen flitting through dense vegetation in search of food.',
         habitat: 'Scrublands, open woodlands, grasslands',
@@ -4581,6 +4794,7 @@ const birdData = [
     {
         id: 314,
         name: 'Yellow-eyed Babbler',
+        scientificName: 'Chrysomma sinense ',
         image: YellowEyedBabbler,
         description: 'The Yellow-eyed Babbler is a small bird with a distinctive yellow eye ring and streaked brown feathers. It is commonly found in grasslands, scrub forests, and open woodland areas. This species feeds on insects, small fruits, and seeds. The Yellow-eyed Babbler is highly social and often seen in small groups, foraging together in the underbrush. Its behavior is characterized by active hopping, and it is known for its distinctive chirping calls used to communicate within the group.',
         habitat: 'Grasslands, scrub forests, open woodlands',
@@ -4594,6 +4808,7 @@ const birdData = [
     {
         id: 315,
         name: 'Sri Lanka White-eye',
+        scientificName: 'Zosterops ceylonensis ',
         image: SriLankaWhiteEye,
         description: 'The Sri Lanka White-eye is a small, vibrant bird with a distinct white ring around its eye, contrasting with its greenish-yellow body. Native to Sri Lanka, this species inhabits forests and woodland areas, where it feeds on fruits, nectar, and insects. Sri Lanka White-eyes are social birds, often seen in flocks. They are known for their high-pitched calls and active foraging behavior, flitting through the canopy and searching for food in flowers and foliage.',
         habitat: 'Forests, woodlands',
@@ -4607,6 +4822,7 @@ const birdData = [
     {
         id: 316,
         name: 'Indian White-eye',
+        scientificName: 'Zosterops palpebrosus ',
         image: IndianWhiteEye,
         description: 'The Indian White-eye is a small, lively bird with a distinctive white ring around its eye, which stands out against its greenish-yellow plumage. This species is found across India in a variety of habitats, including forests, gardens, and scrublands. Indian White-eyes primarily feed on nectar, small fruits, and insects. They are social birds and can often be found in small flocks, actively foraging and calling out to each other. Their sharp, melodic calls are a common feature of their habitat.',
         habitat: 'Forests, gardens, scrublands',
@@ -4620,6 +4836,7 @@ const birdData = [
     {
         id: 317,
         name: 'Sri Lanka Scimitar-babbler',
+        scientificName: 'Pomatorhinus melanurus ',
         image: SriLankaScimitarBabbler,
         description: 'The Sri Lanka Scimitar-babbler is a medium-sized bird with a long, curved beak and dark brown plumage. Native to Sri Lanka, this species inhabits dense forests and is primarily insectivorous, feeding on small invertebrates and insects found in the leaf litter. Sri Lanka Scimitar-babblers are elusive and difficult to spot due to their secretive nature. Their calls are distinctive and often heard before they are seen, as they move through thick vegetation.',
         habitat: 'Dense forests',
@@ -4633,6 +4850,7 @@ const birdData = [
     {
         id: 318,
         name: 'Tawny-bellied Babbler',
+        scientificName: 'Dumetia hyperythra ',
         image: TawnyBelliedBabbler,
         description: 'The Tawny-bellied Babbler is a small bird with a distinctive tawny-colored belly and brownish-grey body. Found in grasslands and scrub forests, this species feeds on insects, small fruits, and seeds. Tawny-bellied Babblers are often seen hopping through the undergrowth, searching for food. They are social birds and often travel in small groups. During the breeding season, they are known for their loud and aggressive calls, which they use to defend their territories from other birds.',
         habitat: 'Grasslands, scrub forests',
@@ -4646,6 +4864,7 @@ const birdData = [
     {
         id: 319,
         name: 'Dark-fronted Babbler',
+        scientificName: 'Dumetia atriceps ',
         image: DarkFrontedBabbler,
         description: 'The Dark-fronted Babbler is a small bird with a dark brown plumage on its front and a pale, brownish-grey body. This species is found in dense forests and grasslands, where it feeds on insects, small fruits, and seeds. Known for its secretive behavior, the Dark-fronted Babbler is rarely seen but can often be heard calling from within dense vegetation. Its diet consists primarily of insects and other small invertebrates, which it forages for among the leaves and undergrowth.',
         habitat: 'Dense forests, grasslands',
@@ -4659,6 +4878,7 @@ const birdData = [
     {
         id: 320, 
         name: 'Brown-capped Babbler', 
+        scientificName: ' Pellorneum fuscocapillus',
         image: BrownCappedBabbler, 
         description: 'The Brown-capped Babbler is a small bird known for its distinctive brown cap and muted, brownish-grey body. Found in dense forests, it is an insectivorous species, foraging in leaf litter and dense undergrowth for small invertebrates. Its cryptic plumage allows it to blend well into its surroundings, making it a challenging bird to spot. The Brown-capped Babbler is known for its secretive behavior, often heard rather than seen, and its calls are typically soft and continuous.', 
         habitat: 'Dense forests', 
@@ -4672,6 +4892,7 @@ const birdData = [
     {
         id: 321, 
         name: 'Ashy-fronted Babbler', 
+        scientificName: ' Argya cinereifrons',
         image: AshyFrontedBabbler, 
         description: 'The Ashy-fronted Babbler is a medium-sized bird characterized by its ashy-grey plumage on the front, contrasted with darker brown wings and back. Native to Sri Lanka, it is commonly found in forested areas, where it feeds on insects and small fruits. This species is known for its high-pitched, chattering calls and its tendency to move through the undergrowth in small groups. Its secretive nature makes it difficult to spot, although its calls can often be heard in the forest.', 
         habitat: 'Forests', 
@@ -4685,6 +4906,7 @@ const birdData = [
     {
         id: 322, 
         name: 'Orange-billed Babbler', 
+        scientificName: ' Argya rufescens',
         image: OrangeBilledBabbler, 
         description: 'The Orange-billed Babbler is a small, brownish bird with a striking orange bill that stands out against its dull plumage. This species is primarily found in dense forests, where it feeds on insects and small fruits. It is highly social and often forages in groups, using loud calls to communicate. The Orange-billed Babbler is known for its secretive behavior, spending most of its time in dense vegetation, making it difficult to observe despite its presence in common habitats.', 
         habitat: 'Dense forests', 
@@ -4697,7 +4919,8 @@ const birdData = [
     },
     {
         id: 323, 
-        name: 'Yellow-billed Babbler', 
+        name: 'Yellow-billed Babbler',
+        scientificName: 'Argya affinis ', 
         image: YellowBilledBabbler, 
         description: 'The Yellow-billed Babbler is a small bird with a distinctive yellow bill and brownish plumage. Commonly found in Sri Lanka’s forests and grasslands, it is an insectivorous species, foraging for small invertebrates and seeds. Yellow-billed Babblers are social birds, often seen in small flocks, moving through the undergrowth in search of food. They are known for their loud calls, which they use to communicate with other members of their group. This species is widespread and adaptable.', 
         habitat: 'Grasslands, forests', 
@@ -4711,6 +4934,7 @@ const birdData = [
     {
         id: 324, 
         name: 'Velvet-fronted Nuthatch', 
+        scientificName: 'Sitta frontalis ',
         image: VelvetFrontedNuthatch, 
         description: 'The Velvet-fronted Nuthatch is a striking bird with a blue-grey body and a velvet-like black front. Native to Sri Lanka, this species is typically found in moist forests, where it feeds on insects and small invertebrates. Known for its climbing abilities, it is often seen foraging on tree trunks and branches, using its strong bill to extract prey. Velvet-fronted Nuthatches are territorial and can be heard calling loudly from their perches, often defending their feeding territories from other birds.', 
         habitat: 'Moist forests', 
@@ -4724,6 +4948,7 @@ const birdData = [
     {
         id: 325, 
         name: 'Rosy Starling', 
+        scientificName: 'Pastor roseus ',
         image: RosyStarling, 
         description: 'The Rosy Starling is a medium-sized bird with striking pink and white plumage during the breeding season. It is a migratory species, commonly found in open grasslands and agricultural fields. Rosy Starlings feed on insects, fruits, and seeds, and are often seen in large flocks during migration. Their loud, chattering calls and coordinated flight patterns are characteristic features of their behavior. This species is known for its vibrant coloration, which makes it a favorite among birdwatchers during its breeding season.', 
         habitat: 'Open grasslands, agricultural fields', 
@@ -4736,7 +4961,8 @@ const birdData = [
     },
     {
         id: 326, 
-        name: 'White-faced Starling', 
+        name: 'White-faced Starling',
+        scientificName: ' Sturnornis albofrontatus', 
         image: WhiteFacedStarling, 
         description: 'The White-faced Starling is a small to medium-sized bird with a distinctive white face and a glossy black body. This species is native to Sri Lanka, where it inhabits forests and urban areas. White-faced Starlings are omnivorous, feeding on insects, fruits, and human food scraps. They are highly adaptable and can thrive in a variety of habitats, from dense forests to urban areas. Known for their chattering calls and active foraging, they are often seen in pairs or small groups.', 
         habitat: 'Forests, urban areas', 
@@ -4750,6 +4976,7 @@ const birdData = [
     {
         id: 327, 
         name: 'Brahminy Starling', 
+        scientificName: ' Sturnia pagodarum',
         image: BrahminyStarling, 
         description: 'The Brahminy Starling is a small bird with a pale brown body and a distinctive black crest on its head. Found across India and Sri Lanka, this species prefers open woodlands and cultivated fields. Brahminy Starlings are omnivorous, feeding on a diet of insects, fruits, and seeds. They are social birds, often seen in small flocks, and are known for their loud calls and active foraging behavior. Their glossy plumage and distinct calls make them easily recognizable in their habitats.', 
         habitat: 'Open woodlands, fields', 
@@ -4763,6 +4990,7 @@ const birdData = [
     {
         id: 328, 
         name: 'Common Myna', 
+        scientificName: ' Acridotheres tristis',
         image: CommonMyna, 
         description: 'The Common Myna is a medium-sized bird with a brown body and striking yellow eye patches. It is one of the most widely distributed and adaptable species in Sri Lanka and India. Common Mynas are omnivorous, feeding on a variety of foods including insects, fruits, and human food scraps. They are social and highly vocal, often seen in pairs or small groups. Mynas are known for their aggressive territorial behavior and ability to thrive in urban and rural environments.', 
         habitat: 'Urban areas, agricultural fields', 
@@ -4775,7 +5003,8 @@ const birdData = [
     },
     {
         id: 329, 
-        name: 'Sri Lanka Hill Myna', 
+        name: 'Sri Lanka Hill Myna',
+        scientificName: 'Gracula ptilogenys ', 
         image: SriLankaHillMyna, 
         description: 'The Sri Lanka Hill Myna is a striking bird with glossy black feathers and bright orange wattles around its eyes. Native to Sri Lanka, it is commonly found in forests and highland areas. This species is known for its remarkable ability to mimic human speech and other sounds. Sri Lanka Hill Mynas are omnivorous, feeding on fruits, seeds, and insects. They are social birds, often seen in pairs or small groups, and are prized for their vocal abilities.', 
         habitat: 'Forests, highland areas', 
@@ -4789,6 +5018,7 @@ const birdData = [
     {
         id: 330, 
         name: 'Southern Hill Myna', 
+        scientificName: 'Gracula indica ',
         image: SouthernHillMyna, 
         description: 'The Southern Hill Myna is a striking bird with a bright yellow-orange wattle around its eyes and black plumage. It is a social species, found in forests and hilly areas of Sri Lanka. Southern Hill Mynas are omnivorous, feeding on fruits, seeds, and insects. They are known for their excellent mimicking abilities, often copying human speech and other environmental sounds. These birds are highly sought after for their vocal skills, often kept as pets due to their ability to mimic speech.', 
         habitat: 'Forests, hilly areas', 
@@ -4802,6 +5032,7 @@ const birdData = [
     {
         id: 331, 
         name: "White's Thrush", 
+        scientificName: ' Zoothera aurea',
         image: WhitesThrush, 
         description: 'White’s Thrush is a medium-sized bird with brownish plumage and striking white underparts. Native to Sri Lanka, it is found in forests, where it forages on the forest floor for insects and small invertebrates. Known for its elusive nature, it is difficult to spot, often remaining hidden in dense vegetation. White’s Thrush is known for its melodious, soft calls that echo through the forest during the breeding season. Its shy behavior and cryptic plumage make it a challenging bird to observe.', 
         habitat: 'Forests', 
@@ -4815,6 +5046,7 @@ const birdData = [
     {
         id: 332, 
         name: 'Pied Thrush', 
+        scientificName: ' Geokichla wardii',
         image: PiedThrush, 
         description: 'The Pied Thrush is a striking bird with black and white plumage, and a characteristic bright orange patch on its chest. It is a solitary species, often found in forested areas, where it feeds on insects, worms, and small invertebrates. Pied Thrushes are known for their loud, melodious songs, which can be heard during the breeding season. Their distinctive coloration and song make them a favorite among birdwatchers, although their shy nature makes them difficult to observe in the wild.', 
         habitat: 'Forested areas', 
@@ -4828,6 +5060,7 @@ const birdData = [
     {
         id: 333, 
         name: 'Spot-winged Thrush', 
+        scientificName: 'Geokichla spiloptera ',
         image: SpotWingedThrush, 
         description: 'The Spot-winged Thrush is a medium-sized bird known for its dark plumage and distinctive white spots on its wings. Found in dense forests, this species feeds on insects, fruits, and small invertebrates. Spot-winged Thrushes are known for their loud, repetitive calls that echo through the forest during the breeding season. They are elusive birds, often heard rather than seen, and their cryptic coloration allows them to blend into their environment.', 
         habitat: 'Dense forests', 
@@ -4841,6 +5074,7 @@ const birdData = [
     {
         id: 334, 
         name: 'Orange-headed Thrush', 
+        scientificName: 'Geokichla citrina ',
         image: OrangeHeadedThrush, 
         description: 'The Orange-headed Thrush is a small to medium-sized bird with bright orange plumage on its head and a dark body. Native to Sri Lanka, this species is often found in forested areas, foraging on the forest floor for insects and fruits. Known for its melodious calls, it is a relatively shy bird, often hiding in dense vegetation. Its vibrant head color and distinctive song make it one of the more sought-after species for birdwatchers in Sri Lanka.', 
         habitat: 'Forested areas', 
@@ -4854,6 +5088,7 @@ const birdData = [
     {
         id: 335, 
         name: 'Indian Blackbird', 
+        scientificName: ' Turdus simillimus',
         image: IndianBlackbird, 
         description: 'The Indian Blackbird is a medium-sized bird with glossy black plumage and a yellow ring around its eye. It is commonly found in forests, grasslands, and cultivated areas. Indian Blackbirds are omnivorous, feeding on insects, fruits, and small invertebrates. Known for their melodious song, they often sing during the breeding season. These birds are territorial and are often seen foraging on the ground or in low shrubs, where they search for food with swift movements.', 
         habitat: 'Forests, grasslands, cultivated areas', 
@@ -4867,6 +5102,7 @@ const birdData = [
     {
         id: 336, 
         name: 'Eyebrowed Thrush', 
+        scientificName: 'Turdus obscurus ',
         image: EyebrowedThrush, 
         description: 'The Eyebrowed Thrush is a medium-sized bird with brownish plumage and distinct white markings on its eyebrows. It is found in forested areas, where it forages on the ground for insects and small invertebrates. This bird is known for its soft, melodious calls and elusive nature, making it difficult to spot. During the breeding season, the Eyebrowed Thrush sings to establish territory and attract mates, often hiding in dense foliage while singing.', 
         habitat: 'Forests', 
@@ -4880,6 +5116,7 @@ const birdData = [
     {
         id: 337, 
         name: 'Oriental Magpie-robin', 
+        scientificName: ' Copsychus saularis',
         image: OrientalMagpieRobin, 
         description: 'The Oriental Magpie-robin is a small, striking bird with a black-and-white plumage pattern. It is commonly found in forests, gardens, and urban areas across South Asia. These birds are known for their melodious songs, which they use for territorial defense and attracting mates. They feed on insects, small invertebrates, and fruits, often seen hopping on the ground. The Oriental Magpie-robin is a highly active bird, frequently seen flitting about in search of food or singing from an exposed perch.', 
         habitat: 'Forests, gardens, urban areas', 
@@ -4893,6 +5130,7 @@ const birdData = [
     {
         id: 338, 
         name: 'Indian Robin', 
+        scientificName: 'Copsychus fulicatus ',
         image: IndianRobin, 
         description: 'The Indian Robin is a small bird with a vibrant chestnut-red tail and blackish plumage. It is found in open areas such as scrublands, grasslands, and cultivated fields. Indian Robins are known for their distinctive, melodious calls and are often seen foraging on the ground for insects, small invertebrates, and seeds. During the breeding season, the male sings from an elevated perch to attract the female, displaying its vibrant tail. They are territorial and often remain in pairs or small groups.', 
         habitat: 'Scrublands, grasslands, cultivated fields', 
@@ -4906,6 +5144,7 @@ const birdData = [
     {
         id: 339, 
         name: 'White-rumped Shama', 
+        scientificName: ' Copsychus malabaricus',
         image: WhiteRumpedShama, 
         description: 'The White-rumped Shama is a small, elegant bird with a long tail and striking white rump. It is commonly found in dense forests and woodland areas. Known for its beautiful song, the White-rumped Shama is often seen perched on low branches, singing to establish territory and attract mates. It feeds on insects, small invertebrates, and fruits. Its melodious and complex song has made it a popular bird in aviaries, often kept for its vocal abilities.', 
         habitat: 'Dense forests, woodlands', 
@@ -4919,6 +5158,7 @@ const birdData = [
     {
         id: 340, 
         name: 'Brown-breasted Flycatcher', 
+        scientificName: 'Muscicapa muttui ',
         image: BrownBreastedFlycatcher, 
         description: 'The Brown-breasted Flycatcher is a small bird with brownish plumage and a distinctive white throat. It is found in forests and woodland areas, where it hunts for insects in mid-air or on the ground. Known for its quiet, melodious calls, this bird is often difficult to spot due to its cryptic coloration. During the breeding season, the Brown-breasted Flycatcher becomes more active, with males singing to establish their territory and attract females.', 
         habitat: 'Forests, woodlands', 
@@ -4932,6 +5172,7 @@ const birdData = [
     {
         id: 341, 
         name: 'Asian Brown Flycatcher', 
+        scientificName: 'Muscicapa dauurica ',
         image: AsianBrownFlycatcher, 
         description: 'The Asian Brown Flycatcher is a small, agile bird with brownish-grey plumage and a white belly. It is found in forests, woodlands, and gardens across Asia. Known for its insect-catching skills, this flycatcher hunts by perching and darting out to capture prey in mid-air. The bird has a melodious, soft call that is often heard during the breeding season. Despite its small size, the Asian Brown Flycatcher is highly active, often flitting between branches in search of food.', 
         habitat: 'Forests, woodlands, gardens', 
@@ -4945,6 +5186,7 @@ const birdData = [
     {
         id: 342, 
         name: 'Dull-blue Flycatcher', 
+        scientificName: 'Eumyias sordidus',
         image: DullBlueFlycatcher, 
         description: 'The Dull-blue Flycatcher is a small bird with muted blue plumage and a white belly. It inhabits forested areas and is often found in dense undergrowth, where it forages for insects. The Dull-blue Flycatcher is known for its high-pitched, melodious song that is frequently heard during the breeding season. This shy bird is often elusive, making it difficult to observe. Despite its dull appearance, it is a skilled insect hunter, using its quick reflexes to catch prey mid-flight.', 
         habitat: 'Forested areas, dense undergrowth', 
@@ -4959,6 +5201,7 @@ const birdData = [
         id: 343, 
         name: "Tickell's Blue-flycatcher", 
         image: TickellsBlueFlycatcher, 
+        scientificName: ' Cyornis tickelliae',
         description: 'Tickell’s Blue-flycatcher is a striking bird with a vibrant blue plumage and a white belly. It inhabits forested areas and is often seen perched on branches, where it hunts insects in mid-air. This flycatcher is known for its melodious and often complex song, which is heard during the breeding season. Tickell’s Blue-flycatcher is a territorial species, with males singing from elevated perches to attract mates and defend their territory. It is a relatively shy bird, often hiding in dense foliage.', 
         habitat: 'Forested areas', 
         diet: 'Insects, small invertebrates', 
@@ -4971,6 +5214,7 @@ const birdData = [
     {
         id: 344, 
         name: 'Blue-throated Blue-flycatcher', 
+        scientificName: 'Cyornis rubeculoides ',
         image: BlueThroatedBlueFlycatcher, 
         description: 'The Blue-throated Blue-flycatcher is a small bird known for its brilliant blue throat and striking plumage. It is often found in forested areas, where it hunts for insects and small invertebrates. This flycatcher is known for its active foraging behavior, often perched on branches from which it darts out to catch prey mid-flight. Its melodious song can be heard during the breeding season, when males establish their territory and attract females. The Blue-throated Blue-flycatcher is highly territorial and elusive.', 
         habitat: 'Forested areas', 
@@ -4984,6 +5228,7 @@ const birdData = [
     {
         id: 345, 
         name: 'Indian Blue Robin', 
+        scientificName: 'Larvivora brunnea',
         image: IndianBlueRobin, 
         description: 'The Indian Blue Robin is a small bird with striking blue and white plumage. It is found in dense forests, where it forages on the forest floor for insects, worms, and small invertebrates. The Indian Blue Robin is known for its soft, melodious song, which is often heard during the breeding season. These birds are often difficult to spot due to their cryptic coloration, making them elusive. Despite their shy nature, they are active foragers and can be seen hopping around the forest floor.', 
         habitat: 'Dense forests', 
@@ -4997,6 +5242,7 @@ const birdData = [
     {
         id: 346, 
         name: 'Bluethroat', 
+        scientificName: 'Luscinia svecica ',
         image: Bluethroat, 
         description: 'The Bluethroat is a small, colorful bird with a vibrant blue throat and a white belly. It is commonly found in wetlands, grasslands, and along riverbanks. The Bluethroat is known for its beautiful song, which can be heard during the breeding season as males establish their territory. It feeds on insects, small invertebrates, and fruits, often seen foraging in dense vegetation. The Bluethroat is highly territorial and often displays its colorful throat during courtship and territorial defense.', 
         habitat: 'Wetlands, grasslands, riverbanks', 
@@ -5010,6 +5256,7 @@ const birdData = [
     {
         id: 347, 
         name: 'Sri Lanka Whistling-thrush', 
+        scientificName: 'Myophonus blighi ',
         image: SriLankaWhistlingThrush, 
         description: 'The Sri Lanka Whistling-thrush is a small bird native to the forests of Sri Lanka. It is known for its distinctive whistling call, which can be heard echoing through the dense forest. These birds are often seen near streams and waterfalls, where they forage for small invertebrates and insects. The Sri Lanka Whistling-thrush has a dark plumage with a blue sheen, which is especially noticeable in bright light. This bird is elusive and often hides in dense foliage, making it difficult to spot.', 
         habitat: 'Forests near streams and waterfalls', 
@@ -5023,6 +5270,7 @@ const birdData = [
     {
         id: 348, 
         name: 'Kashmir Flycatcher', 
+        scientificName: 'Ficedula subrubra ',
         image: KashmirFlycatcher, 
         description: 'The Kashmir Flycatcher is a small bird with striking plumage, including a pale blue throat and a dark brown back. It is found in the mountainous regions of Kashmir, where it inhabits forested areas and forages for insects. These birds are known for their quick movements and are often seen flitting between branches in search of prey. The Kashmir Flycatcher has a melodious song that can be heard during the breeding season, and it is highly territorial, often defending its small territory from other flycatchers.', 
         habitat: 'Mountainous regions, forests', 
@@ -5036,6 +5284,7 @@ const birdData = [
     {
         id: 349, 
         name: 'Blue Rock-thrush', 
+        scientificName: 'Monticola solitarius',
         image: BlueRockThrush, 
         description: 'The Blue Rock-thrush is a medium-sized bird with striking blue plumage and a contrasting dark head. It is commonly found in rocky outcrops, cliffs, and hilly areas, where it forages for insects and small invertebrates. Known for its territorial behavior, the Blue Rock-thrush sings to defend its territory and attract mates. During the breeding season, the male often displays his vibrant plumage to attract the female. These birds are strong fliers and often seen perched on high rocks or cliffs, scanning for prey.', 
         habitat: 'Rocky outcrops, cliffs, hilly areas', 
@@ -5049,6 +5298,7 @@ const birdData = [
     {
         id: 350, 
         name: 'Pied Bushchat', 
+        scientificName: 'Saxicola caprata ',
         image: PiedBushchat, 
         description: 'The Pied Bushchat is a small, striking bird with contrasting black and white plumage. It is commonly found in open scrublands, grasslands, and cultivated fields. Pied Bushchats are known for their loud, melodious calls, which are often heard during the breeding season. These birds forage on the ground for insects, small invertebrates, and seeds. During courtship, the male displays its vibrant plumage and sings to attract the female. Despite its small size, the Pied Bushchat is highly territorial and often aggressive toward intruders.', 
         habitat: 'Scrublands, grasslands, cultivated fields', 
@@ -5062,6 +5312,7 @@ const birdData = [
     {
         id: 351, 
         name: 'Pied Wheatear', 
+        scientificName: 'Oenanthe pleschanka ',
         image: PiedWheatear, 
         description: 'The Pied Wheatear is a small passerine bird with striking black and white plumage. It is commonly found in open, arid regions, where it forages for insects and seeds. Males display their bright plumage during the breeding season, and their territorial behavior includes song and aerial displays. The Pied Wheatear is often seen perched on elevated positions, scanning for prey. Its habitat typically includes rocky areas and open grasslands.',
         habitat: 'Open arid regions, rocky areas, grasslands',
@@ -5075,6 +5326,7 @@ const birdData = [
     {
         id: 352, 
         name: 'Asian Fairy-bluebird', 
+        scientificName: 'Irena puella ',
         image: AsianFairyBluebird, 
         description: 'The Asian Fairy-bluebird is a brightly colored bird with vibrant blue plumage and a striking black and greenish head. Found in tropical forests, it feeds primarily on fruits, insects, and nectar. This bird is known for its melodious calls and energetic foraging habits. Males often display their vivid plumage to attract females, and they can be seen darting among branches in search of food. The species is fairly common in its forested habitat.',
         habitat: 'Tropical forests',
@@ -5088,6 +5340,7 @@ const birdData = [
     {
         id: 353, 
         name: 'Golden-fronted Leafbird', 
+        scientificName: 'Chloropsis aurifrons ',
         image: GoldenFrontedLeafbird, 
         description: 'The Golden-fronted Leafbird is a small, vibrant green bird with a striking golden patch on its forehead. It is commonly found in forested areas, where it feeds on insects and fruits. The Leafbird is known for its agility in navigating the treetops, where it searches for prey. These birds are territorial and often display their bright plumage during the breeding season. They play an important role in pollination and controlling insect populations.',
         habitat: 'Forested areas, tall trees',
@@ -5101,6 +5354,7 @@ const birdData = [
     {
         id: 354, 
         name: "Jerdon's Leafbird", 
+        scientificName: 'Chloropsis jerdoni ',
         image: JerdonsLeafbird, 
         description: 'Jerdon’s Leafbird is a small bird with striking green plumage and a yellowish belly. It inhabits dense tropical forests where it forages for insects and small fruits. The species is known for its shy behavior, often hiding among leaves and branches. During the breeding season, males display their vibrant colors to attract females. Jerdon’s Leafbird plays a crucial role in the forest ecosystem by controlling insect populations and dispersing seeds.',
         habitat: 'Dense tropical forests',
@@ -5114,6 +5368,7 @@ const birdData = [
     {
         id: 355, 
         name: 'White-throated Flowerpecker', 
+        scientificName: ' Dicaeum vincens',
         image: WhiteThroatedFlowerpecker, 
         description: 'The White-throated Flowerpecker is a small bird with a distinctive white throat and dark plumage. Found in tropical and subtropical forests, this species feeds primarily on nectar, fruits, and insects. It is known for its high-pitched calls and quick movements as it darts between flowers in search of food. The Flowerpecker plays an important role in pollination and seed dispersal, and its active nature makes it easy to spot in the dense undergrowth.',
         habitat: 'Tropical and subtropical forests',
@@ -5127,6 +5382,7 @@ const birdData = [
     {
         id: 356, 
         name: 'Thick-billed Flowerpecker', 
+        scientificName: ' Dicaeum agile',
         image: ThickBilledFlowerpecker, 
         description: 'The Thick-billed Flowerpecker is a small bird with a stout beak and vibrant plumage. Found in dense forests and plantations, it feeds on nectar, fruits, and insects. This bird is known for its distinctive, powerful beak, which helps it extract nectar from tough flowers. Its bright colors and quick movements make it a striking sight in the treetops. The Thick-billed Flowerpecker is highly territorial and defends its feeding area vigorously.',
         habitat: 'Dense forests, plantations',
@@ -5140,6 +5396,7 @@ const birdData = [
     {
         id: 357, 
         name: 'Pale-billed Flowerpecker', 
+        scientificName: ' Dicaeum erythrorhynchos',
         image: PaleBilledFlowerpecker, 
         description: 'The Pale-billed Flowerpecker is a small, inconspicuous bird with a pale bill and muted plumage. It lives in dense tropical forests, where it feeds on nectar, small fruits, and insects. The species is known for its quiet behavior and tendency to stay hidden in the foliage. Its pale bill allows it to blend in with the surrounding vegetation, making it difficult to spot. Despite its secretive nature, the Pale-billed Flowerpecker plays a key role in pollination.',
         habitat: 'Dense tropical forests',
@@ -5153,6 +5410,7 @@ const birdData = [
     {
         id: 358, 
         name: 'Purple-rumped Sunbird', 
+        scientificName: 'Leptocoma zeylonica ',
         image: PurpleRumpedSunbird, 
         description: 'The Purple-rumped Sunbird is a small, brightly colored bird with iridescent plumage. Found in tropical and subtropical forests, it feeds on nectar, insects, and small fruits. The sunbird is known for its rapid movements as it flits between flowers, using its long bill to extract nectar. Males are more colorful and display their vibrant plumage during the breeding season to attract females. These birds play a key role in pollination.',
         habitat: 'Tropical and subtropical forests',
@@ -5166,6 +5424,7 @@ const birdData = [
     {
         id: 359, 
         name: 'Purple Sunbird', 
+        scientificName: 'Cinnyris asiaticus ',
         image: PurpleSunbird, 
         description: 'The Purple Sunbird is a small, iridescent bird with a metallic purple sheen. It is found in tropical and subtropical regions, where it feeds on nectar, insects, and small fruits. The species is known for its rapid movements and its ability to hover while feeding. Males are more colorful, and during the breeding season, they display their plumage to attract mates. The Purple Sunbird is an important pollinator and can be seen frequently in gardens and forests.',
         habitat: 'Tropical and subtropical regions',
@@ -5179,6 +5438,7 @@ const birdData = [
     {
         id: 360, 
         name: "Loten's Sunbird", 
+        scientificName: 'Cinnyris lotenius ',
         image: LotensSunbird, 
         description: 'Loten’s Sunbird is a small, colorful bird found in the forests of South Asia. It has a striking combination of green, blue, and purple plumage. The sunbird is an active forager, feeding primarily on nectar, insects, and small fruits. Males display their vibrant colors during the breeding season to attract females. Known for their agility and rapid movements, Loten’s Sunbird plays an important role in pollinating flowers while feeding.',
         habitat: 'Forests of South Asia',
@@ -5192,6 +5452,7 @@ const birdData = [
     {
         id: 361, 
         name: 'Streaked Weaver', 
+        scientificName: 'Ploceus manyar ',
         image: StreakedWeaver, 
         description: 'The Streaked Weaver is a small, streaked brown bird found in open grasslands and scrubby areas. It is known for its intricate nest-building skills, often weaving large, hanging nests in tall grasses. The Streaked Weaver feeds primarily on seeds, grains, and small insects. During the breeding season, males display their nests and perform courtship displays to attract females. These birds are often seen in groups, foraging on the ground for food.',
         habitat: 'Open grasslands, scrubby areas',
@@ -5205,6 +5466,7 @@ const birdData = [
     {
         id: 362, 
         name: 'Baya Weaver', 
+        scientificName: ' Ploceus philippinus',
         image: BayaWeaver, 
         description: 'The Baya Weaver is a small, colorful bird known for its impressive nest-building skills. Males weave intricate, hanging nests from grass and other materials to attract females. The bird is commonly found in grasslands and cultivated areas, where it feeds on seeds, grains, and insects. During the breeding season, males are more brightly colored, with a yellow body and black mask. The Baya Weaver is a highly social species, often seen in large colonies.',
         habitat: 'Grasslands, cultivated areas',
@@ -5218,6 +5480,7 @@ const birdData = [
     {
         id: 363, 
         name: 'Indian Silverbill', 
+        scientificName: 'Euodice malabarica ',
         image: IndianSilverbill, 
         description: 'The Indian Silverbill is a small, finch-like bird with a silvery appearance and a distinctive short tail. It is commonly found in grasslands, scrublands, and cultivated areas, where it feeds on seeds and grasses. Indian Silverbills are highly social birds, often seen in large flocks. Their calls are soft and chirpy, and they can be seen hopping on the ground foraging for food. During the breeding season, they build small cup-shaped nests in shrubs or trees.',
         habitat: 'Grasslands, scrublands, cultivated areas',
@@ -5231,6 +5494,7 @@ const birdData = [
     {
         id: 364, 
         name: 'White-rumped Munia', 
+        scientificName: ' Lonchura striata',
         image: WhiteRumpedMunia, 
         description: 'The White-rumped Munia is a small, brown bird with distinctive white markings on its rump. Found in grasslands and open fields, it feeds primarily on seeds, grasses, and small insects. The species is known for its gregarious behavior, often forming large flocks, especially during the non-breeding season. White-rumped Munias are agile foragers, often seen hopping on the ground or perching in tall grasses while searching for food.',
         habitat: 'Grasslands, open fields',
@@ -5244,6 +5508,7 @@ const birdData = [
     {
         id: 365, 
         name: 'Scaly-breasted Munia', 
+        scientificName: 'Lonchura punctulata ',
         image: ScalyBreastedMunia, 
         description: 'The Scaly-breasted Munia is a small, stocky bird known for its scaly plumage and strong beak. It is commonly found in grasslands, cultivated areas, and open fields, where it feeds on seeds, grains, and small insects. These birds are highly social, often seen in large flocks, and they build small, dome-shaped nests in tall grasses. The Scaly-breasted Munia is known for its chirpy calls and its tendency to stay in groups for protection.',
         habitat: 'Grasslands, cultivated areas, open fields',
@@ -5257,6 +5522,7 @@ const birdData = [
     {
         id: 366,
         name: 'Black-throated Munia',
+        scientificName: 'Lonchura kelaarti ',
         image: BlackThroatedMunia,
         description: 'The Black-throated Munia is a small, stocky bird with a distinctive black throat and a brownish plumage. It is commonly found in grasslands and cultivated areas, where it feeds on seeds and small insects. These birds are often seen in small flocks, and they build their nests in tall grasses or shrubs. The Black-throated Munia is known for its melodic calls and is highly social, often foraging in groups.',
         habitat: 'Grasslands, cultivated areas',
@@ -5270,6 +5536,7 @@ const birdData = [
     {
         id: 367,
         name: 'Tricoloured Munia',
+        scientificName: 'Lonchura malacca ',
         image: TricolouredMunia,
         description: 'The Tricoloured Munia is a small, brightly colored bird known for its striking plumage with shades of black, white, and chestnut. It is typically found in grasslands and open fields, where it feeds on seeds, grains, and small insects. Tricoloured Munias are social and often seen in flocks, foraging on the ground and building nests in tall grasses.',
         habitat: 'Grasslands, open fields',
@@ -5283,6 +5550,7 @@ const birdData = [
     {
         id: 368,
         name: 'House Sparrow',
+        scientificName: 'Passer domesticus ',
         image: HouseSparrow,
         description: 'The House Sparrow is a small, stocky bird that is commonly found in urban and rural areas. It has a distinctive brown and grey plumage, with a black bib on the male. House Sparrows are highly adaptable and can be seen around human settlements, foraging for seeds, crumbs, and small insects. They often build their nests in crevices, eaves, and buildings.',
         habitat: 'Urban areas, rural areas',
@@ -5296,6 +5564,7 @@ const birdData = [
     {
         id: 369,
         name: 'Forest Wagtail',
+        scientificName: 'Dendronanthus indicus ',
         image: ForestWagtail,
         description: 'The Forest Wagtail is a slender, ground-dwelling bird found in forested areas and along rivers. It is known for its long tail, which it frequently wags, and its muted greenish-brown plumage. This bird feeds on insects and small invertebrates, foraging by walking and wagging its tail. The Forest Wagtail is highly mobile, often hopping through underbrush and along stream banks.',
         habitat: 'Forested areas, riversides',
@@ -5309,6 +5578,7 @@ const birdData = [
     {
         id: 370,
         name: "Richard's Pipit",
+        scientificName: 'Anthus richardi ',
         image: RichardsPipit,
         description: "Richard's Pipit is a medium-sized bird with a streaky brown plumage and long legs. It is commonly found in open fields, grasslands, and agricultural areas, where it feeds on insects and seeds. The bird is known for its loud song during the breeding season and its habit of staying on the ground for foraging, often flushing up into the air when disturbed.",
         habitat: 'Open fields, grasslands, agricultural areas',
@@ -5322,6 +5592,7 @@ const birdData = [
     {
         id: 371,
         name: 'Paddyfield Pipit',
+        scientificName: ' Anthus rufulus',
         image: PaddyfieldPipit,
         description: 'The Paddyfield Pipit is a small, slender bird that is commonly found in wetlands, paddy fields, and marshy areas. It has streaked brown plumage and a distinctive white throat. Paddyfield Pipits feed on insects and seeds and are known for their quiet, unobtrusive behavior, often remaining hidden in tall grass or low vegetation.',
         habitat: 'Paddy fields, marshes, wetlands',
@@ -5335,6 +5606,7 @@ const birdData = [
     {
         id: 372,
         name: "Blyth's Pipit",
+        scientificName: 'Anthus godlewskii ',
         image: BlythsPipit,
         description: "Blyth's Pipit is a small, streaky bird found in grasslands and open fields. It is characterized by its brown streaked plumage and pale underparts. The bird feeds primarily on insects and seeds and is known for its high-pitched, repetitive calls. Blyth’s Pipit is a relatively elusive species, often difficult to spot due to its camouflage in grassy environments.",
         habitat: 'Grasslands, open fields',
@@ -5348,6 +5620,7 @@ const birdData = [
     {
         id: 373,
         name: 'Western Yellow Wagtail',
+        scientificName: ' Motacilla flava',
         image: WesternYellowWagtail,
         description: 'The Western Yellow Wagtail is a vibrant, ground-dwelling bird known for its bright yellow plumage. It is typically found in wetlands, grasslands, and agricultural fields, where it feeds on insects and small invertebrates. The Western Yellow Wagtail is active and can often be seen wagging its tail while foraging along the ground, searching for food.',
         habitat: 'Wetlands, grasslands, agricultural fields',
@@ -5361,6 +5634,7 @@ const birdData = [
     {
         id: 374,
         name: 'Grey Wagtail',
+        scientificName: 'Motacilla cinerea ',
         image: GreyWagtail,
         description: 'The Grey Wagtail is a slender, elegant bird with grey and yellow plumage. It is often seen along riversides, streams, and wetlands, where it feeds on insects and small aquatic invertebrates. The Grey Wagtail is known for its constant tail-wagging behavior, which is frequently seen while it is foraging on the ground or in shallow waters.',
         habitat: 'Riversides, streams, wetlands',
@@ -5375,6 +5649,7 @@ const birdData = [
         id: 375,
         name: 'White-browed Wagtail',
         image: WhiteBrowedWagtail,
+        scientificName: 'Motacilla maderaspatensis ',
         description: 'The White-browed Wagtail is a distinctive bird with a white eyebrow stripe and contrasting black and white plumage. It is commonly found near water bodies, including rivers, streams, and wetlands, where it feeds on insects, small crustaceans, and invertebrates. The White-browed Wagtail is known for its constant tail-wagging and its active foraging behavior along the water’s edge.',
         habitat: 'Water bodies, rivers, streams, wetlands',
         diet: 'Insects, small crustaceans, invertebrates',
@@ -5387,6 +5662,7 @@ const birdData = [
     {
         id: 376,
         name: 'White Wagtail',
+        scientificName: 'Motacilla alba ',
         image: WhiteWagtail,
         description: 'The White Wagtail is a slender, ground-dwelling bird with striking black and white plumage. It is commonly found in wetlands, rivers, and coastal areas, where it feeds on insects, small invertebrates, and algae. The White Wagtail is known for its tail-wagging behavior and can often be seen foraging along the shore or walking through mudflats in search of food.',
         habitat: 'Wetlands, rivers, coastal areas',
