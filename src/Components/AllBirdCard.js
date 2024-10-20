@@ -2,11 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Styles/BirdCard.css'; 
 
-const BirdCard = ({ bird }) => {
+const AllBirdCard = ({ bird }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(`/endemicbirds/${bird.id}`);
+        navigate(`/allbirds/${bird.id}`);
     };
 
     return (
@@ -17,4 +17,4 @@ const BirdCard = ({ bird }) => {
     );
 };
 
-export default BirdCard;
+export default AllBirdCard;

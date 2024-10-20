@@ -522,7 +522,7 @@ const birdData = [
 
 
 
-const BirdInfo = () => {
+const EndemicBirdInfo = () => {
     const { id } = useParams(); 
     const bird = birdData.find((bird) => bird.id === parseInt(id));
 
@@ -556,4 +556,4 @@ const BirdInfo = () => {
     );
 };
 
-export default BirdInfo;
+export default EndemicBirdInfo;

@@ -1,5 +1,4 @@
 import React from 'react';
-import BirdCard from './BirdCard';
 import SriLankaJunglefowl from '../Assets/EndemicBirds/Sri Lanka Junglefowl.webp';
 import Spurfowl from '../Assets/EndemicBirds/SriLankaSpurfowl.jpg';
 import IndianPeafowl from '../Assets/AllBirds/Indian Peafowl.webp';
@@ -349,7 +348,6 @@ import SriLankaWhistlingThrush from '../Assets/EndemicBirds/SriLankaWhistlingThr
 import KashmirFlycatcher from '../Assets/AllBirds/KashmirFlycatcher.jpg';
 import BlueRockThrush from '../Assets/AllBirds/BlueRockThrush.webp';
 import PiedBushchat from '../Assets/AllBirds/PiedBushchat.jpg';
-
 import PiedWheatear from '../Assets/AllBirds/PiedWheatear.jpg';
 import AsianFairyBluebird from '../Assets/AllBirds/AsianFairyBluebird.jpeg';
 import GoldenFrontedLeafbird from '../Assets/AllBirds/GoldenFrontedLeafbird.jpg';
@@ -376,6 +374,7 @@ import WesternYellowWagtail from '../Assets/AllBirds/WesternYellowWagtail.jpeg';
 import GreyWagtail from '../Assets/AllBirds/GreyWagtail.jpeg';
 import WhiteBrowedWagtail from '../Assets/AllBirds/WhiteBrowedWagtail.jpeg';
 import WhiteWagtail from '../Assets/AllBirds/WhiteWagtail.jpeg';
+import AllBirdCard from './AllBirdCard';
 
 
 const birds = [
@@ -762,7 +761,7 @@ const BirdGallery = () => {
         <h2 style={{ paddingLeft:'4rem', paddingTop:'5rem', paddingBottom:'2rem'}}></h2>
         <div className="bird-gallery" style={{ display: 'flex', flexWrap: 'wrap', paddingLeft:'3rem' , paddingBottom:'2rem', gap: '30px'}}>      
             {birds.map((bird) => (               
-                <BirdCard key={bird.id} bird={bird} />
+                <AllBirdCard key={bird.id} bird={bird} />
             ))}
         </div>
         </>
