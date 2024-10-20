@@ -5662,7 +5662,7 @@ const birdData = [
     {
         id: 376,
         name: 'White Wagtail',
-        scientificName: 'Motacilla alba ',
+        scientificName: ' ',
         image: WhiteWagtail,
         description: 'The White Wagtail is a slender, ground-dwelling bird with striking black and white plumage. It is commonly found in wetlands, rivers, and coastal areas, where it feeds on insects, small invertebrates, and algae. The White Wagtail is known for its tail-wagging behavior and can often be seen foraging along the shore or walking through mudflats in search of food.',
         habitat: 'Wetlands, rivers, coastal areas',

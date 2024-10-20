@@ -7,7 +7,7 @@ import logo from '../Assets/logowithoutbg.png';
 function NavPage() {
     const navRef = useRef();
     const [isNavOpen, setIsNavOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
@@ -20,10 +20,12 @@ function NavPage() {
 
     return (
         <header>
-            <img src={logo} style={{ width: '18rem', paddingTop: '1.1rem' }} />
+            <div className="logo">
+                <img src={logo} style={{ width: '18rem', paddingTop: '1.1rem' }} />
+            </div>
             <nav ref={navRef}>
                 <Link to='/' style={{ fontSize: '18px', fontWeight: 'bold' }}>Home</Link>
-                
+
                 {/* Dropdown handling */}
                 <div className="dropdown">
                     {window.innerWidth <= 1024 ? (
@@ -48,11 +50,17 @@ function NavPage() {
 
                 <Link to='/BirdIdentification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Bird Identification</Link>
                 <Link to='/visual-identification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Visual Identification</Link>
-                
-                <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-                    <FaTimes />
-                </button>
             </nav>
+
+            <div className="auth-links">
+                <Link to='/signup' style={{ fontSize: '18px', fontWeight: 'bold' }} className="auth-link">Signup</Link>
+                <Link to='/login' style={{ fontSize: '18px', fontWeight: 'bold' }} className="auth-link">Login</Link>
+            </div>
+
+            <button className='nav-btn nav-close-btn' onClick={showNavbar} style={{ display: isNavOpen ? 'block' : 'none' }}>
+                <FaTimes />
+            </button>
+
             {/* Only show the menu icon (FaBars) when the menu is not open */}
             {!isNavOpen && (
                 <button className='nav-btn' onClick={showNavbar}>
