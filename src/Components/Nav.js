@@ -48,8 +48,8 @@ function NavPage() {
                     )}
                 </div>
 
-                <Link to='/BirdIdentification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Bird Identification</Link>
-                <Link to='/visual-identification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Visual Identification</Link>
+                <Link to='/Bird-Identification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Bird Identification</Link>
+                <Link to='/Visual-Identification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Visual Identification</Link>
             </nav>
 
             <div className="auth-links">

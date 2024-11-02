@@ -8,21 +8,33 @@ import AllBirdInfo from './Components/AllBirdInfo';
 import BirdGallery from './Components/BirdGalleryEndemic';
 import EndemicBirds from './Pages/EndemicBirds';
 import AllBirds from './Pages/AllBirds';
+import LoginPage from './Pages/Login';
+import SignupPage from './Pages/Signup';
+import VisualIdentification from './Pages/VisualIdentification';
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/BirdIdentification" element={<BirdIdentification />} />
+        
+        <Route path="/Bird-Identification" element={<BirdIdentification />} />
+        <Route path="/Visual-Identification" element={<VisualIdentification />} />
+
         <Route path="/endemicbirds/:id" element={<BirdInfo />} />
         <Route path="/all-birds/:id" element={<AllBirdInfo />} />
         <Route path="/BirdGallery"  element={<BirdGallery />} />
         <Route path='/endemic-birds' element={<EndemicBirds />}  />
         <Route path='/all-birds' element={<AllBirds />}  />
+
+        <Route path='/login' element={<LoginPage />}  />
+        <Route path='/signup' element={<SignupPage />}  />
+        
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 export default App;
