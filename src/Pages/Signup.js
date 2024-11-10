@@ -1,38 +1,56 @@
-import React from 'react'
+import React from 'react';
 import NavPage from '../Components/Nav';
 import Signupimage from '../Assets/Signupimage1.jpg';
+import TextField from '@mui/material/TextField';
 
 const SignupPage = () => {
   return (
     <>
       <NavPage />
       <div className="flex justify-center items-center min-h-[91vh]">
-        <div className="flex w-full max-w-7xl h-[80vh] bg-white shadow-lg rounded-lg overflow-hidden">
+        <div className="flex w-full max-w-7xl h-[80vh] bg-white shadow-2xl rounded-lg overflow-hidden">
           
           {/* Left Section - Image */}
           <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${Signupimage})` }}>
           </div>
           
-          {/* Right Section - Login Form */}
-          <div className="w-1/2 p-8 flex flex-col justify-center">
+          {/* Right Section - Signup Form */}
+          <div className="w-1/2 p-8 flex flex-col justify-start">
             <h2 className="text-5xl font-semibold text-gray-700 mb-10">Signup</h2>
+            <p className="text-gray-600 text-lg mb-6">
+              Join us and start your journey today! Sign up to access personalized features, stay updated, and become part of our growing community. We’re excited to have you with us!
+            </p>
             <form className="mt-4">
               <div className="mb-4">
-                <label className="block text-gray-700 font-bold mb-2">Email:</label>
-                <input
+                <TextField
+                  label="Name"
+                  name="name"
+                  variant="outlined"
+                  fullWidth
+                  required
+                  className="mb-4"
+                />
+              </div>
+              <div className="mb-4">
+                <TextField
+                  label="Email"
                   type="email"
                   name="email"
+                  variant="outlined"
+                  fullWidth
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-blue-500"
+                  className="mb-4"
                 />
               </div>
               <div className="mb-6">
-                <label className="block text-gray-700 font-bold mb-2">Password:</label>
-                <input
+                <TextField
+                  label="Password"
                   type="password"
                   name="password"
+                  variant="outlined"
+                  fullWidth
                   required
-                  className="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-blue-500"
+                  className="mb-4"
                 />
               </div>
               <button
@@ -43,9 +61,9 @@ const SignupPage = () => {
               </button>
               <button
                 type="button"
-                className="w-full mt-3 bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-colors duration-200"
+                className="w-full mt-3 bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
-                Login with Google
+                <span>Login with Google</span>
               </button>
             </form>
           </div>
@@ -53,6 +71,6 @@ const SignupPage = () => {
       </div>
     </>
   );
-  };
+};
 
-export default SignupPage
+export default SignupPage;
