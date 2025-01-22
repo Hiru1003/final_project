@@ -1,5 +1,6 @@
 import React from 'react';
 import BirdImage from '../Assets/illustration/illustration1.png'; 
+import PrimaryButton from './PrimaryButton';
 
 const HomeSection1 = () => {
   return (
@@ -13,10 +14,10 @@ const HomeSection1 = () => {
         <p className="text-lg text-gray-700">
           Join us in appreciating these fascinating creatures and learn how to identify birds in your area or beyond. Expand your knowledge and become part of a community passionate about birds and their natural habitats.
         </p>
-        <button className="bg-[#85C6FF] text-black font-semibold py-2 px-4 rounded-lg hover:bg-[#70b0e0] transition-colors duration-200 mt-7"
-            >
-            Learn More About Birds
-        </button>
+      
+        <PrimaryButton>
+          Learn More About Birds
+        </PrimaryButton>
 
       </div>
 
