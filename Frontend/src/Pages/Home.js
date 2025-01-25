@@ -2,6 +2,7 @@ import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
 import landingImage from '../Assets/landing2.webp'; 
 import HomeSection1 from "../Components/HomeSection1";
+import HomeSection2 from "../Components/HomeSection2";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
         />
 
       <HomeSection1/>
+      <HomeSection2/>
     </>
   );
 };

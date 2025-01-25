@@ -16,13 +16,13 @@ const VisualIdentificationByFeature = () => {
       </Typography>
 
       {/* Dropdown Form */}
-      <Box sx={{ display: 'flex', flexWrap: 'wrap',overflow: 'visible', marginLeft: 3, marginRight: 5, marginBottom: 3, marginTop:3}}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap',overflow: 'visible', marginLeft: 3, marginRight: 5, marginBottom: 1, marginTop:3}}>
         {Array.from({ length: 4 }).map((_, rowIndex) => (
           <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', mb: 2 }} key={rowIndex}>
             {Array.from({ length: 3 }).map((_, colIndex) => {
               const labelIndex = rowIndex * 3 + colIndex + 1; // Calculate label from 1-12
               return (
-                <FormControl sx={{ width: 350, mb: 4, height: '45px' }} key={colIndex}>
+                <FormControl sx={{ width: 350, mb: 2, height: '45px' }} key={colIndex}>
                   <InputLabel 
                     id={`label-${labelIndex}`} 
                     sx={{ 
@@ -59,9 +59,6 @@ const VisualIdentificationByFeature = () => {
                   </Select>
                 </FormControl>
 
-
-
-
               );
             })}
           </Box>
@@ -69,12 +66,16 @@ const VisualIdentificationByFeature = () => {
       </Box>
 
 
-      {/* Search Button */}
-      <Box textAlign="center">
-        <PrimaryButton>
+     {/* Search Button */}
+      <Box 
+        textAlign="center" 
+        sx={{ width: '350px', margin: '0 auto' }} // Center-align and set fixed width
+      >
+        <PrimaryButton width="350px" onClick={() => console.log('Clicked!')}>
           Search Bird
         </PrimaryButton>
       </Box>
+
     </Box>
   );
 };

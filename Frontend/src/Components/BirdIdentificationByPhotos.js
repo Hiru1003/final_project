@@ -39,8 +39,9 @@ const BirdIdentificationByPhotos = () => {
       </Box>
 
       {/* Search Button */}
-      <Box textAlign="center">
-        <PrimaryButton>
+      <Box textAlign="center" 
+        sx={{ width: '350px', margin: '0 auto' }}>
+        <PrimaryButton width="350px" onClick={() => console.log('Clicked!')}>
             Search Bird
         </PrimaryButton>
       </Box>

@@ -15,7 +15,7 @@ const HomeSection1 = () => {
           Join us in appreciating these fascinating creatures and learn how to identify birds in your area or beyond. Expand your knowledge and become part of a community passionate about birds and their natural habitats.
         </p>
       
-        <PrimaryButton>
+        <PrimaryButton width="280px" onClick={() => console.log('Clicked!')}>
           Learn More About Birds
         </PrimaryButton>
 
