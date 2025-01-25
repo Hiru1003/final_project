@@ -1,11 +1,23 @@
 import NavPage from "../Components/Nav";
-
+import landingImage from '../Assets/AllBirds/WhiteBrowedFantail.jpg'; 
+import LandingPage from "../Components/LandindPage";
+import VisualIdentificationByFeature from "../Components/VisualIdentificationByFeature";
 
 const VisualIdentification = () => {
   return (
     <>
         <NavPage />
-        <h1>Bird Visual Identification</h1>
+        <LandingPage
+          image= {landingImage}
+          heading="Visual Identification" 
+          paragraph={
+              <>
+                Discover the fascinating world of avian life with our state-of-the-art bird identification platform. Whether you're an enthusiastic beginner,  <br />an experienced ornithologist, or simply curious,
+                FeatherFinder equips you with powerful tools to explore bird species effortlessly. Harness the power of advanced <br />image recognition technology to identify birds from your photos instantly.
+              </>
+          } 
+        />
+        <VisualIdentificationByFeature/>
     </>
   );
 };
