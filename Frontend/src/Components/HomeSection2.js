@@ -45,7 +45,7 @@ const HomeSection2 = () => {
     };
 
     return (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ p: 3, marginBottom:5 }}>
            <Box sx={{ p: 3, display: 'flex', justifyContent: 'space-between', alignItems: 'center' ,marginRight:11,}}>
                 <Typography variant="h5" fontWeight="bold" gutterBottom sx={{ marginTop: 5, marginLeft:4}}>
                     Explore Endemic Birds
