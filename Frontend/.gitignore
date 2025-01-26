@@ -12,10 +12,8 @@
 /build
 
 # Backend
-/env
-/venv
-env/
-venv/
+/Backend/env
+/Backend/venv
 
 # Large data files
 *.jpg
