@@ -11,9 +11,13 @@
 # production
 /build
 
-# Backend
-/Backend/env
-/Backend/venv
+# Ignore the venv and env directories
+Backend/env/
+Backend/venv/
+
+# Ignore large files
+Backend/scripts/bird_species_classifier.h5
+Backend/data/CUB_200_2011/attributes/image_attribute_labels.txt
 
 # Large data files
 *.jpg
