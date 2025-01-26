@@ -11,6 +11,16 @@
 # production
 /build
 
+#Backend
+env/
+venv/
+
+# Large data files
+*.jpg
+*.png
+data/
+
+
 # misc
 .DS_Store
 .env.local
