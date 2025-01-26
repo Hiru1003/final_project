@@ -102,7 +102,7 @@ const getLabel = (index) => {
 // Function to return the dropdown options based on the label index
 const getOptions = (index) => {
   switch (index) {
-    case 1: return ['Black', 'White', 'Brown', 'Grey', 'Blue', 'Green', 'Yellow', 'Red', 'Orange', 'Pink', 'Purple', 'Multicolored'];
+    case 1: return ['Black', 'White', 'Brown', 'Grey', 'Blue', 'Green', 'Yellow', 'Red', 'Orange', 'Pink', 'Purple', 'Multicolored','Black and White'];
     case 2: return ['Black', 'Yellow', 'Orange', 'Red', 'Grey', 'Blue', 'Brown', 'White'];
     case 3: return ['Rounded', 'Forked', 'Pointed', 'Square', 'Long', 'Short', 'Fan-shaped'];
     case 4: return ['Small (e.g., Sparrow-sized)', 'Medium (e.g., Robin-sized)', 'Large (e.g., Crow-sized)', 'Extra Large (e.g., Eagle-sized)'];
@@ -112,8 +112,8 @@ const getOptions = (index) => {
     case 8: return ['Plain', 'Striped', 'Crested', 'Cap', 'Mask', 'Patch', 'Eyering'];
     case 9: return ['Solid', 'Spotted', 'Streaked', 'Striped', 'Mottled', 'Iridescent'];
     case 10: return ['Hooked', 'Pointed', 'Conical', 'Flat', 'Curved', 'Long', 'Short'];
-    case 11: return ['Black', 'Brown', 'White', 'Grey', 'Yellow', 'Orange', 'Red', 'Blue', 'Green', 'Multicolored'];
-    case 12: return ['Perching', 'Soaring', 'Wading', 'Swimming', 'Ground Walking', 'Hovering', 'Diving'];
+    case 11: return ['Black', 'Brown', 'White', 'Grey', 'Yellow', 'Orange', 'Red', 'Blue', 'Green', 'Multicolored','Black and White'];
+    case 12: return ['Perching', 'Soaring', 'Wading', 'Swimming', 'Ground Walking', 'Hovering', 'Diving','Drilling' ];
     default: return [];
   }
 };
