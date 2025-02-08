@@ -2,6 +2,7 @@ import React from 'react';
 import NavPage from '../Components/Nav';
 import Signupimage from '../Assets/Signupimage1.jpg';
 import TextField from '@mui/material/TextField';
+import { FaGoogle } from "react-icons/fa";
 
 const SignupPage = () => {
   return (
@@ -63,6 +64,7 @@ const SignupPage = () => {
                 type="button"
                 className="w-full mt-3 bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
+                <FaGoogle className="text-lg" />
                 <span>Login with Google</span>
               </button>
             </form>

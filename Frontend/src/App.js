@@ -11,6 +11,9 @@ import AllBirds from './Pages/AllBirds';
 import LoginPage from './Pages/Login';
 import SignupPage from './Pages/Signup';
 import VisualIdentification from './Pages/VisualIdentification';
+import SightingGallery from './Components/SightingGallery';
+import SightingPage from './Pages/Sighting';
+import SightingsInfo from './Components/SightingInfo';
 
 
 function App() {
@@ -27,6 +30,10 @@ function App() {
         <Route path="/BirdGallery"  element={<BirdGallery />} />
         <Route path='/endemic-birds' element={<EndemicBirds />}  />
         <Route path='/all-birds' element={<AllBirds />}  />
+
+        <Route path='/Sightings' element={<SightingPage />}  />
+        <Route path='/SightingsGallery' element={<SightingGallery />}  />
+        <Route path="/Sightings/:id" element={<SightingsInfo />} />
 
         <Route path='/login' element={<LoginPage />}  />
         <Route path='/signup' element={<SignupPage />}  />

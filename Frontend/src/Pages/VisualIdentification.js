@@ -1,5 +1,5 @@
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/AllBirds/WhiteBrowedFantail.jpg'; 
+import landingImage from '../Assets/AllBirds/PurpleSwamphen.jpg'; 
 import LandingPage from "../Components/LandindPage";
 import VisualIdentificationByFeature from "../Components/VisualIdentificationByFeature";
 
