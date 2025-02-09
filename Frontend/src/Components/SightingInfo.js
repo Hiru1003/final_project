@@ -1,16 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
-import BundalaNationalPark from '../Assets/Sightings/Bundala National Park.jpg';
-import HortonPlains from '../Assets/Sightings/Horton Plains .jpg';
-
-import AnawilundawaWetlandSanctuary from '../Assets/Sightings/Anawilundawa Wetland Sanctuary.jpg';
-import KnucklesForestReserve from '../Assets/Sightings/Knuckles Forest Reserve.jpg';
-import SigiriyaBirdSanctuary from '../Assets/Sightings/Sigiriya Bird Sanctuary.jpg';
-import BeddaganaWetlandPark from '../Assets/Sightings/Beddagana Wetland Park.jpg';
-import ThalangamaWetlandPark from '../Assets/Sightings/thalangama wetland park.jpg';
-import WilpattuNationalPark from '../Assets/Sightings/Wilpattu National Park.jpg';
-import MannarIsland from '../Assets/Sightings/Mannar Island .webp';
 import NavPage from './Nav';
 
 import SinharajaForestReserve1 from '../Assets/Sightings/Sinharaja Forest Reserve.jpg';
@@ -40,6 +29,72 @@ import Yala3 from '../Assets/Sightings/YalaNationalPark.jpg';
 import Yala4 from '../Assets/Sightings/Yala4.jpg';
 import Yala5 from '../Assets/Sightings/Yala5.jpg';
 import Yala6 from '../Assets/Sightings/Yala6.webp';
+
+import Hortonplains1 from '../Assets/Sightings/Horton Plains .jpg';
+import Hortonplains2 from '../Assets/Sightings/Hortonplains2.jpeg';
+import Hortonplains3 from '../Assets/Sightings/Hortainplains3.jpg';
+import Hortonplains4 from '../Assets/Sightings/Hortonplains4.jpg';
+import Hortonplains5 from '../Assets/Sightings/Hortainplains5.jpg';
+import Hortonplains6 from '../Assets/Sightings/Hortonplains6.jpeg';
+
+import Bundala1 from '../Assets/Sightings/Bundala National Park.jpg';
+import Bundala2 from '../Assets/Sightings/Bundala2.png';
+import Bundala3 from '../Assets/Sightings/Bundala3.jpg';
+import Bundala4 from '../Assets/Sightings/Bundala4.jpg';
+import Bundala5 from '../Assets/Sightings/Bundala5.jpg';
+import Bundala6 from '../Assets/Sightings/Bundala5.jpeg';
+
+import Anawilundawa1 from '../Assets/Sightings/Anawilundawa Wetland Sanctuary.jpg';
+import Anawilundawa2 from '../Assets/Sightings/Anawilundawa2.png';
+import Anawilundawa3 from '../Assets/Sightings/Anawilundawa3.jpg';
+import Anawilundawa4 from '../Assets/Sightings/Anawilundawa4.webp';
+import Anawilundawa5 from '../Assets/Sightings/Anawilundawa5.jpeg';
+import Anawilundawa6 from '../Assets/Sightings/Anawilundawa6.jpeg';
+
+import Knuckles1 from '../Assets/Sightings/Knuckles Forest Reserve.jpg';
+import Knuckles2 from '../Assets/Sightings/Knuckles2.jpg';
+import Knuckles3 from '../Assets/Sightings/Knuckles3.jpg';
+import Knuckles4 from '../Assets/Sightings/Knuckles4.jpeg';
+import Knuckles5 from '../Assets/Sightings/Knuckles5.jpg';
+import Knuckles6 from '../Assets/Sightings/Knuckles6.jpg';
+
+import Sigiriya1 from '../Assets/Sightings/Sigiriya Bird Sanctuary.jpg';
+import Sigiriya2 from '../Assets/Sightings/Sigiriya2.jpg';
+import Sigiriya3 from '../Assets/Sightings/Sigiriya3.webp';
+import Sigiriya4 from '../Assets/Sightings/Sigiriya4.jpg';
+import Sigiriya5 from '../Assets/Sightings/Sigiriya5.jpg';
+import Sigiriya6 from '../Assets/Sightings/Sigiriya6.jpeg';
+
+import Thalangama1 from '../Assets/Sightings/thalangama wetland park.jpg';
+import Thalangama2 from '../Assets/Sightings/Thalangama2.jpeg';
+import Thalangama3 from '../Assets/Sightings/Thalangama3.jpg';
+import Thalangama4 from '../Assets/Sightings/Thalangama4.jpeg';
+import Thalangama5 from '../Assets/Sightings/Thalangama5.jpg';
+import Thalangama6 from '../Assets/Sightings/Thalangama6.jpg';
+
+import Mannar1 from '../Assets/Sightings/Mannar Island .webp';
+import Mannar2 from '../Assets/Sightings/Mannar2.avif';
+import Mannar3 from '../Assets/Sightings/Mannar3.webp';
+import Mannar4 from '../Assets/Sightings/Mannar4.jpg';
+import Mannar5 from '../Assets/Sightings/Mannar5.jpg';
+import Mannar6 from '../Assets/Sightings/Mannar6.jpg';
+
+import Beddagana1 from '../Assets/Sightings/Beddagana Wetland Park.jpg';
+import Beddagana2 from '../Assets/Sightings/Beddagana2.webp';
+import Beddagana3 from '../Assets/Sightings/Beddagana3.png';
+import Beddagana4 from '../Assets/Sightings/Beddagana4.jpg';
+import Beddagana5 from '../Assets/Sightings/Beddagana5.webp';
+import Beddagana6 from '../Assets/Sightings/Beddagana6.jpg';
+
+import Wilpattu1 from '../Assets/Sightings/Wilpattu National Park.jpg';
+import Wilpattu2 from '../Assets/Sightings/Wilpattu2.webp';
+import Wilpattu3 from '../Assets/Sightings/Wilpattu3.jpeg';
+import Wilpattu4 from '../Assets/Sightings/Wilpattu4.jpg';
+import Wilpattu5 from '../Assets/Sightings/Wilpattu5.webp';
+import Wilpattu6 from '../Assets/Sightings/Wilpattu6.jpeg';
+
+
+
 
 const sightingsData = [
     {
@@ -86,19 +141,19 @@ const sightingsData = [
         notableBirds: 'Horton Plains is a paradise for birdwatchers, with over 87 bird species recorded, including 21 endemics. The Sri Lanka Whistling Thrush, Sri Lanka Bush Warbler, and Dull-blue Flycatcher are some of the rarest and most sought-after birds in the park. Other notable species include the Yellow-eared Bulbul, Sri Lanka White-eye, and the Mountain Hawk-Eagle. Due to its elevation and vegetation, the park attracts many migratory birds as well, making it an excellent destination for avian enthusiasts.',
         conservationStatus: 'Horton Plains is a protected national park and part of the UNESCO Central Highlands World Heritage Site. Despite its conservation status, threats such as deforestation, illegal tourism activities, and pollution pose risks to the delicate ecosystem. Efforts to preserve the park include strict regulations on waste disposal, controlled visitor entry, and reforestation initiatives. Authorities are also working to protect endemic species and minimize human impact to ensure the park’s sustainability for future generations.',
         bestTimeToVisit: 'The best time to visit Horton Plains is between January and March, when the weather is relatively dry and visibility is at its best for scenic views, especially at World’s End. Mornings are the ideal time for hikes, as the mist tends to cover the landscapes later in the day. The park is open year-round, but visitors should be prepared for sudden weather changes and bring warm clothing due to the cool temperatures at higher altitudes.',
-        images: [HortonPlains, /* Add 5 more images */]
+        images: [Hortonplains1, Hortonplains2,Hortonplains3,Hortonplains4, Hortonplains5, Hortonplains6]
     },
     {
         id: 5,
         name: 'Bundala National Park',
-        briefInfo: 'Bundala National Park, located in southern Sri Lanka, is a coastal wetland sanctuary famous for its diverse ecosystems, including lagoons, sand dunes, and scrub forests. As Sri Lanka’s first Ramsar wetland, it is an essential stop for migratory birds, particularly greater flamingos. The park supports over 200 bird species, as well as mammals like elephants and reptiles. Its rich biodiversity and scenic landscapes make it a prime destination for birdwatching, wildlife photography, and nature enthusiasts.',
-        locationDetails: 'Bundala National Park is in the Hambantota District, 245 km from Colombo. Spanning 6,200 hectares, the park is easily accessed via the Wellawaya-Hambantota Road. It lies between Kirinda and Hambantota, adjacent to the Indian Ocean.',
-        environmentalConditions: 'The park experiences an arid climate, with temperatures between 27°C and 32°C. Most rainfall occurs from October to January. Its lagoons, wetlands, and coastal dunes support diverse wildlife despite the dry conditions.',
-        notableBirds: 'Bundala is a birdwatching paradise, with over 200 bird species, including greater flamingos, Eurasian Spoonbills, Black-headed Ibises, Painted Storks, and various waders. Migratory species like the Indian Peafowl also visit.',
-        conservationStatus: 'Declared a national park in 1993 and a Ramsar wetland, Bundala faces challenges like habitat degradation, illegal fishing, and climate change. Ongoing conservation focuses on protecting habitats and promoting eco-tourism.',
-        bestTimeToVisit: 'The best time to visit is from September to March, during the migratory bird season. Early mornings and late afternoons offer the best birdwatching opportunities.',
-        images: [BundalaNationalPark, /* Add 5 more images */]
-    },    
+        briefInfo: 'Bundala National Park, located in southern Sri Lanka, is a coastal wetland sanctuary known for its rich biodiversity. It features a mix of lagoons, sand dunes, and scrub forests. As Sri Lanka’s first Ramsar wetland site, it plays a critical role in supporting migratory birds, particularly the greater flamingo. The park is also home to over 200 bird species, elephants, crocodiles, and various reptiles. The park’s scenic landscapes and diverse wildlife make it an excellent destination for birdwatching, wildlife photography, and nature exploration.',
+        locationDetails: 'Bundala National Park is situated in the Hambantota District, around 245 km from Colombo. Spanning 6,200 hectares, it is easily accessible via the Wellawaya-Hambantota Road. The park lies between Kirinda and Hambantota, along the southern coast of Sri Lanka, bordered by the Indian Ocean. This strategic location makes it an ideal spot for eco-tourism and wildlife observation. Its proximity to nearby attractions like Yala National Park further enhances its appeal to nature lovers and wildlife photographers looking to explore Sri Lanka’s diverse landscapes and ecosystems.',
+        environmentalConditions: 'The park experiences an arid climate, with temperatures ranging between 27°C and 32°C year-round. Most rainfall occurs between October and January, during the northeast monsoon season. Despite the dry conditions, Bundala’s lagoons, wetlands, and coastal dunes support a wide variety of wildlife. The park’s ecosystems provide a stable environment for both aquatic and terrestrial animals. The combination of coastal, wetland, and scrubland habitats creates a unique ecological balance, making it a haven for migratory birds and a thriving sanctuary for native wildlife despite the challenges posed by its dry climate.',
+        notableBirds: 'Bundala National Park is renowned for its diverse birdlife, with over 200 recorded species. The park’s most famous visitors are the greater flamingos, which migrate here in large flocks during the season. Other notable bird species include the Eurasian Spoonbill, Black-headed Ibis, Painted Stork, and several species of terns and waders. The park also attracts migratory birds like the Indian Peafowl and Caspian Tern. With its varied habitats, including wetlands, lagoons, and coastal dunes, Bundala is a prime location for birdwatching enthusiasts, offering excellent opportunities to observe both resident and migratory species.',
+        conservationStatus: 'Bundala was declared a national park in 1993 and is a designated Ramsar wetland site, emphasizing its global importance for biodiversity conservation. The park faces conservation challenges, including habitat degradation, illegal fishing, and the impacts of climate change. Efforts to preserve its biodiversity include initiatives to protect critical habitats for migratory birds and native wildlife. The park is also focusing on controlling invasive species and promoting sustainable eco-tourism practices. Ongoing conservation programs aim to balance wildlife protection with the development of eco-friendly tourism, helping to safeguard Bundala’s natural heritage for future generations.',
+        bestTimeToVisit: 'The best time to visit Bundala National Park is between September and March, when migratory birds, including flamingos, flock to the park’s wetlands. The dry season ensures optimal birdwatching conditions, with early mornings and late afternoons offering the best opportunities to spot a wide variety of birds and other wildlife. Visiting during these months also allows for a more comfortable experience, as the park can get quite hot during midday. While accessible year-round, the peak migratory season offers the most rewarding wildlife encounters, particularly for bird enthusiasts and photographers.',
+        images: [Bundala1, Bundala2,Bundala3,Bundala4,Bundala5,Bundala6]
+    },        
     {
         id: 6,
         name: 'Yala National Park',
@@ -119,7 +174,7 @@ const sightingsData = [
         notableBirds: 'The sanctuary is home to over 150 species of birds, including both endemic and migratory species. Notable residents include the Black-crowned Night Heron, Painted Stork, Open-billed Stork, and Purple Heron. Migratory species such as Garganeys, Eurasian Spoonbills, and Lesser Whistling Ducks visit the wetland seasonally. The wetland’s diverse habitats, including reed beds, open water, and mudflats, provide ideal conditions for nesting and feeding. Birdwatchers can witness large flocks of birds gathering around the water bodies, making Anawilundawa one of the best birdwatching locations in Sri Lanka, particularly during the peak migratory season.',
         conservationStatus: 'Anawilundawa Wetland Sanctuary is protected under Sri Lankan law and is designated as a Ramsar Wetland of International Importance. Despite its protected status, the wetland faces threats from illegal encroachment, water pollution, and unsustainable fishing practices. Conservation programs aim to restore wetland habitats, improve water quality, and strengthen enforcement against illegal activities. Community-based initiatives encourage local participation in conservation, raising awareness about the wetland’s importance. The Department of Wildlife Conservation and environmental organizations work together to monitor biodiversity and implement sustainable management practices to ensure the long-term protection of this critical ecosystem.',
         bestTimeToVisit: 'The best time to visit Anawilundawa Wetland Sanctuary is between October and April, when migratory birds arrive in large numbers. Early mornings and late afternoons provide the best opportunities for birdwatching, as birds are most active during these times. The dry season allows for easier access to trails and better visibility of wildlife. During the monsoon, the wetland becomes more vibrant, with lush greenery and abundant water sources attracting even more wildlife. Visitors are encouraged to bring binoculars, wear neutral-colored clothing, and maintain a respectful distance from nesting sites to avoid disturbing the birds.',
-        images: [AnawilundawaWetlandSanctuary, /* Add 5 more images */]
+        images: [Anawilundawa1,Anawilundawa2,Anawilundawa3,Anawilundawa4,Anawilundawa5,Anawilundawa6]
     },
     {
         id: 8,
@@ -130,7 +185,7 @@ const sightingsData = [
         notableBirds: 'Knuckles is home to over 120 bird species, including several endemic and migratory birds. The Sri Lanka White-eye, Yellow-fronted Barbet, and Sri Lanka Hanging Parrot thrive in its montane forests. Raptors such as the Black Eagle and Crested Serpent Eagle soar above the valleys, while the elusive Sri Lanka Whistling Thrush is often spotted near forest streams. The region’s rich biodiversity also supports various insects and amphibians, providing a balanced ecosystem for birdlife. Birdwatchers can explore multiple trails, especially in the early morning, for the best chances of spotting these rare and colorful species.',
         conservationStatus: 'Knuckles Forest Reserve is a protected conservation area under the Forest Department of Sri Lanka and is designated as a UNESCO World Heritage Site. Despite its protected status, illegal activities such as deforestation, encroachment, and poaching threaten its delicate ecosystem. Conservation efforts focus on reforestation, wildlife protection, and sustainable tourism initiatives. Government agencies, NGOs, and local communities work together to implement conservation programs, ensuring the long-term preservation of the reserve’s biodiversity. Scientific research and monitoring programs continue to assess the health of Knuckles’ ecosystem, addressing environmental challenges and promoting its conservation.',
         bestTimeToVisit: 'The best time to visit Knuckles Forest Reserve is from June to September, when rainfall is minimal, making hiking and wildlife spotting more accessible. Early mornings and late afternoons offer breathtaking views of mist-covered peaks and valleys. Dry-season hikes reveal clear trails, waterfalls, and vibrant birdlife. However, monsoon months (October to January) bring heavy rains, making trails slippery and difficult to navigate. Visitors are advised to carry proper hiking gear, wear layered clothing due to temperature variations, and respect conservation rules to minimize their ecological footprint while exploring this pristine natural wonder.',
-        images: [KnucklesForestReserve, /* Add 5 more images */]
+        images: [Knuckles1, Knuckles2,Knuckles3,Knuckles4,Knuckles5,Knuckles6]
     },
     {
         id: 9,
@@ -141,7 +196,7 @@ const sightingsData = [
         notableBirds: 'Sigiriya Bird Sanctuary hosts over 150 species of birds, including the Sri Lanka Grey Hornbill, Asian Paradise Flycatcher, and Brown Fish Owl. The vibrant Indian Roller and colorful Bee-eaters are commonly seen perched on branches, while flocks of Painted Storks and Egrets gather near water bodies. Raptors such as the Crested Serpent Eagle and Shikra dominate the skies. The sanctuary’s wetlands attract migratory birds like the Garganey and Black-winged Stilt. Birdwatching trails offer glimpses of rare species, making it a must-visit location for avian enthusiasts.',
         conservationStatus: 'Sigiriya Bird Sanctuary is a protected area under Sri Lanka’s Department of Wildlife Conservation. Despite its legal protection, deforestation, pollution, and increasing tourism pose threats to its fragile ecosystem. Conservation projects focus on habitat restoration, minimizing human-wildlife conflict, and promoting eco-friendly tourism. Bird monitoring programs help assess population health, while awareness campaigns educate local communities about sustainable practices. Government and non-governmental organizations collaborate to ensure the long-term survival of the sanctuary’s avifauna and maintain the balance between tourism and wildlife conservation.',
         bestTimeToVisit: 'The best time to visit Sigiriya Bird Sanctuary is from December to April, as migratory birds arrive and the climate is pleasant. Early morning and late afternoon are ideal for spotting rare birds and experiencing the sanctuary’s rich biodiversity. The dry season (May to September) offers excellent visibility, with birds congregating around water sources. Monsoon months bring lush greenery, enhancing the scenic beauty but making trails slippery. Visitors are encouraged to bring binoculars, wear neutral-colored clothing, and maintain silence to maximize birdwatching experiences while minimizing disturbances to wildlife.',
-        images: [SigiriyaBirdSanctuary, /* Add 5 more images */]
+        images: [Sigiriya1, Sigiriya2,Sigiriya3,Sigiriya4,Sigiriya6,Sigiriya5]
     },
     {
         id: 10,
@@ -152,7 +207,7 @@ const sightingsData = [
         notableBirds: 'Thalangama Wetland Park is a birdwatcher’s paradise, hosting over 100 bird species, including migratory and endemic birds. Highlights include the Purple Heron, Black-crowned Night Heron, and White-throated Kingfisher. The Lesser Whistling Duck and Pheasant-tailed Jacana can often be spotted around the lake, while Brahminy Kites soar above. Wetland vegetation attracts small warblers and flycatchers, creating a vibrant birding environment. During the migratory season, visitors can witness rare species such as the Indian Pitta and Black Bittern. The parks biodiversity makes it a prime location for avian research and eco-tourism.',
         conservationStatus: 'Thalangama Wetland Park is designated as an Environmental Protection Area under Sri Lanka’s National Environmental Act, ensuring its conservation. However, rapid urbanization, pollution, and encroachments threaten its delicate ecosystem. Conservation initiatives focus on habitat restoration, awareness campaigns, and sustainable tourism practices. Local communities play a key role in maintaining the wetland through eco-friendly farming and wildlife monitoring. Government and non-governmental organizations actively work to prevent illegal land use, ensuring long-term protection. Ongoing efforts aim to balance development with ecological preservation, making Thalangama a model for wetland conservation in Sri Lanka.',
         bestTimeToVisit: 'The best time to visit Thalangama Wetland Park is from December to April, when migratory birds arrive, and the weather is relatively dry. Early mornings and late afternoons offer the best birdwatching opportunities, as many species are most active during these times. The cooler climate and golden light create an ideal setting for photography and nature walks. While the monsoon months (May to November) bring heavier rainfall, they also enhance the park’s lush greenery and fill its water bodies, making it a picturesque location. Visitors are encouraged to wear light clothing, use binoculars, and maintain silence to observe wildlife without disturbances.',
-        images: [ThalangamaWetlandPark, /* Add 5 more images */]
+        images: [Thalangama1, Thalangama2,Thalangama3,Thalangama4,Thalangama5,Thalangama6]
     },
     {
         id: 11,
@@ -163,10 +218,10 @@ const sightingsData = [
         notableBirds: 'Mannar Island is famous for its birdlife, especially the migratory shorebirds that visit during the winter months. Notable species include the Eurasian Curlew, Black-tailed Godwit, and the migratory Little Stint. The island also hosts endemic species like the Sri Lanka Grey Hornbill and Sri Lanka Junglefowl. Raptors such as the Crested Hawk-Eagle can be spotted soaring above the island. The rich avian diversity, particularly the migratory species, makes Mannar a prime destination for birdwatching, attracting birders from around the world to witness the seasonal spectacle.',
         conservationStatus: 'Mannar Island’s ecosystems, particularly its wetlands, are increasingly threatened by human activity, including overfishing, habitat degradation, and development. Conservation efforts are focused on maintaining the island’s delicate balance through protected areas and the implementation of sustainable practices. Local organizations and government initiatives are working to prevent further loss of habitat, particularly in coastal areas, while promoting eco-tourism as a sustainable alternative. Effective monitoring of the bird populations and habitats is critical for ensuring the long-term preservation of Mannar’s rich biodiversity.',
         bestTimeToVisit: 'The best time to visit Mannar Island is between November and March, during the migratory bird season. This period offers birdwatchers the chance to witness a variety of species that stopover during their migration. Early mornings and late afternoons are ideal for birdwatching, as the birds are most active during these times. The dry weather and clear skies also make it easier to explore the island’s diverse ecosystems. Although the island can be visited year-round, the migratory season provides the most rewarding birdwatching experiences.',
-        images: [MannarIsland, /* Add 5 more images */]
+        images: [Mannar1,Mannar2,Mannar3,Mannar4,Mannar6 ,Mannar5/* Add 5 more images */]
     },
     {
-        id: 11,
+        id: 12,
         name: 'Beddagana Wetland Park',
         briefInfo: 'Beddagana Wetland Park, located in the outskirts of Colombo, Sri Lanka, is a serene urban wetland offering a peaceful escape into nature. The park is home to a wide variety of bird species, making it a popular destination for birdwatchers. It features walking paths, observation towers, and tranquil ponds that provide visitors with an opportunity to enjoy its rich biodiversity. This eco-friendly park serves as a natural habitat for numerous waterfowl and other wildlife, making it an ideal spot for eco-tourism and environmental education.',
         locationDetails: 'Beddagana Wetland Park is situated in the southwestern part of Colombo, near the suburb of Kotte. It is easily accessible from the city center, offering a refreshing break from urban life. The park covers several hectares of marshland, interspersed with small waterways and rich vegetation. It is located near the Parliament of Sri Lanka, adding to its appeal as a nature reserve within the bustling city limits. Visitors can explore the park’s diverse environments, including ponds, reeds, and forests.',
@@ -174,18 +229,18 @@ const sightingsData = [
         notableBirds: 'Beddagana Wetland Park is renowned for its diverse bird population, particularly its resident and migratory species. Among the notable birds found here are the Purple Heron, Little Egret, and the Common Kingfisher. The park’s wetlands and water sources are ideal habitats for waterfowl, while the trees and reeds offer shelter to a range of small birds. Visitors can often spot birds such as the Indian Pond Heron and various species of ducks, making the park a key birdwatching destination within Colombo.',
         conservationStatus: 'Beddagana Wetland Park plays a significant role in conserving urban biodiversity and is managed by the Sri Lanka Land Reclamation and Development Corporation. The park is protected, and efforts are in place to preserve its natural habitats. While the park is largely untouched by urbanization, ongoing challenges include maintaining the balance between conservation and development in the surrounding areas. The park continues to serve as an environmental educational resource and is monitored to safeguard its delicate ecosystems and wildlife.',
         bestTimeToVisit: 'The best time to visit Beddagana Wetland Park is during the early morning or late afternoon when bird activity is at its peak. The cooler temperatures and calm waters make these hours ideal for birdwatching and photography. The park is accessible year-round, with the rainy season (May to September) offering the best chances to see a variety of migratory species. However, the dry months provide easier access to the walking trails and observation towers, making it a pleasant visit for nature enthusiasts.',
-        images: [BeddaganaWetlandPark, /* Add 5 more images */]
+        images: [Beddagana1,Beddagana2,Beddagana3,Beddagana4,Beddagana5,Beddagana6 /* Add 5 more images */]
     },
     {
-        id: 12,
+        id: 13,
         name: 'Wilpattu National Park',
         briefInfo: 'Wilpattu National Park, located in the northwest of Sri Lanka, is the country’s largest national park. It is renowned for its unique “villus,” natural lakes or ponds that attract diverse wildlife. The park is a haven for Sri Lanka’s leopards, elephants, and numerous bird species, making it a prime location for wildlife enthusiasts. Rich in biodiversity, Wilpattu also offers a unique mix of dry zone forests and grasslands, providing a variety of habitats for its fauna. It is one of the oldest and most ecologically significant protected areas in Sri Lanka.',
         locationDetails: 'Wilpattu National Park is situated in the North Western Province of Sri Lanka, spanning over 1,300 square kilometers. It is bordered by the Puttalam District to the north and Anuradhapura District to the east. The park is known for its scenic beauty, with open grasslands and dense forests. Wilpattu’s geographical location near the coast also provides a unique blend of ecosystems, making it an important site for biodiversity conservation. Visitors can enter the park through the main gate at Hunuwilagama and enjoy guided safaris to explore its wilderness.',
         environmentalConditions: 'Wilpattu experiences a tropical dry climate with annual rainfall averaging between 1,000 mm to 2,000 mm, mainly during the northeast monsoon season. The temperature ranges from 28°C to 35°C, creating a warm environment that is conducive for many wildlife species. The park’s terrain consists of dry forests, wetlands, and grasslands, providing a diverse range of habitats. These varying conditions support a rich array of flora and fauna, while also contributing to the park’s importance in maintaining ecological balance and supporting sustainable wildlife populations.',
-        notableBirds: 'Wilpattu National Park is home to numerous bird species, including endemic species like the Sri Lanka Junglefowl and the Red-faced Malkoha. The park’s diverse habitats, including wetlands, forests, and grasslands, provide ideal conditions for birdwatching. Migratory birds such as the Painted Stork and various species of herons can also be spotted in the park during migration seasons. Bird enthusiasts can also spot raptors such as the Crested Serpent Eagle and the White-bellied Sea Eagle. The park is a birdwatching paradise, offering sightings of over 200 species of birds.',
+        notableBirds: 'Wilpattu National Park is home to numerous bird species, including endemic species like the Sri Lanka Junglefowl and the Blue-faced Malkoha. The park’s diverse habitats, including wetlands, forests, and grasslands, provide ideal conditions for birdwatching. Migratory birds such as the Painted Stork and various species of herons can also be spotted in the park during migration seasons. Bird enthusiasts can also spot raptors such as the Crested Serpent Eagle and the White-bellied Sea Eagle. The park is a birdwatching paradise, offering sightings of over 200 species of birds.',
         conservationStatus: 'Wilpattu National Park has been a protected area for many years, with efforts focused on preserving its unique ecosystems and biodiversity. Conservation challenges include poaching, human-wildlife conflict, and the encroachment of agricultural land. However, the Sri Lanka Department of Wildlife Conservation has been working diligently to maintain the park’s protected status, combat illegal activities, and promote sustainable tourism. The park’s ecosystem plays a vital role in the broader ecological health of Sri Lanka, supporting a variety of endangered species and contributing to the conservation of natural habitats.',
         bestTimeToVisit: 'The best time to visit Wilpattu National Park is between February and October, as the dry season provides optimal conditions for wildlife sightings. During this period, the park’s animals are often concentrated around water sources, making them easier to spot. The cooler months are also more comfortable for safaris. While the park is open year-round, the northeast monsoon season from October to January brings heavy rainfall, which may make some areas inaccessible. However, visiting during the rainy season can offer a more tranquil and scenic experience.',
-        images: [WilpattuNationalPark, /* Add 5 more images */]
+        images: [Wilpattu1,Wilpattu2,Wilpattu3,Wilpattu4,Wilpattu6,Wilpattu5]
     }
     
     

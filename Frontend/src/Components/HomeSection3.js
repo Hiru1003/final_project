@@ -21,7 +21,7 @@ const HomeSection3 = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/SightingPage'); // Replace with your actual path
+    navigate('/Sightings'); // Replace with your actual path
   };
 
   return (
