@@ -14,6 +14,7 @@ import VisualIdentification from './Pages/VisualIdentification';
 import SightingGallery from './Components/SightingGallery';
 import SightingPage from './Pages/Sighting';
 import SightingsInfo from './Components/SightingInfo';
+import Feedback from './Components/FeedBack';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path='/SightingsGallery' element={<SightingGallery />}  />
         <Route path="/Sightings/:id" element={<SightingsInfo />} />
 
+        <Route path='/Feedback' element={<Feedback />}  />
         <Route path='/login' element={<LoginPage />}  />
         <Route path='/signup' element={<SignupPage />}  />
         
