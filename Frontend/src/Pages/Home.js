@@ -5,6 +5,7 @@ import HomeSection1 from "../Components/HomeSection1";
 import HomeSection2 from "../Components/HomeSection2";
 import HomeSection3 from "../Components/HomeSection3";
 import Feedback from "../Components/FeedBack";
+import Footer from "../Components/Footer";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
       <HomeSection2/>
       <HomeSection3/>
       <Feedback/>
+      <Footer/>
     </>
   );
 };
