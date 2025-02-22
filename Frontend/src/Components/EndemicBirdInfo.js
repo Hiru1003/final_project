@@ -706,7 +706,7 @@ const EndemicBirdInfo = () => {
                     <p><strong>Role In Ecosystem:</strong> {bird.roleInEcosystem}</p><br />
                     <p><strong>Adaptations And Survival Mechanisms:</strong> {bird.adaptationsAndSurvivalMechanisms}</p><br />
                 </div>
-                </div>
+             </div>
         
         </>
     );
