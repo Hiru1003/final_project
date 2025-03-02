@@ -1,0 +1,11 @@
+# Ignore node_modules in the frontend directory
+Frontend/node_modules/
+
+# Ignore environment file in the backend directory
+Backend/env/
+
+# Ignore images directory in the backend/data
+Backend/data/CUB_200_2011/images/
+
+# Ignore bird_species_classifier
+Backend/scripts/bird_species_classifier.h5

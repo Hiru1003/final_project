@@ -1,7 +1,14 @@
+import os
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from scripts.predict_species import predict_species
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for frontend communication
+
+TEMP_DIR = "temp"
+os.makedirs(TEMP_DIR, exist_ok=True)  # Ensure the temp directory exists
+
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -15,12 +22,13 @@ def predict():
     # Predict the species using the model
     species = predict_species(img_path)
 
-    # Return the prediction as a JSON response
-    return jsonify({'species': species})
+    # Extract species name after removing number and replacing underscores
+    formatted_species = species.split('.', 1)[-1].replace('_', ' ')
+
+    return jsonify({'species': formatted_species})
 
 if __name__ == '__main__':
     app.run(debug=True)
-
 
 #Image Loading Progress
 
@@ -37,5 +45,5 @@ if __name__ == '__main__':
 
 #source env/bin/activate
 #cd Backend
-#python main.py
+#python3 main.py
 
