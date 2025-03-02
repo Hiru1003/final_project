@@ -3,11 +3,11 @@ import { Box, Typography, Snackbar, Alert } from '@mui/material';
 import PrimaryButton from './PrimaryButton';
 import axios from 'axios';
 
-
 const BirdIdentificationByPhotos = () => {
   const [image, setImage] = useState(null);
   const [birdPrediction, setBirdPrediction] = useState('');
   const [toast, setToast] = useState({ open: false, message: '', severity: 'info' });
+  const [imagePreview, setImagePreview] = useState(''); // New state to hold image preview
 
   // Handle image drop
   const handleDrop = (e) => {
@@ -15,6 +15,7 @@ const BirdIdentificationByPhotos = () => {
     const file = e.dataTransfer.files[0];
     if (file && isValidImage(file)) {
       setImage(file);
+      setImagePreview(URL.createObjectURL(file)); // Set preview URL
       setToast({ open: true, message: 'Image uploaded successfully!', severity: 'success' });
     } else {
       setToast({ open: true, message: 'Invalid file format. Upload jpg, jpeg, png.', severity: 'error' });
@@ -26,6 +27,7 @@ const BirdIdentificationByPhotos = () => {
     const file = e.target.files[0];
     if (file && isValidImage(file)) {
       setImage(file);
+      setImagePreview(URL.createObjectURL(file)); // Set preview URL
       setToast({ open: true, message: 'Image uploaded successfully!', severity: 'success' });
     } else {
       setToast({ open: true, message: 'Invalid file format. Upload jpg, jpeg, png.', severity: 'error' });
@@ -97,15 +99,21 @@ const BirdIdentificationByPhotos = () => {
           textAlign: 'center',
           mx: 'auto',
           my: 4,
+          position: 'relative', // Position relative to contain the preview
         }}
         onDrop={handleDrop}
         onDragOver={(e) => e.preventDefault()}
       >
-        <label htmlFor="file-input" style={{ cursor: 'pointer' }}>
-          <Typography variant="body1" color="textSecondary">
-            Drop Your Photo Here
-          </Typography>
-        </label>
+        {/* Display the image preview if there is an image */}
+        {imagePreview ? (
+          <img src={imagePreview} alt="Preview" style={{ maxWidth: '100%', maxHeight: '100%',objectFit: 'cover', }} />
+        ) : (
+          <label htmlFor="file-input" style={{ cursor: 'pointer' }}>
+            <Typography variant="body1" color="textSecondary">
+              Drop Your Photo Here
+            </Typography>
+          </label>
+        )}
         <input
           type="file"
           accept="image/*"
