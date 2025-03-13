@@ -9,3 +9,12 @@ Backend/data/CUB_200_2011/images/
 
 # Ignore bird_species_classifier
 Backend/scripts/bird_species_classifier.h5
+
+# Ignore bird_model.pkl
+Backend/bird_model.pkl
+
+# Ignore bird_identification_model.pkl
+Backend/bird_identification_model.pkl
+
+# Ignore __pycache__
+Backend/scripts/__pycache__

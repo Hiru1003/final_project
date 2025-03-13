@@ -62,6 +62,8 @@ def encode_features(features):
     
     return np.array(encoded_features)
 
+
+
 # Function to predict the bird based on the user input
 def predict_bird(user_input):
     encoded_input = encode_features(user_input)
@@ -73,10 +75,15 @@ def predict_bird(user_input):
 
     if len(encoded_input[0]) != 88:  # It should match your model's expectation
         print(f"Error: Expected 88 features, but got {len(encoded_input[0])}.")
-        return None
+        return "Information is not enough to predict the bird."  # Return a message when features are incorrect
     
     prediction = model.predict(encoded_input)
-    return prediction[0]
+    
+    # Assuming prediction might sometimes return an empty or unidentifiable value
+    if prediction is None or prediction[0] == 'unknown':  # Adjust condition based on model behavior
+        return "Information is not enough to predict the bird."  # When prediction is unclear or unknown
+    return prediction[0]  # Return the predicted bird species
+
 
 # Main script to get input from the user and make a prediction
 if __name__ == "__main__":
