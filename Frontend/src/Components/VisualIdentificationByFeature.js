@@ -1,67 +1,39 @@
 import React, { useState } from 'react';
-import { Box, Typography, FormControl, InputLabel, Select, MenuItem, Snackbar, Alert } from '@mui/material';
+import { Box, Typography, FormControl, InputLabel, Select, MenuItem, Snackbar, Alert, CircularProgress } from '@mui/material';
 import PrimaryButton from './PrimaryButton';
 
 const VisualIdentificationByFeature = () => {
-  const [selectedFeatures, setSelectedFeatures] = useState({
-    primaryColor: '',
-    beakColor: '',
-    tailShape: '',
-    size: '',
-    wingPattern: '',
-    habitat: '',
-    legColor: '',
-    headMarkings: '',
-    bodyPattern: '',
-    beakShape: '',
-    tailColor: '',
-    behavior: '',
-  });
+  const [birdSpecies, setBirdSpecies] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [openSnackbar, setOpenSnackbar] = useState(false);
 
-  const [birdSpecies, setBirdSpecies] = useState('');
-  const [toast, setToast] = useState({ open: false, message: '', severity: 'error' });
+  const handleSearch = async () => {
+    setLoading(true);
+    setError(null);
+    setBirdSpecies(null);
 
-  const handleSelectChange = (event, label) => {
-    setSelectedFeatures({
-      ...selectedFeatures,
-      [label]: event.target.value,
-    });
-  };
-
-  const handleSearchBird = async () => {
-    const featuresArray = Object.values(selectedFeatures).filter(value => value !== '');
-    
-    if (featuresArray.length === 0) {
-      setToast({ open: true, message: 'Please select at least one feature before searching.', severity: 'error' });
-      return;
-    }
-  
     try {
       const response = await fetch('http://127.0.0.1:5000/predict_features', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(featuresArray),
+        body: JSON.stringify({}) // Add selected dropdown values here
       });
-  
-      if (response.ok) {
-        const data = await response.json();
-        console.log('Entered Features:', featuresArray);
-        console.log('Bird Prediction:', data);
-  
-        if (data.species === "Information is not enough to predict the bird.") {
-          setBirdSpecies("Sorry, we couldn't identify the bird with the given features.");
-        } else {
-          setBirdSpecies(data.species);
-        }
-      } else {
-        setBirdSpecies("Sorry, there was an error processing your request.");
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch bird identification');
       }
+      
+      const data = await response.json();
+      setBirdSpecies(data.birdSpecies || 'Unknown Species');
     } catch (error) {
-      console.error('Fetch failed:', error);
-      setBirdSpecies("Sorry, there was an error processing your request.");
+      setError(error.message);
+      setOpenSnackbar(true);
+    } finally {
+      setLoading(false);
     }
   };
-  
+
   return (
     <Box sx={{ p: 3 }}>
       <Typography variant="h6" fontWeight="bold" align="left" gutterBottom marginTop={8} marginLeft={3}>
@@ -69,37 +41,38 @@ const VisualIdentificationByFeature = () => {
       </Typography>
 
       <Typography variant="body1" align="left" gutterBottom marginLeft={3} marginRight={3}>
-        Have you ever come across a bird and wondered what species it might be? With our bird identification system, you can select features and receive accurate results.
+        Have you ever come across a bird and wondered what species it might be? With our bird identification system, you can upload a photo and receive accurate results within seconds.
       </Typography>
 
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', marginLeft: 3, marginRight: 5, marginBottom: 1, marginTop: 3 }}>
-        {Object.keys(selectedFeatures).map((key, index) => (
-          index % 3 === 0 && (
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', mb: 2 }} key={index}>
-              {Object.keys(selectedFeatures).slice(index, index + 3).map((feature, colIndex) => (
-                <FormControl sx={{ width: 350, mb: 2 }} key={feature}>
-                  <InputLabel>{getLabel(feature)}</InputLabel>
-                  <Select
-                    value={selectedFeatures[feature] || ''}
-                    onChange={(e) => handleSelectChange(e, feature)}
-                    sx={{ height: '50px' }}
-                  >
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', overflow: 'visible', marginLeft: 3, marginRight: 5, marginBottom: 1, marginTop: 3 }}>
+        {Array.from({ length: 4 }).map((_, rowIndex) => (
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', mb: 2 }} key={rowIndex}>
+            {Array.from({ length: 3 }).map((_, colIndex) => {
+              const labelIndex = rowIndex * 3 + colIndex + 1;
+              return (
+                <FormControl sx={{ width: 350, mb: 2, height: '45px' }} key={colIndex}>
+                  <InputLabel id={`label-${labelIndex}`} sx={{ backgroundColor: 'white', zIndex: 1 }}>
+                    {getLabel(labelIndex)}
+                  </InputLabel>
+                  <Select labelId={`label-${labelIndex}`} id={`select-${labelIndex}`} defaultValue="">
                     <MenuItem value="">
                       <em>None</em>
                     </MenuItem>
-                    {getOptions(feature).map((option) => (
+                    {getOptions(labelIndex).map(option => (
                       <MenuItem key={option} value={option}>{option}</MenuItem>
                     ))}
                   </Select>
                 </FormControl>
-              ))}
-            </Box>
-          )
+              );
+            })}
+          </Box>
         ))}
       </Box>
 
       <Box textAlign="center" sx={{ width: '350px', margin: '0 auto' }}>
-        <PrimaryButton width="350px" onClick={handleSearchBird}>Search Bird</PrimaryButton>
+        <PrimaryButton width="350px" onClick={handleSearch} disabled={loading}>
+          {loading ? <CircularProgress size={24} /> : 'Search Bird'}
+        </PrimaryButton>
       </Box>
 
       {birdSpecies && (
@@ -109,44 +82,53 @@ const VisualIdentificationByFeature = () => {
       )}
 
       <Snackbar
-        open={toast.open}
-        autoHideDuration={3000}
-        onClose={() => setToast({ ...toast, open: false })}
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={() => setOpenSnackbar(false)}
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
       >
-        <Alert onClose={() => setToast({ ...toast, open: false })} severity={toast.severity} sx={{ width: '100%' }}>
-          {toast.message}
+        <Alert severity="error" onClose={() => setOpenSnackbar(false)}>
+          {error}
         </Alert>
       </Snackbar>
     </Box>
   );
 };
 
-const getLabel = (feature) => {
-  const labels = {
-    primaryColor: 'Primary Color', beakColor: 'Beak Color', tailShape: 'Tail Shape', size: 'Size',
-    wingPattern: 'Wing Pattern', habitat: 'Habitat', legColor: 'Leg Color', headMarkings: 'Head Markings',
-    bodyPattern: 'Body Pattern', beakShape: 'Beak Shape', tailColor: 'Tail Color', behavior: 'Behavior'
-  };
-  return labels[feature] || '';
+const getLabel = (index) => {
+  switch (index) {
+    case 1: return 'Primary Color';
+    case 2: return 'Beak Color';
+    case 3: return 'Tail Shape';
+    case 4: return 'Size';
+    case 5: return 'Wing Pattern';
+    case 6: return 'Habitat';
+    case 7: return 'Leg Color';
+    case 8: return 'Head Markings';
+    case 9: return 'Body Pattern';
+    case 10: return 'Beak Shape';
+    case 11: return 'Tail Color';
+    case 12: return 'Behavior';
+    default: return '';
+  }
 };
 
-const getOptions = (feature) => {
-  const options = {
-    primaryColor: ['Black', 'White', 'Brown', 'Grey', 'Blue', 'Green', 'Yellow', 'Red'],
-    beakColor: ['Black', 'Yellow', 'Orange', 'Red', 'Grey', 'Blue', 'Brown', 'White'],
-    tailShape: ['Rounded', 'Forked', 'Pointed', 'Square', 'Long', 'Short', 'Fan-shaped'],
-    size: ['Small', 'Medium', 'Large', 'Extra Large'],
-    wingPattern: ['Solid', 'Striped', 'Spotted', 'Bars', 'Mottled', 'Plain'],
-    habitat: ['Forest', 'Wetlands', 'Grasslands', 'Urban', 'Coastal', 'Desert', 'Mountains'],
-    legColor: ['Black', 'Yellow', 'Orange', 'Red', 'Pink', 'Grey', 'Brown', 'White'],
-    headMarkings: ['Plain', 'Striped', 'Crested', 'Cap', 'Mask', 'Patch', 'Eyering'],
-    bodyPattern: ['Solid', 'Spotted', 'Streaked', 'Striped', 'Mottled', 'Iridescent'],
-    beakShape: ['Hooked', 'Pointed', 'Conical', 'Flat', 'Curved', 'Long', 'Short'],
-    tailColor: ['Black', 'Brown', 'White', 'Grey', 'Yellow', 'Orange', 'Red'],
-    behavior: ['Perching', 'Soaring', 'Wading', 'Swimming', 'Hovering', 'Diving'],
-  };
-  return options[feature] || [];
+const getOptions = (index) => {
+  switch (index) {
+    case 1: return ['Black', 'White', 'Brown', 'Grey', 'Blue', 'Green', 'Yellow', 'Red', 'Orange', 'Pink', 'Purple', 'Multicolored', 'Black and White'];
+    case 2: return ['Black', 'Yellow', 'Orange', 'Red', 'Grey', 'Blue', 'Brown', 'White'];
+    case 3: return ['Rounded', 'Forked', 'Pointed', 'Square', 'Long', 'Short', 'Fan-shaped'];
+    case 4: return ['Small', 'Medium', 'Large', 'Extra Large'];
+    case 5: return ['Solid', 'Striped', 'Spotted', 'Bars', 'Mottled', 'Plain'];
+    case 6: return ['Forest', 'Wetlands', 'Grasslands', 'Urban', 'Coastal', 'Desert', 'Mountains'];
+    case 7: return ['Black', 'Yellow', 'Orange', 'Red', 'Pink', 'Grey', 'Brown', 'White'];
+    case 8: return ['Plain', 'Striped', 'Crested', 'Cap', 'Mask', 'Patch', 'Eyering'];
+    case 9: return ['Solid', 'Spotted', 'Streaked', 'Striped', 'Mottled', 'Iridescent'];
+    case 10: return ['Hooked', 'Pointed', 'Conical', 'Flat', 'Curved', 'Long', 'Short'];
+    case 11: return ['Black', 'Brown', 'White', 'Grey', 'Yellow', 'Orange', 'Red', 'Blue', 'Green', 'Multicolored', 'Black and White'];
+    case 12: return ['Perching', 'Soaring', 'Wading', 'Swimming', 'Ground Walking', 'Hovering', 'Diving', 'Drilling'];
+    default: return [];
+  }
 };
 
 export default VisualIdentificationByFeature;
