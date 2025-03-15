@@ -7,32 +7,49 @@ const VisualIdentificationByFeature = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState('');
+  const [formValues, setFormValues] = useState({});
+
+  const handleChange = (index, value) => {
+    setFormValues(prevValues => ({ ...prevValues, [index]: value }));
+  };
 
   const handleSearch = async () => {
+    if (Object.keys(formValues).length < 12) {
+      setSnackbarMessage('Please fill out the entire form before searching.');
+      setOpenSnackbar(true);
+      return;
+    }
+  
+    console.log("User Input Values:", Object.values(formValues)); // Ensure data format
+  
     setLoading(true);
     setError(null);
     setBirdSpecies(null);
-
+  
     try {
       const response = await fetch('http://127.0.0.1:5000/predict_features', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({}) // Add selected dropdown values here
+        body: JSON.stringify(Object.values(formValues)) // Send as an array
       });
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch bird identification');
-      }
-      
+  
       const data = await response.json();
-      setBirdSpecies(data.birdSpecies || 'Unknown Species');
+      if (data.species) {
+        setBirdSpecies(data.species);
+      } else {
+        setBirdSpecies("The system couldn't confidently identify a bird. The information may be incorrect.");
+      }
     } catch (error) {
+      console.error("API Error:", error);
       setError(error.message);
+      setSnackbarMessage('Error fetching bird identification. Please try again.');
       setOpenSnackbar(true);
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <Box sx={{ p: 3 }}>
@@ -54,7 +71,12 @@ const VisualIdentificationByFeature = () => {
                   <InputLabel id={`label-${labelIndex}`} sx={{ backgroundColor: 'white', zIndex: 1 }}>
                     {getLabel(labelIndex)}
                   </InputLabel>
-                  <Select labelId={`label-${labelIndex}`} id={`select-${labelIndex}`} defaultValue="">
+                  <Select
+                    labelId={`label-${labelIndex}`}
+                    id={`select-${labelIndex}`}
+                    defaultValue=""
+                    onChange={(e) => handleChange(labelIndex, e.target.value)}
+                  >
                     <MenuItem value="">
                       <em>None</em>
                     </MenuItem>
@@ -77,7 +99,7 @@ const VisualIdentificationByFeature = () => {
 
       {birdSpecies && (
         <Typography align="center" sx={{ marginTop: 3, fontSize: '16px' }}>
-          We found your bird! It can be {birdSpecies}.
+         We found your bird. It might be {birdSpecies}
         </Typography>
       )}
 
@@ -87,8 +109,8 @@ const VisualIdentificationByFeature = () => {
         onClose={() => setOpenSnackbar(false)}
         anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
       >
-        <Alert severity="error" onClose={() => setOpenSnackbar(false)}>
-          {error}
+        <Alert severity={error ? 'error' : 'warning'} onClose={() => setOpenSnackbar(false)}>
+          {snackbarMessage}
         </Alert>
       </Snackbar>
     </Box>
