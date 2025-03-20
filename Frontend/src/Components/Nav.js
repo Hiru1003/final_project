@@ -50,6 +50,7 @@ function NavPage() {
 
                 <Link to='/Bird-Identification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Bird Identification</Link>
                 <Link to='/Visual-Identification' style={{ fontSize: '18px', fontWeight: 'bold' }}>Visual Identification</Link>
+                <Link to='/Bird-Diary' style={{ fontSize: '18px', fontWeight: 'bold' }}>Bird Diary</Link>
             </nav>
 
             <div className="auth-links">

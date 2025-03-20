@@ -1,7 +1,7 @@
 import BirdGalleryAllBirds from "../Components/BirdGalleryAllBirds";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/landing3.jpg'; 
+import landingImage from '../Assets/AllBirds/LongToedStint.jpg'; 
 
 const AllBirds = () => {
   return (
