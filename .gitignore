@@ -18,3 +18,10 @@ Backend/bird_identification_model.pkl
 
 # Ignore __pycache__
 Backend/scripts/__pycache__
+
+# Ignore temp
+Backend/temp
+
+Backend/.env
+Backend/__pycache__/
+Backend/venv/

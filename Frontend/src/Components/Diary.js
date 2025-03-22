@@ -5,12 +5,12 @@ import PrimaryButton from './PrimaryButton';
 const Diary = () => {
   const [birdName, setBirdName] = useState('');
   const [location, setLocation] = useState('');
-  const [date, setDate] = useState('');
   const [weather, setWeather] = useState('');
   const [notes, setNotes] = useState('');
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState('');
   const [toast, setToast] = useState({ open: false, message: '', severity: 'info' });
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]); 
 
   // Handle file input change
   const handleFileChange = (e) => {
@@ -27,22 +27,34 @@ const Diary = () => {
   };
 
   return (
-    <Box sx={{ p: 3, maxWidth: 1200, mx: 'auto' }}>
+    <Box sx={{ p: 3, maxWidth: 1200, mx: 'auto' , mt:3 }}>
       <Typography variant="h5" fontWeight="bold" gutterBottom textAlign="center">
         Bird Diary
       </Typography>
 
       {/* Bird Name & Location */}
-      <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
+      <Box sx={{ display: 'flex', gap: 2, mb: 2 , mt:3}}>
         <TextField fullWidth label="Bird Name *" value={birdName} onChange={(e) => setBirdName(e.target.value)} />
         <TextField fullWidth label="Location *" value={location} onChange={(e) => setLocation(e.target.value)} />
       </Box>
 
       {/* Date & Weather */}
       <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
-        <TextField fullWidth label="YYYY-MM-DD" type="date" value={date} onChange={(e) => setDate(e.target.value)} InputLabelProps={{ shrink: true }} />
-        <TextField fullWidth label="Weather" value={weather} onChange={(e) => setWeather(e.target.value)} />
-      </Box>
+        <TextField 
+            fullWidth 
+            label="Date" 
+            type="date" 
+            value={date} 
+            onChange={(e) => setDate(e.target.value)} 
+            InputLabelProps={{ shrink: true }} 
+        />
+        <TextField 
+            fullWidth 
+            label="Weather" 
+            value={weather} 
+            onChange={(e) => setWeather(e.target.value)} 
+        />
+    </Box>
 
 
       <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
@@ -101,13 +113,19 @@ const Diary = () => {
             display: 'flex', 
             justifyContent: 'center', 
             width: '100%', 
-            mt: 2 // Optional margin for spacing
+            mt: 2, 
+            gap: 2 
         }}
-        >
+    >
         <PrimaryButton width="200px" onClick={handleSubmit}>
             Save
         </PrimaryButton>
-        </Box>
+
+        <PrimaryButton width="200px" onClick={handleSubmit}>
+            Previous entries
+        </PrimaryButton>
+    </Box>
+
 
 
       {/* Snackbar for notifications */}

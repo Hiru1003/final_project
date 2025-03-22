@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from scripts.predict_species import predict_species
 from scripts.visual_identification import predict_bird 
+from config import collection 
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend communication
@@ -49,6 +50,38 @@ def predict_from_features():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
     
+
+
+@app.route('/add_entry', methods=['POST'])
+def add_entry():
+    try:
+        data = request.json
+
+        # Validate the required fields
+        required_fields = ["bird_name", "location", "date"]
+        for field in required_fields:
+            if field not in data:
+                return jsonify({'error': f'Missing required field: {field}'}), 400
+
+        entry = {
+            "bird_name": data.get("bird_name"),
+            "location": data.get("location"),
+            "date": data.get("date"),
+            "weather": data.get("weather", None),
+            "notes": data.get("notes", None),
+            "image_url": data.get("image_url", None)
+        }
+
+        # Insert into MongoDB
+        result = collection.insert_one(entry)
+
+        if result.inserted_id:
+            return jsonify({"message": "Diary entry added successfully!"}), 201
+        else:
+            return jsonify({"error": "Failed to save entry"}), 500
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 
