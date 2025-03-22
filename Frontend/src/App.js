@@ -16,6 +16,7 @@ import SightingPage from './Pages/Sighting';
 import SightingsInfo from './Components/SightingInfo';
 import Feedback from './Components/FeedBack';
 import BirdDiary from './Pages/BirdDiary';
+import PreviousEntries from './Pages/PreviouseEntries';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/Bird-Identification" element={<BirdIdentification />} />
         <Route path="/Visual-Identification" element={<VisualIdentification />} />
         <Route path="/Bird-Diary" element={<BirdDiary />} />
+        <Route path="/SaveBirds" element={<PreviousEntries />} />
 
         <Route path="/endemicbirds/:id" element={<BirdInfo />} />
         <Route path="/all-birds/:id" element={<AllBirdInfo />} />

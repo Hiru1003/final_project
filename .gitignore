@@ -22,6 +22,11 @@ Backend/scripts/__pycache__
 # Ignore temp
 Backend/temp
 
+# Ignore environment variables file
 Backend/.env
-Backend/__pycache__/
+
+# Ignore venv/ directory
 Backend/venv/
+
+# Ignore site-packages folder (installed libraries)
+Backend/env

@@ -51,13 +51,19 @@ def predict_from_features():
         return jsonify({'error': str(e)}), 500
     
 
+ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'avif'}
+
+# Function to check the allowed extensions
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
 
 @app.route('/add_entry', methods=['POST'])
 def add_entry():
     try:
         data = request.json
 
-        # Validate the required fields
         required_fields = ["bird_name", "location", "date"]
         for field in required_fields:
             if field not in data:
@@ -75,13 +81,39 @@ def add_entry():
         # Insert into MongoDB
         result = collection.insert_one(entry)
 
+        # Debug log to ensure the insert was successful
+        print(f"MongoDB result: {result.inserted_id}")
+
         if result.inserted_id:
             return jsonify({"message": "Diary entry added successfully!"}), 201
         else:
             return jsonify({"error": "Failed to save entry"}), 500
 
     except Exception as e:
+        # Log the detailed error message
+        print(f"Error: {e}")
         return jsonify({'error': str(e)}), 500
+
+
+
+
+@app.route('/get_entries', methods=['GET'])
+def get_entries():
+    try:
+        # Query all entries from the MongoDB collection
+        entries = collection.find({}, {"_id": 0})  # Exclude _id field from the result
+        
+        # Convert the MongoDB cursor to a list of dictionaries
+        entries_list = list(entries)
+
+        # Return the entries as JSON
+        return jsonify(entries_list)
+
+    except Exception as e:
+        # Log and return the error message
+        print(f"Error: {e}")
+        return jsonify({'error': str(e)}), 500
+
 
 
 

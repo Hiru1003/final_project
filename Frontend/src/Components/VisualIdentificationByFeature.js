@@ -58,8 +58,8 @@ const VisualIdentificationByFeature = () => {
       </Typography>
 
       <Typography variant="body1" align="left" gutterBottom marginLeft={3} marginRight={3}>
-  Spotted a bird and curious about its species? Take a moment to recall its features! Was it a vibrant splash of red darting through the trees, or a subtle shade of brown blending into the forest? Did it have a sleek, pointed beak built for precision, or a curved one suited for cracking seeds? Notice its wings—were they patterned with stripes, speckled with spots, or a solid shade? How about its tail—long and elegant, short and fan-like, or forked at the tip? Even the smallest details, like leg color or markings on the head, can help uncover its identity. Simply select the characteristics that stood out to you, and let's solve the mystery of your feathered visitor together!
-</Typography>
+        Spotted a bird and curious about its species? Take a moment to recall its features! Was it a vibrant splash of red darting through the trees, or a subtle shade of brown blending into the forest? Did it have a sleek, pointed beak built for precision, or a curved one suited for cracking seeds? Notice its wings—were they patterned with stripes, speckled with spots, or a solid shade? How about its tail—long and elegant, short and fan-like, or forked at the tip? Even the smallest details, like leg color or markings on the head, can help uncover its identity. Simply select the characteristics that stood out to you, and let's solve the mystery of your feathered visitor together!
+      </Typography>
 
 
 
