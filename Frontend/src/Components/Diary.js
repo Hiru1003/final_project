@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Box, TextField, Typography, Button, Snackbar, Alert } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { Box, TextField, Typography, Snackbar, Alert } from '@mui/material';
 import axios from 'axios'; // Import Axios
 import PrimaryButton from './PrimaryButton';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Diary = () => {
   const [birdName, setBirdName] = useState('');
@@ -14,6 +14,19 @@ const Diary = () => {
   const [toast, setToast] = useState({ open: false, message: '', severity: 'info' });
   const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
   const navigate = useNavigate(); 
+  const locationState = useLocation().state; // Capture the state passed from Entries
+
+  useEffect(() => {
+    if (locationState) {
+      // Populate fields with entry data when editing an entry
+      setBirdName(locationState.bird_name);
+      setLocation(locationState.location);
+      setWeather(locationState.weather);
+      setNotes(locationState.notes);
+      setImagePreview(locationState.image_url);
+      setDate(locationState.date);
+    }
+  }, [locationState]);
 
   // Handle file input change
   const handleFileChange = (e) => {
@@ -26,49 +39,49 @@ const Diary = () => {
   };
 
   // Handle submit and send data to backend
-// Handle submit and send data to backend
-const handleSubmit = async () => {
-  try {
-    const requestData = {
-      bird_name: birdName,
-      location: location,
-      date: date,
-      weather: weather,
-      notes: notes,
-      image_url: imagePreview || null, // Sending the image URL instead of FormData
-    };
+  const handleSubmit = async () => {
+    try {
+      const requestData = {
+        bird_name: birdName,
+        location: location,
+        date: date,
+        weather: weather,
+        notes: notes,
+        image_url: imagePreview || null, // Sending the image URL instead of FormData
+      };
 
-    // Log request data before sending
-    console.log("Submitting Data:", requestData);
+      // Log request data before sending
+      console.log("Submitting Data:", requestData);
 
-    const response = await axios.post('http://127.0.0.1:5000/add_entry', requestData, {
-      headers: { 'Content-Type': 'application/json' },
-    });
+      const response = locationState 
+        ? await axios.put(`http://127.0.0.1:5000/edit_entry/${locationState._id}`, requestData, {
+            headers: { 'Content-Type': 'application/json' },
+          })
+        : await axios.post('http://127.0.0.1:5000/add_entry', requestData, {
+            headers: { 'Content-Type': 'application/json' },
+          });
 
-    if (response.status === 201) {
-      setToast({ open: true, message: 'Diary entry saved successfully!', severity: 'success' });
+      if (response.status === 201 || response.status === 200) {
+        setToast({ open: true, message: locationState ? 'Diary entry updated successfully!' : 'Diary entry saved successfully!', severity: 'success' });
 
-      // Reset the form after successful save
-      setBirdName('');
-      setLocation('');
-      setWeather('');
-      setNotes('');
-      setImage(null);
-      setImagePreview('');
-      setDate(new Date().toISOString().split('T')[0]); // Reset date to today's date
+        // Reset the form after successful save
+        setBirdName('');
+        setLocation('');
+        setWeather('');
+        setNotes('');
+        setImage(null);
+        setImagePreview('');
+        setDate(new Date().toISOString().split('T')[0]); // Reset date to today's date
+      }
+    } catch (error) {
+      console.error('Error submitting diary entry:', error);
+      setToast({ open: true, message: 'Failed to save entry', severity: 'error' });
     }
-  } catch (error) {
-    console.error('Error submitting diary entry:', error);
-    setToast({ open: true, message: 'Failed to save entry', severity: 'error' });
-  }
-};
+  };
 
-
-const handlePreviousEntries = () => {
-  navigate('/SaveBirds');  // Navigate to the Previous Entries page
-};
-
-  
+  const handlePreviousEntries = () => {
+    navigate('/SaveBirds');  // Navigate to the Previous Entries page
+  };
 
   return (
     <Box sx={{ p: 3, maxWidth: 1200, mx: 'auto', mt: 3 }}>
@@ -120,7 +133,6 @@ const handlePreviousEntries = () => {
           onChange={(e) => setNotes(e.target.value)}
           fullWidth
         />
-
         {/* Image Drop Area */}
         <Box
           sx={{
@@ -159,7 +171,7 @@ const handlePreviousEntries = () => {
         />
       </Box>
 
-      {/* Save Button */}
+      {/* Save/Edit Button */}
       <Box
         sx={{
           display: 'flex',
@@ -170,7 +182,7 @@ const handlePreviousEntries = () => {
         }}
       >
         <PrimaryButton width="200px" onClick={handleSubmit}>
-          Save
+          {locationState ? 'Edit' : 'Save'}
         </PrimaryButton>
         <PrimaryButton width="200px" onClick={handlePreviousEntries}>
           Previous entries

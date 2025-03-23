@@ -38,7 +38,7 @@ const Entries = () => {
 
   // Edit function
   const handleEdit = () => {
-    navigate('/diary', { state: selectedEntry }); // Navigate to the Diary page with the selected entry data
+    navigate('/Bird-Diary', { state: selectedEntry }); // Navigate to the Diary page with the selected entry data
     handleMenuClose();
   };
 
