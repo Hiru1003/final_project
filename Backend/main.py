@@ -67,18 +67,25 @@ def add_entry():
     try:
         data = request.json
 
+        # Get the logged-in user's email from the request headers (or JWT token, if applicable)
+        user_email = request.headers.get('User-Email')  # Assuming you're passing email in the request header
+
+        if not user_email:
+            return jsonify({'error': 'User email is required for this request'}), 400
+
         required_fields = ["bird_name", "location", "date"]
         for field in required_fields:
             if field not in data:
                 return jsonify({'error': f'Missing required field: {field}'}), 400
 
         entry = {
+            "user_email": user_email,  # Associate entry with the logged-in user
             "bird_name": data.get("bird_name"),
             "location": data.get("location"),
             "date": data.get("date"),
             "weather": data.get("weather", None),
             "notes": data.get("notes", None),
-            "image_url": data.get("image_url", None)
+            "image_url": data.get("image_url", None),
         }
 
         # Insert into MongoDB
@@ -99,12 +106,16 @@ def add_entry():
 
 
 
-
 @app.route('/get_entries', methods=['GET'])
 def get_entries():
     try:
-        # Query all entries from the MongoDB collection
-        entries = collection.find({}, {"_id": 0})  # Exclude _id field from the result
+        # Get the user email from headers
+        user_email = request.headers.get('User-Email')
+        if not user_email:
+            return jsonify({'error': 'User email is required'}), 400
+
+        # Query the entries for the specific user using "user_email"
+        entries = collection.find({"user_email": user_email}, {"_id": 0})  # Updated key to user_email
         
         # Convert the MongoDB cursor to a list of dictionaries
         entries_list = list(entries)
@@ -163,4 +174,3 @@ if __name__ == '__main__':
 #source env/bin/activate
 #cd Backend
 #python3 main.py
-

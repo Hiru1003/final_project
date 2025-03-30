@@ -46,4 +46,3 @@ def login_user(user: UserLogin):
         "email": user.email
     }
 
-

@@ -31,21 +31,29 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Login data being sent:', formData); // Log form data to the console
+  
     try {
       // Send POST request to backend API for login
       const response = await axios.post('http://127.0.0.1:5000/login', formData);
-      setSnackbarMessage('Login successful!');
-      setError(false); // No error, success message
-      setOpenSnackbar(true); // Show Snackbar
-
-      // Clear the form data
-      setFormData({
-        email: '',
-        password: '',
-      });
-      
-      // Optionally, handle further actions (like redirecting to dashboard)
-      
+  
+      // If login is successful, store the email in localStorage
+      if (response.status === 200) {
+        localStorage.setItem('userEmail', formData.email);  // Store email in localStorage
+  
+        setSnackbarMessage('Login successful!');
+        setError(false); // No error, success message
+        setOpenSnackbar(true); // Show Snackbar
+  
+        // Clear the form data
+        setFormData({
+          email: '',
+          password: '',
+        });
+  
+        // Optionally, handle further actions (like redirecting to dashboard)
+        // Example:
+        // navigate('/dashboard'); // Navigate to a different page if needed
+      }
     } catch (error) {
       console.error("There was an error logging in", error);
       setSnackbarMessage('Error logging in!');
@@ -53,6 +61,7 @@ const LoginPage = () => {
       setOpenSnackbar(true); // Show Snackbar
     }
   };
+  
 
   return (
     <>

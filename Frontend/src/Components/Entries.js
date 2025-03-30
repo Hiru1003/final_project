@@ -12,14 +12,25 @@ const Entries = () => {
 
   // Fetch entries from MongoDB on component mount
   useEffect(() => {
+  
     const fetchEntries = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:5000/get_entries'); // Assuming you have an endpoint for this
+        const userEmail = localStorage.getItem('userEmail');  // Retrieve email from localStorage
+        if (!userEmail) {
+          console.error("User email is missing. Please log in.");
+          return;  // Exit if no user email is found
+        }
+    
+        const response = await axios.get('http://127.0.0.1:5000/get_entries', {
+          headers: { 'User-Email': userEmail }
+        });
         setEntries(response.data);
       } catch (error) {
         console.error('Error fetching entries:', error);
       }
     };
+    
+
 
     fetchEntries();
   }, []);

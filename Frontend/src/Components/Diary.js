@@ -41,6 +41,14 @@ const Diary = () => {
   // Handle submit and send data to backend
   const handleSubmit = async () => {
     try {
+      // Retrieve the logged-in user's email from localStorage (or cookies, if you're using them)
+      const userEmail = localStorage.getItem('userEmail');  // Replace with actual key where email is stored
+  
+      if (!userEmail) {
+        console.error("User email is missing. Please log in.");
+        return;
+      }
+  
       const requestData = {
         bird_name: birdName,
         location: location,
@@ -49,21 +57,26 @@ const Diary = () => {
         notes: notes,
         image_url: imagePreview || null, // Sending the image URL instead of FormData
       };
-
-      // Log request data before sending
+  
       console.log("Submitting Data:", requestData);
-
+  
       const response = locationState 
         ? await axios.put(`http://127.0.0.1:5000/edit_entry/${locationState._id}`, requestData, {
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 
+              'Content-Type': 'application/json',
+              'User-Email': userEmail  // Add the email to the request headers dynamically
+            },
           })
         : await axios.post('http://127.0.0.1:5000/add_entry', requestData, {
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 
+              'Content-Type': 'application/json',
+              'User-Email': userEmail  // Add the email to the request headers dynamically
+            },
           });
-
+  
       if (response.status === 201 || response.status === 200) {
         setToast({ open: true, message: locationState ? 'Diary entry updated successfully!' : 'Diary entry saved successfully!', severity: 'success' });
-
+  
         // Reset the form after successful save
         setBirdName('');
         setLocation('');
@@ -78,6 +91,7 @@ const Diary = () => {
       setToast({ open: true, message: 'Failed to save entry', severity: 'error' });
     }
   };
+  
 
   const handlePreviousEntries = () => {
     navigate('/SaveBirds');  // Navigate to the Previous Entries page
