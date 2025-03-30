@@ -1,10 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
 import Loginimage from '../Assets/login.jpg';
 import { FaGoogle } from "react-icons/fa";
 import TextField from '@mui/material/TextField';
+import axios from 'axios';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 
 const LoginPage = () => {
+  // State to manage form data
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+
+  // State for Snackbar
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState('');
+  const [error, setError] = useState(false); // State to manage error or success
+
+  // Handle input change
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log('Login data being sent:', formData); // Log form data to the console
+    try {
+      // Send POST request to backend API for login
+      const response = await axios.post('http://127.0.0.1:5000/login', formData);
+      setSnackbarMessage('Login successful!');
+      setError(false); // No error, success message
+      setOpenSnackbar(true); // Show Snackbar
+
+      // Clear the form data
+      setFormData({
+        email: '',
+        password: '',
+      });
+      
+      // Optionally, handle further actions (like redirecting to dashboard)
+      
+    } catch (error) {
+      console.error("There was an error logging in", error);
+      setSnackbarMessage('Error logging in!');
+      setError(true); // Error occurred, show error message
+      setOpenSnackbar(true); // Show Snackbar
+    }
+  };
+
   return (
     <>
       <NavPage />
@@ -19,9 +68,9 @@ const LoginPage = () => {
           <div className="w-1/2 p-8 flex flex-col justify-start">
             <h2 className="text-5xl font-semibold text-gray-700 mb-10">Login</h2>
             <p className="text-gray-600 text-lg mb-6">
-              Welcome back, bird enthusiast! Sign in to continue your journey of discovering and identifying beautiful bird species. Let’s dive back into the wonders of bird identification together!
+              Welcome back! Sign in to continue your journey.
             </p>
-            <form className="mt-4">
+            <form onSubmit={handleSubmit} className="mt-4">
               <div className="mb-4">
                 <TextField
                   label="Email"
@@ -30,6 +79,9 @@ const LoginPage = () => {
                   variant="outlined"
                   fullWidth
                   required
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="mb-4"
                 />
               </div>
               <div className="mb-6">
@@ -40,6 +92,9 @@ const LoginPage = () => {
                   variant="outlined"
                   fullWidth
                   required
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  className="mb-4"
                 />
               </div>
               <button
@@ -59,6 +114,18 @@ const LoginPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Snackbar for success/error messages */}
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={() => setOpenSnackbar(false)}
+        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      >
+        <Alert severity={error ? 'error' : 'success'} onClose={() => setOpenSnackbar(false)}>
+          {snackbarMessage}
+        </Alert>
+      </Snackbar>
     </>
   );
 };
