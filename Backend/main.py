@@ -1,6 +1,9 @@
 import os
+from fastapi import HTTPException
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from models.Login import  UserLogin, login_user
+from models.Signup import UserSignup, register_user
 from scripts.predict_species import predict_species
 from scripts.visual_identification import predict_bird 
 from config import collection 
@@ -115,13 +118,36 @@ def get_entries():
         return jsonify({'error': str(e)}), 500
 
 
+@app.route("/signup", methods=["POST"])
+def signup():
+    """API endpoint to handle user signup."""
+    try:
+        # Get JSON data from the request
+        user_data = request.get_json()
+        user = UserSignup(**user_data)  # Validate the data using Pydantic
+        return jsonify(register_user(user))
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/login", methods=["POST"])
+def login():
+    """API endpoint to handle user login."""
+    try:
+        # Get JSON data from the request
+        user_data = request.get_json()
+        user = UserLogin(**user_data)  # Validate the data using Pydantic
+        return jsonify(login_user(user))
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 
 
 if __name__ == '__main__':
     app.run(debug=True)
 
-#Image Loading Progress
+
 
 #source env/bin/activate
 #cd Backend
