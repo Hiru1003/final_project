@@ -2,6 +2,7 @@ import os
 from fastapi import HTTPException
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from models.feedback import FeedbackModel, save_feedback
 from models.Login import  UserLogin, login_user
 from models.Signup import UserSignup, register_user
 from scripts.predict_species import predict_species
@@ -152,6 +153,18 @@ def login():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
+
+@app.route("/feedback", methods=["POST"])
+def submit_feedback():
+    """API endpoint to handle feedback submission."""
+    try:
+        data = request.get_json()
+        feedback = FeedbackModel(**data)  # Validate using Pydantic
+        result = save_feedback(feedback)  # Save the feedback to MongoDB
+        return jsonify(result), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 

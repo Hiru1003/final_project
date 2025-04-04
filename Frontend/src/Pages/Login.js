@@ -6,6 +6,7 @@ import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
+import PrimaryButton from '../Components/PrimaryButton';
 
 const LoginPage = () => {
   // State to manage form data
@@ -106,12 +107,15 @@ const LoginPage = () => {
                   className="mb-4"
                 />
               </div>
-              <button
-                type="submit"
-                className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600 transition-colors duration-200"
-              >
-                Login
-              </button>
+
+
+              <div className="w-full">
+                <PrimaryButton className="w-full" type="submit">
+                  Login
+                </PrimaryButton>
+              </div>
+
+
               <button
                 type="button"
                 className="w-full mt-3 bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center justify-center space-x-2"

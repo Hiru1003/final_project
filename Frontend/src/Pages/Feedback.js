@@ -1,86 +1,98 @@
 import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
-import Signupimage from '../Assets/Signupimage1.jpg';
+import Footer from '../Components/Footer';
+import FeedbackImage from '../Assets/login.jpg'; // You can use another image if you like
 import TextField from '@mui/material/TextField';
-import { FaGoogle } from "react-icons/fa";
-import axios from 'axios';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import PrimaryButton from '../Components/PrimaryButton';
 
-const SignupPage = () => {
-  // State to manage form data
+const Feedback = () => {
+  // Form state
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    password: '',
+    message: '',
   });
 
-  // State for Snackbar
+  // Snackbar state
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
-  const [error, setError] = useState(false); // State to manage error or success
+  const [error, setError] = useState(false);
 
-  // Handle input change
+  // Handle input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value,
     }));
   };
 
-  const handleSubmit = async (e) => {
+// Handle form submission
+const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form data being sent:', formData); // Log form data to the console
+  
     try {
-      // Send POST request to backend API
-      const response = await axios.post('http://127.0.0.1:5000/signup', formData);
-      setSnackbarMessage('User registered successfully!');
-      setError(false); // No error, success message
-      setOpenSnackbar(true); // Show Snackbar
-      
-      setFormData({
-        name: '',
-        email: '',
-        password: '',
+      const response = await fetch('http://127.0.0.1:5000/feedback', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      
-    } catch (error) {
-      console.error("There was an error registering the user", error);
-      setSnackbarMessage('Error registering user!');
-      setError(true); // Error occurred, show error message
-      setOpenSnackbar(true); // Show Snackbar
+  
+      const result = await response.json();
+  
+      if (response.ok) {
+        setSnackbarMessage(result.message || 'Feedback submitted successfully!');
+        setError(false);
+        setOpenSnackbar(true);
+  
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      } else {
+        throw new Error(result.error || 'Failed to submit feedback.');
+      }
+    } catch (err) {
+      console.error("Feedback submission error", err);
+      setSnackbarMessage(err.message || 'Failed to submit feedback.');
+      setError(true);
+      setOpenSnackbar(true);
     }
   };
+  
 
   return (
-    <>
+    <div>
       <NavPage />
       <div className="flex justify-center items-center min-h-[91vh]">
         <div className="flex w-full max-w-7xl h-[80vh] bg-white shadow-2xl rounded-lg overflow-hidden">
           
           {/* Left Section - Image */}
-          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${Signupimage})` }}>
-          </div>
-          
-          {/* Right Section - Signup Form */}
+          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${FeedbackImage})` }}></div>
+
+          {/* Right Section - Feedback Form */}
           <div className="w-1/2 p-8 flex flex-col justify-start">
-            <h2 className="text-5xl font-semibold text-gray-700 mb-10">Sign Up</h2>
+            <h2 className="text-5xl font-semibold text-gray-700 mb-10">Feedback</h2>
             <p className="text-gray-600 text-lg mb-6">
-              Join us and start your journey today! Sign up to access personalized features, stay updated, and become part of our growing community. We’re excited to have you with us!
+              We'd love to hear your thoughts or concerns!
             </p>
             <form onSubmit={handleSubmit} className="mt-4">
               <div className="mb-4">
                 <TextField
                   label="Name"
+                  type="text"
                   name="name"
                   variant="outlined"
                   fullWidth
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="mb-4"
                 />
               </div>
               <div className="mb-4">
@@ -93,38 +105,35 @@ const SignupPage = () => {
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="mb-4"
                 />
               </div>
               <div className="mb-6">
                 <TextField
-                  label="Password"
-                  type="password"
-                  name="password"
+                  label="Message"
+                  name="message"
                   variant="outlined"
                   fullWidth
+                  multiline
+                  rows={4}
                   required
-                  value={formData.password}
+                  value={formData.message}
                   onChange={handleInputChange}
-                  className="mb-4"
                 />
               </div>
+            
               <div className="w-full">
                 <PrimaryButton className="w-full" type="submit">
-                  Sign Up
+                    Submit Feedback
                 </PrimaryButton>
-              </div>
-              <button
-                type="button"
-                className="w-full mt-3 bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center justify-center space-x-2"
-              >
-                <FaGoogle className="text-lg" />
-                <span>Sign Up with Google</span>
-              </button>
+                </div>
+
+
             </form>
           </div>
         </div>
       </div>
+
+      <Footer />
 
       {/* Snackbar for success/error messages */}
       <Snackbar
@@ -137,8 +146,8 @@ const SignupPage = () => {
           {snackbarMessage}
         </Alert>
       </Snackbar>
-    </>
+    </div>
   );
 };
 
-export default SignupPage;
+export default Feedback;

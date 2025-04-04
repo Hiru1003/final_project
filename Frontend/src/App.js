@@ -16,7 +16,7 @@ import VisualIdentification from './Pages/VisualIdentification';
 import SightingGallery from './Components/SightingGallery';
 import SightingPage from './Pages/Sighting';
 import SightingsInfo from './Components/SightingInfo';
-import Feedback from './Components/FeedBack';
+import Feedback from './Pages/Feedback';
 import BirdDiary from './Pages/BirdDiary';
 import PreviousEntries from './Pages/PreviouseEntries';
 
@@ -42,6 +42,7 @@ function App() {
         <Route path='/Feedback' element={<Feedback />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
+        <Route path='/feedback' element={<Feedback />} />
       </Routes>
     </BrowserRouter>
   );
