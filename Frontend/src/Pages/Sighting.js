@@ -2,6 +2,7 @@ import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
 import landingImage from '../Assets/landing6.jpeg'; 
 import SightingGallery from "../Components/SightingGallery";
+import Footer from "../Components/Footer";
 
 const SightingPage = () => {
   return (
@@ -18,6 +19,7 @@ const SightingPage = () => {
           } 
         />
         <SightingGallery/>
+        <Footer/>
     </>
   );
 };

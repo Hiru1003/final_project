@@ -1,10 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import BirdImage from '../Assets/illustration/illustration1.png'; 
 import PrimaryButton from './PrimaryButton';
 
 const HomeSection1 = () => {
+  const navigate = useNavigate(); // Initialize navigate
+
+  const handleButtonClick = () => {
+    navigate('/all-birds'); // Redirect to /all-birds
+  };
+
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-16 ">
+    <div className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-16">
       {/* Text Section */}
       <div className="md:w-1/2 p-4 md:pr-8">
         <h2 className="text-4xl font-bold text-gray-800 mb-4">Learn About Birds</h2>
@@ -14,11 +21,9 @@ const HomeSection1 = () => {
         <p className="text-lg text-gray-700">
           Join us in appreciating these fascinating creatures and learn how to identify birds in your area or beyond. Expand your knowledge and become part of a community passionate about birds and their natural habitats.
         </p>
-      
-        <PrimaryButton width="280px" onClick={() => console.log('Clicked!')}>
+        <PrimaryButton width="280px" onClick={handleButtonClick}>
           Learn More About Birds
         </PrimaryButton>
-
       </div>
 
       {/* Image Section */}
@@ -26,7 +31,7 @@ const HomeSection1 = () => {
         <img
           src={BirdImage}
           alt="Bird in nature"
-          className="w-full h-full  max-h-100"
+          className="w-full h-full max-h-100"
         />
       </div>
     </div>

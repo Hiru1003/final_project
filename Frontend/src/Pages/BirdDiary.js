@@ -3,6 +3,7 @@ import NavPage from '../Components/Nav'
 import LandingPage from '../Components/LandindPage'
 import landingImage from '../Assets/landing8.jpg'; 
 import Diary from '../Components/Diary';
+import Footer from '../Components/Footer';
 
 const BirdDiary = () => {
   return (
@@ -19,6 +20,7 @@ const BirdDiary = () => {
         } 
         />
         <Diary/>
+        <Footer/>
         
     </div>
   )

@@ -36,17 +36,17 @@ const Footer = () => {
       <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap',marginTop:5 }}>
         <Box sx={{ marginRight: 4, width: '300px' }}>
             <Typography variant="subtitle1" fontWeight="bold">Quick Navigation</Typography>
-            <Link href="#" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Bird Identification</Link>
-            <Link href="#" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2}}>Visual Identification</Link>
-            <Link href="#" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Endemic Birds</Link>
-            <Link href="#" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2}}>All Birds</Link>
+            <Link href="/Bird-Identification" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Bird Identification</Link>
+            <Link href="/Visual-Identification" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2}}>Visual Identification</Link>
+            <Link href="/endemic-birds" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Endemic Birds</Link>
+            <Link href="/all-birds" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2}}>All Birds</Link>
         </Box>
 
         <Box sx={{ marginRight: 4, width: '300px' }}>
             <Typography variant="subtitle1" fontWeight="bold">Other</Typography>
             <Link href="#" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Feedback</Link>
-            <Link href="#" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Login</Link>
-            <Link href="#" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Signup</Link>
+            <Link href="/login" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Login</Link>
+            <Link href="/signup" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Signup</Link>
         </Box>
         </Box>
 

@@ -3,6 +3,7 @@ import NavPage from '../Components/Nav'
 import LandingPage from '../Components/LandindPage'
 import landingImage from '../Assets/landing8.jpg'; 
 import Entries from '../Components/Entries';
+import Footer from '../Components/Footer';
 
 const PreviousEntries = () => {
   return (
@@ -19,6 +20,7 @@ const PreviousEntries = () => {
         } 
         />
         <Entries/>
+        <Footer/>
     </div>
   )
 }

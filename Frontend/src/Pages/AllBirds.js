@@ -2,6 +2,7 @@ import BirdGalleryAllBirds from "../Components/BirdGalleryAllBirds";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
 import landingImage from '../Assets/AllBirds/LongToedStint.jpg'; 
+import Footer from "../Components/Footer";
 
 const AllBirds = () => {
   return (
@@ -18,6 +19,7 @@ const AllBirds = () => {
           }
       />
         <BirdGalleryAllBirds/>
+        <Footer/>
     </>
   );
 };

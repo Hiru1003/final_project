@@ -2,6 +2,7 @@ import NavPage from "../Components/Nav";
 import landingImage from '../Assets/AllBirds/PurpleSwamphen.jpg'; 
 import LandingPage from "../Components/LandindPage";
 import VisualIdentificationByFeature from "../Components/VisualIdentificationByFeature";
+import Footer from "../Components/Footer";
 
 const VisualIdentification = () => {
   return (
@@ -18,6 +19,7 @@ const VisualIdentification = () => {
           } 
         />
         <VisualIdentificationByFeature/>
+        <Footer/>
     </>
   );
 };

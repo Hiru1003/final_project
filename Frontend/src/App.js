@@ -28,6 +28,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/Bird-Identification" element={<BirdIdentification />} />
         <Route path="/Visual-Identification" element={<VisualIdentification />} />
+        
         <Route path="/Bird-Diary" element={<BirdDiary />} />
         <Route path="/SaveBirds" element={<PreviousEntries />} />
         <Route path="/endemicbirds/:id" element={<BirdInfo />} />
