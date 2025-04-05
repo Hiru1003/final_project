@@ -1,16 +1,27 @@
 import os
-from fastapi import HTTPException
+from fastapi import HTTPException, requests
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from pymongo import MongoClient
 from models.feedback import FeedbackModel, save_feedback
 from models.Login import  UserLogin, login_user
 from models.Signup import UserSignup, register_user
 from scripts.predict_species import predict_species
 from scripts.visual_identification import predict_bird 
 from config import collection 
+from google.oauth2 import id_token
+from google.auth.transport import requests
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for frontend communication
+CORS(app, origins=["http://localhost:3000"], supports_credentials=True) 
+
+
+@app.after_request
+def apply_cors(response):
+    response.headers['Cross-Origin-Opener-Policy'] = 'unsafe-none'  # Relax the COOP header
+    response.headers['Cross-Origin-Embedder-Policy'] = 'unsafe-none'  # If needed
+    return response
+
 
 TEMP_DIR = "temp"
 os.makedirs(TEMP_DIR, exist_ok=True)  # Ensure the temp directory exists
@@ -165,6 +176,45 @@ def submit_feedback():
         return jsonify(result), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+
+
+MONGO_URI = os.getenv("MONGO_URI")
+client = MongoClient(MONGO_URI)
+db = client["User_Management"]
+users_collection = db["users"]
+
+@app.route("/google-login", methods=['POST'])
+def google_login_handler():
+    """API endpoint to handle Google login."""
+    token = request.json.get('token')  # Retrieve the token from the request
+
+    try:
+        # Specify your Google CLIENT_ID
+        idinfo = id_token.verify_oauth2_token(
+            token, requests.Request(), "135579718410-lr6odphl76uhfk475430teeuv257533r.apps.googleusercontent.com"
+        )
+
+        email = idinfo['email']
+        name = idinfo['name']
+
+        existing_user = users_collection.find_one({"email": email})
+        if not existing_user:
+            new_user = {
+                "name": name,
+                "email": email,
+                "password": None  # Password not required for Google users
+            }
+            users_collection.insert_one(new_user)
+
+        return jsonify({
+            "message": "User logged in successfully",
+            "email": email
+        })
+    except ValueError:
+        raise HTTPException(status_code=403, detail="Invalid token")
+    
 
 
 

@@ -7,6 +7,8 @@ import axios from 'axios';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import PrimaryButton from '../Components/PrimaryButton';
+import { GoogleLogin } from '@react-oauth/google';
+
 
 const SignupPage = () => {
   // State to manage form data
@@ -31,28 +33,43 @@ const SignupPage = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log('Form data being sent:', formData); // Log form data to the console
+      e.preventDefault();
+      try {
+          const response = await axios.post('http://127.0.0.1:5000/signup', formData);
+          setSnackbarMessage('User registered successfully!');
+          setError(false);
+          setOpenSnackbar(true);
+          setFormData({
+              name: '',
+              email: '',
+              password: '',
+          });
+      } catch (error) {
+          console.error("There was an error registering the user", error);
+          setSnackbarMessage('Error registering user!');
+          setError(true);
+          setOpenSnackbar(true);
+      }
+  };
+
+  const handleGoogleLogin = async (credentialResponse) => {
     try {
-      // Send POST request to backend API
-      const response = await axios.post('http://127.0.0.1:5000/signup', formData);
-      setSnackbarMessage('User registered successfully!');
-      setError(false); // No error, success message
-      setOpenSnackbar(true); // Show Snackbar
-      
-      setFormData({
-        name: '',
-        email: '',
-        password: '',
-      });
-      
+        const res = await axios.post('http://127.0.0.1:5000/google-login', {
+            token: credentialResponse.credential,
+        });
+        setSnackbarMessage('Google login successful!');
+        setError(false);
+        setOpenSnackbar(true);
+        // Optionally, handle the response (e.g., navigate to another page)
     } catch (error) {
-      console.error("There was an error registering the user", error);
-      setSnackbarMessage('Error registering user!');
-      setError(true); // Error occurred, show error message
-      setOpenSnackbar(true); // Show Snackbar
+        console.error("Google login failed", error);
+        setSnackbarMessage('Error with Google login!');
+        setError(true);
+        setOpenSnackbar(true);
     }
   };
+
+
 
   return (
     <>
@@ -114,13 +131,18 @@ const SignupPage = () => {
                   Sign Up
                 </PrimaryButton>
               </div>
-              <button
-                type="button"
-                className="w-full mt-3 bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center justify-center space-x-2"
-              >
-                <FaGoogle className="text-lg" />
-                <span>Sign Up with Google</span>
-              </button>
+
+              <div className="mt-4 w-full">
+                <GoogleLogin
+                  onSuccess={handleGoogleLogin}
+                  onError={() => console.log('Google login failed')}
+                  useOneTap
+                  size="large"
+                  width="100%"
+                  text="Sign up with Google"
+                />
+              </div>
+
             </form>
           </div>
         </div>
