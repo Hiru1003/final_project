@@ -10,8 +10,6 @@ import PrimaryButton from '../Components/PrimaryButton';
 import { GoogleLogin } from '@react-oauth/google';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const SignupPage = () => {
   // State to manage form data
   const [formData, setFormData] = useState({
@@ -48,6 +46,8 @@ const SignupPage = () => {
               email: '',
               password: '',
           });
+
+          navigate('/login');
       } catch (error) {
           console.error("There was an error registering the user", error);
           setSnackbarMessage('Error registering user!');

@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import React, { useRef, useState, useEffect } from 'react';
+import { FaBars, FaTimes, FaUserCircle } from 'react-icons/fa';
 import "../Styles/main.css";
 import { Link } from 'react-router-dom';
 import logo from '../Assets/logowithoutbg.png';
@@ -8,6 +8,15 @@ function NavPage() {
     const navRef = useRef();
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [userEmail, setUserEmail] = useState(null);
+
+    // Check if user is logged in based on localStorage
+    useEffect(() => {
+        const email = localStorage.getItem('userEmail');
+        if (email) {
+            setUserEmail(email); // Set the email if the user is logged in
+        }
+    }, []);
 
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
@@ -16,6 +25,12 @@ function NavPage() {
 
     const toggleDropdown = () => {
         setIsDropdownOpen(!isDropdownOpen);
+    }
+
+    const handleLogout = () => {
+        // Remove user data from localStorage on logout
+        localStorage.removeItem('userEmail');
+        setUserEmail(null); // Update state to reflect the logout
     }
 
     return (
@@ -54,8 +69,16 @@ function NavPage() {
             </nav>
 
             <div className="auth-links">
-                <Link to='/signup' style={{ fontSize: '18px', fontWeight: 'bold' }} className="auth-link">Signup</Link>
-                <Link to='/login' style={{ fontSize: '18px', fontWeight: 'bold' }} className="auth-link">Login</Link>
+                {userEmail ? (
+                    <button onClick={handleLogout} style={{ fontSize: '18px', fontWeight: 'bold' }} className="auth-link">
+                        Sign Out
+                    </button>
+                ) : (
+                    <>
+                        <Link to='/signup' style={{ fontSize: '18px', fontWeight: 'bold' }} className="auth-link">Signup</Link>
+                        <Link to='/login' style={{ fontSize: '18px', fontWeight: 'bold' }} className="auth-link">Login</Link>
+                    </>
+                )}
             </div>
 
             <button className='nav-btn nav-close-btn' onClick={showNavbar} style={{ display: isNavOpen ? 'block' : 'none' }}>

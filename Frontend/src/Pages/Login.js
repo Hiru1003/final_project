@@ -7,6 +7,7 @@ import axios from 'axios';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import PrimaryButton from '../Components/PrimaryButton';
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
   // State to manage form data
@@ -20,6 +21,10 @@ const LoginPage = () => {
   const [snackbarMessage, setSnackbarMessage] = useState('');
   const [error, setError] = useState(false); // State to manage error or success
 
+
+  const navigate = useNavigate();
+
+
   // Handle input change
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -31,10 +36,9 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Login data being sent:', formData); // Log form data to the console
+    console.log('Login data being sent:', formData); 
   
     try {
-      // Send POST request to backend API for login
       const response = await axios.post('http://127.0.0.1:5000/login', formData);
   
       // If login is successful, store the email in localStorage
@@ -43,21 +47,18 @@ const LoginPage = () => {
         localStorage.setItem('userName', response.data.name); 
 
         console.log('Stored UserEmail:', localStorage.getItem('userEmail'));
-      console.log('Stored UserName:', localStorage.getItem('userName'));
+        console.log('Stored UserName:', localStorage.getItem('userName'));
   
         setSnackbarMessage('Login successful!');
-        setError(false); // No error, success message
-        setOpenSnackbar(true); // Show Snackbar
-  
-        // Clear the form data
+        setError(false); 
+        setOpenSnackbar(true); 
         setFormData({
           email: '',
           password: '',
         });
-  
-        // Optionally, handle further actions (like redirecting to dashboard)
-        // Example:
-        // navigate('/dashboard'); // Navigate to a different page if needed
+
+        navigate('/');
+
       }
     } catch (error) {
       console.error("There was an error logging in", error);
