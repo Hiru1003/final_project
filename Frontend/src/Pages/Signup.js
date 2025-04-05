@@ -8,6 +8,8 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 import PrimaryButton from '../Components/PrimaryButton';
 import { GoogleLogin } from '@react-oauth/google';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const SignupPage = () => {
@@ -21,7 +23,9 @@ const SignupPage = () => {
   // State for Snackbar
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [snackbarMessage, setSnackbarMessage] = useState('');
-  const [error, setError] = useState(false); // State to manage error or success
+  const [error, setError] = useState(false); 
+  const navigate = useNavigate();
+
 
   // Handle input change
   const handleInputChange = (e) => {
@@ -60,6 +64,7 @@ const SignupPage = () => {
         setSnackbarMessage('Google login successful!');
         setError(false);
         setOpenSnackbar(true);
+        navigate('/'); 
         // Optionally, handle the response (e.g., navigate to another page)
     } catch (error) {
         console.error("Google login failed", error);

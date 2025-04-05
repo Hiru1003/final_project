@@ -39,7 +39,11 @@ const LoginPage = () => {
   
       // If login is successful, store the email in localStorage
       if (response.status === 200) {
-        localStorage.setItem('userEmail', formData.email);  // Store email in localStorage
+        localStorage.setItem('userEmail', formData.email); 
+        localStorage.setItem('userName', response.data.name); 
+
+        console.log('Stored UserEmail:', localStorage.getItem('userEmail'));
+      console.log('Stored UserName:', localStorage.getItem('userName'));
   
         setSnackbarMessage('Login successful!');
         setError(false); // No error, success message
