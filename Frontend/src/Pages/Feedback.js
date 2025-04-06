@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
 import Footer from '../Components/Footer';
-// import FeedbackImage from '../Assets/other/login.jpg';
 import FeedbackImage from '../Assets/other/login.jpg';
 import TextField from '@mui/material/TextField';
 import Snackbar from '@mui/material/Snackbar';
