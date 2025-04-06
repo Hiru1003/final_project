@@ -37,7 +37,7 @@ import Hortonplains4 from '../Assets/Sightings/Hortonplains4.jpg';
 import Hortonplains5 from '../Assets/Sightings/Hortainplains5.jpg';
 import Hortonplains6 from '../Assets/Sightings/Hortonplains6.jpeg';
 
-import Bundala1 from '../Assets/Sightings/Bundala National Park.jpg';
+import Bundala1 from '../Assets/Sightings/Bundalanationalpark.jpg';
 import Bundala2 from '../Assets/Sightings/Bundala2.png';
 import Bundala3 from '../Assets/Sightings/Bundala3.jpg';
 import Bundala4 from '../Assets/Sightings/Bundala4.jpg';
