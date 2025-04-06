@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
+//import Signupimage from '../Assets/other/Signupimage1.jpg';
 import Signupimage from '../Assets/other/Signupimage1.jpg';
 import TextField from '@mui/material/TextField';
 import { FaGoogle } from "react-icons/fa";
