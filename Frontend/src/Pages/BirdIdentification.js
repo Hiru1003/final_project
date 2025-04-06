@@ -1,6 +1,6 @@
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/landing6.jpeg'; 
+import landingImage from '../Assets/other/landing6.jpeg'; 
 import BirdIdentificationByPhotos from "../Components/BirdIdentificationByPhotos";
 import Footer from "../Components/Footer";
 
