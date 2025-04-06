@@ -7,7 +7,7 @@ import '../Styles/Home.css';
 // Import Images
 import SriLankaJunglefowl from '../Assets/EndemicBirds/Sri Lanka Junglefowl.webp';
 import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpeg';
-import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
+// import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parrot.jpeg';
 import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
 import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
@@ -21,7 +21,7 @@ import PrimaryButton from './PrimaryButton';
 const birds = [
   { id: 1, name: 'Sri Lanka Junglefowl', image: SriLankaJunglefowl },
   { id: 2, name: 'Sri Lanka Blue Magpie', image: SriLankaBlueMagpie },
-  { id: 3, name: 'Sri Lanka Wood Pigeon', image: SriLankaWoodPigeon },
+//   { id: 3, name: 'Sri Lanka Wood Pigeon', image: SriLankaWoodPigeon },
   { id: 4, name: 'Sri Lanka Hanging Parrot', image: SriLankaHangingParrot },
   { id: 5, name: 'Orange-billed Babbler', image: OrangebilledBabbler },
   { id: 6, name: 'Layard’s Parakeet', image: LayardsParakeet },

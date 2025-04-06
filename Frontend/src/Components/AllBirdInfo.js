@@ -24,7 +24,7 @@ import CommonTeal from '../Assets/AllBirds/Common Teal.jpg';
 import LittleGrebe from '../Assets/AllBirds/Little Grebe.jpg';
 import GreaterFlamingo from '../Assets/AllBirds/GreaterFlamingo.webp';
 import WhitetailedTropicbird from '../Assets/AllBirds/WhitetailedTropicbird.png';
-import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
+// import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import EurasianCollaredDove from '../Assets/AllBirds/EurasianCollaredDove.jpg';
 import RedCollareddove from '../Assets/AllBirds/RedCollareddove.webp';
 import WesternSpottedDove from '../Assets/AllBirds/WesternSpottedDove.webp';
@@ -781,7 +781,7 @@ const birdData = [
         "id": 24,
         "name": "Sri Lanka Woodpigeon",
         "scientificName": "Columba torringtoniae",
-        "image": SriLankaWoodPigeon,
+        // "image": SriLankaWoodPigeon,
         "description": "The Sri Lanka Woodpigeon is an endemic bird species to Sri Lanka, known for its deep grey plumage and distinctive white-and-black barred neck. It inhabits montane forests and is typically found in small flocks. These pigeons feed on a variety of fruits and seeds. Due to habitat loss, the Sri Lanka Woodpigeon is considered near-threatened.",
         "habitat": "Sri Lanka Woodpigeons inhabit montane forests, preferring dense, moist environments that provide ample food resources and cover. These habitats support a rich diversity of fruit and seed species that form the basis of their diet. The conservation of montane forest ecosystems is essential for their survival, as habitat degradation threatens their populations. Protecting these habitats ensures the continued existence of this endemic species.",
         "diet": "The diet of Sri Lanka Woodpigeons consists primarily of fruits and seeds. They are adapted to forage in their forest habitats, utilizing their keen eyesight to locate food sources among dense vegetation. This specialized diet allows them to thrive in their montane environments, but it also makes them vulnerable to changes in food availability due to habitat loss. Ensuring access to diverse food sources is crucial for their survival.",

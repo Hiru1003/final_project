@@ -4,7 +4,7 @@ import '../Styles/BirdInfo.css';
 import NavPage from './Nav';
 import SriLankaJunglefowl from '../Assets/EndemicBirds/Sri Lanka Junglefowl.webp';
 import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpeg';
-import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
+// import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parrot.jpeg';
 import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
 import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
@@ -81,7 +81,7 @@ const birdData = [
         name: 'Sri Lanka Wood Pigeon',
         scientificName: 'Columba torringtoniae',
         likeNames: ['Ceylon Wood Pigeon'],
-        image: SriLankaWoodPigeon,
+        // image: SriLankaWoodPigeon,
         description: 'The Sri Lanka Wood Pigeon is a large and striking pigeon species endemic to Sri Lanka. It is easily recognized by its dark grey plumage, which provides excellent camouflage in its forested habitat. This pigeon is distinguished by its unique white and black bars on the sides of its neck, adding to its elegance. With a robust body and a relatively long tail, the Sri Lanka Wood Pigeon is often seen perched on tree branches, cooing softly in the trees.',
         "habitat": "The Sri Lanka Wood Pigeon prefers montane forests, subtropical forests, and cloud forests, typically inhabiting areas with dense tree cover. These habitats provide necessary camouflage, offering protection from predators. The pigeon is often found at elevations above 1,200 meters, where the cool misty climate complements its lifestyle. The presence of fruit-bearing trees is essential for their diet, making these specific ecological zones particularly important for the species' survival.",
         "diet": "This pigeon primarily feeds on fruits, berries, and seeds, showcasing a frugivorous diet. Its preference for fleshy fruits plays a vital role in the dispersal of seeds within its forested habitat. During the breeding season, the availability of diverse fruit sources influences their reproductive success. Its feeding behavior typically takes place in the forest canopy, allowing the bird to forage safely above ground level.",
