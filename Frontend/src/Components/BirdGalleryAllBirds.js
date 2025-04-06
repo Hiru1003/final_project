@@ -255,7 +255,7 @@ import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parr
 import PlumHeadedParakeet from '../Assets/AllBirds/PlumHeadedParakeet.jpg';
 import RoseRingedParakeet from '../Assets/AllBirds/RoseRingedParakeet.webp';
 import AlexandrineParakeet from '../Assets/AllBirds/AlexandrineParakeet.jpeg';
-// import EmeraldCollaredParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
+import EmeraldCollaredParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
 import IndianPitta from '../Assets/AllBirds/IndianPitta.jpeg';
 import BlackHoodedOriole from '../Assets/AllBirds/BlackHoodedOriole.webp';
 import EurasianGoldenOriole from '../Assets/AllBirds/EurasianGoldenOriole.jpg';
@@ -634,7 +634,7 @@ const birds = [
     { id: 255, name: 'Plum-headed Parakeet', image: PlumHeadedParakeet },
     { id: 256, name: 'Rose-ringed Parakeet', image: RoseRingedParakeet },
     { id: 257, name: 'Alexandrine Parakeet', image: AlexandrineParakeet },
-    // { id: 258, name: 'Emerald-collared Parakeet', image: EmeraldCollaredParakeet },
+    { id: 258, name: 'Emerald-collared Parakeet', image: EmeraldCollaredParakeet },
     { id: 259, name: 'Indian Pitta', image: IndianPitta },
     { id: 260, name: 'Black-hooded Oriole', image: BlackHoodedOriole },
     { id: 261, name: 'Eurasian Golden Oriole', image: EurasianGoldenOriole },

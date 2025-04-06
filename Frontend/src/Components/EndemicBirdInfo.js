@@ -4,10 +4,10 @@ import '../Styles/BirdInfo.css';
 import NavPage from './Nav';
 import SriLankaJunglefowl from '../Assets/EndemicBirds/Sri Lanka Junglefowl.webp';
 import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpeg';
-// import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
+import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parrot.jpeg';
-// import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
-// import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
+import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
+import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
 import SriLankaWhistlingThrush from '../Assets/EndemicBirds/SriLankaWhistlingThrush.jpg';
 import SriLankaScimitarBabbler from '../Assets/EndemicBirds/SriLankaScimitarBabbler.jpg';
 import SriLankaSpotwingedThrush from '../Assets/EndemicBirds/SriLankaSpotwingedThrush.webp';
@@ -81,7 +81,7 @@ const birdData = [
         name: 'Sri Lanka Wood Pigeon',
         scientificName: 'Columba torringtoniae',
         likeNames: ['Ceylon Wood Pigeon'],
-        // image: SriLankaWoodPigeon,
+        image: SriLankaWoodPigeon,
         description: 'The Sri Lanka Wood Pigeon is a large and striking pigeon species endemic to Sri Lanka. It is easily recognized by its dark grey plumage, which provides excellent camouflage in its forested habitat. This pigeon is distinguished by its unique white and black bars on the sides of its neck, adding to its elegance. With a robust body and a relatively long tail, the Sri Lanka Wood Pigeon is often seen perched on tree branches, cooing softly in the trees.',
         "habitat": "The Sri Lanka Wood Pigeon prefers montane forests, subtropical forests, and cloud forests, typically inhabiting areas with dense tree cover. These habitats provide necessary camouflage, offering protection from predators. The pigeon is often found at elevations above 1,200 meters, where the cool misty climate complements its lifestyle. The presence of fruit-bearing trees is essential for their diet, making these specific ecological zones particularly important for the species' survival.",
         "diet": "This pigeon primarily feeds on fruits, berries, and seeds, showcasing a frugivorous diet. Its preference for fleshy fruits plays a vital role in the dispersal of seeds within its forested habitat. During the breeding season, the availability of diverse fruit sources influences their reproductive success. Its feeding behavior typically takes place in the forest canopy, allowing the bird to forage safely above ground level.",
@@ -121,7 +121,7 @@ const birdData = [
         name: 'Orange-billed Babbler',
         scientificName: 'Turdoides rufescens',
         likeNames: ['Ceylon Rufous Babbler'],
-        // image: OrangebilledBabbler,
+        image: OrangebilledBabbler,
         description:  'The Orange-billed Babbler is a lively and sociable bird native to the forests of Sri Lanka. Known for its distinctive orange bill, this bird has a brownish plumage that blends well with its surroundings. Often found in large, noisy flocks, they are recognized for their chattering calls and playful behavior. These babblers are commonly seen foraging on the ground for insects and fruits, adding a vibrant presence to the lush forest environment.',
         "habitat": "The Orange-billed Babbler is native to rainforests and wet-zone forests in Sri Lanka. These lush environments provide the necessary cover and resources for foraging. Their preference for dense undergrowth allows them to find food and safety from predators, making them a common sight in these habitats.",
         "diet": "This species feeds on insects, small invertebrates, and fruits, playing a crucial role in controlling insect populations. Their foraging behavior actively contributes to the health of the ecosystem, as they help to maintain the balance of species within their environment.",
@@ -141,7 +141,7 @@ const birdData = [
         name: 'Layard’s Parakeet',
         scientificName: 'Psittacula calthrapae',
         likeNames: ['Ceylon Parakeet'],
-        // image: LayardsParakeet,
+        image: LayardsParakeet,
         description: 'Layard’s Parakeet is a vibrant parrot species endemic to Sri Lanka, easily recognized by its striking colors. Males feature a bright red beak and distinctive blue wings, which contrast beautifully with their green body. Females, on the other hand, have a more subdued color palette, making them less conspicuous. These parakeets are often found in flocks, chattering among themselves as they feed on seeds and fruits in the trees, adding color to the lush landscapes of Sri Lanka.',
         "habitat": "Layard’s Parakeet thrives in forests, plantations, and gardens throughout Sri Lanka. These varied habitats provide plenty of food sources and nesting sites. Their adaptability to different environments, including human-modified landscapes, enhances their resilience as a species.",
     "diet": "Their diet includes fruits, seeds, and grains, reflecting their status as omnivores. This varied diet allows them to exploit multiple food sources, ensuring their survival across different seasons. Their feeding habits contribute to forest dynamics through seed dispersal.",
