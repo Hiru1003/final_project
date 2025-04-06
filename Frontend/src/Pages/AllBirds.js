@@ -1,7 +1,6 @@
 import BirdGalleryAllBirds from "../Components/BirdGalleryAllBirds";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/AllBirds/LongToedStint.jpg'; 
 import Footer from "../Components/Footer";
 
 const AllBirds = () => {
@@ -9,7 +8,7 @@ const AllBirds = () => {
     <>
         <NavPage />
         <LandingPage 
-        image= {landingImage}
+        image= '/illustration/AllBirds/LongToedStint.jpg' 
         heading="All Birds" 
         paragraph={
             <>

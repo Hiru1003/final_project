@@ -1,6 +1,6 @@
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/other/landing6.jpeg'; 
+// import landingImage from '../Assets/other/landing6.jpeg'; 
 import SightingGallery from "../Components/SightingGallery";
 import Footer from "../Components/Footer";
 
@@ -9,7 +9,7 @@ const SightingPage = () => {
     <>
         <NavPage />
         <LandingPage
-          image= {landingImage}
+          image= '/Assets/other/landing6.jpg' 
           heading="Sightings In Sri Lanka" 
           paragraph={
               <>

@@ -1,5 +1,5 @@
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/AllBirds/PurpleSwamphen.jpg'; 
+// import landingImage from '../Assets/AllBirds/PurpleSwamphen.jpg'; 
 import LandingPage from "../Components/LandindPage";
 import VisualIdentificationByFeature from "../Components/VisualIdentificationByFeature";
 import Footer from "../Components/Footer";
@@ -9,7 +9,7 @@ const VisualIdentification = () => {
     <>
         <NavPage />
         <LandingPage
-          image= {landingImage}
+          image= '/Assets/AllBirds/PurpleSwamphen.jpg' 
           heading="Visual Identification" 
           paragraph={
               <>

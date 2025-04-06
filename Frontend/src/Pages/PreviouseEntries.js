@@ -10,7 +10,7 @@ const PreviousEntries = () => {
     <div>
       <NavPage />
         <LandingPage 
-        image= {landingImage}
+       image= '/Assets/other/landing8.jpg' 
         heading="See All Your Birds" 
         paragraph={
             <>
