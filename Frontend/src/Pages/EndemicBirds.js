@@ -1,7 +1,7 @@
 import BirdGalleryEndemic from "../Components/BirdGalleryEndemic";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/landing4.jpg'; 
+import landingImage from '../Assets/endemicbirdlanding4.jpg'; 
 import Footer from "../Components/Footer";
 
 const EndemicBirds = () => {
