@@ -9,7 +9,7 @@ const VisualIdentification = () => {
     <>
         <NavPage />
         <LandingPage
-          image= '/Assets/AllBirds/PurpleSwamphen.jpg' 
+          image= '/other/PurpleSwamphen.jpg' 
           heading="Visual Identification" 
           paragraph={
               <>

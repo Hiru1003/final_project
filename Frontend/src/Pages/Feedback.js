@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
 import Footer from '../Components/Footer';
-import FeedbackImage from '../Assets/illustration/login.jpg';
+// import FeedbackImage from '../Assets/illustration/login.jpg';
 import TextField from '@mui/material/TextField';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
@@ -74,7 +74,7 @@ const handleSubmit = async (e) => {
         <div className="flex w-full max-w-7xl h-[80vh] bg-white shadow-2xl rounded-lg overflow-hidden">
           
           {/* Left Section - Image */}
-          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${FeedbackImage})` }}></div>
+          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url('/other/login.jpg')` }}></div>
 
           {/* Right Section - Feedback Form */}
           <div className="w-1/2 p-8 flex flex-col justify-start">

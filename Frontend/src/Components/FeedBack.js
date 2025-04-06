@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
-import FeedbackImage from '../Assets/Feedback.png';
+// import FeedbackImage from '../Assets/Feedback.png';
 
 const testimonials = [
     {
@@ -45,7 +45,7 @@ const Feedback = () => {
         What they think about us
       </Typography>
       <Box sx={{ mb: 2, mt:5, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <img src={FeedbackImage} alt="Feedback" style={{ maxWidth: '100%', height: 'auto' }} />
+        <img src="/other/Feedback.png"  alt="Feedback" style={{ maxWidth: '100%', height: 'auto' }} />
       </Box>
       <Box sx={{ fontSize: '18px', margin: '20px 0' , marginTop:5, paddingLeft:40, paddingRight:40}}>
         <Typography>

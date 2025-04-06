@@ -8,7 +8,7 @@ const EndemicBirds = () => {
     <>
         <NavPage />
         <LandingPage 
-        image= '/illustration/endemicbirdlanding4.jpg' 
+        image= '/other/endemicbirdlanding4.jpg' 
         heading="Endemic Birds" 
         paragraph={
             <>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
-import Loginimage from '../Assets/illustration/login.jpg';
+// import Loginimage from '../Assets/illustration/login.jpg';
 import { FaGoogle } from "react-icons/fa";
 import TextField from '@mui/material/TextField';
 import axios from 'axios';
@@ -76,7 +76,7 @@ const LoginPage = () => {
         <div className="flex w-full max-w-7xl h-[80vh] bg-white shadow-2xl rounded-lg overflow-hidden">
           
           {/* Left Section - Image */}
-          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${Loginimage})` }}>
+          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url('/other/login.jpg')` }}>
           </div>
           
           {/* Right Section - Login Form */}

@@ -9,7 +9,7 @@ const BirdIdentification = () => {
     <>
         <NavPage />
         <LandingPage
-          image= '/Assets/other/landing6.jpeg' 
+          image= '/other/landing6.jpeg' 
           heading="Bird Identification" 
           paragraph={
               <>

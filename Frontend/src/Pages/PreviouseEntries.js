@@ -1,7 +1,7 @@
 import React from 'react'
 import NavPage from '../Components/Nav'
 import LandingPage from '../Components/LandindPage'
-import landingImage from '../Assets/other/landing8.jpg'; 
+// import landingImage from '../Assets/other/landing8.jpg'; 
 import Entries from '../Components/Entries';
 import Footer from '../Components/Footer';
 
@@ -10,7 +10,7 @@ const PreviousEntries = () => {
     <div>
       <NavPage />
         <LandingPage 
-       image= '/Assets/other/landing8.jpg' 
+       image= 'other/landing8.jpg' 
         heading="See All Your Birds" 
         paragraph={
             <>

@@ -8,7 +8,7 @@ const AllBirds = () => {
     <>
         <NavPage />
         <LandingPage 
-        image= '/illustration/AllBirds/LongToedStint.jpg' 
+        image= '/other/LongToedStint.jpg' 
         heading="All Birds" 
         paragraph={
             <>

@@ -35,7 +35,7 @@ const BirdDiary = () => {
       {showLoginPrompt ? (
         <div className="login-prompt">
           <LandingPage 
-            image= '/Assets/other/landing8.jpg' 
+            image= '/other/landing8.jpg' 
             heading="Access Your Bird Diary Today!"
             paragraph={
               <>
@@ -54,7 +54,7 @@ const BirdDiary = () => {
         </div>
       ) : (
         <LandingPage 
-        image= '/Assets/other/landing8.jpg' 
+        image= '/other/landing8.jpg' 
           heading={userName ? `Hi ${userName}, ready to write today’s birding memories?` : 'Welcome to Bird Diary'}
           paragraph={
               <>
