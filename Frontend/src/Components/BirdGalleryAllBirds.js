@@ -319,7 +319,7 @@ import TawnyBelliedBabbler from '../Assets/AllBirds/TawnyBelliedBabbler.jpeg';
 import DarkFrontedBabbler from '../Assets/AllBirds/DarkFrontedBabbler.jpg';
 import BrownCappedBabbler from '../Assets/AllBirds/BrownCappedBabbler.jpeg';
 import AshyFrontedBabbler from '../Assets/AllBirds/AshyFrontedBabbler.jpg';
-import OrangeBilledBabbler from  '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
+// import OrangeBilledBabbler from  '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
 import YellowBilledBabbler from '../Assets/AllBirds/YellowBilledBabbler.jpg';
 import VelvetFrontedNuthatch from '../Assets/AllBirds/VelvetFrontedNuthatch.jpeg';
 import RosyStarling from '../Assets/AllBirds/RosyStarling.webp';
@@ -698,7 +698,7 @@ const birds = [
     { id: 319, name: 'Dark-fronted Babbler', image: DarkFrontedBabbler },
     { id: 320, name: 'Brown-capped Babbler', image: BrownCappedBabbler },
     { id: 321, name: 'Ashy-fronted Babbler', image: AshyFrontedBabbler },
-    { id: 322, name: 'Orange-billed Babbler', image: OrangeBilledBabbler },
+    // { id: 322, name: 'Orange-billed Babbler', image: OrangeBilledBabbler },
     { id: 323, name: 'Yellow-billed Babbler', image: YellowBilledBabbler },
     { id: 324, name: 'Velvet-fronted Nuthatch', image: VelvetFrontedNuthatch },
     { id: 325, name: 'Rosy Starling', image: RosyStarling },

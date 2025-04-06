@@ -6,7 +6,7 @@ import SriLankaJunglefowl from '../Assets/EndemicBirds/Sri Lanka Junglefowl.webp
 import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpeg';
 // import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parrot.jpeg';
-import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
+// import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
 import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
 import SriLankaWhistlingThrush from '../Assets/EndemicBirds/SriLankaWhistlingThrush.jpg';
 import SriLankaScimitarBabbler from '../Assets/EndemicBirds/SriLankaScimitarBabbler.jpg';
@@ -121,7 +121,7 @@ const birdData = [
         name: 'Orange-billed Babbler',
         scientificName: 'Turdoides rufescens',
         likeNames: ['Ceylon Rufous Babbler'],
-        image: OrangebilledBabbler,
+        // image: OrangebilledBabbler,
         description:  'The Orange-billed Babbler is a lively and sociable bird native to the forests of Sri Lanka. Known for its distinctive orange bill, this bird has a brownish plumage that blends well with its surroundings. Often found in large, noisy flocks, they are recognized for their chattering calls and playful behavior. These babblers are commonly seen foraging on the ground for insects and fruits, adding a vibrant presence to the lush forest environment.',
         "habitat": "The Orange-billed Babbler is native to rainforests and wet-zone forests in Sri Lanka. These lush environments provide the necessary cover and resources for foraging. Their preference for dense undergrowth allows them to find food and safety from predators, making them a common sight in these habitats.",
         "diet": "This species feeds on insects, small invertebrates, and fruits, playing a crucial role in controlling insect populations. Their foraging behavior actively contributes to the health of the ecosystem, as they help to maintain the balance of species within their environment.",

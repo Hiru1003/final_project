@@ -322,7 +322,7 @@ import TawnyBelliedBabbler from '../Assets/AllBirds/TawnyBelliedBabbler.jpeg';
 import DarkFrontedBabbler from '../Assets/AllBirds/DarkFrontedBabbler.jpg';
 import BrownCappedBabbler from '../Assets/AllBirds/BrownCappedBabbler.jpeg';
 import AshyFrontedBabbler from '../Assets/AllBirds/AshyFrontedBabbler.jpg';
-import OrangeBilledBabbler from  '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
+// import OrangeBilledBabbler from  '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
 import YellowBilledBabbler from '../Assets/AllBirds/YellowBilledBabbler.jpg';
 import VelvetFrontedNuthatch from '../Assets/AllBirds/VelvetFrontedNuthatch.jpeg';
 import RosyStarling from '../Assets/AllBirds/RosyStarling.webp';
@@ -6148,7 +6148,7 @@ const birdData = [
         "id": 322,
         "name": "Orange-billed Babbler",
         "scientificName": "Argya rufescens",
-        "image": OrangeBilledBabbler,
+        // "image": OrangeBilledBabbler,
         "description": "The Orange-billed Babbler is a small, brownish bird with a striking orange bill that stands out against its dull plumage. This species is primarily found in dense forests, where it feeds on insects and small fruits. It is highly social and often forages in groups, using loud calls to communicate. The Orange-billed Babbler is known for its secretive behavior, spending most of its time in dense vegetation, making it difficult to observe despite its presence in common habitats.",
         "habitat": "Orange-billed Babblers are primarily found in dense forests, where they benefit from the abundant cover and food sources. These environments are essential for their foraging behavior and provide safe nesting opportunities, facilitating their social interactions.",
         "diet": "Their diet consists mainly of insects and small fruits. This diet is vital for providing the energy required for their active lifestyle, particularly during the breeding season when food availability is crucial for raising young.",
