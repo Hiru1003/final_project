@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
-import Loginimage from '../Assets/login.jpg';
+import Loginimage from '../Assets/other/login.jpg';
 import { FaGoogle } from "react-icons/fa";
 import TextField from '@mui/material/TextField';
 import axios from 'axios';
