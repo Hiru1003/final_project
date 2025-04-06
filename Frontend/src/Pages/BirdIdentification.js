@@ -13,8 +13,7 @@ const BirdIdentification = () => {
           heading="Bird Identification" 
           paragraph={
               <>
-                Discover the world of birds with our cutting-edge bird identification website. Whether you're a beginner or an expert,<br />
-                FeatherFinder helps you explore bird species like never before.
+               Spot a bird, snap a photo, and let Feather Finder reveal its story. From vibrant wings to hidden forest visitors, <br/>discover the birds around you in just a click. Nature is closer than you think — just look up.
               </>
           } 
         />

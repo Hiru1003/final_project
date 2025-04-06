@@ -75,7 +75,7 @@ const BirdIdentificationByPhotos = () => {
       </Typography>
 
       <Typography variant="body1" align="left" gutterBottom marginLeft={3} marginRight={3}>
-        Have you ever come across a bird and wondered what species it might be? Upload a photo and receive accurate results within seconds.
+      Every feather tells a story — let Feather Finder help you listen. Wandering through forests, gardens, or quiet backyards, have you ever caught a glimpse of a bird and wondered what it was? With just a photo, Feather Finder becomes your guide to the skies. Snap it. Search it. And uncover the hidden name, story, and world behind every winged visitor you meet. From the rarest colours to the most common songs — nature has never been this close.
       </Typography>
 
       <Box

@@ -58,8 +58,7 @@ const BirdDiary = () => {
           heading={userName ? `Hi ${userName}, ready to write today’s birding memories?` : 'Welcome to Bird Diary'}
           paragraph={
               <>
-                  Discover the world of birds with our cutting-edge bird identification website. Whether you're a beginner or an expert,<br />
-                  FeatherFinder helps you explore bird species like never before.
+                  Every bird has a story — now it’s your turn. Record your birdwatching adventures, capture rare sightings, and treasure your moments in nature.<br/> Your Bird Diary keeps memories alive, one feathered friend at a time.
               </>
           } 
         />

@@ -57,14 +57,14 @@ const VisualIdentificationByFeature = () => {
         Identify Your Bird By Visual Identification
       </Typography>
 
-      <Typography variant="body1" align="left" gutterBottom marginLeft={3} marginRight={3}>
+      <Typography variant="body1" align="left" gutterBottom marginLeft={3} marginRight={3} marginBottom={10}>
         Spotted a bird and curious about its species? Take a moment to recall its features! Was it a vibrant splash of red darting through the trees, or a subtle shade of brown blending into the forest? Did it have a sleek, pointed beak built for precision, or a curved one suited for cracking seeds? Notice its wings—were they patterned with stripes, speckled with spots, or a solid shade? How about its tail—long and elegant, short and fan-like, or forked at the tip? Even the smallest details, like leg color or markings on the head, can help uncover its identity. Simply select the characteristics that stood out to you, and let's solve the mystery of your feathered visitor together!
       </Typography>
 
 
 
 
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', overflow: 'visible', marginLeft: 3, marginRight: 5, marginBottom: 1, marginTop: 3 }}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', overflow: 'visible', marginLeft: 3, marginRight: 5, marginBottom: 1, marginTop: 5 }}>
         {Array.from({ length: 4 }).map((_, rowIndex) => (
           <Box sx={{ display: 'flex', justifyContent: 'space-between', width: '100%', mb: 2 }} key={rowIndex}>
             {Array.from({ length: 3 }).map((_, colIndex) => {
@@ -94,7 +94,7 @@ const VisualIdentificationByFeature = () => {
         ))}
       </Box>
 
-      <Box textAlign="center" sx={{ width: '350px', margin: '0 auto' }}>
+      <Box textAlign="center" sx={{ width: '350px', margin: '0 auto', marginBottom:5 }}>
         <PrimaryButton width="350px" onClick={handleSearch} disabled={loading}>
           {loading ? <CircularProgress size={24} /> : 'Search Bird'}
         </PrimaryButton>
