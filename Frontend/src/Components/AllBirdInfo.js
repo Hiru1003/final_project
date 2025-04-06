@@ -258,7 +258,7 @@ import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parr
 import PlumHeadedParakeet from '../Assets/AllBirds/PlumHeadedParakeet.jpg';
 import RoseRingedParakeet from '../Assets/AllBirds/RoseRingedParakeet.webp';
 import AlexandrineParakeet from '../Assets/AllBirds/AlexandrineParakeet.jpeg';
-import EmeraldCollaredParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
+// import EmeraldCollaredParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
 import IndianPitta from '../Assets/AllBirds/IndianPitta.jpeg';
 import BlackHoodedOriole from '../Assets/AllBirds/BlackHoodedOriole.webp';
 import EurasianGoldenOriole from '../Assets/AllBirds/EurasianGoldenOriole.jpg';
@@ -4996,7 +4996,7 @@ const birdData = [
         "id": 258,
         "name": "Emerald-collared Parakeet",
         "scientificName": "Nicopsitta calthrapae",
-        "image": EmeraldCollaredParakeet,
+        // "image": EmeraldCollaredParakeet,
         "description": "The Emerald-collared Parakeet is a striking green parakeet known for its brilliant emerald-colored neck and distinctive vocalizations. Native to the Indian subcontinent, it is often found in tropical and subtropical forests. This bird is social and can often be seen in groups feeding on fruits, seeds, and nuts. The Emerald-collared Parakeet is recognized for its intelligence and adaptability in urban settings. Its vibrant plumage and lively behavior make it a favorite among birdwatchers.",
         "habitat": "Emerald-collared Parakeets inhabit tropical and subtropical forests, as well as urban areas. Their preference for lush environments ensures they have access to sufficient food sources. These habitats provide shelter and security, which are essential for their survival.",
         "diet": "The diet of Emerald-collared Parakeets consists of fruits, seeds, and nuts. Their feeding habits contribute to ecological diversity by aiding in seed dispersal, which promotes plant growth and maintains the health of their forest ecosystems.",

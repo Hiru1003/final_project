@@ -7,7 +7,7 @@ import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpe
 // import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parrot.jpeg';
 // import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
-import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
+// import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
 import SriLankaWhistlingThrush from '../Assets/EndemicBirds/SriLankaWhistlingThrush.jpg';
 import SriLankaScimitarBabbler from '../Assets/EndemicBirds/SriLankaScimitarBabbler.jpg';
 import SriLankaSpotwingedThrush from '../Assets/EndemicBirds/SriLankaSpotwingedThrush.webp';
@@ -141,7 +141,7 @@ const birdData = [
         name: 'Layard’s Parakeet',
         scientificName: 'Psittacula calthrapae',
         likeNames: ['Ceylon Parakeet'],
-        image: LayardsParakeet,
+        // image: LayardsParakeet,
         description: 'Layard’s Parakeet is a vibrant parrot species endemic to Sri Lanka, easily recognized by its striking colors. Males feature a bright red beak and distinctive blue wings, which contrast beautifully with their green body. Females, on the other hand, have a more subdued color palette, making them less conspicuous. These parakeets are often found in flocks, chattering among themselves as they feed on seeds and fruits in the trees, adding color to the lush landscapes of Sri Lanka.',
         "habitat": "Layard’s Parakeet thrives in forests, plantations, and gardens throughout Sri Lanka. These varied habitats provide plenty of food sources and nesting sites. Their adaptability to different environments, including human-modified landscapes, enhances their resilience as a species.",
     "diet": "Their diet includes fruits, seeds, and grains, reflecting their status as omnivores. This varied diet allows them to exploit multiple food sources, ensuring their survival across different seasons. Their feeding habits contribute to forest dynamics through seed dispersal.",
