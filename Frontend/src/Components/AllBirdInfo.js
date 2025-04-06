@@ -24,7 +24,7 @@ import CommonTeal from '../Assets/AllBirds/Common Teal.jpg';
 import LittleGrebe from '../Assets/AllBirds/Little Grebe.jpg';
 import GreaterFlamingo from '../Assets/AllBirds/GreaterFlamingo.webp';
 import WhitetailedTropicbird from '../Assets/AllBirds/WhitetailedTropicbird.png';
-import SriLankaWoodPigeon from '../Assets/EndemicBirds/Sri Lanka Wood Pigeon.jpg';
+import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import EurasianCollaredDove from '../Assets/AllBirds/EurasianCollaredDove.jpg';
 import RedCollareddove from '../Assets/AllBirds/RedCollareddove.webp';
 import WesternSpottedDove from '../Assets/AllBirds/WesternSpottedDove.webp';

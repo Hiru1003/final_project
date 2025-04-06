@@ -2,7 +2,7 @@ import React from 'react';
 import BirdCard from './BirdCard';
 import SriLankaJunglefowl from '../Assets/EndemicBirds/Sri Lanka Junglefowl.webp';
 import SriLankaBlueMagpie from '../Assets/EndemicBirds/Sri Lanka Blue Magpie.jpeg';
-import SriLankaWoodPigeon from '../Assets/EndemicBirds/Sri Lanka Wood Pigeon.jpg';
+import SriLankaWoodPigeon from '../Assets/EndemicBirds/SriLankaWoodPigeon.jpg';
 import SriLankaHangingParrot from '../Assets/EndemicBirds/Sri Lanka Hanging Parrot.jpeg';
 import OrangebilledBabbler from '../Assets/EndemicBirds/OrangebilledBabbler.jpg';
 import LayardsParakeet from '../Assets/EndemicBirds/LayardsParakeet.jpg';
