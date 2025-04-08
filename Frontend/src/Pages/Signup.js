@@ -47,7 +47,7 @@ const SignupPage = () => {
               password: '',
           });
 
-          navigate('/login');
+          // navigate('/login');
       } catch (error) {
           console.error("There was an error registering the user", error);
           setSnackbarMessage('Error registering user!');
