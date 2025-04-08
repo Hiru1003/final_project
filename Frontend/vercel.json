@@ -1,7 +1,31 @@
 {
-    "images": {
-      "domains": ["*"],
-      "sizes": [16, 32, 48, 64, 128, 256, 512]
-    }
+    "builds": [
+      {
+        "src": "Frontend/package.json",
+        "use": "@vercel/react"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/assets/AllBirds/(.*)",
+        "dest": "/Frontend/src/Assets/AllBirds/$1"
+      },
+      {
+        "src": "/assets/EndemicBirds/(.*)",
+        "dest": "/Frontend/src/Assets/EndemicBirds/$1"
+      },
+      {
+        "src": "/assets/illustration/(.*)",
+        "dest": "/Frontend/src/Assets/illustration/$1"
+      },
+      {
+        "src": "/assets/Sightings/(.*)",
+        "dest": "/Frontend/src/Assets/Sightings/$1"
+      },
+      {
+        "src": "/assets(.*)",
+        "dest": "/Frontend/src/Assets/$1"
+      }
+    ]
   }
   
