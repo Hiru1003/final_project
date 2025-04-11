@@ -1,6 +1,5 @@
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-// import landingImage from '../Assets/other/landing2.webp'; 
 import HomeSection1 from "../Components/HomeSection1";
 import HomeSection2 from "../Components/HomeSection2";
 import HomeSection3 from "../Components/HomeSection3";

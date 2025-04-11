@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80" # React Frontend on localhost:3000
+    stdin_open: true
+    tty: true
+
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000" # Flask Backend on localhost:5000
