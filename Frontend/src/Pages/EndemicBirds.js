@@ -2,13 +2,14 @@ import BirdGalleryEndemic from "../Components/BirdGalleryEndemic";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
 import Footer from "../Components/Footer";
+import landingImage from '../Assets/other/endemicbirdlanding4.jpg'; 
 
 const EndemicBirds = () => {
   return (
     <>
         <NavPage />
         <LandingPage 
-        image= '/other/endemicbirdlanding4.jpg' 
+        image= {landingImage}
         heading="Endemic Birds" 
         paragraph={
             <>

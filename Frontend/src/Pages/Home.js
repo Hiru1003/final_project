@@ -5,13 +5,14 @@ import HomeSection2 from "../Components/HomeSection2";
 import HomeSection3 from "../Components/HomeSection3";
 import Feedback from "../Components/FeedBack";
 import Footer from "../Components/Footer";
+import LandingImage from "../Assets/other/landing2.webp"
 
 const HomePage = () => {
   return (
     <>
         <NavPage />
         <LandingPage 
-          image= "/other/landing2.webp"
+          image= {LandingImage}
           heading="Welcome to FeatherFinder" 
           paragraph={
               <>
