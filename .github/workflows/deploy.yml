@@ -21,14 +21,13 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-
     - name: Build and Push Frontend Image
       run: |
-        docker build -t yourdockerusername/frontend:latest ./Frontend
-        docker push yourdockerusername/frontend:latest
+        docker build -t hirumi/frontend:latest ./Frontend
+        docker push hirumi/frontend:latest
 
     - name: Build and Push Backend Image
       run: |
-        docker build -t yourdockerusername/backend:latest ./Backend
-        docker push yourdockerusername/backend:latest
+        docker build -t hirumi/backend:latest ./Backend
+        docker push hirumi/backend:latest
 
