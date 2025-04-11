@@ -24,10 +24,10 @@ jobs:
 
     - name: Build and Push Frontend Image
       run: |
-        docker build -t yourdockerusername/frontend:latest ./frontend
-        docker push yourdockerusername/frontend:latest
+        docker build -t yourdockerusername/Frontend:latest ./Frontend
+        docker push yourdockerusername/Frontend:latest
 
     - name: Build and Push Backend Image
       run: |
-        docker build -t yourdockerusername/backend:latest ./backend
-        docker push yourdockerusername/backend:latest
+        docker build -t yourdockerusername/Backend:latest ./Backend
+        docker push yourdockerusername/Backend:latest
