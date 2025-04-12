@@ -2,7 +2,7 @@
 FROM node:18-alpine as build
 
 WORKDIR /app
-COPY ./Frontend ./
+COPY . ./
 RUN npm install
 RUN npm run build
 
