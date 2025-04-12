@@ -1,12 +1,13 @@
-name: CI/CD Pipeline
+name: Build Docker Images
 
 on:
   push:
-    branches:
-      - main  # trigger when push to main branch
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  build-frontend-backend:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,20 +15,26 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
+      uses: docker/setup-buildx-action@v3
 
-    - name: Login to Docker Hub
-      uses: docker/login-action@v2
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-    - name: Build and Push Frontend Image
-      run: |
-        docker build -t hirumi/frontend:latest ./Frontend
-        docker push hirumi/frontend:latest
 
-    - name: Build and Push Backend Image
-      run: |
-        docker build -t hirumi/backend:latest ./Backend
-        docker push hirumi/backend:latest
+    - name: Build and push frontend image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: Dockerfile.frontend
+        push: true
+        tags: ${{ secrets.DOCKER_USERNAME }}/my-frontend:latest
 
+    - name: Build and push backend image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: Dockerfile.backend
+        push: true
+        tags: ${{ secrets.DOCKER_USERNAME }}/my-backend:latest
