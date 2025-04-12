@@ -54,7 +54,7 @@ const BirdDiary = () => {
         </div>
       ) : (
         <LandingPage 
-        image= '/other/landing8.jpg' 
+        image= {landingImage}
           heading={userName ? `Hi ${userName}, ready to write today’s birding memories?` : 'Welcome to Bird Diary'}
           paragraph={
               <>

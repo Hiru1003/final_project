@@ -7,6 +7,7 @@ import LandingImage from "../Assets/other/LongToedStint.webp"
 const AllBirds = () => {
   return (
     <>
+    
         <NavPage />
         <LandingPage 
         image= {LandingImage}
