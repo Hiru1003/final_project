@@ -26,15 +26,15 @@ jobs:
     - name: Build and push frontend image
       uses: docker/build-push-action@v5
       with:
-        context: .
+        context: ./Frontend
         file: Dockerfile.frontend
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/my-frontend:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/frontend:latest
 
     - name: Build and push backend image
       uses: docker/build-push-action@v5
       with:
-        context: .
+        context: ./Backend
         file: Dockerfile.backend
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/my-backend:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/backend:latest
