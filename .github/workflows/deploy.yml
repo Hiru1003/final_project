@@ -24,8 +24,8 @@ jobs:
 
     - name: Build and Push Frontend Image
       run: |
-        docker buildx build -t ${{ secrets.DOCKER_USERNAME }}/frontend:latest ./Frontend --push
+        docker buildx build -f ./Frontend/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/frontend:latest ./Frontend --push
 
     - name: Build and Push Backend Image
       run: |
-        docker buildx build -t ${{ secrets.DOCKER_USERNAME }}/backend:latest ./Backend --push
+        docker buildx build -f ./Backend/Dockerfile -t ${{ secrets.DOCKER_USERNAME }}/backend:latest ./Backend --push
