@@ -2,7 +2,7 @@ import BirdGalleryAllBirds from "../Components/BirdGalleryAllBirds";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
 import Footer from "../Components/Footer";
-import LandingImage from "../Assets/other/LongToedStint.jpg"
+import LandingImage from "../Assets/other/LongToedStint.webp"
 
 const AllBirds = () => {
   return (
