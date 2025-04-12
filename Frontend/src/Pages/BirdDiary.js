@@ -7,6 +7,7 @@ import Diary from '../Components/Diary';
 import Footer from '../Components/Footer';
 import PrimaryButton from '../Components/PrimaryButton';
 
+
 const BirdDiary = () => {
   const navigate = useNavigate();
   const [showLoginPrompt, setShowLoginPrompt] = useState(false); // State for showing login prompt
