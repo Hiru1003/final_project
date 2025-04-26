@@ -29,6 +29,8 @@ function NavPage() {
 
     const handleLogout = () => {
         // Remove user data from localStorage on logout
+        localStorage.removeItem('access_token');
+        localStorage.removeItem('user');
         localStorage.removeItem('userEmail');
         setUserEmail(null); // Update state to reflect the logout
     }

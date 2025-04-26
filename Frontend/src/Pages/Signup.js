@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
 // import Signupimage from '../Assets/illustration/Signupimage1.jpg';
 import TextField from '@mui/material/TextField';
-import { FaGoogle } from "react-icons/fa";
 import axios from 'axios';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
@@ -58,21 +57,27 @@ const SignupPage = () => {
 
   const handleGoogleLogin = async (credentialResponse) => {
     try {
-        const res = await axios.post('http://127.0.0.1:5000/google-login', {
-            token: credentialResponse.credential,
-        });
-        setSnackbarMessage('Google login successful!');
-        setError(false);
-        setOpenSnackbar(true);
-        navigate('/'); 
-        // Optionally, handle the response (e.g., navigate to another page)
+      const res = await axios.post('http://127.0.0.1:5000/google-login', {
+        token: credentialResponse.credential,
+      });
+  
+      // Save token to localStorage or cookies
+      localStorage.setItem('access_token', res.data.access_token); // or however your backend sends it
+      localStorage.setItem('user', JSON.stringify(res.data.user)); // optional: store user info
+  
+      setSnackbarMessage('Google login successful!');
+      setError(false);
+      setOpenSnackbar(true);
+  
+      navigate('/');
     } catch (error) {
-        console.error("Google login failed", error);
-        setSnackbarMessage('Error with Google login!');
-        setError(true);
-        setOpenSnackbar(true);
+      console.error("Google login failed", error);
+      setSnackbarMessage('Error with Google login!');
+      setError(true);
+      setOpenSnackbar(true);
     }
   };
+  
 
 
 

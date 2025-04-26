@@ -1,5 +1,4 @@
 import React from 'react';
-import BirdCard from './BirdCard';
 import Kanneliya from '../Assets/Sightings/Kanneliya Forest.webp';
 import BundalaNationalPark from '../Assets/Sightings/Bundalanationalpark.jpg';
 import HortonPlains from '../Assets/Sightings/Horton Plains .jpg';

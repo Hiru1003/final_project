@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import NavPage from '../Components/Nav';
 // import Loginimage from '../Assets/illustration/login.jpg';
-import { FaGoogle } from "react-icons/fa";
 import TextField from '@mui/material/TextField';
 import axios from 'axios';
 import Snackbar from '@mui/material/Snackbar';
@@ -84,6 +83,7 @@ const LoginPage = () => {
             <h2 className="text-5xl font-semibold text-gray-700 mb-10">Login</h2>
             <p className="text-gray-600 text-lg mb-6">
               Welcome back! Sign in to continue your journey.
+              Discover new species, revisit your favorite sightings, and keep your birding adventure alive.<br />
             </p>
             <form onSubmit={handleSubmit} className="mt-4">
               <div className="mb-4">
@@ -121,13 +121,13 @@ const LoginPage = () => {
               </div>
 
 
-              <button
+              {/* <button
                 type="button"
                 className="w-full mt-3 bg-red-500 text-white font-semibold py-2 rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <FaGoogle className="text-lg" />
                 <span>Login with Google</span>
-              </button>
+              </button> */}
             </form>
           </div>
         </div>
