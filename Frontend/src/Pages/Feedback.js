@@ -74,7 +74,7 @@ const handleSubmit = async (e) => {
         <div className="flex w-full max-w-7xl h-[80vh] bg-white shadow-2xl rounded-lg overflow-hidden">
           
           {/* Left Section - Image */}
-          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url('/other/login.jpg')` }}></div>
+          <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url('/other/feedback.jpg')` }}></div>
 
           {/* Right Section - Feedback Form */}
           <div className="w-1/2 p-8 flex flex-col justify-start">

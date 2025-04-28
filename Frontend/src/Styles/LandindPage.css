@@ -1,7 +1,7 @@
 /* Fullscreen background image with text in the center */
 .landing-page {
   position: relative;
-  height: 80vh;
+  height: 80vh; 
   width: 100%;
   display: flex;
   justify-content: center;
