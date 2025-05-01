@@ -1,6 +1,8 @@
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-// import landingImage from '../Assets/other/landing6.jpeg'; 
+import LandingImage1 from "../Assets/other/home20.jpg"
+import LandingImage2 from "../Assets/other/home21.jpg"
+import LandingImage3 from "../Assets/other/home22.jpg"
 import SightingGallery from "../Components/SightingGallery";
 import Footer from "../Components/Footer";
 
@@ -9,7 +11,7 @@ const SightingPage = () => {
     <>
         <NavPage />
         <LandingPage
-          image= '/Assets/other/landing6.jpg' 
+          images={[LandingImage1, LandingImage2, LandingImage3]} 
           heading="Sightings In Sri Lanka" 
           paragraph={
               <>
