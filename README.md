@@ -1,71 +1,82 @@
-# Getting Started with Create React App
+# 🐦 FeatherFinder
+## 📖 Introduction
+FeatherFinder is an intelligent and user-friendly web platform built for bird enthusiasts, researchers, and nature lovers.
+It helps users identify birds through image uploads, explore birds visually, and maintain a personal birdwatching diary.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+FeatherFinder offers an educational, interactive, and seamless experience for anyone passionate about birds — without requiring an account for most features!
+Whether you're a casual explorer or a dedicated ornithologist, FeatherFinder is your companion for discovering and documenting the fascinating world of birds.
 
 
-### `npm start`
+## 🚀 Key Features
+Home Page – Introduction to FeatherFinder's mission.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bird Identification by Image – Upload bird photos and identify species using AI.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Visual Identification – Explore categorized bird images.
 
-### `npm test`
+Bird Diary – Record your birdwatching experiences (requires login).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Bird Data – Access All Birds and Endemic Birds databases.
 
-### `npm run build`
+Login / Signup – Create an account to maintain your personalized Bird Diary (optional for browsing).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Note: Access to all pages is available without login, except Bird Diary.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Installation Guide
 
-### `npm run eject`
+### 1. Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+git clone https://github.com/Hiru1003/final_project.git
+### Navigate to the Project Directory
+cd final_project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Backend Setup
+Navigate to the backend folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+cd Backend
+Create and activate a virtual environment:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install backend dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+pip install -r requirements.txt
+Start the FastAPI backend server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+python3 main.py
+### Frontend Setup
+Navigate to the frontend folder:
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+cd ../Frontend
+Install frontend (Node.js) dependencies:
 
-### Analyzing the Bundle Size
+npm install
+Start the React frontend server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+npm start
+### Access the Application
+Once both backend and frontend servers are running, open your browser and visit:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📓 How to Use FeatherFinder
+Home: Discover the purpose and mission of FeatherFinder.
 
-### Deployment
+Identify by Image: Upload a photo and find out which bird it is instantly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Visual Identification: Browse through categorized bird photos.
 
-### `npm run build` fails to minify
+All Birds: Explore a wide variety of bird species.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Endemic Birds: Learn about species unique to specific regions.
+
+Bird Diary: Log your bird sightings with notes and dates.
+
+
+## 🌟 Thank you for using FeatherFinder!
+Let's discover the beauty of birds together 🐥🌳.<br/>

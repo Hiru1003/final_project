@@ -2,7 +2,9 @@ import BirdGalleryAllBirds from "../Components/BirdGalleryAllBirds";
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
 import Footer from "../Components/Footer";
-import LandingImage from "../Assets/other/LongToedStint.jpg"
+import LandingImage1 from "../Assets/other/home7.jpg"
+import LandingImage2 from "../Assets/other/home8.jpg"
+import LandingImage3 from "../Assets/other/home9.jpg"
 
 const AllBirds = () => {
   return (
@@ -10,7 +12,7 @@ const AllBirds = () => {
 
         <NavPage />
         <LandingPage 
-        image= {LandingImage}
+          images={[LandingImage1, LandingImage2, LandingImage3]} 
         heading="All Birds" 
         paragraph={
             <>

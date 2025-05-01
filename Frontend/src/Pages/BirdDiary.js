@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavPage from '../Components/Nav';
 import LandingPage from '../Components/LandindPage';
-import landingImage from '../Assets/other/landing8.jpg'; 
+import LandingImage1 from "../Assets/other/home13.jpg"
+import LandingImage2 from "../Assets/other/home14.jpg"
+import LandingImage3 from "../Assets/other/home15.jpg"
 import Diary from '../Components/Diary';
 import Footer from '../Components/Footer';
 import PrimaryButton from '../Components/PrimaryButton';
@@ -36,7 +38,7 @@ const BirdDiary = () => {
       {showLoginPrompt ? (
         <div className="login-prompt">
           <LandingPage 
-            image= {landingImage}
+            images={[LandingImage1, LandingImage2, LandingImage3]} 
             heading="Access Your Bird Diary Today!"
             paragraph={
               <>
@@ -55,7 +57,7 @@ const BirdDiary = () => {
         </div>
       ) : (
         <LandingPage 
-        image= {landingImage}
+        images={[LandingImage1, LandingImage2, LandingImage3]} 
           heading={userName ? `Hi ${userName}, ready to write today’s birding memories?` : 'Welcome to Bird Diary'}
           paragraph={
               <>

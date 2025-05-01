@@ -1,15 +1,17 @@
 import NavPage from "../Components/Nav";
-// import landingImage from '../Assets/AllBirds/PurpleSwamphen.jpg'; 
-import LandingPage from "../Components/LandindPage";
+import LandingImage1 from "../Assets/other/home13.jpg"
+import LandingImage2 from "../Assets/other/home14.jpg"
+import LandingImage3 from "../Assets/other/home15.jpg"
 import VisualIdentificationByFeature from "../Components/VisualIdentificationByFeature";
 import Footer from "../Components/Footer";
+import LandingPage from "../Components/LandindPage";
 
 const VisualIdentification = () => {
   return (
     <>
         <NavPage />
         <LandingPage
-          image= '/other/PurpleSwamphen.jpg' 
+          images={[LandingImage1, LandingImage2, LandingImage3]} 
           heading="Visual Identification" 
           paragraph={
               <>

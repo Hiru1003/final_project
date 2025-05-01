@@ -1,15 +1,17 @@
 import LandingPage from "../Components/LandindPage";
 import NavPage from "../Components/Nav";
-import landingImage from '../Assets/other/landing6.jpeg'; 
 import BirdIdentificationByPhotos from "../Components/BirdIdentificationByPhotos";
 import Footer from "../Components/Footer";
+import LandingImage1 from "../Assets/other/home10.jpg"
+import LandingImage2 from "../Assets/other/home11.jpg"
+import LandingImage3 from "../Assets/other/home12.jpg"
 
 const BirdIdentification = () => {
   return (
     <>
         <NavPage />
         <LandingPage
-          image= {landingImage}
+          images={[LandingImage1, LandingImage2, LandingImage3]} 
           heading="Bird Identification" 
           paragraph={
               <>

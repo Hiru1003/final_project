@@ -1,7 +1,7 @@
-/* Fullscreen background image with text in the center */
+/* Fullscreen background image with smooth transition */
 .landing-page {
   position: relative;
-  height: 80vh; 
+  height: 90vh; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -9,9 +9,10 @@
   background-size: cover; 
   background-position: center;
   z-index: 0;
+  transition: background-image 1s ease-in-out;
 }
 
-/* Overlay with opacity on the image */
+/* Overlay on the image */
 .landing-page::before {
   content: "";
   position: absolute;
@@ -23,29 +24,29 @@
   z-index: 1;
 }
 
-/* Text container */
+/* Text content */
 .landing-content {
   position: relative;
-  z-index: 2; /* Make sure it sits above the overlay */
+  z-index: 2;
   text-align: center;
   color: #fff;
   padding: 2rem;
 }
 
-/* Heading styles */
+/* Heading */
 .landing-heading {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-/* Paragraph styles */
+/* Paragraph */
 .landing-paragraph {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 
-/* Button styles */
+/* Button styles (you can add button later if needed) */
 .landing-button {
   background-color: var(--secondaryColor200); 
   color: #fff;
