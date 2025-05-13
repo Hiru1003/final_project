@@ -79,33 +79,41 @@ const BirdIdentificationByPhotos = () => {
       </Typography>
 
       <Box
-        sx={{
-          width: 700,
-          height: 500,
-          border: '2px dashed gray',
-          borderRadius: 4,
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          mx: 'auto',
-          my: 4,
-          position: 'relative',
-        }}
-        onDrop={handleDrop}
-        onDragOver={(e) => e.preventDefault()}
-      >
-        {imagePreview ? (
-          <img src={imagePreview} alt="Preview" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'cover' }} />
-        ) : (
-          <label htmlFor="file-input" style={{ cursor: 'pointer' }}>
-            <Typography variant="body1" color="textSecondary">
-              Drop Your Photo Here
-            </Typography>
-          </label>
-        )}
-        <input type="file" accept="image/*" style={{ display: 'none' }} onChange={handleFileChange} id="file-input" />
-      </Box>
+  sx={{
+    width: 700,
+    height: 500,
+    border: '2px dashed gray',
+    borderRadius: 4,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    mx: 'auto',
+    my: 4,
+    position: 'relative',
+    overflow: 'hidden', // Ensure image stays inside
+    cursor: 'pointer',   // Matches top box behavior
+  }}
+  onDrop={handleDrop}
+  onDragOver={(e) => e.preventDefault()}
+  onClick={() => document.getElementById('file-input').click()} // Match click behavior too
+>
+  {imagePreview ? (
+    <img
+      src={imagePreview}
+      alt="Preview"
+      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+    />
+  ) : (
+    <label htmlFor="file-input" style={{ cursor: 'pointer' }}>
+      <Typography variant="body1" color="textSecondary">
+        Drop Your Photo Here
+      </Typography>
+    </label>
+  )}
+  <input type="file" accept="image/*" style={{ display: 'none' }} onChange={handleFileChange} id="file-input" />
+</Box>
+
 
       <Box textAlign="center" sx={{ width: '350px', margin: '0 auto' }}>
         {!searchCompleted ? (

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Card, CardContent, CardMedia, Grid, Typography, Box, IconButton, Menu, MenuItem } from '@mui/material';
+import {
+  Card, CardContent, CardMedia, Grid, Typography,
+  Box, IconButton, Menu, MenuItem, Snackbar, Alert
+} from '@mui/material';
 import { MoreVert, Edit, Delete } from '@mui/icons-material';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -8,59 +11,96 @@ const Entries = () => {
   const [entries, setEntries] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedEntry, setSelectedEntry] = useState(null);
+  const [toast, setToast] = useState({ open: false, message: '', severity: 'success' });
   const navigate = useNavigate();
 
-  // Fetch entries from MongoDB on component mount
   useEffect(() => {
-  
     const fetchEntries = async () => {
       try {
-        const userEmail = localStorage.getItem('userEmail');  // Retrieve email from localStorage
+        const userEmail = localStorage.getItem('userEmail');
         if (!userEmail) {
-          console.error("User email is missing. Please log in.");
-          return;  // Exit if no user email is found
+          console.error("User email is missing.");
+          return;
         }
-    
+
         const response = await axios.get('http://127.0.0.1:5000/get_entries', {
           headers: { 'User-Email': userEmail }
         });
+
         setEntries(response.data);
       } catch (error) {
         console.error('Error fetching entries:', error);
       }
     };
-    
-
 
     fetchEntries();
   }, []);
 
-  // Open menu
   const handleMenuOpen = (event, entry) => {
     setAnchorEl(event.currentTarget);
     setSelectedEntry(entry);
   };
 
-  // Close menu
   const handleMenuClose = () => {
     setAnchorEl(null);
     setSelectedEntry(null);
   };
 
-  // Edit function
-  const handleEdit = () => {
-    navigate('/Bird-Diary', { state: selectedEntry }); // Navigate to the Diary page with the selected entry data
-    handleMenuClose();
+  const handleEdit = async () => {
+    if (!selectedEntry || !selectedEntry._id) return;
+  
+    try {
+      // Send the PUT request to update the entry
+      const response = await axios.put(
+        `http://127.0.0.1:5000/edit_entry/${selectedEntry._id}`,
+        {
+          user_email: selectedEntry.user_email,
+          bird_name: selectedEntry.bird_name,
+          location: selectedEntry.location,
+          date: selectedEntry.date,
+          weather: selectedEntry.weather,
+          notes: selectedEntry.notes,
+          image_url: selectedEntry.image_url,
+        }
+      );
+  
+      // If the update is successful
+      if (response.status === 200) {
+        // Show success message
+        setToast({ open: true, message: 'Entry Edited successfully!', severity: 'success' });
+  
+        // Populate the form with the updated entry and navigate to the Bird-Diary page
+        navigate('/Bird-Diary', { state: { ...selectedEntry, updated: true } }); // Passing state to navigate
+  
+      }
+    } catch (error) {
+      // Show error message in case of failure
+      console.error('Failed to update entry:', error);
+      setToast({ open: true, message: 'Failed to update entry.', severity: 'error' });
+    } finally {
+      handleMenuClose();
+    }
   };
+  
 
-  // Delete function
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://127.0.0.1:5000/delete_entry/${selectedEntry._id}`); // Assuming you have an endpoint for deleting
-      setEntries(entries.filter(entry => entry._id !== selectedEntry._id)); // Update the list locally
-      handleMenuClose();
+      if (!selectedEntry?._id) {
+        console.error('Selected entry does not have a valid _id:', selectedEntry);
+        return;
+      }
+
+      await axios.delete(`http://127.0.0.1:5000/delete_entry/${selectedEntry._id}`, {
+        headers: { 'User-Email': localStorage.getItem('userEmail') }
+      });
+
+      setEntries(prev => prev.filter(entry => entry._id !== selectedEntry._id));
+      setToast({ open: true, message: 'Entry Deleted successfully!', severity: 'success' });
     } catch (error) {
       console.error('Error deleting entry:', error);
+      setToast({ open: true, message: 'Failed to delete entry.', severity: 'error' });
+    } finally {
+      handleMenuClose();
     }
   };
 
@@ -78,9 +118,8 @@ const Entries = () => {
 
       <Grid container spacing={3} sx={{ paddingLeft: 3 }}>
         {entries.map((entry) => (
-          <Grid item xs={12} sm={6} key={entry._id}> 
+          <Grid item xs={12} sm={6} key={entry._id}>
             <Card sx={{ display: 'flex', flexDirection: 'row', height: 300, position: 'relative' }}>
-              {/* First Column: Bird Image */}
               <CardMedia
                 component="img"
                 sx={{ width: 300, height: 300, objectFit: 'cover' }}
@@ -88,7 +127,6 @@ const Entries = () => {
                 alt={entry.bird_name}
               />
 
-              {/* Second Column: Bird Details */}
               <Box sx={{ padding: 2, flex: 1 }}>
                 <CardContent>
                   <Typography variant="h6" fontWeight="bold" align="left" gutterBottom>
@@ -108,7 +146,6 @@ const Entries = () => {
                   </Typography>
                 </CardContent>
 
-                {/* Menu Options */}
                 <Box sx={{ position: 'absolute', top: 10, right: 10 }}>
                   <IconButton onClick={(event) => handleMenuOpen(event, entry)}>
                     <MoreVert />
@@ -121,7 +158,6 @@ const Entries = () => {
         ))}
       </Grid>
 
-      {/* Menu for Edit & Delete */}
       <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleMenuClose}>
         <MenuItem onClick={handleEdit}>
           <Edit sx={{ marginRight: 1 }} /> Edit
@@ -130,6 +166,18 @@ const Entries = () => {
           <Delete sx={{ marginRight: 1 }} /> Delete
         </MenuItem>
       </Menu>
+
+      {/* Snackbar Toast */}
+      <Snackbar
+              open={toast.open}
+              autoHideDuration={3000}
+              onClose={() => setToast({ ...toast, open: false })}
+              anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+            >
+              <Alert onClose={() => setToast({ ...toast, open: false })} severity={toast.severity} sx={{ width: '100%' }}>
+                {toast.message}
+              </Alert>
+            </Snackbar>
     </Box>
   );
 };

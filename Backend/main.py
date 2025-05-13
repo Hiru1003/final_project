@@ -1,4 +1,5 @@
 import os
+from bson import ObjectId
 from fastapi import HTTPException, requests
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -13,7 +14,7 @@ from google.oauth2 import id_token
 from google.auth.transport import requests
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"], supports_credentials=True) 
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}}, supports_credentials=True)
 
 
 @app.after_request
@@ -126,19 +127,71 @@ def get_entries():
         if not user_email:
             return jsonify({'error': 'User email is required'}), 400
 
-        # Query the entries for the specific user using "user_email"
-        entries = collection.find({"user_email": user_email}, {"_id": 0})  # Updated key to user_email
-        
-        # Convert the MongoDB cursor to a list of dictionaries
-        entries_list = list(entries)
+        # Query the entries for the specific user
+        entries = collection.find({"user_email": user_email})
 
-        # Return the entries as JSON
+        # Convert cursor to list and ensure _id is a string
+        entries_list = []
+        for entry in entries:
+            entry['_id'] = str(entry['_id'])  # Convert ObjectId to string
+            entries_list.append(entry)
+
         return jsonify(entries_list)
 
     except Exception as e:
-        # Log and return the error message
         print(f"Error: {e}")
         return jsonify({'error': str(e)}), 500
+
+
+
+@app.route('/delete_entry/<entry_id>', methods=['DELETE'])
+def delete_entry(entry_id):
+    try:
+        # Get the user email from the request headers
+        user_email = request.headers.get('User-Email')
+        if not user_email:
+            return jsonify({'error': 'User email is required'}), 400
+
+        # Validate entry_id format
+        if not ObjectId.is_valid(entry_id):
+            return jsonify({'error': 'Invalid entry ID format'}), 400
+
+        # Try to delete the entry by its unique _id and check if the entry belongs to the logged-in user
+        result = collection.delete_one({
+            "_id": ObjectId(entry_id),
+            "user_email": user_email  # Ensure the entry belongs to the logged-in user
+        })
+
+        if result.deleted_count == 1:
+            return jsonify({"message": "Diary entry deleted successfully!"}), 200
+        else:
+            return jsonify({"error": "Entry not found or user is not authorized to delete this entry"}), 404
+
+    except Exception as e:
+        # Log the detailed error message
+        print(f"Error: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/edit_entry/<entry_id>', methods=['PUT'])
+def edit_entry(entry_id):
+    try:
+        data = request.get_json()
+
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+
+        result = collection.update_one(
+            {"_id": ObjectId(entry_id)},
+            {"$set": data}
+        )
+
+        if result.matched_count == 0:
+            return jsonify({"error": "Entry not found"}), 404
+
+        return jsonify({"message": "Entry updated successfully"}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/signup", methods=["POST"])
