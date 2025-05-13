@@ -69,8 +69,9 @@ const VisualIdentificationByFeature = () => {
       </Typography>
 
       <Typography variant="body1" align="left" gutterBottom marginLeft={3} marginRight={3} marginBottom={10}>
-        {/* Your description here */}
-      </Typography>
+  Unsure of the bird you've spotted? Use our visual identification tool to match features like color, size, beak shape, and feather patterns with known species. Whether you're a seasoned birder or just curious, this tool makes birdwatching more interactive and rewarding. Start your journey in identifying birds with ease and confidence!
+</Typography>
+
 
       <Box sx={{ display: 'flex', flexWrap: 'wrap', overflow: 'visible', marginLeft: 3, marginRight: 5, marginBottom: 1, marginTop: 5 }}>
         {Array.from({ length: 4 }).map((_, rowIndex) => (
@@ -87,18 +88,25 @@ const VisualIdentificationByFeature = () => {
                     id={`select-${labelIndex}`}
                     defaultValue=""
                     onChange={(e) => handleChange(labelIndex, e.target.value)}
+                    renderValue={(selected) => selected}
                   >
                     <MenuItem value="">
                       <em>None</em>
                     </MenuItem>
                     {getOptions(labelIndex).map(option => (
-                      <MenuItem key={option} value={option}>
+                      <MenuItem key={option} value={option} sx={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        height: 48, // fixed height
+                        paddingY: 0, // remove excess vertical padding
+                      }}>
                         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
                           <span>{option}</span>
-                          {[1, 2, 6,11].includes(labelIndex) ? null : (
+                          {[1, 2, 6,7, 11].includes(labelIndex) ? null : (
                             <Tooltip
                               title={
-                                <Card sx={{ width: 200 }}>
+                                <Card sx={{ width: 200,borderRadius: 2 }}>
                                   <CardMedia
                                     component="img"
                                     height="140"
