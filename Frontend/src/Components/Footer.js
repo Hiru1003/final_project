@@ -1,28 +1,48 @@
 import React from 'react';
-import { Box, Typography, Link } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook'; // Ensure you have Material Icons installed
-import InstagramIcon from '@mui/icons-material/Instagram'; // Ensure you have Material Icons installed
-import Logo from '../Assets/logowithoutbg.png'; // Ensure this path is correct
+import { Box, Typography, Link, useTheme, useMediaQuery } from '@mui/material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import Logo from '../Assets/logowithoutbg.png';
 
 const Footer = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <Box
       sx={{
         display: 'flex',
+        flexDirection: { xs: 'column', sm: 'column', md: 'row' },
         justifyContent: 'space-between',
-        alignItems: 'flex-start',
+        alignItems: { xs: 'center', sm: 'center', md: 'flex-start' },
         bgcolor: '#E1F5FE',
         padding: '20px',
-        height: '300px',
+        gap: { xs: 4, sm: 4, md: 0 },
+        textAlign: { xs: 'center', sm: 'center', md: 'left' },
       }}
     >
-      {/* Left Side: Logo and Tagline in a column layout */}
-      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginLeft:5, marginTop:5 }}>
-        <img src={Logo} alt="FeatherFinder Logo" style={{ height: '70px', marginBottom: '10px' }} />
-        <Typography variant="body2" sx={{ marginBottom: '14px' , marginLeft:1, fontSize:'15px'}}>
+      {/* Left Section */}
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: { xs: 'center', md: 'flex-start' },
+          marginLeft: { md: 5 },
+          marginTop: 3,
+        }}
+      >
+        <img
+          src={Logo}
+          alt="FeatherFinder Logo"
+          style={{ height: '70px', marginBottom: '10px' }}
+        />
+        <Typography
+          variant="body2"
+          sx={{ marginBottom: '14px', fontSize: '15px' }}
+        >
           Help you to spy on birds
         </Typography>
-        <Box sx={{ display: 'flex' }}>
+        <Box sx={{ display: 'flex', justifyContent: { xs: 'center', md: 'flex-start' } }}>
           <Link href="#" sx={{ margin: '0 5px', color: 'inherit' }}>
             <FacebookIcon />
           </Link>
@@ -32,25 +52,62 @@ const Footer = () => {
         </Box>
       </Box>
 
-      {/* Right Side: Quick Navigation and Other Links */}
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap',marginTop:5 }}>
-        <Box sx={{ marginRight: 4, width: '300px' }}>
-            <Typography variant="subtitle1" fontWeight="bold">Quick Navigation</Typography>
-            <Link href="/Bird-Identification" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Bird Identification</Link>
-            <Link href="/Visual-Identification" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2}}>Visual Identification</Link>
-            <Link href="/endemic-birds" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Endemic Birds</Link>
-            <Link href="/all-birds" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2}}>All Birds</Link>
+      {/* Right Section */}
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          justifyContent: 'center',
+          alignItems: { xs: 'center', sm: 'flex-start' },
+          flexWrap: 'wrap',
+          gap: 4,
+          marginTop: { xs: 2, sm: 4, md: 5 },
+        }}
+      >
+        {/* Quick Navigation */}
+        <Box sx={{ width: '250px' }}>
+          <Typography variant="subtitle1" fontWeight="bold">
+            Quick Navigation
+          </Typography>
+          {['Bird-Identification', 'Visual-Identification', 'endemic-birds', 'all-birds'].map((path, idx) => (
+            <Link
+              key={idx}
+              href={`/${path}`}
+              sx={{
+                display: 'block',
+                my: 0.8,
+                color: 'inherit',
+                textDecoration: 'none',
+                lineHeight: 2,
+              }}
+            >
+              {path.replace(/-/g, ' ')}
+            </Link>
+          ))}
         </Box>
 
-        <Box sx={{ marginRight: 4, width: '300px' }}>
-            <Typography variant="subtitle1" fontWeight="bold">Other</Typography>
-            <Link href="/feedback" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Feedback</Link>
-            <Link href="/login" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Login</Link>
-            <Link href="/signup" sx={{ display: 'block', marginY: 0.8, color: 'inherit', textDecoration: 'none', lineHeight: 2 }}>Signup</Link>
+        {/* Other */}
+        <Box sx={{ width: '250px' }}>
+          <Typography variant="subtitle1" fontWeight="bold">
+            Other
+          </Typography>
+          {['feedback', 'login', 'signup'].map((path, idx) => (
+            <Link
+              key={idx}
+              href={`/${path}`}
+              sx={{
+                display: 'block',
+                my: 0.8,
+                color: 'inherit',
+                textDecoration: 'none',
+                lineHeight: 2,
+              }}
+            >
+              {path.charAt(0).toUpperCase() + path.slice(1)}
+            </Link>
+          ))}
         </Box>
-        </Box>
-
-
+      </Box>
     </Box>
   );
 };
