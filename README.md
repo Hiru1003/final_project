@@ -27,42 +27,68 @@ Note: Access to all pages is available without login, except Bird Diary.
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Hiru1003/final_project.git
-### Navigate to the Project Directory
+```` 
+
+### 2. Navigate to the Project Directory
+
+```bash
 cd final_project
+````
 
 ### 3. Backend Setup
-Navigate to the backend folder:
 
+Navigate to the backend folder:
+```bash
 cd Backend
+````
 Create and activate a virtual environment:
 
-
+### On Mac: 
+```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
+````
+### On Windows: 
+
+```bash
+python3 -m venv venv
+venv\Scripts\activate
+````
+
 Install backend dependencies:
 
+```bash
 pip install -r requirements.txt
+````
+
 Start the FastAPI backend server:
 
+```bash
 python3 main.py
-### Frontend Setup
+````
+### 4. Frontend Setup
 Navigate to the frontend folder:
 
-
+```bash
 cd ../Frontend
+````
 Install frontend (Node.js) dependencies:
-
+```bash
 npm install
+````
 Start the React frontend server:
 
-
+```bash
 npm start
-### Access the Application
+````
+### 5. Access the Application
 Once both backend and frontend servers are running, open your browser and visit:
 
-
+```bash
 http://localhost:3000
+````
 
 ## 📓 How to Use FeatherFinder
 Home: Discover the purpose and mission of FeatherFinder.
